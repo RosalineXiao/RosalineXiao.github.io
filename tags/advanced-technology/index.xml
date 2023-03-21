@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>interactive design on Rosaline Xiao - Portfolio</title>
-    <link>https://rosalinexiao.github.io/tags/interactive-design/</link>
-    <description>Recent content in interactive design on Rosaline Xiao - Portfolio</description>
+    <title>Advanced Technology on Rosaline Xiao - Portfolio</title>
+    <link>https://rosalinexiao.github.io/tags/advanced-technology/</link>
+    <description>Recent content in Advanced Technology on Rosaline Xiao - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Mar 2023 22:36:45 +0100</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/interactive-design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 22:36:45 +0100</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/advanced-technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DRT Bus Experience Design for Tourists</title>
       <link>https://rosalinexiao.github.io/portfolio/drt-bus-experience-design-for-tourists/</link>
@@ -19,15 +19,6 @@ SUSTAINABLE CITIES AND COMMUNITIES
 The goal target is:
 By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport.
 To achieve these goals, we decided to improve the bus ride experience by designing with buses in public transport. We wanted to provide a more convenient ride for passengers, and we found that tourists, as a group unfamiliar with the local environment, prefer to travel by taxi.</description>
-    </item>
-    
-    <item>
-      <title>PLANT COMPANION</title>
-      <link>https://rosalinexiao.github.io/portfolio/plantcompanion/</link>
-      <pubDate>Sun, 05 Mar 2023 20:56:42 +0600</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/portfolio/plantcompanion/</guid>
-      <description>Introduction In 2021, there were approximately 973 thousand males and 561 thousand females aged 16 to 44 living alone in the United Kingdom[1]. They crave love and emotional support. As a way to solve the loneliness problem, many young people living alone are eager to keep pets to accompany them, but they cannot due to various reasons. Many of them then choose to keep plants and regard plants as living companions.</description>
     </item>
     
   </channel>
