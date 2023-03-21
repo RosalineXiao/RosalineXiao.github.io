@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Mar 2023 23:13:24 +0100</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Arduino</title>
+      <link>https://rosalinexiao.github.io/tags/arduino/</link>
+      <pubDate>Tue, 21 Mar 2023 23:13:24 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic</title>
+      <link>https://rosalinexiao.github.io/tags/dynamic/</link>
+      <pubDate>Tue, 21 Mar 2023 23:13:24 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/dynamic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ferrofluid Speaker</title>
       <link>https://rosalinexiao.github.io/tags/ferrofluid-speaker/</link>
       <pubDate>Tue, 21 Mar 2023 23:13:24 +0100</pubDate>
@@ -17,11 +35,11 @@
     </item>
     
     <item>
-      <title>Visual</title>
-      <link>https://rosalinexiao.github.io/tags/visual/</link>
+      <title>Music Visualization</title>
+      <link>https://rosalinexiao.github.io/tags/music-visualization/</link>
       <pubDate>Tue, 21 Mar 2023 23:13:24 +0100</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/visual/</guid>
+      <guid>https://rosalinexiao.github.io/tags/music-visualization/</guid>
       <description></description>
     </item>
     
@@ -35,20 +53,20 @@
     </item>
     
     <item>
+      <title>Innovative Design</title>
+      <link>https://rosalinexiao.github.io/tags/innovative-design/</link>
+      <pubDate>Tue, 21 Mar 2023 23:02:54 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/innovative-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Prototype</title>
       <link>https://rosalinexiao.github.io/tags/prototype/</link>
       <pubDate>Tue, 21 Mar 2023 23:02:54 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/tags/prototype/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Twist to transform</title>
-      <link>https://rosalinexiao.github.io/tags/twist-to-transform/</link>
-      <pubDate>Tue, 21 Mar 2023 23:02:54 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/twist-to-transform/</guid>
       <description></description>
     </item>
     
@@ -62,11 +80,11 @@
     </item>
     
     <item>
-      <title>Sensora</title>
-      <link>https://rosalinexiao.github.io/tags/sensora/</link>
+      <title>Sensors</title>
+      <link>https://rosalinexiao.github.io/tags/sensors/</link>
       <pubDate>Tue, 21 Mar 2023 22:44:05 +0100</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/sensora/</guid>
+      <guid>https://rosalinexiao.github.io/tags/sensors/</guid>
       <description></description>
     </item>
     
@@ -80,6 +98,15 @@
     </item>
     
     <item>
+      <title>3D Printing</title>
+      <link>https://rosalinexiao.github.io/tags/3d-printing/</link>
+      <pubDate>Tue, 21 Mar 2023 23:44:46 +0600</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/3d-printing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Floating Bridge</title>
       <link>https://rosalinexiao.github.io/tags/floating-bridge/</link>
       <pubDate>Tue, 21 Mar 2023 23:44:46 +0600</pubDate>
@@ -89,25 +116,16 @@
     </item>
     
     <item>
-      <title>Industrial Design</title>
-      <link>https://rosalinexiao.github.io/tags/industrial-design/</link>
+      <title>Modelling</title>
+      <link>https://rosalinexiao.github.io/tags/modelling/</link>
       <pubDate>Tue, 21 Mar 2023 23:44:46 +0600</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/industrial-design/</guid>
+      <guid>https://rosalinexiao.github.io/tags/modelling/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Arduino</title>
-      <link>https://rosalinexiao.github.io/tags/arduino/</link>
-      <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>human-plant interaction</title>
+      <title>Human-Plant Interaction</title>
       <link>https://rosalinexiao.github.io/tags/human-plant-interaction/</link>
       <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
@@ -116,7 +134,7 @@
     </item>
     
     <item>
-      <title>interactive design</title>
+      <title>Interactive Design</title>
       <link>https://rosalinexiao.github.io/tags/interactive-design/</link>
       <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
@@ -125,7 +143,7 @@
     </item>
     
     <item>
-      <title>loneliness</title>
+      <title>Loneliness</title>
       <link>https://rosalinexiao.github.io/tags/loneliness/</link>
       <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
@@ -139,6 +157,15 @@
       <pubDate>Mon, 20 Mar 2023 22:36:45 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/tags/advanced-technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APP</title>
+      <link>https://rosalinexiao.github.io/tags/app/</link>
+      <pubDate>Mon, 20 Mar 2023 22:36:45 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/app/</guid>
       <description></description>
     </item>
     
@@ -170,6 +197,15 @@
     </item>
     
     <item>
+      <title>Behavior and Habits</title>
+      <link>https://rosalinexiao.github.io/tags/behavior-and-habits/</link>
+      <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/behavior-and-habits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Design Research Methods</title>
       <link>https://rosalinexiao.github.io/tags/design-research-methods/</link>
       <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
@@ -179,29 +215,11 @@
     </item>
     
     <item>
-      <title>Habits</title>
-      <link>https://rosalinexiao.github.io/tags/habits/</link>
-      <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/habits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Laundry</title>
       <link>https://rosalinexiao.github.io/tags/laundry/</link>
       <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/tags/laundry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>APP</title>
-      <link>https://rosalinexiao.github.io/tags/app/</link>
-      <pubDate>Sat, 18 Mar 2023 03:12:54 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/app/</guid>
       <description></description>
     </item>
     
