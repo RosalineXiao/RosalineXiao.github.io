@@ -6,67 +6,40 @@
     <description>Recent content in Tags on Rosaline Xiao - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2023 03:12:54 +0100</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 20:56:42 +0600</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>APP</title>
-      <link>https://rosalinexiao.github.io/tags/app/</link>
-      <pubDate>Tue, 21 Mar 2023 03:12:54 +0100</pubDate>
+      <title>Arduino</title>
+      <link>https://rosalinexiao.github.io/tags/arduino/</link>
+      <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/app/</guid>
+      <guid>https://rosalinexiao.github.io/tags/arduino/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Energy Saving</title>
-      <link>https://rosalinexiao.github.io/tags/energy-saving/</link>
-      <pubDate>Tue, 21 Mar 2023 03:12:54 +0100</pubDate>
+      <title>human-plant interaction</title>
+      <link>https://rosalinexiao.github.io/tags/human-plant-interaction/</link>
+      <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/energy-saving/</guid>
+      <guid>https://rosalinexiao.github.io/tags/human-plant-interaction/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Experience Design</title>
-      <link>https://rosalinexiao.github.io/tags/experience-design/</link>
-      <pubDate>Tue, 21 Mar 2023 03:12:54 +0100</pubDate>
+      <title>interactive design</title>
+      <link>https://rosalinexiao.github.io/tags/interactive-design/</link>
+      <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/experience-design/</guid>
+      <guid>https://rosalinexiao.github.io/tags/interactive-design/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Smart Meter</title>
-      <link>https://rosalinexiao.github.io/tags/smart-meter/</link>
-      <pubDate>Tue, 21 Mar 2023 03:12:54 +0100</pubDate>
+      <title>loneliness</title>
+      <link>https://rosalinexiao.github.io/tags/loneliness/</link>
+      <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/smart-meter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design Research Methods</title>
-      <link>https://rosalinexiao.github.io/tags/design-research-methods/</link>
-      <pubDate>Tue, 21 Mar 2023 03:09:37 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/design-research-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Habits</title>
-      <link>https://rosalinexiao.github.io/tags/habits/</link>
-      <pubDate>Tue, 21 Mar 2023 03:09:37 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/habits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laundry</title>
-      <link>https://rosalinexiao.github.io/tags/laundry/</link>
-      <pubDate>Tue, 21 Mar 2023 03:09:37 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/laundry/</guid>
+      <guid>https://rosalinexiao.github.io/tags/loneliness/</guid>
       <description></description>
     </item>
     
@@ -89,15 +62,6 @@
     </item>
     
     <item>
-      <title>interactive design</title>
-      <link>https://rosalinexiao.github.io/tags/interactive-design/</link>
-      <pubDate>Mon, 20 Mar 2023 22:36:45 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/tags/interactive-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>UX Design</title>
       <link>https://rosalinexiao.github.io/tags/ux-design/</link>
       <pubDate>Mon, 20 Mar 2023 22:36:45 +0100</pubDate>
@@ -116,29 +80,65 @@
     </item>
     
     <item>
-      <title>Arduino</title>
-      <link>https://rosalinexiao.github.io/tags/arduino/</link>
-      <pubDate>Sun, 05 Mar 2023 20:56:42 +0600</pubDate>
+      <title>Design Research Methods</title>
+      <link>https://rosalinexiao.github.io/tags/design-research-methods/</link>
+      <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/arduino/</guid>
+      <guid>https://rosalinexiao.github.io/tags/design-research-methods/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>human-plant interaction</title>
-      <link>https://rosalinexiao.github.io/tags/human-plant-interaction/</link>
-      <pubDate>Sun, 05 Mar 2023 20:56:42 +0600</pubDate>
+      <title>Habits</title>
+      <link>https://rosalinexiao.github.io/tags/habits/</link>
+      <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/human-plant-interaction/</guid>
+      <guid>https://rosalinexiao.github.io/tags/habits/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>loneliness</title>
-      <link>https://rosalinexiao.github.io/tags/loneliness/</link>
-      <pubDate>Sun, 05 Mar 2023 20:56:42 +0600</pubDate>
+      <title>Laundry</title>
+      <link>https://rosalinexiao.github.io/tags/laundry/</link>
+      <pubDate>Sun, 19 Mar 2023 03:09:37 +0100</pubDate>
       
-      <guid>https://rosalinexiao.github.io/tags/loneliness/</guid>
+      <guid>https://rosalinexiao.github.io/tags/laundry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APP</title>
+      <link>https://rosalinexiao.github.io/tags/app/</link>
+      <pubDate>Sat, 18 Mar 2023 03:12:54 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Saving</title>
+      <link>https://rosalinexiao.github.io/tags/energy-saving/</link>
+      <pubDate>Sat, 18 Mar 2023 03:12:54 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/energy-saving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experience Design</title>
+      <link>https://rosalinexiao.github.io/tags/experience-design/</link>
+      <pubDate>Sat, 18 Mar 2023 03:12:54 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/experience-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smart Meter</title>
+      <link>https://rosalinexiao.github.io/tags/smart-meter/</link>
+      <pubDate>Sat, 18 Mar 2023 03:12:54 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/tags/smart-meter/</guid>
       <description></description>
     </item>
     
