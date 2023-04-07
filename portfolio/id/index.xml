@@ -8,30 +8,33 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Dec 2019 16:48:28 +0600</lastBuildDate><atom:link href="https://rosalinexiao.github.io/portfolio/id/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Limera</title>
+      <link>https://rosalinexiao.github.io/portfolio/id/limera/</link>
+      <pubDate>Wed, 22 Mar 2023 23:02:54 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/portfolio/id/limera/</guid>
+      <description>LIMERA: Professional camera for easy storage LIMERA is a portable camera that proposes a new method of camera storage without compromising professionalty, It implements a swivel body that allows the camera to be transformed into a smaller cylinder which is much easier to store in bags and carry around.
+Professional cameras are big, bulky and have a weird shape, whereas LIMERA cuts the bulk of raditional cameres.The project originates from my hoby ofphotography, where l find traditional cameras hard to fit in my back pack.</description>
+    </item>
+    
+    <item>
       <title>SpaceCube</title>
       <link>https://rosalinexiao.github.io/portfolio/id/spacecube/</link>
       <pubDate>Tue, 21 Mar 2023 23:13:24 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/portfolio/id/spacecube/</guid>
-      <description>Ferrofluid Loudspeakers Ferrofluid is a new type of nanomaterial that appears as a black, smooth liquid. Its biggest characteristic is that it has both fluidity and magnetism, which makes it similar to flowing metal. The shape and position of the ferrofluid can be controlled by magnetic force, especially under strong magnetic fields, where the ferrofluid will split into many spikes, which changes its physical appearance in a way that contradicts human intuition.</description>
+      <description>Ferrofluid Loudspeakers SPACE CUBE is a futuristic loudspeaker that has built-in audio visualization. It features ferrofluid, which dances and changes shape in rhythm with the music that is being played. The loudspeaker has an elegant and futuristic design.
+The idea comes from one of my school projects where we discuss and experiment with different materials. Ferrofluid is a special liquid as it is magnetic,so its unique magnetic properties can be used to achieve stunning effects in designing a product.</description>
     </item>
     
     <item>
-      <title>Limera</title>
-      <link>https://rosalinexiao.github.io/portfolio/id/limera/</link>
-      <pubDate>Tue, 21 Mar 2023 23:02:54 +0100</pubDate>
+      <title>BENTO&#43;</title>
+      <link>https://rosalinexiao.github.io/portfolio/id/bento/</link>
+      <pubDate>Tue, 21 Mar 2023 23:45:46 +0600</pubDate>
       
-      <guid>https://rosalinexiao.github.io/portfolio/id/limera/</guid>
-      <description> </description>
-    </item>
-    
-    <item>
-      <title>Logger</title>
-      <link>https://rosalinexiao.github.io/portfolio/id/logger/</link>
-      <pubDate>Tue, 21 Mar 2023 22:44:05 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/portfolio/id/logger/</guid>
-      <description> </description>
+      <guid>https://rosalinexiao.github.io/portfolio/id/bento/</guid>
+      <description>BENTO+: Tableware designed for office workers BENTO+ is a set of specilly designed bento boxes that have a redesigned user experience. It incorporates special hinges that allows the bento boxes to swivel, making it easy to load up with your favorite recipes and lit up to go without having to close each of the bento boxes.
+The idea comes from my own experience of bringing breakfast in lunch boxes every day.</description>
     </item>
     
     <item>
@@ -40,7 +43,17 @@
       <pubDate>Tue, 21 Mar 2023 23:44:46 +0600</pubDate>
       
       <guid>https://rosalinexiao.github.io/portfolio/id/ezporter/</guid>
-      <description> </description>
+      <description>EzPorter: Fast deployable floating bridge design for rescue EzPorter is portable and fast-deployable bridge system that can be used during foods. It implements diferent modules that can be utilited in diferent combinations to meet different use cases. It can also function as road barriers when not in use.
+The idea of EzPorter comes from my own experience in floods. My home town is prone to big food in the summer, and I have experenced being stranded and not able to move due to floods.</description>
+    </item>
+    
+    <item>
+      <title>Logger</title>
+      <link>https://rosalinexiao.github.io/portfolio/id/logger/</link>
+      <pubDate>Mon, 20 Mar 2023 22:44:05 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/portfolio/id/logger/</guid>
+      <description>LOGGER: Contribute to meteorological studies while hiking LOGGER is a smart water bottle that has multiple in-built sensors for environmental measurements. Hikers are able to contribute to scientific research by trekking to remote areas that lack internet connection and weather monitoring. The sensors will collect data while hikers are trekking, and upload the data once it connects to the internet. This allows scientist to collect data first-hand from hikers, data gathered from some of the most unstudied and remote places on Earth.</description>
     </item>
     
   </channel>

@@ -13,16 +13,8 @@
       <pubDate>Tue, 21 Mar 2023 23:13:24 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/portfolio/id/spacecube/</guid>
-      <description>Ferrofluid Loudspeakers Ferrofluid is a new type of nanomaterial that appears as a black, smooth liquid. Its biggest characteristic is that it has both fluidity and magnetism, which makes it similar to flowing metal. The shape and position of the ferrofluid can be controlled by magnetic force, especially under strong magnetic fields, where the ferrofluid will split into many spikes, which changes its physical appearance in a way that contradicts human intuition.</description>
-    </item>
-    
-    <item>
-      <title>Logger</title>
-      <link>https://rosalinexiao.github.io/portfolio/id/logger/</link>
-      <pubDate>Tue, 21 Mar 2023 22:44:05 +0100</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/portfolio/id/logger/</guid>
-      <description> </description>
+      <description>Ferrofluid Loudspeakers SPACE CUBE is a futuristic loudspeaker that has built-in audio visualization. It features ferrofluid, which dances and changes shape in rhythm with the music that is being played. The loudspeaker has an elegant and futuristic design.
+The idea comes from one of my school projects where we discuss and experiment with different materials. Ferrofluid is a special liquid as it is magnetic,so its unique magnetic properties can be used to achieve stunning effects in designing a product.</description>
     </item>
     
     <item>
@@ -32,6 +24,15 @@
       
       <guid>https://rosalinexiao.github.io/portfolio/ux/plantcompanion/</guid>
       <description>Introduction In 2021, there were approximately 973 thousand males and 561 thousand females aged 16 to 44 living alone in the United Kingdom[1]. They crave love and emotional support. As a way to solve the loneliness problem, many young people living alone are eager to keep pets to accompany them, but they cannot due to various reasons. Many of them then choose to keep plants and regard plants as living companions.</description>
+    </item>
+    
+    <item>
+      <title>Logger</title>
+      <link>https://rosalinexiao.github.io/portfolio/id/logger/</link>
+      <pubDate>Mon, 20 Mar 2023 22:44:05 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/portfolio/id/logger/</guid>
+      <description>LOGGER: Contribute to meteorological studies while hiking LOGGER is a smart water bottle that has multiple in-built sensors for environmental measurements. Hikers are able to contribute to scientific research by trekking to remote areas that lack internet connection and weather monitoring. The sensors will collect data while hikers are trekking, and upload the data once it connects to the internet. This allows scientist to collect data first-hand from hikers, data gathered from some of the most unstudied and remote places on Earth.</description>
     </item>
     
   </channel>
