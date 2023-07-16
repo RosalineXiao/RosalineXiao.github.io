@@ -8,17 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Dec 2019 16:48:28 +0600</lastBuildDate><atom:link href="https://rosalinexiao.github.io/portfolio/ux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>S-Scooter</title>
-      <link>https://rosalinexiao.github.io/portfolio/ux/ford/</link>
-      <pubDate>Mon, 19 Jun 2023 00:30:46 +0200</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/portfolio/ux/ford/</guid>
-      <description>THE PROBLEM BEING TACKLED Brief “We are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.”
-As students at Loughborough University, we have found that many students lack a suitable means of transport when traveling between school and town, or to the library for study.
-So to solve this problem, our idea was based on the conception of an immediate, free public transport option for short distances to meet the flexible travel needs of the student population</description>
-    </item>
-    
-    <item>
       <title>PLANT COMPANION</title>
       <link>https://rosalinexiao.github.io/portfolio/ux/plantcompanion/</link>
       <pubDate>Tue, 21 Mar 2023 20:56:42 +0600</pubDate>
@@ -33,11 +22,20 @@ So to solve this problem, our idea was based on the conception of an immediate, 
       <pubDate>Mon, 20 Mar 2023 22:36:45 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/portfolio/ux/drt-bus-experience-design-for-tourists/</guid>
+      <description>Bus travel is efficient and sustainable yet restricts travellers to long fixed routes. Issues including difficulty locating bus stops, feelings of insecurity while waiting, and boredom contribute to tourists opting for unsustainable single-occupancy options like Uber.
+However, according to the data from Transport &amp;amp; Environment, PHV drivers in England (including Uber drivers) produced over 81% of the total amount of CO2 in the UK. We aimed to create an innovative bus travel experience using VR and AR to improve enjoyment, flexibility, and convenience.</description>
+    </item>
+    
+    <item>
+      <title>TPX Industry Project: Eco Circle</title>
+      <link>https://rosalinexiao.github.io/portfolio/ux/industryproject/</link>
+      <pubDate>Mon, 20 Mar 2023 22:35:45 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/portfolio/ux/industryproject/</guid>
       <description>Introduction This project is a group work with three other students.
-Team Leader: Xiangyu Xiao (me)：As the team leader, I am responsible for the overall project management, data analysis, determining the main features, prototype iteration, and video production.
-Team members:
-Jingkun Wei: Responsible for the user reseach Mengze Cai: Responsible for making the prototype, user evaluation and reflection Rhys Taylor: Responsible for the design book UN Goal background
-The goal for this project is UN Goal No.</description>
+The project is conducted in collaboration with TPXimpact, a digital transformation company based in the UK, supporting organisations to build a better future for people, places and the planet.
+Team Members: Xiangyu Xiao (me), Mingjin Yang, Wen Zhou, Yifan Shi
+Within the group, we generally use the Scrum Framework to arrange our project, because Scrum is an agile development methodology, which can double the development efficiency of the team and maximize the role of the team compared to the development method under the waterfall process; It can shorten the development cycle and improve the efficiency of project delivery(Leaders and Sennett, 2022).</description>
     </item>
     
     <item>
@@ -58,6 +56,17 @@ Pet owners were intrigued and decided to study. I myself am a pet owner, and the
       <guid>https://rosalinexiao.github.io/portfolio/ux/onearth/</guid>
       <description>Energy Saving APP for GenGame ONEARTH is an smartphone app in partnership with GenGame energy. Based on a user-centered design approach, ONEARTH targets new parents who are short of money and time and encourages them to use smart meters to ensure the best living conditions for their family, allowing their baby to get the best start in life.
 THE BRIEF WHY CLIMATE CHANGE? Climate change happens because large amounts of greenhouse gases are released into the atmosphere as a result of many human activities worldwide, including, most importantly, burning fossil fuels for electricity generation, heating and transport.</description>
+    </item>
+    
+    <item>
+      <title>S-Scooter</title>
+      <link>https://rosalinexiao.github.io/portfolio/ux/ford/</link>
+      <pubDate>Sat, 18 Mar 2023 03:12:52 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/portfolio/ux/ford/</guid>
+      <description>THE PROBLEM BEING TACKLED Brief “We are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.”
+As students at Loughborough University, we have found that many students lack a suitable means of transport when traveling between school and town, or to the library for study.
+So to solve this problem, our idea was based on the conception of an immediate, free public transport option for short distances to meet the flexible travel needs of the student population</description>
     </item>
     
   </channel>

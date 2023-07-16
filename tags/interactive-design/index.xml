@@ -6,18 +6,7 @@
     <description>Recent content in Interactive Design on Rosaline Xiao - Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Jun 2023 00:30:46 +0200</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/interactive-design/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>S-Scooter</title>
-      <link>https://rosalinexiao.github.io/portfolio/ux/ford/</link>
-      <pubDate>Mon, 19 Jun 2023 00:30:46 +0200</pubDate>
-      
-      <guid>https://rosalinexiao.github.io/portfolio/ux/ford/</guid>
-      <description>THE PROBLEM BEING TACKLED Brief “We are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.”
-As students at Loughborough University, we have found that many students lack a suitable means of transport when traveling between school and town, or to the library for study.
-So to solve this problem, our idea was based on the conception of an immediate, free public transport option for short distances to meet the flexible travel needs of the student population</description>
-    </item>
-    
+    <lastBuildDate>Tue, 21 Mar 2023 20:56:42 +0600</lastBuildDate><atom:link href="https://rosalinexiao.github.io/tags/interactive-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PLANT COMPANION</title>
       <link>https://rosalinexiao.github.io/portfolio/ux/plantcompanion/</link>
@@ -33,11 +22,19 @@ So to solve this problem, our idea was based on the conception of an immediate, 
       <pubDate>Mon, 20 Mar 2023 22:36:45 +0100</pubDate>
       
       <guid>https://rosalinexiao.github.io/portfolio/ux/drt-bus-experience-design-for-tourists/</guid>
-      <description>Introduction This project is a group work with three other students.
-Team Leader: Xiangyu Xiao (me)：As the team leader, I am responsible for the overall project management, data analysis, determining the main features, prototype iteration, and video production.
-Team members:
-Jingkun Wei: Responsible for the user reseach Mengze Cai: Responsible for making the prototype, user evaluation and reflection Rhys Taylor: Responsible for the design book UN Goal background
-The goal for this project is UN Goal No.</description>
+      <description>Bus travel is efficient and sustainable yet restricts travellers to long fixed routes. Issues including difficulty locating bus stops, feelings of insecurity while waiting, and boredom contribute to tourists opting for unsustainable single-occupancy options like Uber.
+However, according to the data from Transport &amp;amp; Environment, PHV drivers in England (including Uber drivers) produced over 81% of the total amount of CO2 in the UK. We aimed to create an innovative bus travel experience using VR and AR to improve enjoyment, flexibility, and convenience.</description>
+    </item>
+    
+    <item>
+      <title>S-Scooter</title>
+      <link>https://rosalinexiao.github.io/portfolio/ux/ford/</link>
+      <pubDate>Sat, 18 Mar 2023 03:12:52 +0100</pubDate>
+      
+      <guid>https://rosalinexiao.github.io/portfolio/ux/ford/</guid>
+      <description>THE PROBLEM BEING TACKLED Brief “We are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.”
+As students at Loughborough University, we have found that many students lack a suitable means of transport when traveling between school and town, or to the library for study.
+So to solve this problem, our idea was based on the conception of an immediate, free public transport option for short distances to meet the flexible travel needs of the student population</description>
     </item>
     
   </channel>
