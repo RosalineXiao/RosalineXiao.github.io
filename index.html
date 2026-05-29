@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Xiangyu Xiao portfolio: mechanical engineering PhD, industrial metaverse, HCI, product design, publications, photography, and more."
+    />
+    <title>Xiangyu Xiao | Engineering, HCI and Product Design</title>
+    <link rel="stylesheet" href="styles.css?v=nav-gradient" />
+  </head>
+  <body class="home">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Xiangyu Xiao home">
+        <span class="dynamic-logo" aria-hidden="true">
+          <img class="logo-mark" src="assets/x-logo.png" alt="" />
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications-activities.html">Publications & Activities</a>
+        <a href="photography-more.html">Photography & More Than Design</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title" class="name-lockup">
+            <span class="name-alias">Rosaline</span>
+            <span class="name-legal">Xiangyu Xiao</span>
+          </h1>
+          <p class="role-line">Engineer, researcher, designer, photographer</p>
+        </div>
+
+        <div class="pinecone-station" data-pinecone-station>
+          <button class="pinecone-button" type="button" data-pinecone aria-label="Toggle pine cone night mode; long press to drag">
+            <span class="water-sprinkle" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </span>
+            <svg class="pinecone-model" viewBox="0 0 84 118" aria-hidden="true">
+              <path class="pine-stem" d="M39 8 C38 2 47 2 46 9 L44 23 L38 23 Z"></path>
+              <path class="pine-scale scale-1" d="M42 16 C31 25 29 39 42 49 C55 39 53 25 42 16 Z"></path>
+              <path class="pine-scale scale-2" d="M31 28 C18 35 15 53 31 64 C43 53 42 36 31 28 Z"></path>
+              <path class="pine-scale scale-3" d="M53 28 C66 35 69 53 53 64 C41 53 42 36 53 28 Z"></path>
+              <path class="pine-scale scale-4" d="M42 36 C28 46 27 65 42 76 C57 65 56 46 42 36 Z"></path>
+              <path class="pine-scale scale-5" d="M25 50 C10 58 10 79 28 88 C39 75 39 58 25 50 Z"></path>
+              <path class="pine-scale scale-6" d="M59 50 C74 58 74 79 56 88 C45 75 45 58 59 50 Z"></path>
+              <path class="pine-scale scale-7" d="M42 58 C25 70 27 93 42 101 C57 93 59 70 42 58 Z"></path>
+              <path class="pine-scale scale-8" d="M30 78 C17 87 23 106 42 112 C41 96 39 84 30 78 Z"></path>
+              <path class="pine-scale scale-9" d="M54 78 C67 87 61 106 42 112 C43 96 45 84 54 78 Z"></path>
+              <path class="pine-shadow" d="M42 111 C28 106 22 97 25 88 C30 98 54 98 59 88 C62 98 56 106 42 111 Z"></path>
+            </svg>
+          </button>
+          <button class="ar-toggle" type="button" data-ar-toggle aria-label="Open gesture interaction mode" data-tooltip="Gesture interaction">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M9 17 C8 12 10 10 12 13 L13 16 L13 8 C13 6 16 6 16 8 L16 15 L17 9 C18 7 20 8 20 10 L19 16 L21 12 C22 10 24 11 23 13 L21 18 C24 17 26 19 24 21 C22 24 19 27 15 27 C11 27 8 23 9 17 Z"></path>
+              <circle cx="23" cy="8" r="2.5"></circle>
+            </svg>
+          </button>
+          <div class="ar-panel" data-ar-panel hidden>
+            <video class="ar-video" data-ar-video autoplay muted playsinline></video>
+            <canvas class="ar-canvas" data-ar-canvas aria-hidden="true"></canvas>
+            <button class="ar-close" type="button" data-ar-close aria-label="Close AR gesture mode">x</button>
+            <p class="ar-guide">Pinch all five fingers together, then release.</p>
+            <p class="ar-status" data-ar-status aria-live="polite">Camera</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-projects" aria-labelledby="home-projects-title">
+        <div>
+          <p class="eyebrow">Table of contents</p>
+          <h2 id="home-projects-title">A few directions.</h2>
+        </div>
+        <div class="home-project-list">
+          <a href="#project-showcase" data-filter="all" class="active" aria-selected="true">
+            <span>00</span>
+            <strong>All Work</strong>
+            <small>Engineering research, interaction systems, product design, and visual practice.</small>
+          </a>
+          <a href="#project-showcase" data-filter="metaverse" aria-selected="false">
+            <span>01</span>
+            <strong>Industrial Metaverse</strong>
+            <small>Digital twins, XR workflows, system modelling, and research communication.</small>
+          </a>
+          <a href="#project-showcase" data-filter="hci" aria-selected="false">
+            <span>02</span>
+            <strong>HCI</strong>
+            <small>Human-centred interfaces, service design, and embodied interaction prototypes.</small>
+          </a>
+          <a href="#project-showcase" data-filter="product" aria-selected="false">
+            <span>03</span>
+            <strong>Product Design</strong>
+            <small>Industrial design, CAD, prototyping, materials, mechanisms, and CMF.</small>
+          </a>
+          <a href="#project-showcase" data-filter="visual" aria-selected="false">
+            <span>04</span>
+            <strong>Photography & More</strong>
+            <small>Image-making, visual archives, fieldwork, and material observations.</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="project-showcase" id="project-showcase" aria-labelledby="project-showcase-title">
+        <div class="showcase-heading">
+          <p class="eyebrow">Selected project references</p>
+          <h2 id="project-showcase-title">Projects in view.</h2>
+        </div>
+        <div class="project-card-grid">
+          <a class="project-card" href="projects.html#eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact" data-category="metaverse">
+            <img src="assets/projects/eco-circle.png" alt="Eco Circle interface reference" />
+            <span>Industrial Metaverse</span>
+            <h3>Eco Circle</h3>
+            <p>Campus recycling experience design with system thinking, sustainable behaviour, and digital interaction.</p>
+          </a>
+          <a class="project-card" href="projects.html#plant-companion" data-category="hci">
+            <img src="assets/projects/plant-companion.jpg" alt="Plant Companion interactive prototype with light feedback" />
+            <span>HCI</span>
+            <h3>Plant Companion</h3>
+            <p>Ambient interaction prototype connecting plant care, feedback, sensors, and emotion.</p>
+          </a>
+          <a class="project-card" href="projects.html#spacecube" data-category="product">
+            <img src="assets/projects/spacecube.jpg" alt="SpaceCube product model with light and ferrofluid material study" />
+            <span>Product Design</span>
+            <h3>SpaceCube</h3>
+            <p>Compact product system exploring light, material experimentation, and spatial transformation.</p>
+          </a>
+          <a class="project-card" href="projects.html#ezporter" data-category="product">
+            <img src="assets/projects/ezporter.jpg" alt="EzPorter fast deploy floating bridge concept" />
+            <span>Product Design</span>
+            <h3>EzPorter</h3>
+            <p>Rescue-oriented industrial design study balancing mechanical packaging and deployment logic.</p>
+          </a>
+          <a class="project-card" href="projects.html#drt-bus-experience-design-for-tourists" data-category="hci">
+            <img src="assets/projects/drt-bus.jpg" alt="Demand-responsive tourist bus mobile interface mockup" />
+            <span>HCI</span>
+            <h3>DRT Bus Experience</h3>
+            <p>Tourist mobility service design with route guidance, quiz moments, and trip support.</p>
+          </a>
+          <a class="project-card" href="projects.html#s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough" data-category="hci">
+            <img src="assets/projects/s-scooter.png" alt="S-Scooter sustainable travel interface reference" />
+            <span>HCI</span>
+            <h3>S-Scooter</h3>
+            <p>Sustainable mobility experience for neighbourhood travel and everyday route choices.</p>
+          </a>
+          <a class="project-card" href="projects.html#bento" data-category="product">
+            <img src="assets/projects/bento.jpg" alt="BENTO product design reference" />
+            <span>Product Design</span>
+            <h3>BENTO+</h3>
+            <p>Modular object study focused on everyday use, portability, and product language.</p>
+          </a>
+          <a class="project-card" href="projects.html#onearth-energy-saving-app-for-gengame" data-category="visual">
+            <img src="assets/projects/onearth.jpg" alt="ONEARTH visual interface reference" />
+            <span>Photography & More</span>
+            <h3>ONEARTH</h3>
+            <p>Energy-saving app concept with visual systems, behaviour change, and interaction design.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer home-footer">
+      <p class="footer-connect">
+        Are you a researcher, an engineer, or an entrepreneur? I always welcome
+        new opportunities to exchange ideas and explore collaborations.
+        <a href="mailto:rosalinexiao520@gmail.com">Let's connect!</a>
+      </p>
+      <div class="footer-socials" aria-label="Contact links">
+        <a class="social-link" href="https://www.linkedin.com/in/xiangyu-xiao-rosaline" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.98H3.72v10.3h3.22V8.98ZM5.33 4.1a1.86 1.86 0 1 0 0 3.72 1.86 1.86 0 0 0 0-3.72Zm13.95 9.28c0-3.1-1.65-4.54-3.86-4.54a3.33 3.33 0 0 0-3 1.65h-.04V8.98H9.3v10.3h3.22v-5.1c0-1.34.25-2.64 1.92-2.64 1.64 0 1.66 1.54 1.66 2.73v5.01h3.22v-5.9Z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social-link" href="mailto:rosalinexiao520@gmail.com" aria-label="Email Rosaline Xiao">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.75 6.5h14.5c.96 0 1.75.79 1.75 1.75v7.5c0 .96-.79 1.75-1.75 1.75H4.75A1.75 1.75 0 0 1 3 15.75v-7.5c0-.96.79-1.75 1.75-1.75Zm.18 1.7 6.5 4.42c.35.24.79.24 1.14 0l6.5-4.42H4.93Zm14.32 7.8c.14 0 .25-.11.25-.25V9.41l-6.08 4.14a2.54 2.54 0 0 1-2.84 0L4.5 9.41v6.34c0 .14.11.25.25.25h14.5Z" />
+          </svg>
+          <span>Gmail</span>
+        </a>
+      </div>
+      <p class="footer-copyright">Copyright © 2026 https://rosalinexiao.github.io/. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js?v=nav-gradient"></script>
+  </body>
+</html>
