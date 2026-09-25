@@ -2475,7 +2475,7 @@ body.night-mode .factory-project dd {
 
 .factory-intro {
   display: grid;
-  grid-template-columns: 56px minmax(0, 1.02fr) minmax(340px, 0.98fr);
+  grid-template-columns: 56px minmax(0, 1fr);
   gap: clamp(18px, 4vw, 54px);
   max-width: 1480px;
   margin: 0 auto;
@@ -3118,6 +3118,125 @@ body.night-mode .factory-intro-copy .factory-lede {
   .factory-project-nav {
     align-items: stretch;
     flex-direction: column;
+  }
+}
+
+.factory-comparison,
+.factory-vr-prototype {
+  padding: clamp(58px, 8vw, 106px) clamp(18px, 5vw, 72px);
+}
+
+.factory-comparison .factory-section-heading,
+.factory-vr-prototype .factory-section-heading {
+  margin-bottom: clamp(28px, 4vw, 44px);
+}
+
+.factory-comparison .factory-section-heading .eyebrow {
+  color: #2e7168;
+}
+
+.factory-comparison .factory-section-heading h3,
+.factory-vr-prototype .factory-section-heading h3 {
+  max-width: 980px;
+}
+
+.factory-media-figure {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.factory-video {
+  display: block;
+  max-width: 100%;
+  background: #080a09;
+  object-fit: contain;
+}
+
+.factory-video-comparison {
+  width: min(100%, 920px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.factory-video-vr {
+  width: 100%;
+  aspect-ratio: 1280 / 666;
+}
+
+.factory-video-caption {
+  margin: 14px 0 0;
+  color: #59625d;
+  font-size: clamp(0.94rem, 1.2vw, 1.06rem);
+  line-height: 1.6;
+}
+
+.factory-vr-prototype {
+  background: #111614;
+  color: #f5f7f2;
+}
+
+.factory-vr-prototype .eyebrow,
+.factory-media-label {
+  color: #94cfc0;
+}
+
+.factory-vr-prototype .factory-section-heading h3,
+.factory-vr-media h4 {
+  color: #f5f7f2;
+}
+
+.factory-vr-context {
+  max-width: 820px;
+  margin: 18px 0 0;
+  color: #c5d0ca !important;
+  font-size: 1rem;
+}
+
+.factory-vr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 4vw, 58px);
+}
+
+.factory-vr-media {
+  min-width: 0;
+  margin: 0;
+}
+
+.factory-vr-media .factory-video-caption,
+.factory-vr-media p {
+  color: #c5d0ca !important;
+}
+
+.factory-vr-media h4 {
+  margin: 9px 0 7px;
+  font-size: clamp(1.25rem, 2.1vw, 1.8rem);
+  line-height: 1.16;
+}
+
+.factory-vr-media p {
+  margin-bottom: 0;
+}
+
+.factory-media-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.factory-evaluation-note {
+  margin-top: 16px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--factory-line);
+  font-size: 0.9rem !important;
+}
+
+@media (max-width: 760px) {
+  .factory-vr-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
   }
 }
 

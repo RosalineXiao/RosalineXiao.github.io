@@ -1412,10 +1412,6 @@
                 <a class="factory-text-link" href="#factory-method">How it works <span aria-hidden="true">↘</span></a>
               </div>
             </div>
-            <figure class="factory-intro-image">
-              <img src="assets/portfolio/ev-battery-factory/images/Zone2_LineLayout_Review.png" alt="Unity scene of the EV battery production line, viewed from above as stations and conveyors connect into a factory flow" loading="lazy" />
-              <figcaption>Zone 2 · automated module assembly</figcaption>
-            </figure>
           </header>
 
           <section class="factory-interactive" id="factory-interactive" aria-labelledby="factory-interactive-title">
@@ -1503,15 +1499,62 @@
             <p class="factory-method-note">The aim is to make manufacturing simulation knowledge spatially inspectable without rebuilding the production logic inside Unity.</p>
           </section>
 
+          <section class="factory-comparison" aria-labelledby="factory-comparison-title">
+            <div class="factory-section-heading">
+              <p class="eyebrow">04 / Simulation and Unity comparison</p>
+              <h3 id="factory-comparison-title">From simulation to an explorable scene</h3>
+            </div>
+            <figure class="factory-media-figure factory-comparison-figure">
+              <video class="factory-video factory-video-comparison" controls playsinline preload="none" poster="assets/portfolio/ev-battery-factory/media/simulation-unity-comparison.jpg" aria-label="Siemens Tecnomatix and Unity factory footage shown in a side-by-side comparison">
+                <source src="assets/portfolio/ev-battery-factory/media/simulation-unity-comparison.mp4" type="video/mp4" />
+                Your browser does not support HTML video.
+              </video>
+              <figcaption class="factory-video-caption">This comparison places Siemens Tecnomatix and Unity footage side by side. It shows the research direction: bringing selected simulation behaviour into a factory scene that people can inspect spatially.</figcaption>
+            </figure>
+          </section>
+
+          <section class="factory-vr-prototype" aria-labelledby="factory-vr-title">
+            <div class="factory-section-heading">
+              <p class="eyebrow">05 / VR research prototype footage</p>
+              <h3 id="factory-vr-title">Role-based and first-person inspection</h3>
+              <p class="factory-vr-context">These clips come from the wider research project and show an earlier VR prototype. They are separate from the browser-based Zone 1–2 WebGL demo above.</p>
+            </div>
+            <div class="factory-vr-grid">
+              <figure class="factory-vr-media">
+                <video class="factory-video factory-video-vr" controls playsinline preload="none" poster="assets/portfolio/ev-battery-factory/media/role-selection.jpg" aria-label="Earlier VR research prototype showing Planner and Observer choices before entering a factory view">
+                  <source src="assets/portfolio/ev-battery-factory/media/role-selection.mp4" type="video/mp4" />
+                  Your browser does not support HTML video.
+                </video>
+                <figcaption class="factory-video-caption">
+                  <span class="factory-media-label">VR research prototype footage</span>
+                  <h4>Different roles, different ways to inspect</h4>
+                  <p>An earlier VR prototype lets a visitor enter the factory as a Planner or Observer. The selected role changes how the factory experience begins.</p>
+                </figcaption>
+              </figure>
+              <figure class="factory-vr-media">
+                <video class="factory-video factory-video-vr" controls playsinline preload="none" poster="assets/portfolio/ev-battery-factory/media/vr-factory-walkthrough.jpg" aria-label="First-person view from an earlier VR research prototype, showing a factory assembly line and production information">
+                  <source src="assets/portfolio/ev-battery-factory/media/vr-factory-walkthrough.mp4" type="video/mp4" />
+                  Your browser does not support HTML video.
+                </video>
+                <figcaption class="factory-video-caption">
+                  <span class="factory-media-label">VR research prototype footage</span>
+                  <h4>Inspection from inside the factory</h4>
+                  <p>A first-person VR view brings the assembly line, machine indicators and production information into the same spatial context.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
           <section class="factory-research" aria-labelledby="factory-research-title">
             <div class="factory-section-heading">
-              <p class="eyebrow">04 / Research &amp; contribution</p>
+              <p class="eyebrow">06 / Research &amp; contribution</p>
               <h3 id="factory-research-title">Making simulation knowledge spatially inspectable.</h3>
             </div>
             <div class="factory-research-grid">
               <div>
                 <h4>Research context</h4>
                 <p>Discrete-event simulation can describe when a machine changes state, a buffer accumulates material, or an AGV reaches a handoff. These records are harder to interpret in the spatial context where production decisions are made. I developed a scenario-selective translation approach that carries relevant simulation outputs into a Unity factory scene. The browser experience shows how those events can be explored as a connected production process across inbound logistics and automated assembly.</p>
+                <p class="factory-evaluation-note">The evaluation is framed around task value, correctness and extensibility; these are questions to examine, not completed quantitative results.</p>
               </div>
               <div>
                 <h4>Contribution</h4>
