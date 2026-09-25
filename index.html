@@ -8,7 +8,7 @@
       content="Xiangyu Xiao portfolio: mechanical engineering PhD, industrial metaverse, HCI, product design, publications, photography, and more."
     />
     <title>Xiangyu Xiao | Engineering, HCI and Product Design</title>
-    <link rel="stylesheet" href="styles.css?v=nav-gradient" />
+    <link rel="stylesheet" href="styles.css?v=home-factory-pinecone-motion2" />
   </head>
   <body class="home">
     <header class="site-header" data-header>
@@ -36,24 +36,35 @@
         </div>
 
         <div class="pinecone-station" data-pinecone-station>
-          <button class="pinecone-button" type="button" data-pinecone aria-label="Toggle pine cone night mode; long press to drag">
+          <button class="pinecone-button" type="button" data-pinecone aria-label="Water the pinecone" aria-pressed="false">
             <span class="water-sprinkle" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
             </span>
             <svg class="pinecone-model" viewBox="0 0 84 118" aria-hidden="true">
-              <path class="pine-stem" d="M39 8 C38 2 47 2 46 9 L44 23 L38 23 Z"></path>
-              <path class="pine-scale scale-1" d="M42 16 C31 25 29 39 42 49 C55 39 53 25 42 16 Z"></path>
-              <path class="pine-scale scale-2" d="M31 28 C18 35 15 53 31 64 C43 53 42 36 31 28 Z"></path>
-              <path class="pine-scale scale-3" d="M53 28 C66 35 69 53 53 64 C41 53 42 36 53 28 Z"></path>
-              <path class="pine-scale scale-4" d="M42 36 C28 46 27 65 42 76 C57 65 56 46 42 36 Z"></path>
-              <path class="pine-scale scale-5" d="M25 50 C10 58 10 79 28 88 C39 75 39 58 25 50 Z"></path>
-              <path class="pine-scale scale-6" d="M59 50 C74 58 74 79 56 88 C45 75 45 58 59 50 Z"></path>
-              <path class="pine-scale scale-7" d="M42 58 C25 70 27 93 42 101 C57 93 59 70 42 58 Z"></path>
-              <path class="pine-scale scale-8" d="M30 78 C17 87 23 106 42 112 C41 96 39 84 30 78 Z"></path>
-              <path class="pine-scale scale-9" d="M54 78 C67 87 61 106 42 112 C43 96 45 84 54 78 Z"></path>
-              <path class="pine-shadow" d="M42 111 C28 106 22 97 25 88 C30 98 54 98 59 88 C62 98 56 106 42 111 Z"></path>
+              <defs>
+                <linearGradient id="pinecone-core-shade" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0" stop-color="#39271d"></stop>
+                  <stop offset="0.52" stop-color="#67472d"></stop>
+                  <stop offset="1" stop-color="#39271d"></stop>
+                </linearGradient>
+                <linearGradient id="pinecone-scale-light" x1="0" x2="0.75" y1="0" y2="1">
+                  <stop offset="0" stop-color="#b1875c"></stop>
+                  <stop offset="1" stop-color="#725034"></stop>
+                </linearGradient>
+                <linearGradient id="pinecone-scale-shadow" x1="0" x2="0.9" y1="0" y2="1">
+                  <stop offset="0" stop-color="#9b714a"></stop>
+                  <stop offset="1" stop-color="#593b28"></stop>
+                </linearGradient>
+              </defs>
+              <path class="pinecone-core" d="M42 14 C33 19 28 31 27 48 C25 73 29 96 42 111 C55 96 59 73 57 48 C56 31 51 19 42 14 Z"></path>
+              <g class="pinecone-scales" data-pinecone-scales aria-hidden="true"></g>
+              <path class="pinecone-axis" d="M42 16 C40.8 39 43.1 77 42 108"></path>
             </svg>
           </button>
+          <aside class="pinecone-bubble" data-pinecone-bubble aria-live="polite">
+            <p data-pinecone-copy>Hi, I'm a little pinecone. Give me some water and watch what happens.</p>
+            <a href="https://www.cambridge.org/core/journals/biotechnology-design/article/pinecone-afterlife-exploring-the-potential-of-pinecones-as-augmented-hygromorphic-natural-sensors/ACB03106EFB978524B22A7C934F39022" target="_blank" rel="noopener noreferrer">Meet Pinecone Afterlife ↗</a>
+          </aside>
           <button class="ar-toggle" type="button" data-ar-toggle aria-label="Open gesture interaction mode" data-tooltip="Gesture interaction">
             <svg viewBox="0 0 32 32" aria-hidden="true">
               <path d="M9 17 C8 12 10 10 12 13 L13 16 L13 8 C13 6 16 6 16 8 L16 15 L17 9 C18 7 20 8 20 10 L19 16 L21 12 C22 10 24 11 23 13 L21 18 C24 17 26 19 24 21 C22 24 19 27 15 27 C11 27 8 23 9 17 Z"></path>
@@ -66,6 +77,27 @@
             <button class="ar-close" type="button" data-ar-close aria-label="Close AR gesture mode">x</button>
             <p class="ar-guide">Pinch all five fingers together, then release.</p>
             <p class="ar-status" data-ar-status aria-live="polite">Camera</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-spotlight" aria-labelledby="home-spotlight-title">
+        <div class="home-spotlight-card">
+          <figure class="home-spotlight-image">
+            <img
+              src="assets/portfolio/ev-battery-factory/images/factory-spotlight.webp"
+              alt="Unity screenshot of an EV battery assembly line, with machines and conveyors connected across the factory floor"
+              width="945"
+              height="536"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="home-spotlight-copy">
+            <p class="home-spotlight-label">NEW PROJECT · UNITY WEBGL</p>
+            <h2 id="home-spotlight-title">From simulation to an explorable factory</h2>
+            <p class="home-spotlight-description">Explore an EV battery assembly line in your browser—a new interactive project from my industrial metaverse and VR research.</p>
+            <a class="home-spotlight-link" href="projects.html#ev-battery-factory">Explore the factory ↗</a>
           </div>
         </div>
       </section>
@@ -110,9 +142,15 @@
           <h2 id="project-showcase-title">Projects in view.</h2>
         </div>
         <div class="project-card-grid">
-          <a class="project-card" href="projects.html#eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact" data-category="metaverse">
+          <a class="project-card project-card-factory" href="projects.html#ev-battery-factory" data-category="metaverse">
+            <img src="assets/portfolio/ev-battery-factory/images/factory-spotlight.webp" alt="Unity screenshot of an EV battery production line connecting machines and conveyors" width="945" height="536" loading="lazy" decoding="async" />
+            <span class="project-card-category">Industrial Metaverse <small class="project-new-label">NEW</small></span>
+            <h3>From simulation to an explorable factory</h3>
+            <p>An EV battery assembly line in Unity, driven by selected manufacturing simulation data. Explore how materials, machines, buffers and AGVs move through a connected factory.</p>
+          </a>
+          <a class="project-card" href="projects.html#eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact" data-category="hci">
             <img src="assets/projects/eco-circle.png" alt="Eco Circle interface reference" />
-            <span>Industrial Metaverse</span>
+            <span>HCI</span>
             <h3>Eco Circle</h3>
             <p>Campus recycling experience design with system thinking, sustainable behaviour, and digital interaction.</p>
           </a>
@@ -185,6 +223,6 @@
       <p class="footer-copyright">Copyright © 2026 https://rosalinexiao.github.io/. All rights reserved.</p>
     </footer>
 
-    <script src="script.js?v=nav-gradient"></script>
+    <script src="script.js?v=home-factory-pinecone-motion2"></script>
   </body>
 </html>

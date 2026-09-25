@@ -10,6 +10,7 @@ const photoLightboxImage = document.querySelector("[data-lightbox-image]");
 const photoLightboxClose = document.querySelector("[data-lightbox-close]");
 const pineconeStation = document.querySelector("[data-pinecone-station]");
 const pineconeButton = document.querySelector("[data-pinecone]");
+const pineconeCopy = document.querySelector("[data-pinecone-copy]");
 const arToggle = document.querySelector("[data-ar-toggle]");
 const arPanel = document.querySelector("[data-ar-panel]");
 const arClose = document.querySelector("[data-ar-close]");
@@ -18,9 +19,26 @@ const arCanvas = document.querySelector("[data-ar-canvas]");
 const arStatus = document.querySelector("[data-ar-status]");
 const siteHeader = document.querySelector("[data-header]");
 
-let pineconeClosed = false;
+const pineconeScaleLayout = [
+  { side: -1, y: 25, open: 7, close: 0.68, twist: 0.2, fold: 0.6 },
+  { side: 1, y: 30.5, open: 10, close: 0.7, twist: -0.3, fold: 1.1 },
+  { side: -1, y: 36, open: 12, close: 0.64, twist: -0.6, fold: 1.6 },
+  { side: 1, y: 41.5, open: 16, close: 0.63, twist: 0.7, fold: 0.8 },
+  { side: -1, y: 47, open: 18, close: 0.6, twist: 0.8, fold: 1.2 },
+  { side: 1, y: 52.5, open: 21, close: 0.58, twist: -0.5, fold: 1.9 },
+  { side: -1, y: 58, open: 23, close: 0.56, twist: -0.2, fold: 0.9 },
+  { side: 1, y: 63.5, open: 25, close: 0.55, twist: 0.5, fold: 1.5 },
+  { side: -1, y: 69, open: 26, close: 0.57, twist: 0.6, fold: 0.7 },
+  { side: 1, y: 74.5, open: 26, close: 0.56, twist: -0.7, fold: 1.8 },
+  { side: -1, y: 80, open: 25, close: 0.6, twist: -0.4, fold: 1.2 },
+  { side: 1, y: 85.5, open: 22, close: 0.63, twist: 0.6, fold: 0.8 },
+  { side: -1, y: 91, open: 20, close: 0.64, twist: 0.5, fold: 1.4 },
+  { side: 1, y: 96.5, open: 15, close: 0.69, twist: -0.5, fold: 1.1 },
+  { side: -1, y: 102, open: 12, close: 0.7, twist: -0.3, fold: 0.6 },
+];
+
 let pineconeAnimating = false;
-let touchStartY = null;
+let pineconeIsClosed = false;
 let pressStartY = null;
 let longPressTimer = null;
 let isDraggingPinecone = false;
@@ -31,6 +49,81 @@ let gestureRecognizer = null;
 let arRunning = false;
 let pinchWasClosed = false;
 let lastPhotoTrigger = null;
+
+function pineconeScalePath(scale, closed) {
+  const reach = scale.open * (closed ? scale.close : 1);
+  const tipX = 42 + scale.side * reach;
+  const tipY = scale.y + (closed
+    ? -2.1 - scale.fold + scale.twist * 0.18
+    : 4.2 + scale.twist);
+  const values = [
+    42 + scale.side * 2.2, scale.y - 4.4,
+    42 + scale.side * (3.2 + reach * 0.15), scale.y - 8.4,
+    tipX - scale.side * reach * 0.24, tipY - 6.1,
+    tipX, tipY - 2,
+    tipX + scale.side * 2.2, tipY + 0.8,
+    tipX + scale.side * 0.1, tipY + 3.6,
+    tipX - scale.side * reach * 0.15, tipY + 7.1,
+    42 + scale.side * reach * 0.5, scale.y + 10 + scale.fold * 0.35,
+    42 - scale.side * 2.2, scale.y + 4.4,
+  ];
+  const number = (value) => Number(value.toFixed(2)).toString();
+  return "M " + number(values[0]) + " " + number(values[1]) +
+    " C " + values.slice(2, 8).map(number).join(" ") +
+    " Q " + values.slice(8, 12).map(number).join(" ") +
+    " C " + values.slice(12, 18).map(number).join(" ") + " Z";
+}
+
+function pineconeScaleRidgePath(scale, closed) {
+  const reach = scale.open * (closed ? scale.close : 1);
+  const tipX = 42 + scale.side * reach;
+  const tipY = scale.y + (closed
+    ? -2.1 - scale.fold + scale.twist * 0.18
+    : 4.2 + scale.twist);
+  const startX = 42 + scale.side * reach * 0.36;
+  const middleX = 42 + scale.side * reach * 0.62;
+  const endX = 42 + scale.side * reach * 0.82;
+  const endY = scale.y + (closed ? -0.9 - scale.fold * 0.3 : 2.5 + scale.twist * 0.5);
+  const number = (value) => Number(value.toFixed(2)).toString();
+  return "M " + number(startX) + " " + number(scale.y + 0.1) +
+    " C " + [middleX, scale.y - 2.2, endX, endY - 2.4, tipX, tipY].map(number).join(" ");
+}
+
+function tokenizePineconePath(pathData) {
+  return pathData.match(/[a-z]|-?(?:\d*\.\d+|\d+\.?\d*)(?:e[-+]?\d+)?/gi) || [];
+}
+
+function createPineconeScales() {
+  const group = pineconeButton?.querySelector("[data-pinecone-scales]");
+  if (!group) return [];
+
+  return pineconeScaleLayout.map((scale, index) => {
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    const ridge = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.classList.add("pine-scale", "tone-" + (index % 4));
+    path.setAttribute("d", pineconeScalePath(scale, false));
+    ridge.classList.add("pine-scale-ridge");
+    ridge.setAttribute("d", pineconeScaleRidgePath(scale, false));
+    group.append(path);
+    group.append(ridge);
+
+    const openTokens = tokenizePineconePath(path.getAttribute("d"));
+    const closedTokens = tokenizePineconePath(pineconeScalePath(scale, true));
+    const openRidgeTokens = tokenizePineconePath(ridge.getAttribute("d"));
+    const closedRidgeTokens = tokenizePineconePath(pineconeScaleRidgePath(scale, true));
+    return {
+      path,
+      ridge,
+      openTokens,
+      closedTokens,
+      openRidgeTokens,
+      closedRidgeTokens,
+      delay: index * 18,
+    };
+  });
+}
+
+const pineconeScalePoses = createPineconeScales();
 
 function syncHeaderState() {
   if (!siteHeader) return;
@@ -444,50 +537,113 @@ function setArStatus(message) {
   }
 }
 
-function closePinecone() {
-  if (!pineconeButton || pineconeAnimating || pineconeClosed) return;
-
-  pineconeAnimating = true;
-  pineconeButton.classList.add("is-watering");
-
-  window.setTimeout(() => {
-    document.body.classList.add("pinecone-dimming");
-    pineconeButton.classList.add("is-closed");
-  }, 640);
-
-  window.setTimeout(() => {
-    document.body.classList.add("night-mode");
-    pineconeButton.classList.add("is-off");
-    pineconeClosed = true;
-  }, 1120);
-
-  window.setTimeout(() => {
-    pineconeButton.classList.remove("is-watering");
-    document.body.classList.remove("pinecone-dimming");
-    pineconeAnimating = false;
-  }, 1900);
+function renderPineconePose(closed) {
+  pineconeScalePoses.forEach((pose) => {
+    const tokens = closed ? pose.closedTokens : pose.openTokens;
+    const ridgeTokens = closed ? pose.closedRidgeTokens : pose.openRidgeTokens;
+    pose.path.setAttribute("d", tokens.join(" "));
+    pose.ridge.setAttribute("d", ridgeTokens.join(" "));
+  });
 }
 
-function openPinecone() {
-  if (!pineconeButton || pineconeAnimating || !pineconeClosed) return;
+function interpolatePineconePose(pose, closed, progress) {
+  const from = closed ? pose.openTokens : pose.closedTokens;
+  const to = closed ? pose.closedTokens : pose.openTokens;
+  const eased = progress * progress * (3 - 2 * progress);
+  const pathData = from.map((token, index) => {
+    const start = Number(token);
+    const end = Number(to[index]);
+    if (!Number.isFinite(start) || !Number.isFinite(end)) return token;
+    return (start + (end - start) * eased).toFixed(2);
+  }).join(" ");
+  pose.path.setAttribute("d", pathData);
 
-  pineconeAnimating = true;
-  document.body.classList.remove("night-mode");
-  pineconeButton.classList.remove("is-off");
-  pineconeButton.classList.remove("is-closed");
-
-  window.setTimeout(() => {
-    pineconeClosed = false;
-    pineconeAnimating = false;
-  }, 900);
+  const ridgeFrom = closed ? pose.openRidgeTokens : pose.closedRidgeTokens;
+  const ridgeTo = closed ? pose.closedRidgeTokens : pose.openRidgeTokens;
+  const ridgeData = ridgeFrom.map((token, index) => {
+    const start = Number(token);
+    const end = Number(ridgeTo[index]);
+    if (!Number.isFinite(start) || !Number.isFinite(end)) return token;
+    return (start + (end - start) * eased).toFixed(2);
+  }).join(" ");
+  pose.ridge.setAttribute("d", ridgeData);
 }
 
-function togglePinecone() {
-  if (pineconeClosed) {
-    openPinecone();
-  } else {
-    closePinecone();
+function finishPineconeMotion(closed) {
+  renderPineconePose(closed);
+  pineconeButton.classList.remove("is-watering");
+  pineconeButton.classList.toggle("is-closed", closed);
+  pineconeButton.classList.toggle("is-responding", closed);
+  pineconeStation?.classList.toggle("is-responding", closed);
+  document.body.classList.toggle("night-mode", closed);
+  document.body.classList.remove("pinecone-dimming");
+  pineconeAnimating = false;
+}
+
+function waterPinecone() {
+  if (!pineconeButton || pineconeAnimating || pineconeScalePoses.length === 0) return;
+
+  const targetClosed = !pineconeIsClosed;
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  pineconeAnimating = true;
+  pineconeIsClosed = targetClosed;
+  pineconeButton.setAttribute("aria-pressed", String(targetClosed));
+  pineconeButton.setAttribute("aria-label", targetClosed ? "Open the pinecone" : "Water the pinecone");
+  if (pineconeCopy) {
+    pineconeCopy.textContent = targetClosed
+      ? "A little water makes my scales close. This is a sped-up glimpse of a much slower natural response."
+      : "Hi, I'm a little pinecone. Give me some water and watch what happens.";
   }
+
+  document.body.classList.add("pinecone-dimming");
+  pineconeStation?.classList.add("is-responding");
+  pineconeButton.classList.add("is-responding");
+  if (targetClosed && !reducedMotion) {
+    pineconeButton.classList.add("is-watering");
+  } else {
+    pineconeButton.classList.remove("is-watering");
+  }
+
+  if (!targetClosed) {
+    document.body.classList.remove("night-mode");
+    pineconeButton.classList.remove("is-closed");
+  }
+
+  if (reducedMotion) {
+    finishPineconeMotion(targetClosed);
+    return;
+  }
+
+  const startDelay = targetClosed ? 240 : 0;
+  const duration = targetClosed ? 920 : 1020;
+  const maxDelay = Math.max(0, ...pineconeScalePoses.map((pose) => pose.delay));
+  const startedAt = performance.now();
+  let nightModeStarted = false;
+
+  function animate(now) {
+    const elapsed = now - startedAt;
+    if (targetClosed && !nightModeStarted && elapsed >= 520) {
+      document.body.classList.add("night-mode");
+      nightModeStarted = true;
+    }
+
+    const poseElapsed = elapsed - startDelay;
+    let complete = true;
+    pineconeScalePoses.forEach((pose) => {
+      const delay = targetClosed ? pose.delay : maxDelay - pose.delay;
+      const progress = Math.max(0, Math.min(1, (poseElapsed - delay) / duration));
+      interpolatePineconePose(pose, targetClosed, progress);
+      if (progress < 1) complete = false;
+    });
+
+    if (complete) {
+      finishPineconeMotion(targetClosed);
+    } else {
+      requestAnimationFrame(animate);
+    }
+  }
+
+  requestAnimationFrame(animate);
 }
 
 function distance(a, b) {
@@ -571,7 +727,7 @@ async function detectGestureLoop() {
       } else if (pinchWasClosed) {
         pinchWasClosed = false;
         setArStatus("Release");
-        togglePinecone();
+        waterPinecone();
       } else {
         setArStatus("Camera");
       }
@@ -678,11 +834,10 @@ if (pineconeButton) {
       return;
     }
 
-    togglePinecone();
+    waterPinecone();
   });
 
   pineconeButton.addEventListener("pointerdown", (event) => {
-    touchStartY = event.clientY;
     pressStartY = event.clientY;
     suppressPineconeClick = false;
     clearLongPressTimer();
@@ -710,26 +865,12 @@ if (pineconeButton) {
       return;
     }
 
-    if (touchStartY !== null) {
-      const deltaY = event.clientY - touchStartY;
-
-      if (deltaY < -24) {
-        suppressPineconeClick = true;
-        closePinecone();
-      } else if (deltaY > 24) {
-        suppressPineconeClick = true;
-        openPinecone();
-      }
-    }
-
-    touchStartY = null;
     pressStartY = null;
   });
 
   pineconeButton.addEventListener("pointercancel", () => {
     clearLongPressTimer();
     isDraggingPinecone = false;
-    touchStartY = null;
     pressStartY = null;
     pineconeStation?.classList.remove("is-dragging");
   });
