@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.1.0",
+  "translatorVersion": "0.2.0",
+  "simulationRunId": "adab0d8dfbf6600d1214f504",
+  "scenarioId": "production_line_optimization",
+  "runtimeProfileId": "des_material_flow_replay",
+  "mappingId": "ev-battery-module-line",
+  "mappingVersion": "1.1.0",
+  "sourceAdapter": "tx_jsonl",
+  "generatedAt": "2026-07-27T01:09:05+00:00",
+  "outputFiles": [
+    {
+      "fileName": "agv_events.json",
+      "format": "jsonl",
+      "stream": "agv"
+    },
+    {
+      "fileName": "bufferLog.json",
+      "format": "jsonl",
+      "stream": "buffer"
+    },
+    {
+      "fileName": "contract_manifest.json",
+      "format": "json",
+      "stream": "contract_manifest.json"
+    },
+    {
+      "fileName": "event_provenance.jsonl",
+      "format": "jsonl",
+      "stream": "event_provenance.jsonl"
+    },
+    {
+      "fileName": "production_line_data.json",
+      "format": "json",
+      "stream": "production"
+    },
+    {
+      "fileName": "production_line_status.json",
+      "format": "jsonl",
+      "stream": "status"
+    }
+  ]
+}

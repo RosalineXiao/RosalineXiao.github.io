@@ -1,0 +1,36 @@
+{
+  "machines": [
+    {
+      "id": "Robot_Arm_01",
+      "type": "Welding",
+      "status": "Running", 
+      "utilization": 0.88,
+      "temperature": 65.2,
+      "itemsProcessed": 1500
+    },
+    {
+      "id": "Robot_Arm_02",
+      "type": "Assembly",
+      "status": "Error",
+      "utilization": 0.00,
+      "temperature": 20.5,
+      "itemsProcessed": 800
+    },
+    {
+      "id": "Conveyor_Belt_A",
+      "type": "Transport",
+      "status": "Blocked",
+      "utilization": 0.92,
+      "temperature": 58.0,
+      "itemsProcessed": 3200
+    },
+    {
+      "id": "Packing_Unit_01",
+      "type": "Packaging",
+      "status": "Running",
+      "utilization": 0.75,
+      "temperature": 40.2,
+      "itemsProcessed": 1200
+    }
+  ]
+}

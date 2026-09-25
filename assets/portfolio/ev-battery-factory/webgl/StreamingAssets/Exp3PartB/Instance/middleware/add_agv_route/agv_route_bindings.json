@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "task": "add_agv_route",
+  "source": "AGV_01",
+  "routeNodeBindings": [
+    {
+      "sourceNode": "Wegmarke1",
+      "unityNode": "Zone1_AGV_Waiting"
+    },
+    {
+      "sourceNode": "Wegmarke2",
+      "unityNode": "Zone1_AGV_LaneMid"
+    },
+    {
+      "sourceNode": "Wegmarke3",
+      "unityNode": "Zone1_To_OP10_Infeed"
+    },
+    {
+      "sourceNode": "Wegmarke4",
+      "unityNode": "Zone1_ScanGate"
+    }
+  ],
+  "completionToleranceMetres": 0.05,
+  "durationScaleForAcceptance": 0.01
+}

@@ -1,0 +1,2 @@
+{"time": 123.0,"source": {"name": "AGV_01"},"startNode": "AGV_01_Home","endNode": "Stacker","duration": "8.0"}
+{"time": 132.0,"source": {"name": "AGV_01"},"startNode": "Stacker","endNode": "AGV_01_Home","duration": "8.0"}

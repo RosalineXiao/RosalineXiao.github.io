@@ -1,0 +1,1379 @@
+{
+  "simulationTime": 461.446,
+  "events": [
+    {
+      "comment": "=== Cycle 01 (Starts at 0.0s) ==="
+    },
+    {
+      "time": 0.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_001"
+      ],
+      "outputIds": [
+        "Block_001_A",
+        "Block_001_B"
+      ]
+    },
+    {
+      "time": 10.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_001_A",
+        "Block_001_B"
+      ],
+      "outputIds": [
+        "Cylinder_001_A",
+        "Cap_001"
+      ]
+    },
+    {
+      "time": 20.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_001_A",
+        "Cap_001"
+      ],
+      "outputIds": [
+        "Assembly_001"
+      ]
+    },
+    {
+      "time": 30.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_001"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 40.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_001"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_001"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 02 (Starts at 10.0s) ==="
+    },
+    {
+      "time": 10.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_002"
+      ],
+      "outputIds": [
+        "Block_002_A",
+        "Block_002_B"
+      ]
+    },
+    {
+      "time": 20.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_002_A",
+        "Block_002_B"
+      ],
+      "outputIds": [
+        "Cylinder_002_A",
+        "Cap_002"
+      ]
+    },
+    {
+      "time": 30.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_002_A",
+        "Cap_002"
+      ],
+      "outputIds": [
+        "Assembly_002"
+      ]
+    },
+    {
+      "time": 40.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_002"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_002"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_002"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 03 (Starts at 20.0s) ==="
+    },
+    {
+      "time": 20.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_003"
+      ],
+      "outputIds": [
+        "Block_003_A",
+        "Block_003_B"
+      ]
+    },
+    {
+      "time": 30.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_003_A",
+        "Block_003_B"
+      ],
+      "outputIds": [
+        "Cylinder_003_A",
+        "Cap_003"
+      ]
+    },
+    {
+      "time": 40.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_003_A",
+        "Cap_003"
+      ],
+      "outputIds": [
+        "Assembly_003"
+      ]
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_003"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_003"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_003"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 04 (Starts at 30.0s) ==="
+    },
+    {
+      "time": 30.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_004"
+      ],
+      "outputIds": [
+        "Block_004_A",
+        "Block_004_B"
+      ]
+    },
+    {
+      "time": 40.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_004_A",
+        "Block_004_B"
+      ],
+      "outputIds": [
+        "Cylinder_004_A",
+        "Cap_004"
+      ]
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_004_A",
+        "Cap_004"
+      ],
+      "outputIds": [
+        "Assembly_004"
+      ]
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_004"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_004"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_004"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 05 (Starts at 40.0s) ==="
+    },
+    {
+      "time": 40.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_005"
+      ],
+      "outputIds": [
+        "Block_005_A",
+        "Block_005_B"
+      ]
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_005_A",
+        "Block_005_B"
+      ],
+      "outputIds": [
+        "Cylinder_005_A",
+        "Cap_005"
+      ]
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_005_A",
+        "Cap_005"
+      ],
+      "outputIds": [
+        "Assembly_005"
+      ]
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_005"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_005"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_005"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 06 (Starts at 50.0s) ==="
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_006"
+      ],
+      "outputIds": [
+        "Block_006_A",
+        "Block_006_B"
+      ]
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_006_A",
+        "Block_006_B"
+      ],
+      "outputIds": [
+        "Cylinder_006_A",
+        "Cap_006"
+      ]
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_006_A",
+        "Cap_006"
+      ],
+      "outputIds": [
+        "Assembly_006"
+      ]
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_006"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_006"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_006"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 07 (Starts at 60.0s) ==="
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_007"
+      ],
+      "outputIds": [
+        "Block_007_A",
+        "Block_007_B"
+      ]
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_007_A",
+        "Block_007_B"
+      ],
+      "outputIds": [
+        "Cylinder_007_A",
+        "Cap_007"
+      ]
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_007_A",
+        "Cap_007"
+      ],
+      "outputIds": [
+        "Assembly_007"
+      ]
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_007"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_007"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_007"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 08 (Starts at 70.0s) ==="
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_008"
+      ],
+      "outputIds": [
+        "Block_008_A",
+        "Block_008_B"
+      ]
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_008_A",
+        "Block_008_B"
+      ],
+      "outputIds": [
+        "Cylinder_008_A",
+        "Cap_008"
+      ]
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_008_A",
+        "Cap_008"
+      ],
+      "outputIds": [
+        "Assembly_008"
+      ]
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_008"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_008"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 227.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_008"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 09 (Starts at 80.0s) ==="
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_009"
+      ],
+      "outputIds": [
+        "Block_009_A",
+        "Block_009_B"
+      ]
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_009_A",
+        "Block_009_B"
+      ],
+      "outputIds": [
+        "Cylinder_009_A",
+        "Cap_009"
+      ]
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_009_A",
+        "Cap_009"
+      ],
+      "outputIds": [
+        "Assembly_009"
+      ]
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_009"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 120.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_009"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 237.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_009"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 10 (Starts at 90.0s) ==="
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_010"
+      ],
+      "outputIds": [
+        "Block_010_A",
+        "Block_010_B"
+      ]
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_010_A",
+        "Block_010_B"
+      ],
+      "outputIds": [
+        "Cylinder_010_A",
+        "Cap_010"
+      ]
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_010_A",
+        "Cap_010"
+      ],
+      "outputIds": [
+        "Assembly_010"
+      ]
+    },
+    {
+      "time": 120.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_010"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 237.5462,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_010"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 247.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_010"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 11 (Starts at 100.0s) ==="
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_011"
+      ],
+      "outputIds": [
+        "Block_011_A",
+        "Block_011_B"
+      ]
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_011_A",
+        "Block_011_B"
+      ],
+      "outputIds": [
+        "Cylinder_011_A",
+        "Cap_011"
+      ]
+    },
+    {
+      "time": 120.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_011_A",
+        "Cap_011"
+      ],
+      "outputIds": [
+        "Assembly_011"
+      ]
+    },
+    {
+      "time": 237.5462,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_011"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 247.5462,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_011"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 257.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_011"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 12 (Starts at 110.0s) ==="
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_012"
+      ],
+      "outputIds": [
+        "Block_012_A",
+        "Block_012_B"
+      ]
+    },
+    {
+      "time": 120.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_012_A",
+        "Block_012_B"
+      ],
+      "outputIds": [
+        "Cylinder_012_A",
+        "Cap_012"
+      ]
+    },
+    {
+      "time": 237.5462,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_012_A",
+        "Cap_012"
+      ],
+      "outputIds": [
+        "Assembly_012"
+      ]
+    },
+    {
+      "time": 247.5462,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_012"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 257.5462,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_012"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 267.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_012"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 13 (Starts at 120.0s) ==="
+    },
+    {
+      "time": 120.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_013"
+      ],
+      "outputIds": [
+        "Block_013_A",
+        "Block_013_B"
+      ]
+    },
+    {
+      "time": 237.5462,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_013_A",
+        "Block_013_B"
+      ],
+      "outputIds": [
+        "Cylinder_013_A",
+        "Cap_013"
+      ]
+    },
+    {
+      "time": 247.5462,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_013_A",
+        "Cap_013"
+      ],
+      "outputIds": [
+        "Assembly_013"
+      ]
+    },
+    {
+      "time": 257.5462,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_013"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 267.5462,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_013"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 277.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_013"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 14 (Starts at 130.0s) ==="
+    },
+    {
+      "time": 130.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_014"
+      ],
+      "outputIds": [
+        "Block_014_A",
+        "Block_014_B"
+      ]
+    },
+    {
+      "time": 247.5462,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_014_A",
+        "Block_014_B"
+      ],
+      "outputIds": [
+        "Cylinder_014_A",
+        "Cap_014"
+      ]
+    },
+    {
+      "time": 257.5462,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_014_A",
+        "Cap_014"
+      ],
+      "outputIds": [
+        "Assembly_014"
+      ]
+    },
+    {
+      "time": 267.5462,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_014"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 277.5462,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_014"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 287.5462,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_014"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 15 (Starts at 140.0s) ==="
+    },
+    {
+      "time": 140.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_015"
+      ],
+      "outputIds": [
+        "Block_015_A",
+        "Block_015_B"
+      ]
+    },
+    {
+      "time": 339.7598,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_015_A",
+        "Block_015_B"
+      ],
+      "outputIds": [
+        "Cylinder_015_A",
+        "Cap_015"
+      ]
+    },
+    {
+      "time": 349.7598,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_015_A",
+        "Cap_015"
+      ],
+      "outputIds": [
+        "Assembly_015"
+      ]
+    },
+    {
+      "time": 359.7598,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_015"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 369.7598,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_015"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 441.446,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_015"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 16 (Starts at 150.0s) ==="
+    },
+    {
+      "time": 150.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_016"
+      ],
+      "outputIds": [
+        "Block_016_A",
+        "Block_016_B"
+      ]
+    },
+    {
+      "time": 349.7598,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_016_A",
+        "Block_016_B"
+      ],
+      "outputIds": [
+        "Cylinder_016_A",
+        "Cap_016"
+      ]
+    },
+    {
+      "time": 359.7598,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_016_A",
+        "Cap_016"
+      ],
+      "outputIds": [
+        "Assembly_016"
+      ]
+    },
+    {
+      "time": 369.7598,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_016"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 379.7598,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_016"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 451.446,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_016"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 17 (Starts at 160.0s) ==="
+    },
+    {
+      "time": 160.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_017"
+      ],
+      "outputIds": [
+        "Block_017_A",
+        "Block_017_B"
+      ]
+    },
+    {
+      "time": 389.7962,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_017_A",
+        "Block_017_B"
+      ],
+      "outputIds": [
+        "Cylinder_017_A",
+        "Cap_017"
+      ]
+    },
+    {
+      "time": 399.7962,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_017_A",
+        "Cap_017"
+      ],
+      "outputIds": [
+        "Assembly_017"
+      ]
+    },
+    {
+      "time": 409.7962,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_017"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 451.446,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_017"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 461.446,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Assembly_017"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 18 (Starts at 170.0s) ==="
+    },
+    {
+      "time": 170.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_018"
+      ],
+      "outputIds": [
+        "Block_018_A",
+        "Block_018_B"
+      ]
+    },
+    {
+      "time": 399.7962,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_018_A",
+        "Block_018_B"
+      ],
+      "outputIds": [
+        "Cylinder_018_A",
+        "Cap_018"
+      ]
+    },
+    {
+      "time": 409.7962,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_018_A",
+        "Cap_018"
+      ],
+      "outputIds": [
+        "Assembly_018"
+      ]
+    },
+    {
+      "time": 451.446,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_018"
+      ],
+      "outputIds": []
+    },
+    {
+      "time": 461.446,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Assembly_018"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 19 (Starts at 180.0s) ==="
+    },
+    {
+      "time": 180.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_019"
+      ],
+      "outputIds": [
+        "Block_019_A",
+        "Block_019_B"
+      ]
+    },
+    {
+      "time": 409.7962,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_019_A",
+        "Block_019_B"
+      ],
+      "outputIds": [
+        "Cylinder_019_A",
+        "Cap_019"
+      ]
+    },
+    {
+      "time": 451.446,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_019_A",
+        "Cap_019"
+      ],
+      "outputIds": [
+        "Assembly_019"
+      ]
+    },
+    {
+      "time": 461.446,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembly_019"
+      ],
+      "outputIds": []
+    },
+    {
+      "comment": "=== Cycle 20 (Starts at 190.0s) ==="
+    },
+    {
+      "time": 190.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_020"
+      ],
+      "outputIds": [
+        "Block_020_A",
+        "Block_020_B"
+      ]
+    },
+    {
+      "time": 451.446,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_020_A",
+        "Block_020_B"
+      ],
+      "outputIds": [
+        "Cylinder_020_A",
+        "Cap_020"
+      ]
+    },
+    {
+      "time": 461.446,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Cylinder_020_A",
+        "Cap_020"
+      ],
+      "outputIds": [
+        "Assembly_020"
+      ]
+    },
+    {
+      "comment": "=== Cycle 21 (Starts at 200.0s) ==="
+    },
+    {
+      "time": 200.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_021"
+      ],
+      "outputIds": [
+        "Block_021_A",
+        "Block_021_B"
+      ]
+    },
+    {
+      "time": 461.446,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Block_021_A",
+        "Block_021_B"
+      ],
+      "outputIds": [
+        "Cylinder_021_A",
+        "Cap_021"
+      ]
+    },
+    {
+      "comment": "=== Cycle 22 (Starts at 237.5462s) ==="
+    },
+    {
+      "time": 237.5462,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_022"
+      ],
+      "outputIds": [
+        "Block_022_A",
+        "Block_022_B"
+      ]
+    },
+    {
+      "comment": "=== Cycle 23 (Starts at 247.5462s) ==="
+    },
+    {
+      "time": 247.5462,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_023"
+      ],
+      "outputIds": [
+        "Block_023_A",
+        "Block_023_B"
+      ]
+    },
+    {
+      "comment": "=== Cycle 24 (Starts at 257.5462s) ==="
+    },
+    {
+      "time": 257.5462,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_024"
+      ],
+      "outputIds": [
+        "Block_024_A",
+        "Block_024_B"
+      ]
+    },
+    {
+      "comment": "=== Cycle 25 (Starts at 349.7598s) ==="
+    },
+    {
+      "time": 349.7598,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Bar_025"
+      ],
+      "outputIds": [
+        "Block_025_A",
+        "Block_025_B"
+      ]
+    }
+  ]
+}

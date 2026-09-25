@@ -1,0 +1,115 @@
+{
+  "factoryName": "EV Battery Module Assembly Unified Testbed",
+  "lineId": "Zone2_Automated_Battery_Module_Assembly_Line",
+  "runtimeDataSource": "production_line_data.json",
+  "notes": [
+    "runtimeId values are kept stable for existing JSON-driven production logic",
+    "displayName values are used for Unity labels, HMI overrides, and paper-facing station semantics"
+  ],
+  "stations": [
+    {
+      "stage": 0,
+      "runtimeId": "Raw_Material_Feeder",
+      "sceneObject": "Inbound_Material_Feeder",
+      "displayName": "Inbound Material / Raw Cell Feeder",
+      "industrialSemantic": "Raw cells and inbound materials are introduced to the line"
+    },
+    {
+      "stage": 10,
+      "runtimeId": "OP10_Cutter",
+      "sceneObject": "OP10_Cutter",
+      "displayName": "OP10 Cell Preparation / Cutter",
+      "industrialSemantic": "Cell cutting, trimming, and initial preparation"
+    },
+    {
+      "stage": 15,
+      "runtimeId": "Buffer",
+      "sceneObject": "Buffer_OP10_OP20",
+      "displayName": "Buffer 1: Prepared Cell Buffer",
+      "industrialSemantic": "Prepared cells wait after OP10 before robot-assisted transfer"
+    },
+    {
+      "stage": 18,
+      "runtimeId": "Robot_Arm_01",
+      "sceneObject": "Robot_Arm_01",
+      "displayName": "Robot-assisted Transfer / Feeder",
+      "industrialSemantic": "Robot pick-place handoff from Buffer 1 to OP20 input fixture"
+    },
+    {
+      "stage": 20,
+      "runtimeId": "OP20_Press",
+      "sceneObject": "OP20_Press",
+      "displayName": "OP20 Stacking and Compression Press",
+      "industrialSemantic": "Cell stack alignment, compression, and module forming"
+    },
+    {
+      "stage": 25,
+      "runtimeId": "Buffer_2_Module_Stack_Buffer",
+      "sceneObject": "Buffer_OP20_OP30",
+      "displayName": "Buffer 2: Module Stack Buffer",
+      "industrialSemantic": "Visual diagnostic buffer after OP20 and before OP30"
+    },
+    {
+      "stage": 30,
+      "runtimeId": "OP30_Assembler",
+      "sceneObject": "OP30_Assembler",
+      "displayName": "OP30 Module Assembly Cell",
+      "industrialSemantic": "Module assembly, fastening, joining, or welding"
+    },
+    {
+      "stage": 40,
+      "runtimeId": "OP40_Turnover",
+      "sceneObject": "OP40_Turnover",
+      "displayName": "OP40 Turnover / Reorientation",
+      "industrialSemantic": "Module turnover and reorientation before inspection"
+    },
+    {
+      "stage": 45,
+      "runtimeId": "Buffer_3_Pre_Inspection_Buffer",
+      "sceneObject": "Buffer_OP40_OP50",
+      "displayName": "Buffer 3: Pre-inspection Buffer",
+      "industrialSemantic": "Visual diagnostic buffer before scanning and inspection"
+    },
+    {
+      "stage": 50,
+      "runtimeId": "OP50_Scanner",
+      "sceneObject": "OP50_Scanner",
+      "displayName": "OP50 Scanning and Inspection",
+      "industrialSemantic": "Scanning, visual inspection, and electrical quality checks"
+    },
+    {
+      "stage": 60,
+      "runtimeId": "OP60_Palletizer",
+      "sceneObject": "OP60_Palletizer",
+      "displayName": "OP60 Palletising",
+      "industrialSemantic": "End-of-line palletising and handoff to outbound logistics"
+    }
+  ],
+  "logistics": [
+    {
+      "runtimeId": "AGV_01",
+      "sceneObject": "AGV_01",
+      "displayName": "Outbound AGV Lane",
+      "industrialSemantic": "Finished module or pack delivery lane; visually represented at the line end for now"
+    },
+    {
+      "runtimeId": "Stacker",
+      "sceneObject": "Stacker",
+      "displayName": "Finished Goods Buffer",
+      "industrialSemantic": "Stacked product and finished goods staging"
+    }
+  ],
+  "caseBLocalCell": {
+    "focusObject": "Robot_Arm_01",
+    "supportObjects": [
+      "CaseB_Input_Rack",
+      "CaseB_Fixture_Table",
+      "CaseB_Output_Rack",
+      "CaseB_Safety_Fence",
+      "CaseB_Human_Review_Zone",
+      "CaseB_Robot_Trajectory_Overlay",
+      "CaseB_AGV_Dropoff_Node",
+      "CaseB_Interference_Risk_Points"
+    ]
+  }
+}

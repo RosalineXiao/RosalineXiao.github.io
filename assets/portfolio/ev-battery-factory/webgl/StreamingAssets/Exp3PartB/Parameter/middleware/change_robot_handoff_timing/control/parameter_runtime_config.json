@@ -1,0 +1,13 @@
+{
+  "task": "change_robot_handoff_timing",
+  "robotSource": "PickAndPlace",
+  "unityMachineId": "Robot_Arm_01",
+  "previousHandoffSeconds": 0.0,
+  "handoffSeconds": 0.0,
+  "timingToleranceSeconds": 0.02,
+  "routeNodeBindings": [
+    { "sourceNode": "Wegmarke1", "unityNode": "Zone1_AGV_Waiting" },
+    { "sourceNode": "Wegmarke2", "unityNode": "Zone1_AGV_LaneMid" },
+    { "sourceNode": "Wegmarke3", "unityNode": "Zone1_To_OP10_Infeed" }
+  ]
+}

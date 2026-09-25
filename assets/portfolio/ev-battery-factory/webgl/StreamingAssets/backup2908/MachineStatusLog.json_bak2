@@ -1,0 +1,14 @@
+{"timestamp_s": "2023-01-02 06:00:43.0157", "source": {"name": "OP40_Turnover", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:01:06.3401", "source": {"name": "OP40_Turnover", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:01:22.8946", "source": {"name": "OP30_Assembler", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:01:28.8881", "source": {"name": "OP30_Assembler", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:02:59.4053", "source": {"name": "OP50_Scanner", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:03:21.6376", "source": {"name": "OP60_Palletizer", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:03:53.6673", "source": {"name": "OP50_Scanner", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:04:34.6857", "source": {"name": "OP60_Palletizer", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:04:39.7763", "source": {"name": "OP10_Cutter", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:00:00.0000", "source": {"name": "OP10_Cutter", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:00:43.0157", "source": {"name": "OP40_Turnover", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:01:06.3401", "source": {"name": "OP40_Turnover", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:01:22.8946", "source": {"name": "OP30_Assembler", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:01:28.8881", "source": {"name": "OP30_Assembler", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }

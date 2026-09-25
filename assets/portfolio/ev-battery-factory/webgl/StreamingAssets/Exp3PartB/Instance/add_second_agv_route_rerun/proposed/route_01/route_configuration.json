@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "routeId": "AGV_ROUTE_01",
+  "sourceId": "AGV_ROUTE_01",
+  "eventFileName": "agv_events.json",
+  "controller": "MobileRouteEventReplayController",
+  "nodeBindings": [
+    {
+      "sourceNode": "Wegmarke1",
+      "unityNode": "Wegmarke1"
+    },
+    {
+      "sourceNode": "Wegmarke2",
+      "unityNode": "Wegmarke2"
+    },
+    {
+      "sourceNode": "Wegmarke3",
+      "unityNode": "Wegmarke3"
+    }
+  ],
+  "completionToleranceMetres": 0.05,
+  "durationScaleForAcceptance": 0.001
+}

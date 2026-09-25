@@ -1,0 +1,8 @@
+﻿{
+    "task":  "change_buffer_capacity",
+    "condition":  "ad_hoc",
+    "startedUtc":  "2026-07-27T00:27:17.7145046Z",
+    "endedUtc":  "2026-07-27T00:27:17.9415116Z",
+    "commandElapsedSeconds":  0.227007,
+    "exitCode":  0
+}

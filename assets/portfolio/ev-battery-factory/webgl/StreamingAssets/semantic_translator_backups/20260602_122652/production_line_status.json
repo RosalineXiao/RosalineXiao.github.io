@@ -1,0 +1,10 @@
+{"timestamp_s": "2023-01-02 06:02:06.9162", "source": {"name": "OP60_Palletizer", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:03:54.4624", "source": {"name": "OP60_Palletizer", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:04:24.2925", "source": {"name": "OP20_Press", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:05:46.5061", "source": {"name": "OP20_Press", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:06:00.1803", "source": {"name": "OP10_Cutter", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:06:06.3618", "source": {"name": "OP20_Press", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:06:23.5528", "source": {"name": "OP60_Palletizer", "type": "workstation"}, "state": {"code": "Fault", "label": "Fault"} }
+{"timestamp_s": "2023-01-02 06:06:36.3982", "source": {"name": "OP20_Press", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:07:25.2389", "source": {"name": "OP60_Palletizer", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }
+{"timestamp_s": "2023-01-02 06:08:00.1541", "source": {"name": "OP10_Cutter", "type": "workstation"}, "state": {"code": "Working", "label": "Working"} }

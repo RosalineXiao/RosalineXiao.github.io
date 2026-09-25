@@ -1,0 +1,144 @@
+{
+    "mappingId":  "ev-battery-module-line",
+    "mappingVersion":  "1.1.0-exp3-robot-stream",
+    "targetRuntime":  "Unity external visualisation replay",
+    "referencePolicy":  "Project-specific EV line mapping aligned with the current Unity scene naming contract.",
+    "sources":  {
+                    "buffer":  "Buffer",
+                    "agv":  "AGV_01",
+                    "robotBlockPair":  "Robot_Arm_01",
+                    "stackerEndEffector":  "Arm_in_stacker"
+                },
+    "productionMachines":  {
+                               "OP10_Cutter":  {
+                                                   "runtimeType":  "Separator",
+                                                   "inputTemplates":  [
+                                                                          "rawInput"
+                                                                      ],
+                                                   "outputTemplates":  [
+                                                                           "blockA",
+                                                                           "blockB"
+                                                                       ]
+                                               },
+                               "OP20_Press":  {
+                                                  "runtimeType":  "Transformer",
+                                                  "inputTemplates":  [
+                                                                         "blockA",
+                                                                         "blockB"
+                                                                     ],
+                                                  "outputTemplates":  [
+                                                                          "cylinderA",
+                                                                          "cap"
+                                                                      ]
+                                              },
+                               "OP30_Assembler":  {
+                                                      "runtimeType":  "Combiner",
+                                                      "inputTemplates":  [
+                                                                             "cylinderA",
+                                                                             "cap"
+                                                                         ],
+                                                      "outputTemplates":  [
+                                                                              "assembly"
+                                                                          ]
+                                                  },
+                               "OP40_Turnover":  {
+                                                     "runtimeType":  "Kinematic",
+                                                     "inputTemplates":  [
+                                                                            "assembly"
+                                                                        ],
+                                                     "outputTemplates":  [
+
+                                                                         ]
+                                                 },
+                               "OP50_Scanner":  {
+                                                    "runtimeType":  "Mutator",
+                                                    "inputTemplates":  [
+                                                                           "assembly"
+                                                                       ],
+                                                    "outputTemplates":  [
+
+                                                                        ]
+                                                },
+                               "OP60_Palletizer":  {
+                                                       "runtimeType":  "Stacker",
+                                                       "inputTemplates":  [
+                                                                              "assembly"
+                                                                          ],
+                                                       "outputTemplates":  [
+
+                                                                           ]
+                                                   }
+                           },
+    "productIdTemplates":  {
+                               "rawInput":  "Raw_Bar_{part:03d}",
+                               "blockA":  "Block_{part:03d}_A",
+                               "blockB":  "Block_{part:03d}_B",
+                               "cylinderA":  "Cylinder_{part:03d}_A",
+                               "cap":  "Cap_{part:03d}",
+                               "assembly":  "Assembly_{part:03d}"
+                           },
+    "robotHandoffs":  {
+                          "Robot_Arm_01":  [
+                                               {
+                                                   "ruleId":  "robot_pick_block_a",
+                                                   "targetTemplate":  "blockA",
+                                                   "destinationNode":  "OP20_Press",
+                                                   "duration":  "3.0",
+                                                   "offsetSeconds":  0,
+                                                   "derivation":  "semantic_mapping",
+                                                   "reason":  "Mapped TX Robot_Arm_01 record into Unity robot pick/place event."
+                                               },
+                                               {
+                                                   "ruleId":  "robot_pick_block_b",
+                                                   "targetTemplate":  "blockB",
+                                                   "destinationNode":  "OP20_Press",
+                                                   "duration":  "3.0",
+                                                   "offsetSeconds":  4,
+                                                   "derivation":  "semantic_mapping",
+                                                   "reason":  "Mapped TX Robot_Arm_01 record into Unity robot pick/place event."
+                                               }
+                                           ],
+                          "Arm_in_stacker":  [
+                                                 {
+                                                     "ruleId":  "stacker_end_effector_handoff",
+                                                     "targetTemplate":  "assembly",
+                                                     "destinationNode":  "Drain",
+                                                     "duration":  "3.0",
+                                                     "offsetSeconds":  0,
+                                                     "derivation":  "translator_inference",
+                                                     "reason":  "Generated end-effector handoff from TX Arm_in_stacker -\u003e Drain record."
+                                                 }
+                                             ],
+                          "PickAndPlaceAGV":  [
+                                                  {
+                                                      "ruleId":  "robot_agv_handoff",
+                                                      "targetTemplate":  "assembly",
+                                                      "destinationNode":  "AGV_DropOff_Node",
+                                                      "duration":  "3.0",
+                                                      "offsetSeconds":  0,
+                                                      "derivation":  "semantic_mapping",
+                                                      "reason":  "Mapped TX PickAndPlaceAGV record into a second Unity robot command stream."
+                                                  }
+                                              ]
+                      },
+    "agv":  {
+                "source":  "AGV_01"
+            },
+    "staticReferences":  {
+                             "knownRouteTargets":  [
+                                                       "Buffer",
+                                                       "OP20_Press",
+                                                       "OP30_Assembler",
+                                                       "OP40_Turnover",
+                                                       "OP50_Scanner",
+                                                       "OP60_Palletizer",
+                                                       "Arm_in_stacker",
+                                                       "Drain",
+                                                       "AGV_DropOff_Node"
+                                                   ],
+                             "knownLogisticsNodes":  [
+                                                         "AGV_01_Home",
+                                                         "Stacker"
+                                                     ]
+                         }
+}

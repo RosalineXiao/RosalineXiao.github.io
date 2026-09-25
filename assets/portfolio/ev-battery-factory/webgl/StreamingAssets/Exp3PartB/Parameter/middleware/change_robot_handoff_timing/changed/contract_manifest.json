@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1.0",
+  "translatorVersion": "0.2.0",
+  "simulationRunId": "a775b3745d82713636de14d0",
+  "scenarioId": "remote_human_augmentation",
+  "runtimeProfileId": "human_in_the_loop_replay",
+  "mappingId": "ev-battery-module-line",
+  "mappingVersion": "1.1.0",
+  "sourceAdapter": "tx_jsonl",
+  "generatedAt": "2026-07-27T00:50:12+00:00",
+  "outputFiles": [
+    {
+      "fileName": "agv_events.json",
+      "format": "jsonl",
+      "stream": "agv"
+    },
+    {
+      "fileName": "contract_manifest.json",
+      "format": "json",
+      "stream": "contract_manifest.json"
+    },
+    {
+      "fileName": "event_provenance.jsonl",
+      "format": "jsonl",
+      "stream": "event_provenance.jsonl"
+    },
+    {
+      "fileName": "production_line_status.json",
+      "format": "jsonl",
+      "stream": "status"
+    },
+    {
+      "fileName": "robot_events.json",
+      "format": "jsonl",
+      "stream": "robot"
+    }
+  ]
+}

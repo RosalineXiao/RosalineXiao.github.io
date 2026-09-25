@@ -1,0 +1,9 @@
+﻿{
+    "task":  "change_robot_handoff_timing",
+    "condition":  "middleware",
+    "variant":  "control",
+    "startedUtc":  "2026-07-27T00:50:11.7734280Z",
+    "endedUtc":  "2026-07-27T00:50:13.1318594Z",
+    "commandElapsedSeconds":  1.3584314,
+    "exitCode":  0
+}

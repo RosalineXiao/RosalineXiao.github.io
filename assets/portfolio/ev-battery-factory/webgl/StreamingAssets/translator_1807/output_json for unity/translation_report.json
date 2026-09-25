@@ -1,0 +1,2217 @@
+{
+  "translator_version": "0.2.0",
+  "generated_at_utc": "2026-07-18T00:32:56+00:00",
+  "status": "success",
+  "scenario": "case_study_1",
+  "runtime_profile_id": "full_case_study_replay",
+  "scenario_profile": {
+    "scenarioId": "case_study_1",
+    "title": "EV Battery Module Line Case Study",
+    "description": "Demonstrate the full export-translate-validate-replay path for the current Siemens TX and Unity line.",
+    "runtimeProfileId": "full_case_study_replay",
+    "outputs": [
+      "agv",
+      "buffer",
+      "production",
+      "robot",
+      "status"
+    ],
+    "required_data": [
+      "production.time",
+      "production.machineId",
+      "production.eventType",
+      "production.inputIds",
+      "production.outputIds",
+      "status.timestamp",
+      "status.sourceId",
+      "status.stateCode",
+      "buffer.timestamp",
+      "buffer.sourceId",
+      "buffer.numberOfParts",
+      "robot.timestamp",
+      "robot.sourceId",
+      "robot.action",
+      "robot.targetPartId",
+      "robot.destinationNode",
+      "agv.time",
+      "agv.sourceId",
+      "agv.startNode",
+      "agv.endNode",
+      "agv.duration"
+    ],
+    "potential_data": [
+      "position",
+      "processing.baseTimeSeconds",
+      "processing.partsProduced",
+      "routing.outputTo",
+      "state",
+      "sourceType"
+    ],
+    "requiredAttributes": [
+      "production.time",
+      "production.machineId",
+      "production.eventType",
+      "production.inputIds",
+      "production.outputIds",
+      "status.timestamp",
+      "status.sourceId",
+      "status.stateCode",
+      "buffer.timestamp",
+      "buffer.sourceId",
+      "buffer.numberOfParts",
+      "robot.timestamp",
+      "robot.sourceId",
+      "robot.action",
+      "robot.targetPartId",
+      "robot.destinationNode",
+      "agv.time",
+      "agv.sourceId",
+      "agv.startNode",
+      "agv.endNode",
+      "agv.duration"
+    ],
+    "optionalAttributes": [
+      "position",
+      "processing.baseTimeSeconds",
+      "processing.partsProduced",
+      "routing.outputTo",
+      "state",
+      "sourceType"
+    ],
+    "conceptualButUnavailableAttributes": [
+      "agv.telemetry",
+      "endEffector.telemetry"
+    ],
+    "attributeDefinitions": {
+      "production.time": "Relative simulation time for a Unity production event.",
+      "production.machineId": "Unity machine identifier mapped from TX source.name.",
+      "production.eventType": "Unity machine event type mapped from the EV line mapping.",
+      "production.inputIds": "Unity product IDs consumed by a production event.",
+      "production.outputIds": "Unity product IDs created by a production event.",
+      "status.timestamp": "Original timestamp for a machine-status event.",
+      "status.sourceId": "Source identifier for a machine-status event.",
+      "status.stateCode": "Machine state code from TX state.code.",
+      "buffer.timestamp": "Original timestamp for a buffer event.",
+      "buffer.sourceId": "Buffer source identifier.",
+      "buffer.numberOfParts": "Buffer inventory count.",
+      "robot.timestamp": "Original timestamp for a robot handoff event.",
+      "robot.sourceId": "Robot or end-effector source identifier.",
+      "robot.action": "Unity robot action name.",
+      "robot.targetPartId": "Product ID handled by the robot action.",
+      "robot.destinationNode": "Destination node for the robot handoff.",
+      "agv.time": "Relative simulation time for an AGV movement.",
+      "agv.sourceId": "AGV source identifier.",
+      "agv.startNode": "AGV route start node.",
+      "agv.endNode": "AGV route end node.",
+      "agv.duration": "AGV movement duration.",
+      "processing.baseTimeSeconds": "Optional TX processing.base_time_s value.",
+      "routing.outputTo": "Optional TX routing.output_to value.",
+      "processing.partsProduced": "Optional TX processing.parts_produced value.",
+      "position": "Optional TX object position.",
+      "state": "Optional raw TX state object.",
+      "sourceType": "Optional TX source.type value.",
+      "geometry.reference": "Conceptual geometry reference; unavailable in current TX export.",
+      "transform": "Conceptual transform payload; unavailable in current TX export.",
+      "collision.volume": "Conceptual collision-volume payload; unavailable in current TX export.",
+      "ergonomic.zone": "Conceptual ergonomic-zone payload; unavailable in current TX export.",
+      "plc.signalMapping": "Conceptual PLC signal mapping; unavailable in current TX export.",
+      "safety.interlock": "Conceptual safety interlock state; unavailable in current TX export.",
+      "io.signal": "Conceptual IO signal; unavailable in current TX export.",
+      "kpi.bottleneckLabel": "Conceptual KPI bottleneck label; unavailable in current TX export.",
+      "experimentId": "Conceptual experiment identifier; unavailable in current TX export.",
+      "annotation.user": "Conceptual review annotation; unavailable in current TX export.",
+      "versioning.model": "Conceptual model-version package; unavailable in current TX export.",
+      "supplierPackageId": "Conceptual supplier package ID; unavailable in current TX export.",
+      "mes.orderId": "Conceptual MES order ID; unavailable in current TX export.",
+      "operator.assignment": "Conceptual operator assignment; unavailable in current TX export.",
+      "alarm": "Conceptual alarm stream; unavailable in current TX export.",
+      "assetHealth.telemetry": "Conceptual asset-health telemetry; unavailable in current TX export.",
+      "hri.permission": "Conceptual HRI permission state; unavailable in current TX export.",
+      "operatorId": "Conceptual operator identifier; unavailable in current TX export.",
+      "controlMode": "Conceptual control mode; unavailable in current TX export.",
+      "safetyState": "Conceptual safety state; unavailable in current TX export.",
+      "opcua.nodeId": "Conceptual OPC UA NodeId; unavailable because no live OPC UA is implemented.",
+      "latency": "Conceptual synchronisation latency; unavailable for file-based replay.",
+      "confidence": "Conceptual data confidence value; unavailable in current TX export.",
+      "sensorSource": "Conceptual sensor source identifier; unavailable in current TX export.",
+      "assetHealth.remainingUsefulLife": "Conceptual remaining useful life; unavailable in current TX export.",
+      "vibration": "Conceptual vibration telemetry; unavailable in current TX export.",
+      "temperature": "Conceptual temperature telemetry; unavailable in current TX export.",
+      "maintenanceHistory": "Conceptual maintenance history; unavailable in current TX export.",
+      "trainee.actions": "Conceptual trainee actions; unavailable in current TX export.",
+      "scoringRubric": "Conceptual scoring rubric; unavailable in current TX export.",
+      "hints": "Conceptual training hints; unavailable in current TX export.",
+      "resetPoints": "Conceptual training reset points; unavailable in current TX export.",
+      "energyUse": "Conceptual energy-use value; unavailable in current TX export.",
+      "carbonFactor": "Conceptual carbon factor; unavailable in current TX export.",
+      "wasteStream": "Conceptual waste-stream value; unavailable in current TX export.",
+      "recyclingRoute": "Conceptual recycling route; unavailable in current TX export.",
+      "agv.telemetry": "Continuous AGV telemetry is unavailable; AGV events are emitted only from direct AGV source records.",
+      "endEffector.telemetry": "Conceptual end-effector telemetry; unavailable because stacker handoffs are deterministic translator inferences."
+    },
+    "implementationStatus": "end_to_end_available",
+    "evidenceStatus": "end_to_end_demonstrated",
+    "notes": "Uses the current EV case-study mapping and existing Unity-compatible payload shapes."
+  },
+  "contract": {
+    "manifest_version": "1.0.0",
+    "manifest_id": "tx-unity-semantic-translator-runtime-contract",
+    "runtime_profile_set_version": "1.1.0",
+    "selected_runtime_profile": {
+      "runtimeProfileId": "full_case_study_replay",
+      "title": "Full Case Study Replay",
+      "streams": [
+        "production",
+        "status",
+        "buffer",
+        "robot",
+        "agv"
+      ],
+      "requiredAttributes": [
+        "timestamp_s",
+        "source.name",
+        "processing.current_part",
+        "routing.output_to"
+      ],
+      "optionalAttributes": [
+        "position",
+        "processing.baseTimeSeconds",
+        "processing.partsProduced",
+        "routing.outputTo",
+        "state",
+        "sourceType"
+      ],
+      "notes": "Full EV case-study stream set used by Case Study 1."
+    },
+    "external_mapping_version": "1.1.0",
+    "external_mapping_id": "ev-battery-module-line",
+    "standards_reference_policy": "References are aligned with, informed by, or inspired by the listed standards unless formal conformance is explicitly implemented and tested."
+  },
+  "parser": "tx_jsonl",
+  "dry_run": false,
+  "optional_attributes": {
+    "selected": [],
+    "records": []
+  },
+  "attribute_states": {
+    "required": [
+      {
+        "id": "production.time",
+        "label": "production.time",
+        "description": "Relative simulation time for a Unity production event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.machineId",
+        "label": "production.machineId",
+        "description": "Unity machine identifier mapped from TX source.name.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.eventType",
+        "label": "production.eventType",
+        "description": "Unity machine event type mapped from the EV line mapping.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.inputIds",
+        "label": "production.inputIds",
+        "description": "Unity product IDs consumed by a production event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.outputIds",
+        "label": "production.outputIds",
+        "description": "Unity product IDs created by a production event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "status.timestamp",
+        "label": "status.timestamp",
+        "description": "Original timestamp for a machine-status event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "status.sourceId",
+        "label": "status.sourceId",
+        "description": "Source identifier for a machine-status event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "status.stateCode",
+        "label": "status.stateCode",
+        "description": "Machine state code from TX state.code.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "buffer.timestamp",
+        "label": "buffer.timestamp",
+        "description": "Original timestamp for a buffer event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "buffer.sourceId",
+        "label": "buffer.sourceId",
+        "description": "Buffer source identifier.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "buffer.numberOfParts",
+        "label": "buffer.numberOfParts",
+        "description": "Buffer inventory count.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "robot.timestamp",
+        "label": "robot.timestamp",
+        "description": "Original timestamp for a robot handoff event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "robot.sourceId",
+        "label": "robot.sourceId",
+        "description": "Robot or end-effector source identifier.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "robot.action",
+        "label": "robot.action",
+        "description": "Unity robot action name.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "robot.targetPartId",
+        "label": "robot.targetPartId",
+        "description": "Product ID handled by the robot action.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "robot.destinationNode",
+        "label": "robot.destinationNode",
+        "description": "Destination node for the robot handoff.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.time",
+        "label": "agv.time",
+        "description": "Relative simulation time for an AGV movement.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.sourceId",
+        "label": "agv.sourceId",
+        "description": "AGV source identifier.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.startNode",
+        "label": "agv.startNode",
+        "description": "AGV route start node.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.endNode",
+        "label": "agv.endNode",
+        "description": "AGV route end node.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.duration",
+        "label": "agv.duration",
+        "description": "AGV movement duration.",
+        "state": "required",
+        "selected": true
+      }
+    ],
+    "optional": [
+      {
+        "id": "position",
+        "label": "position",
+        "description": "Optional TX object position.",
+        "state": "optional"
+      },
+      {
+        "id": "processing.baseTimeSeconds",
+        "label": "processing.baseTimeSeconds",
+        "description": "Optional TX processing.base_time_s value.",
+        "state": "optional"
+      },
+      {
+        "id": "processing.partsProduced",
+        "label": "processing.partsProduced",
+        "description": "Optional TX processing.parts_produced value.",
+        "state": "optional"
+      },
+      {
+        "id": "routing.outputTo",
+        "label": "routing.outputTo",
+        "description": "Optional TX routing.output_to value.",
+        "state": "optional"
+      },
+      {
+        "id": "state",
+        "label": "state",
+        "description": "Optional raw TX state object.",
+        "state": "optional"
+      },
+      {
+        "id": "sourceType",
+        "label": "sourceType",
+        "description": "Optional TX source.type value.",
+        "state": "optional"
+      }
+    ],
+    "conceptualButUnavailable": [
+      {
+        "id": "agv.telemetry",
+        "label": "agv.telemetry",
+        "description": "Continuous AGV telemetry is unavailable; AGV events are emitted only from direct AGV source records.",
+        "state": "conceptual_unavailable",
+        "selected": false
+      },
+      {
+        "id": "endEffector.telemetry",
+        "label": "endEffector.telemetry",
+        "description": "Conceptual end-effector telemetry; unavailable because stacker handoffs are deterministic translator inferences.",
+        "state": "conceptual_unavailable",
+        "selected": false
+      }
+    ]
+  },
+  "inputs": {
+    "input_dir": "Assets\\StreamingAssets\\translator_1807",
+    "machine_log": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+    "buffer_log": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+    "status_log": "Assets\\StreamingAssets\\translator_1807\\MachineStatusLog.json",
+    "runtime_profiles": "E:\\UnityProjects\\test_CAD_20260110_3workingCase\\tools\\semantic_translator\\config\\runtime_profiles.json",
+    "application_scenarios": "E:\\UnityProjects\\test_CAD_20260110_3workingCase\\tools\\semantic_translator\\config\\application_scenarios.json",
+    "mapping": "E:\\UnityProjects\\test_CAD_20260110_3workingCase\\tools\\semantic_translator\\config\\mappings\\ev_battery_module_line.mapping.json"
+  },
+  "outputs": {
+    "production_line_data.json": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\production_line_data.json",
+      "bytes": 239664,
+      "written": true
+    },
+    "production_line_status.json": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\production_line_status.json",
+      "bytes": 38704,
+      "written": true
+    },
+    "bufferLog.json": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\bufferLog.json",
+      "bytes": 336391,
+      "written": true
+    },
+    "robot_events.json": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\robot_events.json",
+      "bytes": 70494,
+      "written": true
+    },
+    "agv_events.json": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\agv_events.json",
+      "bytes": 77081,
+      "written": true
+    },
+    "event_provenance.jsonl": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\event_provenance.jsonl",
+      "bytes": 3169685,
+      "written": true
+    },
+    "contract_manifest.json": {
+      "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\contract_manifest.json",
+      "bytes": 1129,
+      "written": true
+    }
+  },
+  "statistics": {
+    "production_events": 1181,
+    "status_events": 264,
+    "buffer_events": 2934,
+    "robot_events": 389,
+    "agv_events": 664,
+    "machine_records_read": 2898,
+    "buffer_records_read": 2934,
+    "status_records_read": 264
+  },
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Transporter' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 1,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:03.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \".Models.Model.Wegmarke1\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[ ]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[ ]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 1,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:03.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \".Models.Model.Wegmarke1\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[ ]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke2]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 2,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:08.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \".Models.Model.Wegmarke2\", \"transporting\": {\"current_part\": \"[*.MUs.Part:1]\", \"number_of_parts\": 1}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke2]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke3]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 3,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:19.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \"VOID\", \"transporting\": {\"current_part\": \"[*.MUs.Part:1]\", \"number_of_parts\": 1}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke3]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke1]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 5,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:23.8010\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \"VOID\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke1]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target 'OP10_20_Buffer' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 8,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:33.8010\", \"source\": {\"name\": \"OP10_Cutter\", \"type\": \"workstation\"}, \"position\": {\"x\": 260, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"base_time_s\": 10, \"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP10_20_Buffer\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'PickAndPlace' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 10,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:46.8010\", \"source\": {\"name\": \"PickAndPlace\", \"type\": \"PickAndPlace\"}, \"position\": {\"x\": 360, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP20_Press\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target 'OP20_30_Buffer' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 15,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:56.8010\", \"source\": {\"name\": \"OP20_Press\", \"type\": \"workstation\"}, \"position\": {\"x\": 400, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"base_time_s\": 10, \"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP20_30_Buffer\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target 'OP30_40_Buffer' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\MachineLog.json",
+      "line": 18,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:01:07.8010\", \"source\": {\"name\": \"OP30_Assembler\", \"type\": \"workstation\"}, \"position\": {\"x\": 520, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"base_time_s\": 10, \"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP30_40_Buffer\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Buffer1' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+      "line": 3,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:01.0000\", \"source\": {\"name\": \"Buffer1\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Buffer2' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+      "line": 5,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:02.0000\", \"source\": {\"name\": \"Buffer2\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Buffer3' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+      "line": 7,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:03.0000\", \"source\": {\"name\": \"Buffer3\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'OP10_20_Buffer' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+      "line": 33,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:33.8010\", \"source\": {\"name\": \"OP10_20_Buffer\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'OP20_30_Buffer' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+      "line": 55,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:56.8010\", \"source\": {\"name\": \"OP20_30_Buffer\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'OP30_40_Buffer' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Assets\\StreamingAssets\\translator_1807\\BufferLog.json",
+      "line": 71,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:01:07.8010\", \"source\": {\"name\": \"OP30_40_Buffer\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    }
+  ],
+  "synthetic_records": [
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:01:50.8010",
+      "targetPartId": "Assembly_001",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:02:23.5874",
+      "targetPartId": "Assembly_002",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:02:56.3738",
+      "targetPartId": "Assembly_003",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:04:56.6857",
+      "targetPartId": "Assembly_004",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:05:12.6857",
+      "targetPartId": "Assembly_005",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:05:28.6857",
+      "targetPartId": "Assembly_006",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:05:44.6857",
+      "targetPartId": "Assembly_007",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:06:00.6857",
+      "targetPartId": "Assembly_008",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:08:22.1305",
+      "targetPartId": "Assembly_009",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:08:38.1305",
+      "targetPartId": "Assembly_010",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:09:04.6125",
+      "targetPartId": "Assembly_011",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:09:16.6125",
+      "targetPartId": "Assembly_012",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:09:32.6125",
+      "targetPartId": "Assembly_013",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:10:02.5970",
+      "targetPartId": "Assembly_014",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:11:32.9415",
+      "targetPartId": "Assembly_015",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:11:48.9415",
+      "targetPartId": "Assembly_016",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:12:04.9415",
+      "targetPartId": "Assembly_017",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:12:20.9415",
+      "targetPartId": "Assembly_018",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:15:20.0042",
+      "targetPartId": "Assembly_019",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:15:36.0042",
+      "targetPartId": "Assembly_020",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:15:52.0042",
+      "targetPartId": "Assembly_021",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:16:46.3503",
+      "targetPartId": "Assembly_022",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:17:44.6173",
+      "targetPartId": "Assembly_023",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:18:00.6173",
+      "targetPartId": "Assembly_024",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:18:16.6173",
+      "targetPartId": "Assembly_025",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:18:32.6173",
+      "targetPartId": "Assembly_026",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:18:48.6173",
+      "targetPartId": "Assembly_027",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:19:04.6173",
+      "targetPartId": "Assembly_028",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:20:54.0978",
+      "targetPartId": "Assembly_029",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:22:29.3153",
+      "targetPartId": "Assembly_030",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:22:45.3153",
+      "targetPartId": "Assembly_031",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:23:01.3153",
+      "targetPartId": "Assembly_032",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:23:17.3153",
+      "targetPartId": "Assembly_033",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:23:33.3153",
+      "targetPartId": "Assembly_034",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:23:49.3153",
+      "targetPartId": "Assembly_035",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:24:05.3153",
+      "targetPartId": "Assembly_036",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:24:21.3153",
+      "targetPartId": "Assembly_037",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:24:37.3153",
+      "targetPartId": "Assembly_038",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:25:16.3446",
+      "targetPartId": "Assembly_039",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:25:32.3446",
+      "targetPartId": "Assembly_040",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:25:48.3446",
+      "targetPartId": "Assembly_041",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:26:04.3446",
+      "targetPartId": "Assembly_042",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:26:26.1891",
+      "targetPartId": "Assembly_043",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:26:58.9755",
+      "targetPartId": "Assembly_044",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:27:31.7619",
+      "targetPartId": "Assembly_045",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:28:04.5483",
+      "targetPartId": "Assembly_046",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:28:37.3347",
+      "targetPartId": "Assembly_047",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:29:10.1211",
+      "targetPartId": "Assembly_048",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:29:42.9075",
+      "targetPartId": "Assembly_049",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:30:15.6939",
+      "targetPartId": "Assembly_050",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:30:48.4803",
+      "targetPartId": "Assembly_051",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:32:40.3226",
+      "targetPartId": "Assembly_052",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:32:56.3226",
+      "targetPartId": "Assembly_053",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:33:12.3226",
+      "targetPartId": "Assembly_054",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:34:26.7262",
+      "targetPartId": "Assembly_055",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:37:04.9005",
+      "targetPartId": "Assembly_056",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:37:20.9005",
+      "targetPartId": "Assembly_057",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:37:36.9005",
+      "targetPartId": "Assembly_058",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:37:52.9005",
+      "targetPartId": "Assembly_059",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:38:08.9005",
+      "targetPartId": "Assembly_060",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:38:24.9005",
+      "targetPartId": "Assembly_061",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:38:40.9005",
+      "targetPartId": "Assembly_062",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:40:56.6155",
+      "targetPartId": "Assembly_063",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:41:12.6155",
+      "targetPartId": "Assembly_064",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:42:07.3228",
+      "targetPartId": "Assembly_065",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:42:23.3228",
+      "targetPartId": "Assembly_066",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:42:49.7812",
+      "targetPartId": "Assembly_067",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:43:22.5676",
+      "targetPartId": "Assembly_068",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:44:39.2335",
+      "targetPartId": "Assembly_069",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:46:42.4492",
+      "targetPartId": "Assembly_070",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:48:04.5249",
+      "targetPartId": "Assembly_071",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:48:20.5249",
+      "targetPartId": "Assembly_072",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:48:36.5249",
+      "targetPartId": "Assembly_073",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:52:11.6252",
+      "targetPartId": "Assembly_074",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:55:05.0139",
+      "targetPartId": "Assembly_075",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:55:21.0139",
+      "targetPartId": "Assembly_076",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:55:37.0139",
+      "targetPartId": "Assembly_077",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:55:53.0139",
+      "targetPartId": "Assembly_078",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:57:25.5981",
+      "targetPartId": "Assembly_079",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:57:41.5981",
+      "targetPartId": "Assembly_080",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:57:57.5981",
+      "targetPartId": "Assembly_081",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:58:13.5981",
+      "targetPartId": "Assembly_082",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:58:29.5981",
+      "targetPartId": "Assembly_083",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:58:45.5981",
+      "targetPartId": "Assembly_084",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:59:01.5981",
+      "targetPartId": "Assembly_085",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:59:17.5981",
+      "targetPartId": "Assembly_086",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:59:33.5981",
+      "targetPartId": "Assembly_087",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 06:59:49.5981",
+      "targetPartId": "Assembly_088",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:00:05.5981",
+      "targetPartId": "Assembly_089",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:00:21.5981",
+      "targetPartId": "Assembly_090",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:00:37.5981",
+      "targetPartId": "Assembly_091",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:00:53.5981",
+      "targetPartId": "Assembly_092",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:01:09.5981",
+      "targetPartId": "Assembly_093",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:01:50.2790",
+      "targetPartId": "Assembly_094",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:02:06.2790",
+      "targetPartId": "Assembly_095",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:02:22.2790",
+      "targetPartId": "Assembly_096",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:02:38.2790",
+      "targetPartId": "Assembly_097",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:03:22.4179",
+      "targetPartId": "Assembly_098",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:03:38.4179",
+      "targetPartId": "Assembly_099",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:03:54.4179",
+      "targetPartId": "Assembly_100",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:04:10.4179",
+      "targetPartId": "Assembly_101",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:05:14.0237",
+      "targetPartId": "Assembly_102",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:07:22.1607",
+      "targetPartId": "Assembly_103",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:07:51.4800",
+      "targetPartId": "Assembly_104",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:08:07.4800",
+      "targetPartId": "Assembly_105",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:08:23.4800",
+      "targetPartId": "Assembly_106",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:08:39.4800",
+      "targetPartId": "Assembly_107",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:09:03.5285",
+      "targetPartId": "Assembly_108",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:09:36.3149",
+      "targetPartId": "Assembly_109",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:10:13.4472",
+      "targetPartId": "Assembly_110",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:10:41.8877",
+      "targetPartId": "Assembly_111",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:11:14.6741",
+      "targetPartId": "Assembly_112",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:12:10.9440",
+      "targetPartId": "Assembly_113",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:12:26.9440",
+      "targetPartId": "Assembly_114",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:14:00.3820",
+      "targetPartId": "Assembly_115",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:14:31.0559",
+      "targetPartId": "Assembly_116",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:18:44.9541",
+      "targetPartId": "Assembly_117",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:19:00.9541",
+      "targetPartId": "Assembly_118",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:19:16.9541",
+      "targetPartId": "Assembly_119",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:19:32.9541",
+      "targetPartId": "Assembly_120",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:19:48.9541",
+      "targetPartId": "Assembly_121",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:21:21.3443",
+      "targetPartId": "Assembly_122",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:22:52.5714",
+      "targetPartId": "Assembly_123",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:23:08.5714",
+      "targetPartId": "Assembly_124",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:23:24.5714",
+      "targetPartId": "Assembly_125",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:23:40.5714",
+      "targetPartId": "Assembly_126",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:23:56.5714",
+      "targetPartId": "Assembly_127",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:24:12.5714",
+      "targetPartId": "Assembly_128",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:24:28.5714",
+      "targetPartId": "Assembly_129",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:24:44.5714",
+      "targetPartId": "Assembly_130",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:25:00.5714",
+      "targetPartId": "Assembly_131",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:25:16.5714",
+      "targetPartId": "Assembly_132",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:25:32.5714",
+      "targetPartId": "Assembly_133",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:25:48.5714",
+      "targetPartId": "Assembly_134",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:26:04.5714",
+      "targetPartId": "Assembly_135",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:26:20.5714",
+      "targetPartId": "Assembly_136",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:27:52.6942",
+      "targetPartId": "Assembly_137",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:29:56.1026",
+      "targetPartId": "Assembly_138",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:30:12.1026",
+      "targetPartId": "Assembly_139",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:30:28.1026",
+      "targetPartId": "Assembly_140",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:30:44.1026",
+      "targetPartId": "Assembly_141",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:31:00.1026",
+      "targetPartId": "Assembly_142",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:31:16.1026",
+      "targetPartId": "Assembly_143",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:31:32.1026",
+      "targetPartId": "Assembly_144",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:31:48.1026",
+      "targetPartId": "Assembly_145",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:32:04.1026",
+      "targetPartId": "Assembly_146",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:34:01.9270",
+      "targetPartId": "Assembly_147",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:34:17.9270",
+      "targetPartId": "Assembly_148",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:34:33.9270",
+      "targetPartId": "Assembly_149",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:34:49.9270",
+      "targetPartId": "Assembly_150",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:35:05.9270",
+      "targetPartId": "Assembly_151",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:35:21.9270",
+      "targetPartId": "Assembly_152",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:35:50.0622",
+      "targetPartId": "Assembly_153",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:36:22.8486",
+      "targetPartId": "Assembly_154",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:36:55.6350",
+      "targetPartId": "Assembly_155",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:37:28.4214",
+      "targetPartId": "Assembly_156",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:38:55.1427",
+      "targetPartId": "Assembly_157",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:39:11.1427",
+      "targetPartId": "Assembly_158",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:39:39.5670",
+      "targetPartId": "Assembly_159",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:40:12.3534",
+      "targetPartId": "Assembly_160",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:40:45.1398",
+      "targetPartId": "Assembly_161",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:41:53.6786",
+      "targetPartId": "Assembly_162",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:42:16.2633",
+      "targetPartId": "Assembly_163",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:42:32.2633",
+      "targetPartId": "Assembly_164",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:43:37.4062",
+      "targetPartId": "Assembly_165",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:43:53.4062",
+      "targetPartId": "Assembly_166",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:44:09.4062",
+      "targetPartId": "Assembly_167",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:46:13.0038",
+      "targetPartId": "Assembly_168",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:46:45.7902",
+      "targetPartId": "Assembly_169",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:47:18.5766",
+      "targetPartId": "Assembly_170",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:49:31.1191",
+      "targetPartId": "Assembly_171",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:49:47.1191",
+      "targetPartId": "Assembly_172",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:50:03.1191",
+      "targetPartId": "Assembly_173",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:50:22.1527",
+      "targetPartId": "Assembly_174",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:50:38.1527",
+      "targetPartId": "Assembly_175",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:50:54.1527",
+      "targetPartId": "Assembly_176",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:51:10.1527",
+      "targetPartId": "Assembly_177",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:51:40.8679",
+      "targetPartId": "Assembly_178",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:53:39.3043",
+      "targetPartId": "Assembly_179",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:55:42.8821",
+      "targetPartId": "Assembly_180",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:55:58.8821",
+      "targetPartId": "Assembly_181",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:56:14.8821",
+      "targetPartId": "Assembly_182",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:56:30.8821",
+      "targetPartId": "Assembly_183",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:56:46.8821",
+      "targetPartId": "Assembly_184",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:58:29.8523",
+      "targetPartId": "Assembly_185",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:58:45.8523",
+      "targetPartId": "Assembly_186",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:59:08.4628",
+      "targetPartId": "Assembly_187",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:59:24.4628",
+      "targetPartId": "Assembly_188",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:59:40.4628",
+      "targetPartId": "Assembly_189",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 07:59:56.4628",
+      "targetPartId": "Assembly_190",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 08:00:12.4628",
+      "targetPartId": "Assembly_191",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 08:00:28.4628",
+      "targetPartId": "Assembly_192",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    },
+    {
+      "stream": "robot",
+      "source": "Arm_in_stacker",
+      "timestamp_s": "2023-01-02 08:00:44.4628",
+      "targetPartId": "Assembly_193",
+      "inferenceRuleId": "stacker_end_effector_handoff",
+      "reason": "Generated end-effector handoff from TX Arm_in_stacker -> Drain record."
+    }
+  ],
+  "event_provenance": {
+    "format": "jsonl",
+    "file": "event_provenance.jsonl",
+    "record_count": 5432
+  },
+  "resolved_parsers": {
+    "machine_log": "tx_jsonl",
+    "buffer_log": "tx_jsonl",
+    "status_log": "tx_jsonl"
+  },
+  "static_reference_validation": {
+    "status": "success",
+    "mapping_id": "ev-battery-module-line",
+    "mapping_version": "1.1.0",
+    "checked_sources": [
+      "Arm_in_stacker",
+      "Buffer",
+      "Buffer1",
+      "Buffer2",
+      "Buffer3",
+      "OP10_20_Buffer",
+      "OP10_Cutter",
+      "OP20_30_Buffer",
+      "OP20_Press",
+      "OP30_40_Buffer",
+      "OP30_Assembler",
+      "OP40_Turnover",
+      "OP50_Scanner",
+      "OP60_Palletizer",
+      "PickAndPlace",
+      "Transporter"
+    ],
+    "checked_routes": [
+      "Arm_in_stacker",
+      "Drain",
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP20_Press",
+      "OP30_40_Buffer",
+      "OP50_Scanner",
+      "OP60_Palletizer",
+      "[ ]",
+      "[*.Models.Model.Wegmarke1]",
+      "[*.Models.Model.Wegmarke2]",
+      "[*.Models.Model.Wegmarke3]"
+    ],
+    "missing_sources": [],
+    "missing_routes": [],
+    "dynamically_discovered_sources": [
+      "Buffer1",
+      "Buffer2",
+      "Buffer3",
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer",
+      "PickAndPlace",
+      "Transporter"
+    ],
+    "dynamically_discovered_routes": [
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer",
+      "[ ]",
+      "[*.Models.Model.Wegmarke1]",
+      "[*.Models.Model.Wegmarke2]",
+      "[*.Models.Model.Wegmarke3]"
+    ]
+  },
+  "timebase": {
+    "start_timestamp_s": "2023-01-02 06:00:03.4000",
+    "simulation_time_s": 7245.0628
+  },
+  "translationDurationMs": 701.733,
+  "schemaValidationDurationMs": 194.811,
+  "inputFileCount": 3,
+  "inputRecordCount": 6096,
+  "outputRecordCount": 5432,
+  "inputBytes": 1306565,
+  "outputBytes": 762334,
+  "streamReductionRatio": 0.416536,
+  "warningCount": 15,
+  "errorCount": 0,
+  "scenarioId": "case_study_1",
+  "runtimeProfileId": "full_case_study_replay",
+  "mappingVersion": "1.1.0",
+  "schemaVersion": "1.1.0",
+  "sourceAdapter": "tx_jsonl",
+  "report": {
+    "path": "Assets\\StreamingAssets\\translator_1807\\output_fixed\\translation_report.json",
+    "written": true,
+    "dry_run": false
+  }
+}

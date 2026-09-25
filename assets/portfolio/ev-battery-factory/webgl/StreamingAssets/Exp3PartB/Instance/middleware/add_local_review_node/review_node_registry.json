@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenarioId": "remote_human_augmentation",
+  "nodes": [
+    {
+      "key": "Zone3_Local_Review_Node",
+      "viewpointKey": "VP_Zone3_Local_Review_Node",
+      "sceneObject": "VP_Zone3_Local_Review_Node",
+      "targetObject": "Zone3_6_Axis_Robot_Visual",
+      "position": {
+        "x": -30.5,
+        "y": 1.65,
+        "z": 48.6
+      },
+      "nodePositionToleranceMetres": 0.05
+    }
+  ]
+}

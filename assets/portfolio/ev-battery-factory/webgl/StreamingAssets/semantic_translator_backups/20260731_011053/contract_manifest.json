@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.1.0",
+  "translatorVersion": "0.2.0",
+  "simulationRunId": "106c10135638cc00e91b8f0a",
+  "scenarioId": "case_study_1",
+  "runtimeProfileId": "full_case_study_replay",
+  "mappingId": "ev-battery-module-line",
+  "mappingVersion": "1.1.0",
+  "sourceAdapter": "tx_jsonl",
+  "generatedAt": "2026-07-30T20:26:13+00:00",
+  "outputFiles": [
+    {
+      "fileName": "agv_events.json",
+      "format": "jsonl",
+      "stream": "agv"
+    },
+    {
+      "fileName": "bufferLog.json",
+      "format": "jsonl",
+      "stream": "buffer"
+    },
+    {
+      "fileName": "contract_manifest.json",
+      "format": "json",
+      "stream": "contract_manifest.json"
+    },
+    {
+      "fileName": "event_provenance.jsonl",
+      "format": "jsonl",
+      "stream": "event_provenance.jsonl"
+    },
+    {
+      "fileName": "production_line_data.json",
+      "format": "json",
+      "stream": "production"
+    },
+    {
+      "fileName": "production_line_status.json",
+      "format": "jsonl",
+      "stream": "status"
+    },
+    {
+      "fileName": "robot_events.json",
+      "format": "jsonl",
+      "stream": "robot"
+    }
+  ]
+}

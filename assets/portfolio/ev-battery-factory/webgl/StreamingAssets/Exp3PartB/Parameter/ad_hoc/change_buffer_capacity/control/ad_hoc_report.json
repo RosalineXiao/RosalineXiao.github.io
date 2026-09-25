@@ -1,0 +1,15 @@
+{
+  "condition": "ad_hoc",
+  "task": "change_buffer_capacity",
+  "status": "success",
+  "sourceFile": "Temp\\paper1_evidence_rerun\\experiment3_partB_parameter_20260727\\inputs\\change_robot_handoff_timing\\BufferLog.json",
+  "sourceSha256": "6a4eaa1cb749fb8b88ac11f14eeceb99d690d2b6511c6dc87c8294d00236385c",
+  "hardCodedBufferName": "Buffer3",
+  "hardCodedPreviousCapacity": 8,
+  "hardCodedCapacity": 8,
+  "recordsRead": 1702,
+  "recordsEmitted": 239,
+  "minimumOccupancy": 0,
+  "maximumOccupancy": 8,
+  "acceptanceDataPresent": true
+}

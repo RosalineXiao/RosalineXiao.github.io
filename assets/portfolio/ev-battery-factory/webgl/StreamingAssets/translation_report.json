@@ -1,0 +1,36 @@
+{
+  "translationStatus": "TRANSLATED_WITH_WARNINGS",
+  "warnings": [
+    {
+      "category": "task",
+      "code": "TARGET_BUFFER_OCCUPANCY_UNAVAILABLE",
+      "message": "Buffer occupancy cannot be replayed in Unity because `numberofparts` is missing or invalid.",
+      "affectedUnityReplay": "Selected-buffer occupancy replay",
+      "sourceFile": "MachineLog.json",
+      "field": "timestamp_s, source.name, numberofparts",
+      "action": "Export time-ordered Buffer3/B02 rows in MachineLog.json with timestamp_s, source.name and a non-negative numberofparts value.",
+      "canContinue": true
+    },
+    {
+      "category": "context",
+      "code": "ADJACENT_RESOURCES_NOT_INFERRED",
+      "message": "Adjacent production resources could not be inferred from the uploaded routing records.",
+      "affectedUnityReplay": "Contextual upstream/downstream replay",
+      "sourceFile": "MachineLog.json",
+      "field": "source.name, routing.input_from, routing.output_to",
+      "action": "Add direct routing references for the selected buffer if nearby machine context should be replayed.",
+      "canContinue": true
+    }
+  ],
+  "skippedRecords": {
+    "MachineLog.json": 0,
+    "MachineStatusLog.json": 0
+  },
+  "generatedFiles": [
+    "agv_events.json",
+    "bufferLog.json",
+    "production_line_data.json",
+    "production_line_status.json",
+    "robot_events.json"
+  ]
+}

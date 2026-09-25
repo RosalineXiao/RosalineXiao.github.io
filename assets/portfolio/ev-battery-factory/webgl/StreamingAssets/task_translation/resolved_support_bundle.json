@@ -1,0 +1,479 @@
+{
+  "bundleVersion": "0.1.0-demo",
+  "generatedAtUtc": "2026-08-28T23:28:00+00:00",
+  "task": {
+    "engineeringTaskFamily": "line_intralogistics_feasibility",
+    "targetId": "Buffer3",
+    "targetLabel": "Zone 2 material buffer B02",
+    "targetRole": "buffer",
+    "assessmentContext": {
+      "id": "Zone2_Assembly_Context",
+      "label": "Zone 2 automated battery module assembly line",
+      "role": "line_and_intralogistics_context",
+      "unityBinding": "Zone2_Automated_Battery_Module_Assembly_Line"
+    },
+    "changeType": "buffer_capacity_increase",
+    "changeLabel": "Zone 2 material buffer B02 — Increase buffer capacity",
+    "selectedConcerns": []
+  },
+  "overallStatus": "UNSUPPORTED",
+  "selectedConcerns": [
+    {
+      "id": "C1",
+      "label": "Flow accumulation and buffer state",
+      "question": "Will the change create WIP accumulation or a changed buffer state?",
+      "classification": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationStatus": "REQUIRED",
+      "activationEvidence": [],
+      "status": "UNSUPPORTED",
+      "dependencies": [],
+      "assuranceLimit": {
+        "supportedClaim": "Supports review of changed WIP accumulation and buffer state.",
+        "excludedClaim": "Does not optimise buffer capacity automatically."
+      },
+      "requirements": [
+        {
+          "concernId": "C1",
+          "requirementId": "C1-R1",
+          "label": "Time-ordered buffer occupancy",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "MISSING",
+          "matched": [
+            "time.order"
+          ],
+          "missing": [
+            "buffer.occupancy"
+          ],
+          "rationale": "The middleware must know how WIP count changes over time.",
+          "basis": [
+            "bounded task analysis",
+            "IEC 62264 resource/location concepts"
+          ]
+        },
+        {
+          "concernId": "C1",
+          "requirementId": "C1-R2",
+          "label": "Target buffer identity binding",
+          "provider": "factory_profile",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "buffer.identity",
+            "plant_simulation_unity.binding"
+          ],
+          "missing": [],
+          "rationale": "The selected Tecnomatix Plant Simulation buffer must resolve to a registered Unity object.",
+          "basis": [
+            "middleware execution requirement"
+          ]
+        },
+        {
+          "concernId": "C1",
+          "requirementId": "C1-R3",
+          "label": "Buffer replay capability",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "buffer.replay"
+          ],
+          "missing": [],
+          "rationale": "The runtime must consume buffer events and present the changed WIP state.",
+          "basis": [
+            "Unity runtime requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "label": "Operational performance impact",
+      "question": "Does the change affect throughput, waiting, cycle time or machine status?",
+      "classification": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationStatus": "REQUIRED",
+      "activationEvidence": [],
+      "status": "UNSUPPORTED",
+      "dependencies": [],
+      "assuranceLimit": {
+        "supportedClaim": "Supports indicative operational comparison using exported DES events.",
+        "excludedClaim": "Does not provide statistically controlled optimisation proof."
+      },
+      "requirements": [
+        {
+          "concernId": "C2",
+          "requirementId": "C2-R1",
+          "label": "Production and status evidence",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "MISSING",
+          "matched": [],
+          "missing": [
+            "production.event",
+            "machine.state"
+          ],
+          "rationale": "Operational review needs event throughput and machine-state context.",
+          "basis": [
+            "ISO 22400 KPI concepts",
+            "bounded task analysis"
+          ]
+        },
+        {
+          "concernId": "C2",
+          "requirementId": "C2-R2",
+          "label": "KPI/status presentation",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "optional",
+          "status": "MISSING",
+          "matched": [
+            "machine.status.presentation"
+          ],
+          "missing": [
+            "kpi.presentation"
+          ],
+          "rationale": "KPI display enriches the task but is not required for spatial feasibility.",
+          "basis": [
+            "user presentation requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "label": "Spatial occupancy and clearance",
+      "question": "How much physical space will WIP or resources occupy after the change?",
+      "classification": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationStatus": "REQUIRED",
+      "activationEvidence": [],
+      "status": "UNSUPPORTED",
+      "dependencies": [],
+      "assuranceLimit": {
+        "supportedClaim": "Supported for visual engineering review.",
+        "excludedClaim": "Does not perform automatic intersection computation, safety validation, standards-conformity assessment or certification.",
+        "mode": "visual_engineering_review"
+      },
+      "requirements": [
+        {
+          "concernId": "C3",
+          "requirementId": "C3-R1",
+          "label": "WIP or movement quantity evidence",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "MISSING",
+          "matched": [
+            "time.order"
+          ],
+          "missing": [
+            "wip.quantity"
+          ],
+          "rationale": "The runtime needs a time-ordered quantity or event driver for occupied-area presentation.",
+          "basis": [
+            "bounded task analysis"
+          ]
+        },
+        {
+          "concernId": "C3",
+          "requirementId": "C3-R2",
+          "label": "Product footprint and registered geometry",
+          "provider": "unity_scene",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "product.footprint",
+            "buffer.boundary",
+            "coordinate.registration"
+          ],
+          "missing": [],
+          "rationale": "Counts become spatial evidence only after binding to footprint and scene geometry.",
+          "basis": [
+            "AutomationML/IEC 62714 geometry concept",
+            "middleware spatial registration requirement"
+          ]
+        },
+        {
+          "concernId": "C3",
+          "requirementId": "C3-R3",
+          "label": "Occupied-area overlay",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "occupied_area.overlay"
+          ],
+          "missing": [],
+          "rationale": "The user must inspect the resulting occupied area in the 3D scene.",
+          "basis": [
+            "user task presentation requirement"
+          ]
+        }
+      ]
+    }
+  ],
+  "concernClassification": [
+    {
+      "id": "C1",
+      "label": "Flow accumulation and buffer state",
+      "classification": "REQUIRED",
+      "activationStatus": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C2",
+      "label": "Operational performance impact",
+      "classification": "REQUIRED",
+      "activationStatus": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C3",
+      "label": "Spatial occupancy and clearance",
+      "classification": "REQUIRED",
+      "activationStatus": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C4",
+      "label": "Staging-area and aisle interaction",
+      "classification": "CONDITIONAL",
+      "activationStatus": "NOT_TRIGGERED",
+      "whySelected": "Not triggered because affected occupancy geometry or an aisle/staging relation is absent.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C5",
+      "label": "AGV/mobile route interaction",
+      "classification": "CONDITIONAL",
+      "activationStatus": "NOT_TRIGGERED",
+      "whySelected": "Not triggered because affected geometry or an in-scope mobile-resource relation is absent.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C6",
+      "label": "Workstation and equipment access",
+      "classification": "CONDITIONAL",
+      "activationStatus": "NOT_TRIGGERED",
+      "whySelected": "Not triggered because affected geometry or an access-zone relation is absent.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C7",
+      "label": "Human-robot-mobile interaction",
+      "classification": "NOT_APPLICABLE",
+      "activationStatus": "NOT_APPLICABLE",
+      "whySelected": "Not applicable to the selected buffer-capacity change.",
+      "activationEvidence": []
+    }
+  ],
+  "evidenceSignals": {},
+  "resolvedRequirements": [
+    {
+      "concernId": "C1",
+      "requirementId": "C1-R1",
+      "label": "Time-ordered buffer occupancy",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "MISSING",
+      "matched": [
+        "time.order"
+      ],
+      "missing": [
+        "buffer.occupancy"
+      ],
+      "rationale": "The middleware must know how WIP count changes over time.",
+      "basis": [
+        "bounded task analysis",
+        "IEC 62264 resource/location concepts"
+      ]
+    },
+    {
+      "concernId": "C1",
+      "requirementId": "C1-R2",
+      "label": "Target buffer identity binding",
+      "provider": "factory_profile",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "buffer.identity",
+        "plant_simulation_unity.binding"
+      ],
+      "missing": [],
+      "rationale": "The selected Tecnomatix Plant Simulation buffer must resolve to a registered Unity object.",
+      "basis": [
+        "middleware execution requirement"
+      ]
+    },
+    {
+      "concernId": "C1",
+      "requirementId": "C1-R3",
+      "label": "Buffer replay capability",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "buffer.replay"
+      ],
+      "missing": [],
+      "rationale": "The runtime must consume buffer events and present the changed WIP state.",
+      "basis": [
+        "Unity runtime requirement"
+      ]
+    },
+    {
+      "concernId": "C2",
+      "requirementId": "C2-R1",
+      "label": "Production and status evidence",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "MISSING",
+      "matched": [],
+      "missing": [
+        "production.event",
+        "machine.state"
+      ],
+      "rationale": "Operational review needs event throughput and machine-state context.",
+      "basis": [
+        "ISO 22400 KPI concepts",
+        "bounded task analysis"
+      ]
+    },
+    {
+      "concernId": "C2",
+      "requirementId": "C2-R2",
+      "label": "KPI/status presentation",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "optional",
+      "status": "MISSING",
+      "matched": [
+        "machine.status.presentation"
+      ],
+      "missing": [
+        "kpi.presentation"
+      ],
+      "rationale": "KPI display enriches the task but is not required for spatial feasibility.",
+      "basis": [
+        "user presentation requirement"
+      ]
+    },
+    {
+      "concernId": "C3",
+      "requirementId": "C3-R1",
+      "label": "WIP or movement quantity evidence",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "MISSING",
+      "matched": [
+        "time.order"
+      ],
+      "missing": [
+        "wip.quantity"
+      ],
+      "rationale": "The runtime needs a time-ordered quantity or event driver for occupied-area presentation.",
+      "basis": [
+        "bounded task analysis"
+      ]
+    },
+    {
+      "concernId": "C3",
+      "requirementId": "C3-R2",
+      "label": "Product footprint and registered geometry",
+      "provider": "unity_scene",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "product.footprint",
+        "buffer.boundary",
+        "coordinate.registration"
+      ],
+      "missing": [],
+      "rationale": "Counts become spatial evidence only after binding to footprint and scene geometry.",
+      "basis": [
+        "AutomationML/IEC 62714 geometry concept",
+        "middleware spatial registration requirement"
+      ]
+    },
+    {
+      "concernId": "C3",
+      "requirementId": "C3-R3",
+      "label": "Occupied-area overlay",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "occupied_area.overlay"
+      ],
+      "missing": [],
+      "rationale": "The user must inspect the resulting occupied area in the 3D scene.",
+      "basis": [
+        "user task presentation requirement"
+      ]
+    }
+  ],
+  "summary": {
+    "concerns": 3,
+    "requirements": 8,
+    "availableRequirements": 4,
+    "missingCoreRequirements": 3,
+    "missingOptionalRequirements": 1,
+    "requiresConfirmationRequirements": 0
+  },
+  "assuranceMode": "visual_engineering_review",
+  "sourceManifest": {
+    "runId": "uploaded-task-run",
+    "status": "failed",
+    "inputDir": "E:\\UnityProjects\\Battery  fac 3 zones\\Temp\\visual_middleware_uploads\\task_translation\\7d8b27d7-7e0f-40bd-87f2-b21ecbfd582a",
+    "sourceAdapter": "tx_jsonl",
+    "availableConcepts": [
+      "run.identity",
+      "time.order"
+    ],
+    "conceptEvidence": [
+      {
+        "concept": "run.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "time.order",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      }
+    ],
+    "statistics": {
+      "machine_records_read": 706,
+      "buffer_records_read": 764,
+      "status_records_read": 102
+    },
+    "warnings": 8,
+    "errors": 1,
+    "dynamicRoutes": [
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer"
+    ],
+    "outputs": {},
+    "runManifest": {}
+  },
+  "upstreamFingerprint": "e3a2acd08132b86e0c2ca598d4c40f09288d0696530cb9b64d9327671f9d594a"
+}

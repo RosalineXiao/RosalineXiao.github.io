@@ -1,0 +1,15 @@
+{
+  "condition": "ad_hoc",
+  "task": "change_buffer_capacity",
+  "status": "success",
+  "sourceFile": "Temp\\paper1_evidence_rerun\\experiment3_partB_parameter_20260727\\inputs\\change_buffer_capacity\\BufferLog.json",
+  "sourceSha256": "11a328846a66d10d72f7accccfbcf486ae204c2300be067959ee3e0f5f62e617",
+  "hardCodedBufferName": "Buffer3",
+  "hardCodedPreviousCapacity": 8,
+  "hardCodedCapacity": 16,
+  "recordsRead": 1650,
+  "recordsEmitted": 231,
+  "minimumOccupancy": 0,
+  "maximumOccupancy": 16,
+  "acceptanceDataPresent": true
+}

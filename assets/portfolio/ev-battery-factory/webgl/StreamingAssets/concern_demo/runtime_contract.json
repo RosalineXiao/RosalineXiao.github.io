@@ -1,0 +1,85 @@
+{
+  "contractVersion": "0.1.0-demo",
+  "generatedAtUtc": "2026-08-28T22:40:29+00:00",
+  "task": {
+    "engineeringTaskFamily": "line_intralogistics_feasibility",
+    "targetId": "Buffer3",
+    "targetLabel": "Zone 2 material buffer B02",
+    "targetRole": "buffer",
+    "assessmentContext": {
+      "id": "Zone2_Assembly_Context",
+      "label": "Zone 2 automated battery module assembly line",
+      "role": "line_and_intralogistics_context",
+      "unityBinding": "Zone2_Automated_Battery_Module_Assembly_Line"
+    },
+    "changeType": "buffer_capacity_increase",
+    "changeLabel": "Zone 2 material buffer B02 — Increase buffer capacity",
+    "selectedConcerns": []
+  },
+  "supportStatus": "SUPPORTED_WITH_LIMITATIONS",
+  "selectedConcerns": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "streams": [
+    {
+      "id": "production",
+      "file": "production_line_data.json"
+    },
+    {
+      "id": "status",
+      "file": "production_line_status.json"
+    },
+    {
+      "id": "buffer",
+      "file": "bufferLog.json"
+    },
+    {
+      "id": "robot",
+      "file": "robot_events.json"
+    },
+    {
+      "id": "agv",
+      "file": "agv_events.json"
+    }
+  ],
+  "unityMode": {
+    "mode": "concern_demo_engineering_task",
+    "defaultRun": "proposed",
+    "showBundlePreview": true,
+    "showUnsupportedLimitations": true
+  },
+  "assuranceLimits": [
+    {
+      "supportedClaim": "Supports review of changed WIP accumulation and buffer state.",
+      "excludedClaim": "Does not optimise buffer capacity automatically."
+    },
+    {
+      "supportedClaim": "Supports indicative operational comparison using exported DES events.",
+      "excludedClaim": "Does not provide statistically controlled optimisation proof."
+    },
+    {
+      "supportedClaim": "Supported for visual engineering review.",
+      "excludedClaim": "Does not perform automatic intersection computation, safety validation, standards-conformity assessment or certification.",
+      "mode": "visual_engineering_review"
+    },
+    {
+      "supportedClaim": "Supports visual review of aisle and staging interaction.",
+      "excludedClaim": "Does not decide plant-wide logistics policy."
+    },
+    {
+      "supportedClaim": "Supports visual engineering review of potential AGV/mobile route interference.",
+      "excludedClaim": "Does not determine ISO 3691-4 conformity."
+    },
+    {
+      "supportedClaim": "Supports visual review of registered access-zone interaction.",
+      "excludedClaim": "Does not replace ergonomic design validation."
+    }
+  ],
+  "assuranceMode": "visual_engineering_review",
+  "upstreamFingerprint": "bec22625634fcec93d175b6e4c07136f2e227c0f9d71fdd5a89fa6013614f9a4"
+}

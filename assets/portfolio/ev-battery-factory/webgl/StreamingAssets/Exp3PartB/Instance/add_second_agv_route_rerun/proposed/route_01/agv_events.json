@@ -1,0 +1,3 @@
+{"time":0.0,"source":{"name":"AGV_ROUTE_01"},"startNode":"Wegmarke1","endNode":"Wegmarke2","duration":"5.0"}
+{"time":5.0,"source":{"name":"AGV_ROUTE_01"},"startNode":"Wegmarke2","endNode":"Wegmarke3","duration":"11.0"}
+{"time":16.0,"source":{"name":"AGV_ROUTE_01"},"startNode":"Wegmarke3","endNode":"Wegmarke1","duration":"4.401"}

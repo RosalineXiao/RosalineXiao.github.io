@@ -1,0 +1,8 @@
+﻿{
+    "task":  "change_robot_handoff_timing",
+    "condition":  "ad_hoc",
+    "startedUtc":  "2026-07-27T00:27:17.3002280Z",
+    "endedUtc":  "2026-07-27T00:27:17.5451347Z",
+    "commandElapsedSeconds":  0.24490669999999998,
+    "exitCode":  0
+}

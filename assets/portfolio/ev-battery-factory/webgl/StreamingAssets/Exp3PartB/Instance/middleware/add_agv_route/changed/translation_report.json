@@ -1,0 +1,630 @@
+{
+  "translator_version": "0.2.0",
+  "generated_at_utc": "2026-07-27T01:09:04+00:00",
+  "status": "success",
+  "scenario": "production_line_optimization",
+  "runtime_profile_id": "des_material_flow_replay",
+  "scenario_profile": {
+    "scenarioId": "production_line_optimization",
+    "title": "Production Line Optimisation",
+    "description": "DES-driven material-flow analysis and immersive spatial review.",
+    "runtimeProfileId": "des_material_flow_replay",
+    "outputs": [
+      "agv",
+      "buffer",
+      "production",
+      "status"
+    ],
+    "required_data": [
+      "production.time",
+      "production.machineId",
+      "production.eventType",
+      "production.inputIds",
+      "production.outputIds",
+      "status.timestamp",
+      "status.sourceId",
+      "status.stateCode",
+      "buffer.timestamp",
+      "buffer.sourceId",
+      "buffer.numberOfParts",
+      "agv.time",
+      "agv.sourceId",
+      "agv.startNode",
+      "agv.endNode",
+      "agv.duration"
+    ],
+    "potential_data": [
+      "processing.baseTimeSeconds",
+      "routing.outputTo",
+      "processing.partsProduced",
+      "position",
+      "state",
+      "sourceType"
+    ],
+    "requiredAttributes": [
+      "production.time",
+      "production.machineId",
+      "production.eventType",
+      "production.inputIds",
+      "production.outputIds",
+      "status.timestamp",
+      "status.sourceId",
+      "status.stateCode",
+      "buffer.timestamp",
+      "buffer.sourceId",
+      "buffer.numberOfParts",
+      "agv.time",
+      "agv.sourceId",
+      "agv.startNode",
+      "agv.endNode",
+      "agv.duration"
+    ],
+    "optionalAttributes": [
+      "processing.baseTimeSeconds",
+      "routing.outputTo",
+      "processing.partsProduced",
+      "position",
+      "state",
+      "sourceType"
+    ],
+    "conceptualButUnavailableAttributes": [
+      "kpi.bottleneckLabel",
+      "experimentId"
+    ],
+    "attributeDefinitions": {
+      "production.time": "Relative simulation time for a Unity production event.",
+      "production.machineId": "Unity machine identifier mapped from TX source.name.",
+      "production.eventType": "Unity machine event type mapped from the EV line mapping.",
+      "production.inputIds": "Unity product IDs consumed by a production event.",
+      "production.outputIds": "Unity product IDs created by a production event.",
+      "status.timestamp": "Original timestamp for a machine-status event.",
+      "status.sourceId": "Source identifier for a machine-status event.",
+      "status.stateCode": "Machine state code from TX state.code.",
+      "buffer.timestamp": "Original timestamp for a buffer event.",
+      "buffer.sourceId": "Buffer source identifier.",
+      "buffer.numberOfParts": "Buffer inventory count.",
+      "robot.timestamp": "Original timestamp for a robot handoff event.",
+      "robot.sourceId": "Robot or end-effector source identifier.",
+      "robot.action": "Unity robot action name.",
+      "robot.targetPartId": "Product ID handled by the robot action.",
+      "robot.destinationNode": "Destination node for the robot handoff.",
+      "agv.time": "Relative simulation time for an AGV movement.",
+      "agv.sourceId": "AGV source identifier.",
+      "agv.startNode": "AGV route start node.",
+      "agv.endNode": "AGV route end node.",
+      "agv.duration": "AGV movement duration.",
+      "processing.baseTimeSeconds": "Optional TX processing.base_time_s value.",
+      "routing.outputTo": "Optional TX routing.output_to value.",
+      "processing.partsProduced": "Optional TX processing.parts_produced value.",
+      "position": "Optional TX object position.",
+      "state": "Optional raw TX state object.",
+      "sourceType": "Optional TX source.type value.",
+      "geometry.reference": "Conceptual geometry reference; unavailable in current TX export.",
+      "transform": "Conceptual transform payload; unavailable in current TX export.",
+      "collision.volume": "Conceptual collision-volume payload; unavailable in current TX export.",
+      "ergonomic.zone": "Conceptual ergonomic-zone payload; unavailable in current TX export.",
+      "plc.signalMapping": "Conceptual PLC signal mapping; unavailable in current TX export.",
+      "safety.interlock": "Conceptual safety interlock state; unavailable in current TX export.",
+      "io.signal": "Conceptual IO signal; unavailable in current TX export.",
+      "kpi.bottleneckLabel": "Conceptual KPI bottleneck label; unavailable in current TX export.",
+      "experimentId": "Conceptual experiment identifier; unavailable in current TX export.",
+      "annotation.user": "Conceptual review annotation; unavailable in current TX export.",
+      "versioning.model": "Conceptual model-version package; unavailable in current TX export.",
+      "supplierPackageId": "Conceptual supplier package ID; unavailable in current TX export.",
+      "mes.orderId": "Conceptual MES order ID; unavailable in current TX export.",
+      "operator.assignment": "Conceptual operator assignment; unavailable in current TX export.",
+      "alarm": "Conceptual alarm stream; unavailable in current TX export.",
+      "assetHealth.telemetry": "Conceptual asset-health telemetry; unavailable in current TX export.",
+      "hri.permission": "Conceptual HRI permission state; unavailable in current TX export.",
+      "operatorId": "Conceptual operator identifier; unavailable in current TX export.",
+      "controlMode": "Conceptual control mode; unavailable in current TX export.",
+      "safetyState": "Conceptual safety state; unavailable in current TX export.",
+      "opcua.nodeId": "Conceptual OPC UA NodeId; unavailable because no live OPC UA is implemented.",
+      "latency": "Conceptual synchronisation latency; unavailable for file-based replay.",
+      "confidence": "Conceptual data confidence value; unavailable in current TX export.",
+      "sensorSource": "Conceptual sensor source identifier; unavailable in current TX export.",
+      "assetHealth.remainingUsefulLife": "Conceptual remaining useful life; unavailable in current TX export.",
+      "vibration": "Conceptual vibration telemetry; unavailable in current TX export.",
+      "temperature": "Conceptual temperature telemetry; unavailable in current TX export.",
+      "maintenanceHistory": "Conceptual maintenance history; unavailable in current TX export.",
+      "trainee.actions": "Conceptual trainee actions; unavailable in current TX export.",
+      "scoringRubric": "Conceptual scoring rubric; unavailable in current TX export.",
+      "hints": "Conceptual training hints; unavailable in current TX export.",
+      "resetPoints": "Conceptual training reset points; unavailable in current TX export.",
+      "energyUse": "Conceptual energy-use value; unavailable in current TX export.",
+      "carbonFactor": "Conceptual carbon factor; unavailable in current TX export.",
+      "wasteStream": "Conceptual waste-stream value; unavailable in current TX export.",
+      "recyclingRoute": "Conceptual recycling route; unavailable in current TX export.",
+      "agv.telemetry": "Continuous AGV telemetry is unavailable; AGV events are emitted only from direct AGV source records.",
+      "endEffector.telemetry": "Conceptual end-effector telemetry; unavailable because stacker handoffs are deterministic translator inferences."
+    },
+    "implementationStatus": "contract_supported",
+    "evidenceStatus": "contract_tested",
+    "notes": "Experiment 3 instance-change profile: emits production, status, buffer, and selected AGV route events; unavailable KPI values are not fabricated."
+  },
+  "contract": {
+    "manifest_version": "1.0.0",
+    "manifest_id": "tx-unity-semantic-translator-runtime-contract",
+    "runtime_profile_set_version": "1.1.0",
+    "selected_runtime_profile": {
+      "runtimeProfileId": "des_material_flow_replay",
+      "title": "DES Material-Flow Replay",
+      "streams": [
+        "production",
+        "status",
+        "buffer",
+        "agv"
+      ],
+      "requiredAttributes": [
+        "timestamp_s",
+        "source.name",
+        "processing.current_part",
+        "routing.output_to",
+        "numberofparts"
+      ],
+      "optionalAttributes": [
+        "processing.baseTimeSeconds",
+        "processing.partsProduced",
+        "routing.outputTo",
+        "position",
+        "state",
+        "sourceType"
+      ],
+      "notes": "Production-line optimisation replay with selected AGV route events for instance-change evaluation."
+    },
+    "external_mapping_version": "1.1.0",
+    "external_mapping_id": "ev-battery-module-line",
+    "standards_reference_policy": "References are aligned with, informed by, or inspired by the listed standards unless formal conformance is explicitly implemented and tested."
+  },
+  "parser": "tx_jsonl",
+  "dry_run": false,
+  "optional_attributes": {
+    "selected": [],
+    "records": []
+  },
+  "attribute_states": {
+    "required": [
+      {
+        "id": "production.time",
+        "label": "production.time",
+        "description": "Relative simulation time for a Unity production event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.machineId",
+        "label": "production.machineId",
+        "description": "Unity machine identifier mapped from TX source.name.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.eventType",
+        "label": "production.eventType",
+        "description": "Unity machine event type mapped from the EV line mapping.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.inputIds",
+        "label": "production.inputIds",
+        "description": "Unity product IDs consumed by a production event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "production.outputIds",
+        "label": "production.outputIds",
+        "description": "Unity product IDs created by a production event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "status.timestamp",
+        "label": "status.timestamp",
+        "description": "Original timestamp for a machine-status event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "status.sourceId",
+        "label": "status.sourceId",
+        "description": "Source identifier for a machine-status event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "status.stateCode",
+        "label": "status.stateCode",
+        "description": "Machine state code from TX state.code.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "buffer.timestamp",
+        "label": "buffer.timestamp",
+        "description": "Original timestamp for a buffer event.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "buffer.sourceId",
+        "label": "buffer.sourceId",
+        "description": "Buffer source identifier.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "buffer.numberOfParts",
+        "label": "buffer.numberOfParts",
+        "description": "Buffer inventory count.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.time",
+        "label": "agv.time",
+        "description": "Relative simulation time for an AGV movement.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.sourceId",
+        "label": "agv.sourceId",
+        "description": "AGV source identifier.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.startNode",
+        "label": "agv.startNode",
+        "description": "AGV route start node.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.endNode",
+        "label": "agv.endNode",
+        "description": "AGV route end node.",
+        "state": "required",
+        "selected": true
+      },
+      {
+        "id": "agv.duration",
+        "label": "agv.duration",
+        "description": "AGV movement duration.",
+        "state": "required",
+        "selected": true
+      }
+    ],
+    "optional": [
+      {
+        "id": "processing.baseTimeSeconds",
+        "label": "processing.baseTimeSeconds",
+        "description": "Optional TX processing.base_time_s value.",
+        "state": "optional"
+      },
+      {
+        "id": "routing.outputTo",
+        "label": "routing.outputTo",
+        "description": "Optional TX routing.output_to value.",
+        "state": "optional"
+      },
+      {
+        "id": "processing.partsProduced",
+        "label": "processing.partsProduced",
+        "description": "Optional TX processing.parts_produced value.",
+        "state": "optional"
+      },
+      {
+        "id": "position",
+        "label": "position",
+        "description": "Optional TX object position.",
+        "state": "optional"
+      },
+      {
+        "id": "state",
+        "label": "state",
+        "description": "Optional raw TX state object.",
+        "state": "optional"
+      },
+      {
+        "id": "sourceType",
+        "label": "sourceType",
+        "description": "Optional TX source.type value.",
+        "state": "optional"
+      }
+    ],
+    "conceptualButUnavailable": [
+      {
+        "id": "kpi.bottleneckLabel",
+        "label": "kpi.bottleneckLabel",
+        "description": "Conceptual KPI bottleneck label; unavailable in current TX export.",
+        "state": "conceptual_unavailable",
+        "selected": false
+      },
+      {
+        "id": "experimentId",
+        "label": "experimentId",
+        "description": "Conceptual experiment identifier; unavailable in current TX export.",
+        "state": "conceptual_unavailable",
+        "selected": false
+      }
+    ]
+  },
+  "inputs": {
+    "input_dir": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route",
+    "machine_log": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+    "buffer_log": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+    "status_log": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineStatusLog.json",
+    "runtime_profiles": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\changed_config\\runtime_profiles.json",
+    "application_scenarios": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\changed_config\\application_scenarios.json",
+    "mapping": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\changed_config\\mappings\\ev_battery_module_line.mapping.json"
+  },
+  "outputs": {
+    "production_line_data.json": {
+      "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\production_line_data.json",
+      "bytes": 129931,
+      "written": true
+    },
+    "production_line_status.json": {
+      "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\production_line_status.json",
+      "bytes": 21152,
+      "written": true
+    },
+    "bufferLog.json": {
+      "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\bufferLog.json",
+      "bytes": 191909,
+      "written": true
+    },
+    "agv_events.json": {
+      "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\agv_events.json",
+      "bytes": 57251,
+      "written": true
+    },
+    "event_provenance.jsonl": {
+      "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\event_provenance.jsonl",
+      "bytes": 1853261,
+      "written": true
+    },
+    "contract_manifest.json": {
+      "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\contract_manifest.json",
+      "bytes": 1046,
+      "written": true
+    }
+  },
+  "statistics": {
+    "production_events": 640,
+    "status_events": 144,
+    "buffer_events": 1676,
+    "agv_events": 492,
+    "machine_records_read": 1835,
+    "buffer_records_read": 1676,
+    "status_records_read": 144
+  },
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Transporter' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 1,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:03.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \".Models.Model.Wegmarke1\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[ ]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[ ]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 1,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:03.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \".Models.Model.Wegmarke1\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[ ]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke2]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 2,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:08.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \".Models.Model.Wegmarke2\", \"transporting\": {\"current_part\": \"[*.MUs.Part:1]\", \"number_of_parts\": 1}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke2]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke3]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 3,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:19.4000\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \"VOID\", \"transporting\": {\"current_part\": \"[*.MUs.Part:1]\", \"number_of_parts\": 1}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke3]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke4]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 5,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:23.8010\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \"VOID\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke4]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target '[*.Models.Model.Wegmarke1]' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 7,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:26.9426\", \"source\": {\"name\": \"Transporter\", \"type\": \"AGV\"}, \"position\": \"VOID\", \"transporting\": {\"current_part\": \"[ ]\", \"number_of_parts\": 0}, \"routing\": {\"output_to\": \"[*.Models.Model.Wegmarke1]\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target 'OP10_20_Buffer' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 10,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:33.8010\", \"source\": {\"name\": \"OP10_Cutter\", \"type\": \"workstation\"}, \"position\": {\"x\": 260, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"base_time_s\": 10, \"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP10_20_Buffer\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'PickAndPlace' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 12,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:46.8010\", \"source\": {\"name\": \"PickAndPlace\", \"type\": \"workstation\"}, \"position\": {\"x\": 360, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP20_Press\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target 'OP20_30_Buffer' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 15,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:56.8010\", \"source\": {\"name\": \"OP20_Press\", \"type\": \"workstation\"}, \"position\": {\"x\": 400, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"base_time_s\": 10, \"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP20_30_Buffer\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_ROUTE_DISCOVERED",
+      "message": "Routing target 'OP30_40_Buffer' is not in staticReferences; it will be preserved as a data-defined route.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\MachineLog.json",
+      "line": 22,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:01:07.8010\", \"source\": {\"name\": \"OP30_Assembler\", \"type\": \"workstation\"}, \"position\": {\"x\": 520, \"y\": 80, \"z\": 0}, \"state\": {\"code\": \"Operational\", \"label\": \"Operational\"}, \"processing\": {\"base_time_s\": 10, \"current_part\": \"Part_1\", \"parts_produced\": 0}, \"routing\": {\"output_to\": \"OP30_40_Buffer\"}}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Buffer1' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+      "line": 3,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:01.0000\", \"source\": {\"name\": \"Buffer1\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Buffer2' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+      "line": 5,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:02.0000\", \"source\": {\"name\": \"Buffer2\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'Buffer3' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+      "line": 7,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:03.0000\", \"source\": {\"name\": \"Buffer3\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'OP10_20_Buffer' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+      "line": 33,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:33.8010\", \"source\": {\"name\": \"OP10_20_Buffer\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'OP20_30_Buffer' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+      "line": 55,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:00:56.8010\", \"source\": {\"name\": \"OP20_30_Buffer\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    },
+    {
+      "severity": "warning",
+      "code": "DYNAMIC_SOURCE_DISCOVERED",
+      "message": "Source 'OP30_40_Buffer' is not in the external mapping; it will be classified from its data structure and name.",
+      "file": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\inputs\\add_agv_route\\BufferLog.json",
+      "line": 71,
+      "raw": "{\"timestamp_s\": \"2023-01-02 06:01:07.8010\", \"source\": {\"name\": \"OP30_40_Buffer\", \"type\": \"buffer\"}, \"numberofparts\": \"1\"}"
+    }
+  ],
+  "synthetic_records": [],
+  "event_provenance": {
+    "format": "jsonl",
+    "file": "event_provenance.jsonl",
+    "record_count": 2952
+  },
+  "resolved_parsers": {
+    "machine_log": "tx_jsonl",
+    "buffer_log": "tx_jsonl",
+    "status_log": "tx_jsonl"
+  },
+  "static_reference_validation": {
+    "status": "success",
+    "mapping_id": "ev-battery-module-line",
+    "mapping_version": "1.1.0",
+    "checked_sources": [
+      "Arm_in_stacker",
+      "Buffer",
+      "Buffer1",
+      "Buffer2",
+      "Buffer3",
+      "OP10_20_Buffer",
+      "OP10_Cutter",
+      "OP20_30_Buffer",
+      "OP20_Press",
+      "OP30_40_Buffer",
+      "OP30_Assembler",
+      "OP40_Turnover",
+      "OP50_Scanner",
+      "OP60_Palletizer",
+      "PickAndPlace",
+      "Transporter"
+    ],
+    "checked_routes": [
+      "Arm_in_stacker",
+      "Drain",
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP20_Press",
+      "OP30_40_Buffer",
+      "OP50_Scanner",
+      "OP60_Palletizer",
+      "[ ]",
+      "[*.Models.Model.Wegmarke1]",
+      "[*.Models.Model.Wegmarke2]",
+      "[*.Models.Model.Wegmarke3]",
+      "[*.Models.Model.Wegmarke4]"
+    ],
+    "missing_sources": [],
+    "missing_routes": [],
+    "dynamically_discovered_sources": [
+      "Buffer1",
+      "Buffer2",
+      "Buffer3",
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer",
+      "PickAndPlace",
+      "Transporter"
+    ],
+    "dynamically_discovered_routes": [
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer",
+      "[ ]",
+      "[*.Models.Model.Wegmarke1]",
+      "[*.Models.Model.Wegmarke2]",
+      "[*.Models.Model.Wegmarke3]",
+      "[*.Models.Model.Wegmarke4]"
+    ]
+  },
+  "timebase": {
+    "start_timestamp_s": "2023-01-02 06:00:03.4000",
+    "simulation_time_s": 4056.08
+  },
+  "translationDurationMs": 433.421,
+  "schemaValidationDurationMs": 136.494,
+  "inputFileCount": 3,
+  "inputRecordCount": 3655,
+  "outputRecordCount": 2952,
+  "inputBytes": 786144,
+  "outputBytes": 400243,
+  "streamReductionRatio": 0.490878,
+  "warningCount": 16,
+  "errorCount": 0,
+  "scenarioId": "production_line_optimization",
+  "runtimeProfileId": "des_material_flow_replay",
+  "mappingVersion": "1.1.0",
+  "schemaVersion": "1.1.0",
+  "sourceAdapter": "tx_jsonl",
+  "report": {
+    "path": "Temp\\paper1_evidence_rerun\\experiment3_partB_instance_20260727\\conditions\\middleware\\add_agv_route\\runtime\\translation_report.json",
+    "written": true,
+    "dry_run": false
+  }
+}

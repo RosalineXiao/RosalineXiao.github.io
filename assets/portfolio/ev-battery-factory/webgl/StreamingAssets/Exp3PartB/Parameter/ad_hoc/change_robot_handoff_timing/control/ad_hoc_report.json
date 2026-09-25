@@ -1,0 +1,15 @@
+{
+  "condition": "ad_hoc",
+  "task": "change_robot_handoff_timing",
+  "status": "success",
+  "sourceFile": "Temp\\paper1_evidence_rerun\\experiment3_partB_parameter_20260727\\inputs\\change_buffer_capacity\\MachineLog.json",
+  "sourceSha256": "ded23ce67ce1f427813628408ee8851cc6053693451b8143d1a11a2b350478b9",
+  "hardCodedSource": "PickAndPlace",
+  "hardCodedAction": "PickAndPlace",
+  "hardCodedDestination": "OP20_Press",
+  "hardCodedLoadUnloadSeconds": 0.0,
+  "recordsRead": 1514,
+  "recordsEmitted": 101,
+  "firstTimestamp": "2023-01-02 06:00:46.8010",
+  "lastTimestamp": "2023-01-02 07:01:58.8781"
+}

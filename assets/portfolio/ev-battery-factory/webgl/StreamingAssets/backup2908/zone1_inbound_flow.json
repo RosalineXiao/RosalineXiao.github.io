@@ -1,0 +1,119 @@
+{
+  "simulationTime": 42.0,
+  "defaultMoveDuration": 2.5,
+  "products": [
+    {
+      "id": "raw_cell",
+      "prefab": "Raw_Prismatic_Cell.prefab"
+    },
+    {
+      "id": "cell_tray",
+      "prefab": "Cell_Tray.prefab"
+    },
+    {
+      "id": "loaded_cell_tray",
+      "prefab": "Loaded_Cell_Tray.prefab"
+    },
+    {
+      "id": "material_crate",
+      "prefab": "Material_Crate.prefab"
+    },
+    {
+      "id": "pallet",
+      "prefab": "Pallet.prefab"
+    },
+    {
+      "id": "module_carrier",
+      "prefab": "Module_Carrier.prefab"
+    }
+  ],
+  "events": [
+    {
+      "time": 0.0,
+      "machineId": "Pallet_Rack",
+      "type": "Source",
+      "outputId": "Zone1_Pallet_001",
+      "outputPrefab": "Pallet.prefab",
+      "note": "Visible raw-material pallet at inbound rack."
+    },
+    {
+      "time": 0.5,
+      "machineId": "RawMaterialStorage",
+      "type": "Source",
+      "outputId": "Zone1_Raw_Cell_001",
+      "outputPrefab": "Raw_Prismatic_Cell.prefab",
+      "note": "Raw prismatic cell enters storage."
+    },
+    {
+      "time": 1.0,
+      "machineId": "Material_Crate_Area",
+      "type": "Source",
+      "outputId": "Zone1_Material_Crate_001",
+      "outputPrefab": "Material_Crate.prefab",
+      "note": "Auxiliary material crate enters inbound area."
+    },
+    {
+      "time": 4.0,
+      "machineId": "Raw_Material_Feeder",
+      "type": "PassThrough",
+      "source": "RawMaterialStorage",
+      "destination": "Raw_Material_Feeder",
+      "inputId": "Zone1_Raw_Cell_001",
+      "outputId": "Zone1_Loaded_Cell_Tray_001",
+      "outputPrefab": "Loaded_Cell_Tray.prefab",
+      "note": "Feeder loads raw cells onto a cell tray."
+    },
+    {
+      "time": 8.0,
+      "machineId": "AGV_DropOff_Node",
+      "type": "PassThrough",
+      "source": "Raw_Material_Feeder",
+      "destination": "AGV_DropOff_Node",
+      "inputId": "Zone1_Loaded_Cell_Tray_001",
+      "outputId": "Zone1_AGV_Cell_Tray_001",
+      "outputPrefab": "Cell_Tray.prefab",
+      "loadToAgv": true,
+      "note": "AGV receives the tray for delivery toward the line infeed."
+    },
+    {
+      "time": 14.0,
+      "machineId": "Inbound_Buffer",
+      "type": "PassThrough",
+      "source": "AGV_DropOff_Node",
+      "destination": "Inbound_Buffer",
+      "inputId": "Zone1_AGV_Cell_Tray_001",
+      "outputId": "Zone1_Inbound_Buffer_Tray_001",
+      "outputPrefab": "Cell_Tray.prefab",
+      "note": "OP10-front inbound buffer receives tray."
+    },
+    {
+      "time": 20.0,
+      "machineId": "RawMaterialStorage",
+      "type": "Source",
+      "outputId": "Zone1_Raw_Cell_002",
+      "outputPrefab": "Raw_Prismatic_Cell.prefab",
+      "note": "Second raw cell batch for repeatability test."
+    },
+    {
+      "time": 24.0,
+      "machineId": "Raw_Material_Feeder",
+      "type": "PassThrough",
+      "source": "RawMaterialStorage",
+      "destination": "Raw_Material_Feeder",
+      "inputId": "Zone1_Raw_Cell_002",
+      "outputId": "Zone1_Loaded_Cell_Tray_002",
+      "outputPrefab": "Loaded_Cell_Tray.prefab"
+    },
+    {
+      "time": 28.0,
+      "machineId": "AGV_DropOff_Node",
+      "type": "PassThrough",
+      "source": "Raw_Material_Feeder",
+      "destination": "AGV_DropOff_Node",
+      "inputId": "Zone1_Loaded_Cell_Tray_002",
+      "outputId": "Zone1_AGV_Cell_Tray_002",
+      "outputPrefab": "Cell_Tray.prefab",
+      "loadToAgv": true
+    }
+  ]
+}

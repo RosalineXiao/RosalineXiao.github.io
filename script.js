@@ -215,6 +215,208 @@ function initialisePhotoProtection() {
   });
 }
 
+function initialiseFactoryPlayer() {
+  const player = document.querySelector("[data-factory-player]");
+  if (!player) return;
+
+  const poster = player.querySelector("[data-factory-poster]");
+  const stage = player.querySelector("[data-factory-stage]");
+  const canvas = player.querySelector("[data-factory-canvas]");
+  const loading = player.querySelector("[data-factory-loading]");
+  const loadingText = player.querySelector("[data-factory-loading-text]");
+  const progress = player.querySelector("[data-factory-progress]");
+  const status = player.querySelector("[data-factory-status]");
+  const launchButton = player.querySelector("[data-factory-launch]");
+  const retryButton = player.querySelector("[data-factory-retry]");
+  const buildRoot = "assets/portfolio/ev-battery-factory/webgl";
+  const loaderUrl = new URL(`${buildRoot}/Build/PortfolioWebGLNavigationFix.loader.js`, document.baseURI).href;
+  const loaderBuildFiles = [
+    {
+      name: "simulation data",
+      paths: Array.from({ length: 11 }, (_, index) => `${buildRoot}/Build/PortfolioWebGLNavigationFix.data.gz.part-${String(index + 1).padStart(2, "0")}`),
+      type: "application/octet-stream",
+      key: "dataUrl",
+    },
+    { name: "Unity framework", path: `${buildRoot}/Build/PortfolioWebGLNavigationFix.framework.js.gz`, type: "text/javascript", key: "frameworkUrl" },
+    {
+      name: "3D runtime",
+      paths: Array.from({ length: 5 }, (_, index) => `${buildRoot}/Build/PortfolioWebGLNavigationFix.wasm.gz.part-${String(index + 1).padStart(2, "0")}`),
+      type: "application/wasm",
+      key: "codeUrl",
+    },
+  ];
+  const objectUrls = [];
+  let loaderPromise = null;
+  let isLoading = false;
+  let unityInstance = null;
+
+  const setStatus = (message) => {
+    status.textContent = message;
+  };
+
+  const setProgress = (value) => {
+    const percent = Math.max(0, Math.min(100, Math.round(value * 100)));
+    progress.value = percent;
+    progress.textContent = `${percent}%`;
+  };
+
+  const releaseObjectUrls = () => {
+    objectUrls.forEach((url) => URL.revokeObjectURL(url));
+    objectUrls.length = 0;
+  };
+
+  const ensureUnityLoader = () => {
+    if (typeof window.createUnityInstance === "function") return Promise.resolve();
+    if (loaderPromise) return loaderPromise;
+
+    loaderPromise = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+      script.async = true;
+      script.onload = () => typeof window.createUnityInstance === "function"
+        ? resolve()
+        : reject(new Error("The Unity loader did not initialise."));
+      script.onerror = () => {
+        script.remove();
+        loaderPromise = null;
+        reject(new Error("The Unity loader could not be downloaded."));
+      };
+      document.head.appendChild(script);
+    });
+
+    return loaderPromise;
+  };
+
+  const loadBuildFile = async (file, onPartProgress) => {
+    const paths = file.paths || [file.path];
+    const compressedParts = [];
+
+    for (const [index, path] of paths.entries()) {
+      loadingText.textContent = paths.length > 1
+        ? `Downloading simulation data (${index + 1} of ${paths.length})…`
+        : `Downloading and unpacking ${file.name}…`;
+      setStatus(paths.length > 1
+        ? `Downloading factory data file ${index + 1} of ${paths.length}.`
+        : `Downloading and unpacking the ${file.name}.`);
+      const response = await fetch(new URL(path, document.baseURI));
+      if (!response.ok) throw new Error(`Could not download the ${file.name} (HTTP ${response.status}).`);
+      compressedParts.push(await response.blob());
+      onPartProgress?.((index + 1) / paths.length);
+    }
+
+    const compressedBlob = compressedParts.length === 1 ? compressedParts[0] : new Blob(compressedParts);
+    const signature = new Uint8Array(await compressedBlob.slice(0, 2).arrayBuffer());
+    const isGzip = signature[0] === 0x1f && signature[1] === 0x8b;
+    let decodedBlob = compressedBlob;
+
+    if (isGzip) {
+      if (typeof DecompressionStream !== "function") {
+        throw new Error("This browser cannot unpack the compressed factory build. Try a recent version of Chrome, Edge, Firefox or Safari.");
+      }
+
+      try {
+        const reader = compressedBlob.stream().pipeThrough(new DecompressionStream("gzip")).getReader();
+        const decodedParts = [];
+        while (true) {
+          const chunk = await reader.read();
+          if (chunk.done) break;
+          decodedParts.push(chunk.value);
+        }
+        decodedBlob = new Blob(decodedParts, { type: file.type });
+      } catch (error) {
+        console.error(`Could not decompress the ${file.name}.`, error);
+        throw new Error(`The compressed ${file.name} could not be unpacked. ${error.message || "Check the downloaded build file."}`);
+      }
+    }
+
+    const objectUrl = URL.createObjectURL(decodedBlob.slice(0, decodedBlob.size, file.type));
+    objectUrls.push(objectUrl);
+    return objectUrl;
+  };
+
+  const startFactory = async () => {
+    if (isLoading || unityInstance) return;
+    isLoading = true;
+    player.dataset.state = "loading";
+    launchButton.disabled = true;
+    retryButton.hidden = true;
+    loading.hidden = false;
+    setProgress(0);
+    setStatus("Loading the interactive factory. Large build files are downloaded only after launch.");
+
+    try {
+      loadingText.textContent = "Preparing the Unity player…";
+      await ensureUnityLoader();
+
+      const config = {
+        streamingAssetsUrl: new URL(`${buildRoot}/StreamingAssets/`, document.baseURI).href,
+        companyName: "DefaultCompany",
+        productName: "test_CAD",
+        productVersion: "0.1",
+        devicePixelRatio: 1,
+        matchWebGLToCanvasSize: true,
+        showBanner: (message, type) => {
+          if (type === "error") setStatus(`Factory runtime: ${message}`);
+        },
+      };
+
+      for (const [index, file] of loaderBuildFiles.entries()) {
+        config[file.key] = await loadBuildFile(file, (partProgress) => {
+          setProgress(((index + partProgress) / loaderBuildFiles.length) * 0.14);
+        });
+        setProgress(((index + 1) / loaderBuildFiles.length) * 0.14);
+      }
+
+      loadingText.textContent = "Starting the factory scene…";
+      setStatus("Starting the Unity factory scene…");
+      stage.hidden = false;
+      canvas.focus({ preventScroll: true });
+
+      unityInstance = await window.createUnityInstance(canvas, config, (value) => {
+        setProgress(0.14 + value * 0.86);
+      });
+
+      poster.hidden = true;
+      loading.hidden = true;
+      launchButton.hidden = true;
+      retryButton.hidden = true;
+      player.dataset.state = "ready";
+      setProgress(1);
+      setStatus("The interactive factory is ready. Select the scene to explore the production flow.");
+      releaseObjectUrls();
+    } catch (error) {
+      const rawErrorMessage = typeof error === "string" ? error : error?.message || String(error || "Unknown player error.");
+      const errorMessage = rawErrorMessage.split(/\r?\n/)[0] || "The interactive factory could not be loaded.";
+      console.error("The interactive factory did not start.", error);
+      stage.hidden = true;
+      poster.hidden = false;
+      loading.hidden = true;
+      launchButton.hidden = true;
+      retryButton.hidden = false;
+      retryButton.disabled = false;
+      player.dataset.state = "error";
+      setStatus(`${errorMessage} Your case study and factory screenshots are still available.`);
+      releaseObjectUrls();
+    } finally {
+      launchButton.disabled = false;
+      isLoading = false;
+    }
+  };
+
+  launchButton.addEventListener("click", startFactory);
+  retryButton.addEventListener("click", startFactory);
+  canvas.addEventListener("webglcontextlost", (event) => {
+    event.preventDefault();
+    setStatus("The factory graphics context was interrupted. Reload the page to try the interactive build again; the screenshots and case study remain available.");
+  });
+}
+
+document.querySelectorAll("[data-project-jump]").forEach((button) => {
+  button.addEventListener("click", () => {
+    selectProjectTab(button.dataset.projectJump, { updateHash: true, scroll: true });
+  });
+});
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((item) => {
@@ -228,6 +430,7 @@ filterButtons.forEach((button) => {
 });
 
 initialiseProjectTabs();
+initialiseFactoryPlayer();
 initialiseActivityGalleries();
 initialisePhotoAlbums();
 initialisePhotoProtection();

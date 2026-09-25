@@ -1,0 +1,1322 @@
+{
+  "bundleVersion": "0.1.0-demo",
+  "generatedAtUtc": "2026-08-28T22:40:29+00:00",
+  "task": {
+    "engineeringTaskFamily": "line_intralogistics_feasibility",
+    "targetId": "Buffer3",
+    "targetLabel": "Zone 2 material buffer B02",
+    "targetRole": "buffer",
+    "assessmentContext": {
+      "id": "Zone2_Assembly_Context",
+      "label": "Zone 2 automated battery module assembly line",
+      "role": "line_and_intralogistics_context",
+      "unityBinding": "Zone2_Automated_Battery_Module_Assembly_Line"
+    },
+    "changeType": "buffer_capacity_increase",
+    "changeLabel": "Zone 2 material buffer B02 — Increase buffer capacity",
+    "selectedConcerns": []
+  },
+  "overallStatus": "SUPPORTED_WITH_LIMITATIONS",
+  "selectedConcerns": [
+    {
+      "id": "C1",
+      "label": "Flow accumulation and buffer state",
+      "question": "Will the change create WIP accumulation or a changed buffer state?",
+      "classification": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationStatus": "REQUIRED",
+      "activationEvidence": [],
+      "status": "SUPPORTED_WITH_LIMITATIONS",
+      "dependencies": [],
+      "assuranceLimit": {
+        "supportedClaim": "Supports review of changed WIP accumulation and buffer state.",
+        "excludedClaim": "Does not optimise buffer capacity automatically."
+      },
+      "requirements": [
+        {
+          "concernId": "C1",
+          "requirementId": "C1-R1",
+          "label": "Time-ordered buffer occupancy",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "buffer.occupancy",
+            "time.order"
+          ],
+          "missing": [],
+          "rationale": "The middleware must know how WIP count changes over time.",
+          "basis": [
+            "bounded task analysis",
+            "IEC 62264 resource/location concepts"
+          ]
+        },
+        {
+          "concernId": "C1",
+          "requirementId": "C1-R2",
+          "label": "Target buffer identity binding",
+          "provider": "factory_profile",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "buffer.identity",
+            "plant_simulation_unity.binding"
+          ],
+          "missing": [],
+          "rationale": "The selected Tecnomatix Plant Simulation buffer must resolve to a registered Unity object.",
+          "basis": [
+            "middleware execution requirement"
+          ]
+        },
+        {
+          "concernId": "C1",
+          "requirementId": "C1-R3",
+          "label": "Buffer replay capability",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "buffer.replay"
+          ],
+          "missing": [],
+          "rationale": "The runtime must consume buffer events and present the changed WIP state.",
+          "basis": [
+            "Unity runtime requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "label": "Operational performance impact",
+      "question": "Does the change affect throughput, waiting, cycle time or machine status?",
+      "classification": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationStatus": "REQUIRED",
+      "activationEvidence": [],
+      "status": "SUPPORTED_WITH_LIMITATIONS",
+      "dependencies": [],
+      "assuranceLimit": {
+        "supportedClaim": "Supports indicative operational comparison using exported DES events.",
+        "excludedClaim": "Does not provide statistically controlled optimisation proof."
+      },
+      "requirements": [
+        {
+          "concernId": "C2",
+          "requirementId": "C2-R1",
+          "label": "Production and status evidence",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "production.event",
+            "machine.state"
+          ],
+          "missing": [],
+          "rationale": "Operational review needs event throughput and machine-state context.",
+          "basis": [
+            "ISO 22400 KPI concepts",
+            "bounded task analysis"
+          ]
+        },
+        {
+          "concernId": "C2",
+          "requirementId": "C2-R2",
+          "label": "KPI/status presentation",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "optional",
+          "status": "MISSING",
+          "matched": [
+            "machine.status.presentation"
+          ],
+          "missing": [
+            "kpi.presentation"
+          ],
+          "rationale": "KPI display enriches the task but is not required for spatial feasibility.",
+          "basis": [
+            "user presentation requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "label": "Spatial occupancy and clearance",
+      "question": "How much physical space will WIP or resources occupy after the change?",
+      "classification": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationStatus": "REQUIRED",
+      "activationEvidence": [],
+      "status": "SUPPORTED_WITH_LIMITATIONS",
+      "dependencies": [],
+      "assuranceLimit": {
+        "supportedClaim": "Supported for visual engineering review.",
+        "excludedClaim": "Does not perform automatic intersection computation, safety validation, standards-conformity assessment or certification.",
+        "mode": "visual_engineering_review"
+      },
+      "requirements": [
+        {
+          "concernId": "C3",
+          "requirementId": "C3-R1",
+          "label": "WIP or movement quantity evidence",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "wip.quantity",
+            "time.order"
+          ],
+          "missing": [],
+          "rationale": "The runtime needs a time-ordered quantity or event driver for occupied-area presentation.",
+          "basis": [
+            "bounded task analysis"
+          ]
+        },
+        {
+          "concernId": "C3",
+          "requirementId": "C3-R2",
+          "label": "Product footprint and registered geometry",
+          "provider": "unity_scene",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "product.footprint",
+            "buffer.boundary",
+            "coordinate.registration"
+          ],
+          "missing": [],
+          "rationale": "Counts become spatial evidence only after binding to footprint and scene geometry.",
+          "basis": [
+            "AutomationML/IEC 62714 geometry concept",
+            "middleware spatial registration requirement"
+          ]
+        },
+        {
+          "concernId": "C3",
+          "requirementId": "C3-R3",
+          "label": "Occupied-area overlay",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "occupied_area.overlay"
+          ],
+          "missing": [],
+          "rationale": "The user must inspect the resulting occupied area in the 3D scene.",
+          "basis": [
+            "user task presentation requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "label": "Staging-area and aisle interaction",
+      "question": "Will occupied areas interfere with staging or aisle zones?",
+      "classification": "CONDITIONAL",
+      "whySelected": "Triggered because affected occupancy geometry intersects a registered aisle/staging review context.",
+      "activationStatus": "TRIGGERED",
+      "activationEvidence": [
+        {
+          "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry.",
+          "signalId": "affected_occupancy_geometry"
+        }
+      ],
+      "status": "SUPPORTED_WITH_LIMITATIONS",
+      "dependencies": [
+        {
+          "concernId": "C3",
+          "evidence": "affected_occupancy.geometry_or_swept_area",
+          "status": "REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry."
+        }
+      ],
+      "assuranceLimit": {
+        "supportedClaim": "Supports visual review of aisle and staging interaction.",
+        "excludedClaim": "Does not decide plant-wide logistics policy."
+      },
+      "requirements": [
+        {
+          "concernId": "C4",
+          "requirementId": "C4-DEP-C3",
+          "label": "C3 affected occupancy/swept-area dependency",
+          "provider": "derived_dependency",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "affected_occupancy.geometry_or_swept_area"
+          ],
+          "missing": [],
+          "rationale": "This concern depends on C3-resolved affected occupancy geometry or swept-area evidence.",
+          "basis": [
+            "Derived from changed source evidence and registered scene/runtime geometry."
+          ]
+        },
+        {
+          "concernId": "C4",
+          "requirementId": "C4-R1",
+          "label": "Aisle or staging zone geometry",
+          "provider": "unity_scene",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "aisle.boundary",
+            "staging.boundary"
+          ],
+          "missing": [],
+          "rationale": "The runtime needs registered zone polygons to show whether occupied areas affect them.",
+          "basis": [
+            "factory profile",
+            "AutomationML/IEC 62714 layout concept"
+          ]
+        },
+        {
+          "concernId": "C4",
+          "requirementId": "C4-R2",
+          "label": "Zone overlay capability",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "zone.overlay"
+          ],
+          "missing": [],
+          "rationale": "Aisle and staging context must be visible during the engineering task.",
+          "basis": [
+            "user task presentation requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "label": "AGV/mobile route interaction",
+      "question": "Will the change obstruct or interfere with the selected mobile-resource route?",
+      "classification": "CONDITIONAL",
+      "whySelected": "Triggered because affected occupancy/swept-area evidence reaches a registered mobile-resource context.",
+      "activationStatus": "TRIGGERED",
+      "activationEvidence": [
+        {
+          "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry.",
+          "signalId": "affected_occupancy_geometry"
+        }
+      ],
+      "status": "SUPPORTED_WITH_LIMITATIONS",
+      "dependencies": [
+        {
+          "concernId": "C3",
+          "evidence": "affected_occupancy.geometry_or_swept_area",
+          "status": "REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry."
+        }
+      ],
+      "assuranceLimit": {
+        "supportedClaim": "Supports visual engineering review of potential AGV/mobile route interference.",
+        "excludedClaim": "Does not determine ISO 3691-4 conformity."
+      },
+      "requirements": [
+        {
+          "concernId": "C5",
+          "requirementId": "C5-DEP-C3",
+          "label": "C3 affected occupancy/swept-area dependency",
+          "provider": "derived_dependency",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "affected_occupancy.geometry_or_swept_area"
+          ],
+          "missing": [],
+          "rationale": "This concern depends on C3-resolved affected occupancy geometry or swept-area evidence.",
+          "basis": [
+            "Derived from changed source evidence and registered scene/runtime geometry."
+          ]
+        },
+        {
+          "concernId": "C5",
+          "requirementId": "C5-R1",
+          "label": "Time-ordered mobile-resource movement",
+          "provider": "source",
+          "supportLayer": "SOURCE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "mobile.event",
+            "mobile.identity",
+            "route.reference"
+          ],
+          "missing": [],
+          "rationale": "The system must know which mobile resource used which route or route reference.",
+          "basis": [
+            "bounded task analysis",
+            "ISO 3691-4 operating-zone relevance"
+          ]
+        },
+        {
+          "concernId": "C5",
+          "requirementId": "C5-R2",
+          "label": "Registered route geometry and vehicle envelope",
+          "provider": "unity_scene",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "route.geometry",
+            "mobile.envelope",
+            "coordinate.registration"
+          ],
+          "missing": [],
+          "rationale": "Route references become assessable only after binding to route geometry and mobile-resource size.",
+          "basis": [
+            "AutomationML/IEC 62714 layout concept",
+            "ISO 3691-4 operating-zone relevance"
+          ]
+        },
+        {
+          "concernId": "C5",
+          "requirementId": "C5-R3",
+          "label": "Route replay and overlay",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "mobile.replay",
+            "route.overlay"
+          ],
+          "missing": [],
+          "rationale": "The user must inspect mobile-resource movement against occupied areas.",
+          "basis": [
+            "Unity runtime requirement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "label": "Workstation and equipment access",
+      "question": "Will the change affect operation, replenishment, inspection or equipment access?",
+      "classification": "CONDITIONAL",
+      "whySelected": "Triggered because affected occupancy/swept-area evidence reaches a registered access-zone context.",
+      "activationStatus": "TRIGGERED",
+      "activationEvidence": [
+        {
+          "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry.",
+          "signalId": "affected_occupancy_geometry"
+        }
+      ],
+      "status": "SUPPORTED_WITH_LIMITATIONS",
+      "dependencies": [
+        {
+          "concernId": "C3",
+          "evidence": "affected_occupancy.geometry_or_swept_area",
+          "status": "REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry."
+        }
+      ],
+      "assuranceLimit": {
+        "supportedClaim": "Supports visual review of registered access-zone interaction.",
+        "excludedClaim": "Does not replace ergonomic design validation."
+      },
+      "requirements": [
+        {
+          "concernId": "C6",
+          "requirementId": "C6-DEP-C3",
+          "label": "C3 affected occupancy/swept-area dependency",
+          "provider": "derived_dependency",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "REQUIRES_CONFIRMATION",
+          "matched": [
+            "affected_occupancy.geometry_or_swept_area"
+          ],
+          "missing": [],
+          "rationale": "This concern depends on C3-resolved affected occupancy geometry or swept-area evidence.",
+          "basis": [
+            "Derived from changed source evidence and registered scene/runtime geometry."
+          ]
+        },
+        {
+          "concernId": "C6",
+          "requirementId": "C6-R1",
+          "label": "Registered workstation access zone",
+          "provider": "unity_scene",
+          "supportLayer": "SCENE",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "workstation.access_zone"
+          ],
+          "missing": [],
+          "rationale": "Access can only be reviewed against explicitly registered access zones.",
+          "basis": [
+            "ISO 6385 work-system principle",
+            "factory profile"
+          ]
+        },
+        {
+          "concernId": "C6",
+          "requirementId": "C6-R2",
+          "label": "Access-zone overlay",
+          "provider": "unity_runtime",
+          "supportLayer": "RUNTIME",
+          "criticality": "core",
+          "status": "AVAILABLE",
+          "matched": [
+            "access_zone.overlay"
+          ],
+          "missing": [],
+          "rationale": "The user must be able to see access zones relative to WIP and route overlays.",
+          "basis": [
+            "user task presentation requirement"
+          ]
+        }
+      ]
+    }
+  ],
+  "concernClassification": [
+    {
+      "id": "C1",
+      "label": "Flow accumulation and buffer state",
+      "classification": "REQUIRED",
+      "activationStatus": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C2",
+      "label": "Operational performance impact",
+      "classification": "REQUIRED",
+      "activationStatus": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C3",
+      "label": "Spatial occupancy and clearance",
+      "classification": "REQUIRED",
+      "activationStatus": "REQUIRED",
+      "whySelected": "Required by the fixed concern mapping for buffer-capacity change.",
+      "activationEvidence": []
+    },
+    {
+      "id": "C4",
+      "label": "Staging-area and aisle interaction",
+      "classification": "CONDITIONAL",
+      "activationStatus": "TRIGGERED",
+      "whySelected": "Triggered because affected occupancy geometry intersects a registered aisle/staging review context.",
+      "activationEvidence": [
+        {
+          "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry.",
+          "signalId": "affected_occupancy_geometry"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "label": "AGV/mobile route interaction",
+      "classification": "CONDITIONAL",
+      "activationStatus": "TRIGGERED",
+      "whySelected": "Triggered because affected occupancy/swept-area evidence reaches a registered mobile-resource context.",
+      "activationEvidence": [
+        {
+          "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry.",
+          "signalId": "affected_occupancy_geometry"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "label": "Workstation and equipment access",
+      "classification": "CONDITIONAL",
+      "activationStatus": "TRIGGERED",
+      "whySelected": "Triggered because affected occupancy/swept-area evidence reaches a registered access-zone context.",
+      "activationEvidence": [
+        {
+          "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+          "basis": "Derived from changed source evidence and registered scene/runtime geometry.",
+          "signalId": "affected_occupancy_geometry"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "label": "Human-robot-mobile interaction",
+      "classification": "NOT_APPLICABLE",
+      "activationStatus": "NOT_APPLICABLE",
+      "whySelected": "Not applicable to the selected buffer-capacity change.",
+      "activationEvidence": []
+    }
+  ],
+  "evidenceSignals": {
+    "wip_buffer_changed": {
+      "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+      "basis": "Baseline/proposed buffer occupancy records differ for the configured target."
+    },
+    "additional_spatial_occupancy": {
+      "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+      "basis": "Proposed maximum WIP 16 exceeds baseline maximum 8 for the configured target."
+    },
+    "affected_occupancy_geometry": {
+      "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+      "basis": "Derived from changed source evidence and registered scene/runtime geometry."
+    }
+  },
+  "resolvedRequirements": [
+    {
+      "concernId": "C1",
+      "requirementId": "C1-R1",
+      "label": "Time-ordered buffer occupancy",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "buffer.occupancy",
+        "time.order"
+      ],
+      "missing": [],
+      "rationale": "The middleware must know how WIP count changes over time.",
+      "basis": [
+        "bounded task analysis",
+        "IEC 62264 resource/location concepts"
+      ]
+    },
+    {
+      "concernId": "C1",
+      "requirementId": "C1-R2",
+      "label": "Target buffer identity binding",
+      "provider": "factory_profile",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "buffer.identity",
+        "plant_simulation_unity.binding"
+      ],
+      "missing": [],
+      "rationale": "The selected Tecnomatix Plant Simulation buffer must resolve to a registered Unity object.",
+      "basis": [
+        "middleware execution requirement"
+      ]
+    },
+    {
+      "concernId": "C1",
+      "requirementId": "C1-R3",
+      "label": "Buffer replay capability",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "buffer.replay"
+      ],
+      "missing": [],
+      "rationale": "The runtime must consume buffer events and present the changed WIP state.",
+      "basis": [
+        "Unity runtime requirement"
+      ]
+    },
+    {
+      "concernId": "C2",
+      "requirementId": "C2-R1",
+      "label": "Production and status evidence",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "production.event",
+        "machine.state"
+      ],
+      "missing": [],
+      "rationale": "Operational review needs event throughput and machine-state context.",
+      "basis": [
+        "ISO 22400 KPI concepts",
+        "bounded task analysis"
+      ]
+    },
+    {
+      "concernId": "C2",
+      "requirementId": "C2-R2",
+      "label": "KPI/status presentation",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "optional",
+      "status": "MISSING",
+      "matched": [
+        "machine.status.presentation"
+      ],
+      "missing": [
+        "kpi.presentation"
+      ],
+      "rationale": "KPI display enriches the task but is not required for spatial feasibility.",
+      "basis": [
+        "user presentation requirement"
+      ]
+    },
+    {
+      "concernId": "C3",
+      "requirementId": "C3-R1",
+      "label": "WIP or movement quantity evidence",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "wip.quantity",
+        "time.order"
+      ],
+      "missing": [],
+      "rationale": "The runtime needs a time-ordered quantity or event driver for occupied-area presentation.",
+      "basis": [
+        "bounded task analysis"
+      ]
+    },
+    {
+      "concernId": "C3",
+      "requirementId": "C3-R2",
+      "label": "Product footprint and registered geometry",
+      "provider": "unity_scene",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "product.footprint",
+        "buffer.boundary",
+        "coordinate.registration"
+      ],
+      "missing": [],
+      "rationale": "Counts become spatial evidence only after binding to footprint and scene geometry.",
+      "basis": [
+        "AutomationML/IEC 62714 geometry concept",
+        "middleware spatial registration requirement"
+      ]
+    },
+    {
+      "concernId": "C3",
+      "requirementId": "C3-R3",
+      "label": "Occupied-area overlay",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "occupied_area.overlay"
+      ],
+      "missing": [],
+      "rationale": "The user must inspect the resulting occupied area in the 3D scene.",
+      "basis": [
+        "user task presentation requirement"
+      ]
+    },
+    {
+      "concernId": "C4",
+      "requirementId": "C4-DEP-C3",
+      "label": "C3 affected occupancy/swept-area dependency",
+      "provider": "derived_dependency",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "affected_occupancy.geometry_or_swept_area"
+      ],
+      "missing": [],
+      "rationale": "This concern depends on C3-resolved affected occupancy geometry or swept-area evidence.",
+      "basis": [
+        "Derived from changed source evidence and registered scene/runtime geometry."
+      ]
+    },
+    {
+      "concernId": "C4",
+      "requirementId": "C4-R1",
+      "label": "Aisle or staging zone geometry",
+      "provider": "unity_scene",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "aisle.boundary",
+        "staging.boundary"
+      ],
+      "missing": [],
+      "rationale": "The runtime needs registered zone polygons to show whether occupied areas affect them.",
+      "basis": [
+        "factory profile",
+        "AutomationML/IEC 62714 layout concept"
+      ]
+    },
+    {
+      "concernId": "C4",
+      "requirementId": "C4-R2",
+      "label": "Zone overlay capability",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "zone.overlay"
+      ],
+      "missing": [],
+      "rationale": "Aisle and staging context must be visible during the engineering task.",
+      "basis": [
+        "user task presentation requirement"
+      ]
+    },
+    {
+      "concernId": "C5",
+      "requirementId": "C5-DEP-C3",
+      "label": "C3 affected occupancy/swept-area dependency",
+      "provider": "derived_dependency",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "affected_occupancy.geometry_or_swept_area"
+      ],
+      "missing": [],
+      "rationale": "This concern depends on C3-resolved affected occupancy geometry or swept-area evidence.",
+      "basis": [
+        "Derived from changed source evidence and registered scene/runtime geometry."
+      ]
+    },
+    {
+      "concernId": "C5",
+      "requirementId": "C5-R1",
+      "label": "Time-ordered mobile-resource movement",
+      "provider": "source",
+      "supportLayer": "SOURCE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "mobile.event",
+        "mobile.identity",
+        "route.reference"
+      ],
+      "missing": [],
+      "rationale": "The system must know which mobile resource used which route or route reference.",
+      "basis": [
+        "bounded task analysis",
+        "ISO 3691-4 operating-zone relevance"
+      ]
+    },
+    {
+      "concernId": "C5",
+      "requirementId": "C5-R2",
+      "label": "Registered route geometry and vehicle envelope",
+      "provider": "unity_scene",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "route.geometry",
+        "mobile.envelope",
+        "coordinate.registration"
+      ],
+      "missing": [],
+      "rationale": "Route references become assessable only after binding to route geometry and mobile-resource size.",
+      "basis": [
+        "AutomationML/IEC 62714 layout concept",
+        "ISO 3691-4 operating-zone relevance"
+      ]
+    },
+    {
+      "concernId": "C5",
+      "requirementId": "C5-R3",
+      "label": "Route replay and overlay",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "mobile.replay",
+        "route.overlay"
+      ],
+      "missing": [],
+      "rationale": "The user must inspect mobile-resource movement against occupied areas.",
+      "basis": [
+        "Unity runtime requirement"
+      ]
+    },
+    {
+      "concernId": "C6",
+      "requirementId": "C6-DEP-C3",
+      "label": "C3 affected occupancy/swept-area dependency",
+      "provider": "derived_dependency",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "REQUIRES_CONFIRMATION",
+      "matched": [
+        "affected_occupancy.geometry_or_swept_area"
+      ],
+      "missing": [],
+      "rationale": "This concern depends on C3-resolved affected occupancy geometry or swept-area evidence.",
+      "basis": [
+        "Derived from changed source evidence and registered scene/runtime geometry."
+      ]
+    },
+    {
+      "concernId": "C6",
+      "requirementId": "C6-R1",
+      "label": "Registered workstation access zone",
+      "provider": "unity_scene",
+      "supportLayer": "SCENE",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "workstation.access_zone"
+      ],
+      "missing": [],
+      "rationale": "Access can only be reviewed against explicitly registered access zones.",
+      "basis": [
+        "ISO 6385 work-system principle",
+        "factory profile"
+      ]
+    },
+    {
+      "concernId": "C6",
+      "requirementId": "C6-R2",
+      "label": "Access-zone overlay",
+      "provider": "unity_runtime",
+      "supportLayer": "RUNTIME",
+      "criticality": "core",
+      "status": "AVAILABLE",
+      "matched": [
+        "access_zone.overlay"
+      ],
+      "missing": [],
+      "rationale": "The user must be able to see access zones relative to WIP and route overlays.",
+      "basis": [
+        "user task presentation requirement"
+      ]
+    }
+  ],
+  "baselineSourceManifest": {
+    "runId": "baseline",
+    "status": "success",
+    "inputDir": "D:\\Desktop\\PhD Y3\\TUB Siemens TX\\middleware 2.0\\TX Data\\original",
+    "sourceAdapter": "tx_jsonl",
+    "availableConcepts": [
+      "buffer.identity",
+      "buffer.occupancy",
+      "machine.identity",
+      "machine.state",
+      "mobile.event",
+      "mobile.identity",
+      "operational.status",
+      "product.identity",
+      "production.event",
+      "robot.event",
+      "robot.identity",
+      "robot.movement_reference",
+      "route.reference",
+      "run.identity",
+      "time.order",
+      "wip.quantity"
+    ],
+    "conceptEvidence": [
+      {
+        "concept": "buffer.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "buffer.occupancy",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "machine.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "machine.state",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "mobile.event",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "mobile.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "operational.status",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "product.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "production.event",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "robot.event",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "robot.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "robot.movement_reference",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "route.reference",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "run.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "time.order",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "wip.quantity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      }
+    ],
+    "statistics": {
+      "production_events": 1181,
+      "status_events": 264,
+      "buffer_events": 2934,
+      "robot_events": 389,
+      "agv_events": 664,
+      "machine_records_read": 2898,
+      "buffer_records_read": 2934,
+      "status_records_read": 264
+    },
+    "warnings": 15,
+    "errors": 0,
+    "dynamicRoutes": [
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer",
+      "[ ]",
+      "[*.Models.Model.Wegmarke1]",
+      "[*.Models.Model.Wegmarke2]",
+      "[*.Models.Model.Wegmarke3]"
+    ],
+    "outputs": {
+      "production_line_data.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\production_line_data.json",
+        "bytes": 239664,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "production_line_status.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\production_line_status.json",
+        "bytes": 38704,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "bufferLog.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\bufferLog.json",
+        "bytes": 336391,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "robot_events.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\robot_events.json",
+        "bytes": 70494,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "agv_events.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\agv_events.json",
+        "bytes": 77081,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "event_provenance.jsonl": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\event_provenance.jsonl",
+        "bytes": 3358355,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "contract_manifest.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\baseline_runtime\\contract_manifest.json",
+        "bytes": 1129,
+        "written": false,
+        "reason": "dry-run"
+      }
+    },
+    "runManifest": {
+      "runId": "evbattery_buffer_baseline_01",
+      "modelVersion": "EVBattery_ModuleLine_Demo_2026-07",
+      "targetRole": "buffer",
+      "targetId": "Buffer3",
+      "changeType": "buffer_capacity_increase",
+      "comparisonTaskId": "buffer_capacity_comparison_01",
+      "appliedChange": "none",
+      "runRole": "baseline",
+      "schemaVersion": "2.0",
+      "artifacts": [
+        {
+          "file": "MachineLog.json",
+          "sha256": "672cc672b44ee5cfd824fe5db133492ea18365c86d65d2eb3320aa59f3f7669d"
+        },
+        {
+          "file": "BufferLog.json",
+          "sha256": "d17babd3a1395bd6ed8a9dd0aa2fdf039bb777d8f83fb6cce8ca37bd8059192f"
+        },
+        {
+          "file": "MachineStatusLog.json",
+          "sha256": "5247dca965ad288602a0619d7b18ded8c5a7b9edec594a5d45734f665ce0f13e"
+        }
+      ]
+    }
+  },
+  "proposedSourceManifest": {
+    "runId": "proposed",
+    "status": "success",
+    "inputDir": "D:\\Desktop\\PhD Y3\\TUB Siemens TX\\middleware 2.0\\TX Data\\changeBufferCapacity (1)\\changeBufferCapacity",
+    "sourceAdapter": "tx_jsonl",
+    "availableConcepts": [
+      "buffer.identity",
+      "buffer.occupancy",
+      "machine.identity",
+      "machine.state",
+      "mobile.event",
+      "mobile.identity",
+      "operational.status",
+      "product.identity",
+      "production.event",
+      "robot.event",
+      "robot.identity",
+      "robot.movement_reference",
+      "route.reference",
+      "run.identity",
+      "time.order",
+      "wip.quantity"
+    ],
+    "conceptEvidence": [
+      {
+        "concept": "buffer.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "buffer.occupancy",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "machine.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "machine.state",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "mobile.event",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "mobile.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "operational.status",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "product.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "production.event",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "robot.event",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "robot.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "robot.movement_reference",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "route.reference",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "run.identity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "time.order",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      },
+      {
+        "concept": "wip.quantity",
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Discovered from translated run records; not asserted by the Run Manifest."
+      }
+    ],
+    "statistics": {
+      "production_events": 610,
+      "status_events": 131,
+      "buffer_events": 1646,
+      "robot_events": 201,
+      "agv_events": 351,
+      "machine_records_read": 1514,
+      "buffer_records_read": 1646,
+      "status_records_read": 131
+    },
+    "warnings": 15,
+    "errors": 0,
+    "dynamicRoutes": [
+      "OP10_20_Buffer",
+      "OP20_30_Buffer",
+      "OP30_40_Buffer",
+      "[ ]",
+      "[*.Models.Model.Wegmarke1]",
+      "[*.Models.Model.Wegmarke2]",
+      "[*.Models.Model.Wegmarke3]"
+    ],
+    "outputs": {
+      "production_line_data.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\production_line_data.json",
+        "bytes": 123730,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "production_line_status.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\production_line_status.json",
+        "bytes": 19231,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "bufferLog.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\bufferLog.json",
+        "bytes": 188522,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "robot_events.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\robot_events.json",
+        "bytes": 36373,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "agv_events.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\agv_events.json",
+        "bytes": 40694,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "event_provenance.jsonl": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\event_provenance.jsonl",
+        "bytes": 1937450,
+        "written": false,
+        "reason": "dry-run"
+      },
+      "contract_manifest.json": {
+        "path": "E:\\UnityProjects\\Battery  fac 3 zones\\Assets\\StreamingAssets\\concern_demo\\proposed_runtime\\contract_manifest.json",
+        "bytes": 1129,
+        "written": false,
+        "reason": "dry-run"
+      }
+    },
+    "runManifest": {
+      "runId": "evbattery_buffer_capacity_15_01",
+      "modelVersion": "EVBattery_ModuleLine_Demo_2026-07",
+      "targetRole": "buffer",
+      "targetId": "Buffer3",
+      "changeType": "buffer_capacity_increase",
+      "comparisonTaskId": "buffer_capacity_comparison_01",
+      "appliedChange": "buffer_capacity_increase",
+      "runRole": "proposed",
+      "schemaVersion": "2.0",
+      "artifacts": [
+        {
+          "file": "MachineLog.json",
+          "sha256": "ded23ce67ce1f427813628408ee8851cc6053693451b8143d1a11a2b350478b9"
+        },
+        {
+          "file": "BufferLog.json",
+          "sha256": "e5517669ff7ad9c35b3f6520a559683d7315678a38ccbaa00d854879c232687f"
+        },
+        {
+          "file": "MachineStatusLog.json",
+          "sha256": "6d8eee1a7c4cab33c77715138791177111af2bfdc45ed2d20bfe240b828694ad"
+        }
+      ]
+    },
+    "evidenceSignals": {
+      "wip_buffer_changed": {
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Baseline/proposed buffer occupancy records differ for the configured target."
+      },
+      "additional_spatial_occupancy": {
+        "status": "DISCOVERED_REQUIRES_CONFIRMATION",
+        "basis": "Proposed maximum WIP 16 exceeds baseline maximum 8 for the configured target."
+      }
+    }
+  },
+  "summary": {
+    "concerns": 6,
+    "requirements": 18,
+    "availableRequirements": 10,
+    "missingCoreRequirements": 0,
+    "missingOptionalRequirements": 1,
+    "requiresConfirmationRequirements": 7
+  },
+  "assuranceMode": "visual_engineering_review",
+  "upstreamFingerprint": "bec22625634fcec93d175b6e4c07136f2e227c0f9d71fdd5a89fa6013614f9a4"
+}

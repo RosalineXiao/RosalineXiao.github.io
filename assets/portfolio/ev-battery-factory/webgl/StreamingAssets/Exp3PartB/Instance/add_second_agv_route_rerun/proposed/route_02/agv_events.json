@@ -1,0 +1,4 @@
+{"time":0.0,"source":{"name":"AGV_ROUTE_02"},"startNode":"Wegmarke1","endNode":"Wegmarke2","duration":"5.0"}
+{"time":5.0,"source":{"name":"AGV_ROUTE_02"},"startNode":"Wegmarke2","endNode":"Wegmarke3","duration":"11.0"}
+{"time":16.0,"source":{"name":"AGV_ROUTE_02"},"startNode":"Wegmarke3","endNode":"Wegmarke4","duration":"4.401"}
+{"time":20.401,"source":{"name":"AGV_ROUTE_02"},"startNode":"Wegmarke4","endNode":"Wegmarke1","duration":"3.1416"}

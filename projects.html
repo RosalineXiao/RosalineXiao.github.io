@@ -43,11 +43,19 @@
           <h2 id="project-index-title">Choose one project.</h2>
         </div>
         <div class="project-filters" role="toolbar" aria-label="Project filters">
-          <button class="active" type="button" data-filter="all" aria-selected="true">All (11)</button>
+          <button class="active" type="button" data-filter="all" aria-selected="true">All (12)</button>
           <button type="button" data-filter="product" aria-selected="false">Product (6)</button>
           <button type="button" data-filter="hci" aria-selected="false">HCI / UX (5)</button>
+          <button type="button" data-filter="industrial-metaverse" aria-selected="false">Industrial Metaverse (1)</button>
         </div>
         <div class="project-card-grid portfolio-card-grid" role="tablist" aria-label="Project tabs">
+          <a class="project-card portfolio-card" href="#ev-battery-factory" data-category="industrial-metaverse">
+            <img src="assets/portfolio/ev-battery-factory/images/Zone2_LineLayout_Review.png" alt="Unity screenshot of the EV battery factory assembly line, with machines and production stations arranged along the line" loading="lazy" />
+            <span>Industrial Metaverse</span>
+            <h3>EV Battery Factory</h3>
+            <p>An explorable Unity factory scene connected to selected manufacturing simulation data.</p>
+            <ul><li>Industrial Metaverse</li><li>Unity</li><li>Manufacturing Simulation</li><li>Interactive 3D</li></ul>
+          </a>
           <a class="project-card portfolio-card" href="#plant-companion" data-category="hci">
   <img src="assets/portfolio/plant-companion/toppic.jpg" alt="PLANT COMPANION project preview" loading="lazy" />
   <span>Tangible Interaction Design</span>
@@ -114,7 +122,8 @@
   <h3>ONEARTH - Energy Saving APP for GenGame</h3>
   <p>ONEARTH is an smartphone app in partnership with GenGame energy. Based on a user-centered design approach, ONEARTH targets new parents who are short of money and time and encourages them to use smart meters to ensure the best living conditions for their family, allowing their baby to get the best start in...</p>
   <ul><li>Experience Design</li><li>APP</li><li>Energy Saving</li><li>Smart Meter</li></ul>
-</a> </div>
+</a>
+        </div>
       </section>
 
       <section class="section portfolio-details" aria-labelledby="project-details-title">
@@ -1389,7 +1398,125 @@
 <li>Based on the app usage we can explore more features that can cater to their needs and enhance their experience.</li>
 </ul>
   </div>
-</article> </section>
+</article>
+        <article class="project-detail factory-project" id="ev-battery-factory" data-category="industrial-metaverse">
+          <header class="factory-intro">
+            <span class="project-number">12</span>
+            <div class="factory-intro-copy">
+              <p class="eyebrow">Industrial Metaverse / Interactive Research</p>
+              <h2>From simulation to an explorable factory.</h2>
+              <p class="factory-lede">An EV battery assembly line in Unity, driven by selected manufacturing simulation data. Explore how materials, machines, buffers and AGVs move through a connected factory.</p>
+              <ul class="project-tags"><li>Industrial Metaverse</li><li>Unity</li><li>Manufacturing Simulation</li><li>Interactive 3D</li></ul>
+              <div class="factory-intro-links">
+                <a class="factory-cta" href="#factory-interactive">Explore the factory <span aria-hidden="true">↓</span></a>
+                <a class="factory-text-link" href="#factory-method">How it works <span aria-hidden="true">↘</span></a>
+              </div>
+            </div>
+            <figure class="factory-intro-image">
+              <img src="assets/portfolio/ev-battery-factory/images/Zone2_LineLayout_Review.png" alt="Unity scene of the EV battery production line, viewed from above as stations and conveyors connect into a factory flow" loading="lazy" />
+              <figcaption>Zone 2 · automated module assembly</figcaption>
+            </figure>
+          </header>
+
+          <section class="factory-interactive" id="factory-interactive" aria-labelledby="factory-interactive-title">
+            <div class="factory-section-heading">
+              <p class="eyebrow">01 / Interactive factory — Zone 1 → Zone 2</p>
+              <h3 id="factory-interactive-title">Walk the production flow.</h3>
+            </div>
+            <div class="factory-player" data-factory-player data-state="poster">
+              <figure class="factory-poster" data-factory-poster>
+                <img src="assets/portfolio/ev-battery-factory/images/Zone2_LineLayout_Review.png" alt="Factory line layout from the Unity project, showing an EV battery production line from a three-quarter view" loading="lazy" />
+                <figcaption>Factory preview · Zone 2 assembly line</figcaption>
+              </figure>
+              <div class="factory-stage" data-factory-stage hidden>
+                <canvas id="unity-canvas" class="factory-canvas" data-factory-canvas width="960" height="600" tabindex="0" aria-label="Interactive Unity EV battery factory. Use the mouse or keyboard controls provided by the factory simulation to explore the production line."></canvas>
+              </div>
+              <div class="factory-loading" data-factory-loading hidden>
+                <p data-factory-loading-text>Preparing the interactive factory…</p>
+                <progress data-factory-progress max="100" value="0" aria-label="Factory loading progress">0%</progress>
+              </div>
+              <div class="factory-actions">
+                <button class="factory-button" type="button" data-factory-launch>Launch interactive factory</button>
+                <button class="factory-button factory-button-secondary" type="button" data-factory-retry hidden>Retry loading</button>
+              </div>
+              <p class="factory-status" data-factory-status role="status" aria-live="polite">The interactive build loads only after you choose to launch it. It replays selected simulation-derived factory events; it is not connected to physical equipment.</p>
+            </div>
+            <p class="factory-caption">Follow the production flow from inbound materials to automated module assembly. This experience replays simulation-derived factory events; it is not a live connection to physical equipment.</p>
+            <div class="factory-look-for" aria-labelledby="factory-look-for-title">
+              <h4 id="factory-look-for-title">What to look for</h4>
+              <ul>
+                <li><strong>Material flow</strong><span>Cells and trays move between operations.</span></li>
+                <li><strong>Machine states</strong><span>Stations respond to selected production events.</span></li>
+                <li><strong>Buffers</strong><span>Work in process gathers between line stages.</span></li>
+                <li><strong>AGV handoffs</strong><span>Automated vehicles link movement across zones.</span></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="factory-scenes" aria-labelledby="factory-scenes-title">
+            <div class="factory-section-heading">
+              <p class="eyebrow">02 / Three connected scenes</p>
+              <h3 id="factory-scenes-title">From inbound materials to assembly.</h3>
+            </div>
+            <div class="factory-scene-grid">
+              <figure class="factory-scene">
+                <img src="assets/portfolio/ev-battery-factory/images/zone1_inbound_topdown.png" alt="Top-down Unity view of inbound battery materials, tray buffers and the entry point to the production flow" loading="lazy" />
+                <figcaption><span>01</span><h4>Inbound logistics</h4><p>Follow battery cells and trays as materials enter the factory and reach the production line.</p></figcaption>
+              </figure>
+              <figure class="factory-scene">
+                <img src="assets/portfolio/ev-battery-factory/images/zone2_kpi_redesign_after.png" alt="Unity view of the automated assembly area, showing conveyor stations and the production control panel" loading="lazy" />
+                <figcaption><span>02</span><h4>Automated assembly</h4><p>Trace preparation, compression, assembly, inspection and palletising across the automated line.</p></figcaption>
+              </figure>
+              <figure class="factory-scene">
+                <img src="assets/portfolio/ev-battery-factory/images/zone1_scaled_to_zone2_topdown.png" alt="Top-down Unity overview connecting Zone 1 buffers and AGV routes with the adjoining production zone" loading="lazy" />
+                <figcaption><span>03</span><h4>A connected production flow</h4><p>See how buffers and AGV deliveries link individual operations into a continuous factory process.</p></figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="factory-method" id="factory-method" aria-labelledby="factory-method-title">
+            <div class="factory-section-heading">
+              <p class="eyebrow">03 / How it works</p>
+              <h3 id="factory-method-title">From simulation output to visible factory behaviour.</h3>
+            </div>
+            <ol class="factory-process">
+              <li><span class="factory-step">01</span><h4>Simulation output</h4><p>Production events and factory states originate in Siemens Tecnomatix Plant Simulation.</p></li>
+              <li><span class="factory-step">02</span><h4>Scenario selection</h4><p>The translation process retains information relevant to this factory experience.</p></li>
+              <li><span class="factory-step">03</span><h4>Semantic mapping</h4><p>Simulation identifiers are connected to Unity stations, products, buffers and route nodes.</p></li>
+              <li><span class="factory-step">04</span><h4>Unity replay</h4><p>A shared simulation timeline turns selected records into visible factory behaviour.</p></li>
+            </ol>
+            <p class="factory-method-note">The aim is to make manufacturing simulation knowledge spatially inspectable without rebuilding the production logic inside Unity.</p>
+          </section>
+
+          <section class="factory-research" aria-labelledby="factory-research-title">
+            <div class="factory-section-heading">
+              <p class="eyebrow">04 / Research &amp; contribution</p>
+              <h3 id="factory-research-title">Making simulation knowledge spatially inspectable.</h3>
+            </div>
+            <div class="factory-research-grid">
+              <div>
+                <h4>Research context</h4>
+                <p>Discrete-event simulation can describe when a machine changes state, a buffer accumulates material, or an AGV reaches a handoff. These records are harder to interpret in the spatial context where production decisions are made. I developed a scenario-selective translation approach that carries relevant simulation outputs into a Unity factory scene. The browser experience shows how those events can be explored as a connected production process across inbound logistics and automated assembly.</p>
+              </div>
+              <div>
+                <h4>Contribution</h4>
+                <dl class="factory-contributions">
+                  <div><dt>Translation architecture</dt><dd>Selecting and mapping simulation-derived information for a specific factory scenario.</dd></div>
+                  <div><dt>Unity runtime</dt><dd>Connecting production events, machine states, buffers and movement to scene behaviour.</dd></div>
+                  <div><dt>Interactive experience</dt><dd>Presenting the EV battery production line as an explorable browser experience.</dd></div>
+                </dl>
+              </div>
+            </div>
+          </section>
+
+          <footer class="factory-closing">
+            <p class="eyebrow">Explore the factory. Follow the data. Understand the process.</p>
+            <nav class="factory-project-nav" aria-label="Project navigation">
+              <button class="factory-nav-link" type="button" data-project-jump="onearth-energy-saving-app-for-gengame">← Previous project: ONEARTH</button>
+              <a class="factory-nav-link" href="#project-index-title">↑ Back to project archive</a>
+            </nav>
+          </footer>
+        </article> </section>
     </main>
 
     <footer class="site-footer">

@@ -1,0 +1,8447 @@
+{
+  "simulationTime": 4309.3122,
+  "events": [
+    {
+      "time": 2.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_1"
+      ],
+      "outputIds": [
+        "Prepared_Cell_1"
+      ]
+    },
+    {
+      "time": 4.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_2"
+      ],
+      "outputIds": [
+        "Prepared_Cell_2"
+      ]
+    },
+    {
+      "time": 6.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_3"
+      ],
+      "outputIds": [
+        "Prepared_Cell_3"
+      ]
+    },
+    {
+      "time": 8.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_4"
+      ],
+      "outputIds": [
+        "Prepared_Cell_4"
+      ]
+    },
+    {
+      "time": 10.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_5"
+      ],
+      "outputIds": [
+        "Prepared_Cell_5"
+      ]
+    },
+    {
+      "time": 12.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_6"
+      ],
+      "outputIds": [
+        "Prepared_Cell_6"
+      ]
+    },
+    {
+      "time": 14.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_7"
+      ],
+      "outputIds": [
+        "Prepared_Cell_7"
+      ]
+    },
+    {
+      "time": 16.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_8"
+      ],
+      "outputIds": [
+        "Prepared_Cell_8"
+      ]
+    },
+    {
+      "time": 17.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_1"
+      ],
+      "outputIds": [
+        "Prepared_Cell_1"
+      ]
+    },
+    {
+      "time": 18.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_9"
+      ],
+      "outputIds": [
+        "Prepared_Cell_9"
+      ]
+    },
+    {
+      "time": 20.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_10"
+      ],
+      "outputIds": [
+        "Prepared_Cell_10"
+      ]
+    },
+    {
+      "time": 22.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_11"
+      ],
+      "outputIds": [
+        "Prepared_Cell_11"
+      ]
+    },
+    {
+      "time": 24.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_12"
+      ],
+      "outputIds": [
+        "Prepared_Cell_12"
+      ]
+    },
+    {
+      "time": 26.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_13"
+      ],
+      "outputIds": [
+        "Prepared_Cell_13"
+      ]
+    },
+    {
+      "time": 28.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_14"
+      ],
+      "outputIds": [
+        "Prepared_Cell_14"
+      ]
+    },
+    {
+      "time": 29.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_2"
+      ],
+      "outputIds": [
+        "Prepared_Cell_2"
+      ]
+    },
+    {
+      "time": 30.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_15"
+      ],
+      "outputIds": [
+        "Prepared_Cell_15"
+      ]
+    },
+    {
+      "time": 32.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_16"
+      ],
+      "outputIds": [
+        "Prepared_Cell_16"
+      ]
+    },
+    {
+      "time": 34.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_17"
+      ],
+      "outputIds": [
+        "Prepared_Cell_17"
+      ]
+    },
+    {
+      "time": 36.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_18"
+      ],
+      "outputIds": [
+        "Prepared_Cell_18"
+      ]
+    },
+    {
+      "time": 38.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_19"
+      ],
+      "outputIds": [
+        "Prepared_Cell_19"
+      ]
+    },
+    {
+      "time": 40.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_20"
+      ],
+      "outputIds": [
+        "Prepared_Cell_20"
+      ]
+    },
+    {
+      "time": 41.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_3"
+      ],
+      "outputIds": [
+        "Prepared_Cell_3"
+      ]
+    },
+    {
+      "time": 42.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_21"
+      ],
+      "outputIds": [
+        "Prepared_Cell_21"
+      ]
+    },
+    {
+      "time": 44.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_22"
+      ],
+      "outputIds": [
+        "Prepared_Cell_22"
+      ]
+    },
+    {
+      "time": 46.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_23"
+      ],
+      "outputIds": [
+        "Prepared_Cell_23"
+      ]
+    },
+    {
+      "time": 48.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_24"
+      ],
+      "outputIds": [
+        "Prepared_Cell_24"
+      ]
+    },
+    {
+      "time": 50.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_25"
+      ],
+      "outputIds": [
+        "Prepared_Cell_25"
+      ]
+    },
+    {
+      "time": 52.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_26"
+      ],
+      "outputIds": [
+        "Prepared_Cell_26"
+      ]
+    },
+    {
+      "time": 53.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_4"
+      ],
+      "outputIds": [
+        "Prepared_Cell_4"
+      ]
+    },
+    {
+      "time": 54.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_27"
+      ],
+      "outputIds": [
+        "Prepared_Cell_27"
+      ]
+    },
+    {
+      "time": 56.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_28"
+      ],
+      "outputIds": [
+        "Prepared_Cell_28"
+      ]
+    },
+    {
+      "time": 58.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_29"
+      ],
+      "outputIds": [
+        "Prepared_Cell_29"
+      ]
+    },
+    {
+      "time": 60.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_30"
+      ],
+      "outputIds": [
+        "Prepared_Cell_30"
+      ]
+    },
+    {
+      "time": 62.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_31"
+      ],
+      "outputIds": [
+        "Prepared_Cell_31"
+      ]
+    },
+    {
+      "time": 64.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_32"
+      ],
+      "outputIds": [
+        "Prepared_Cell_32"
+      ]
+    },
+    {
+      "time": 65.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_5"
+      ],
+      "outputIds": [
+        "Prepared_Cell_5"
+      ]
+    },
+    {
+      "time": 66.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_33"
+      ],
+      "outputIds": [
+        "Prepared_Cell_33"
+      ]
+    },
+    {
+      "time": 68.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_34"
+      ],
+      "outputIds": [
+        "Prepared_Cell_34"
+      ]
+    },
+    {
+      "time": 70.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_35"
+      ],
+      "outputIds": [
+        "Prepared_Cell_35"
+      ]
+    },
+    {
+      "time": 72.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_36"
+      ],
+      "outputIds": [
+        "Prepared_Cell_36"
+      ]
+    },
+    {
+      "time": 74.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_37"
+      ],
+      "outputIds": [
+        "Prepared_Cell_37"
+      ]
+    },
+    {
+      "time": 76.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_38"
+      ],
+      "outputIds": [
+        "Prepared_Cell_38"
+      ]
+    },
+    {
+      "time": 77.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_6"
+      ],
+      "outputIds": [
+        "Prepared_Cell_6"
+      ]
+    },
+    {
+      "time": 78.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_39"
+      ],
+      "outputIds": [
+        "Prepared_Cell_39"
+      ]
+    },
+    {
+      "time": 80.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_40"
+      ],
+      "outputIds": [
+        "Prepared_Cell_40"
+      ]
+    },
+    {
+      "time": 82.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_41"
+      ],
+      "outputIds": [
+        "Prepared_Cell_41"
+      ]
+    },
+    {
+      "time": 84.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_42"
+      ],
+      "outputIds": [
+        "Prepared_Cell_42"
+      ]
+    },
+    {
+      "time": 86.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_43"
+      ],
+      "outputIds": [
+        "Prepared_Cell_43"
+      ]
+    },
+    {
+      "time": 88.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_44"
+      ],
+      "outputIds": [
+        "Prepared_Cell_44"
+      ]
+    },
+    {
+      "time": 89.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_7"
+      ],
+      "outputIds": [
+        "Prepared_Cell_7"
+      ]
+    },
+    {
+      "time": 90.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_45"
+      ],
+      "outputIds": [
+        "Prepared_Cell_45"
+      ]
+    },
+    {
+      "time": 92.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_46"
+      ],
+      "outputIds": [
+        "Prepared_Cell_46"
+      ]
+    },
+    {
+      "time": 94.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_47"
+      ],
+      "outputIds": [
+        "Prepared_Cell_47"
+      ]
+    },
+    {
+      "time": 96.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_48"
+      ],
+      "outputIds": [
+        "Prepared_Cell_48"
+      ]
+    },
+    {
+      "time": 98.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_49"
+      ],
+      "outputIds": [
+        "Prepared_Cell_49"
+      ]
+    },
+    {
+      "time": 100.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_50"
+      ],
+      "outputIds": [
+        "Prepared_Cell_50"
+      ]
+    },
+    {
+      "time": 101.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_8"
+      ],
+      "outputIds": [
+        "Prepared_Cell_8"
+      ]
+    },
+    {
+      "time": 102.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_51"
+      ],
+      "outputIds": [
+        "Prepared_Cell_51"
+      ]
+    },
+    {
+      "time": 104.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_52"
+      ],
+      "outputIds": [
+        "Prepared_Cell_52"
+      ]
+    },
+    {
+      "time": 106.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_53"
+      ],
+      "outputIds": [
+        "Prepared_Cell_53"
+      ]
+    },
+    {
+      "time": 108.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_54"
+      ],
+      "outputIds": [
+        "Prepared_Cell_54"
+      ]
+    },
+    {
+      "time": 110.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_55"
+      ],
+      "outputIds": [
+        "Prepared_Cell_55"
+      ]
+    },
+    {
+      "time": 112.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_56"
+      ],
+      "outputIds": [
+        "Prepared_Cell_56"
+      ]
+    },
+    {
+      "time": 113.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_9"
+      ],
+      "outputIds": [
+        "Prepared_Cell_9"
+      ]
+    },
+    {
+      "time": 114.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_57"
+      ],
+      "outputIds": [
+        "Prepared_Cell_57"
+      ]
+    },
+    {
+      "time": 116.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_58"
+      ],
+      "outputIds": [
+        "Prepared_Cell_58"
+      ]
+    },
+    {
+      "time": 118.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_59"
+      ],
+      "outputIds": [
+        "Prepared_Cell_59"
+      ]
+    },
+    {
+      "time": 120.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_60"
+      ],
+      "outputIds": [
+        "Prepared_Cell_60"
+      ]
+    },
+    {
+      "time": 122.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_61"
+      ],
+      "outputIds": [
+        "Prepared_Cell_61"
+      ]
+    },
+    {
+      "time": 125.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_10"
+      ],
+      "outputIds": [
+        "Prepared_Cell_10"
+      ]
+    },
+    {
+      "time": 131.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_62"
+      ],
+      "outputIds": [
+        "Prepared_Cell_62"
+      ]
+    },
+    {
+      "time": 136.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_1",
+        "Prepared_Cell_2",
+        "Prepared_Cell_3",
+        "Prepared_Cell_4",
+        "Prepared_Cell_5",
+        "Prepared_Cell_6",
+        "Prepared_Cell_7",
+        "Prepared_Cell_8",
+        "Prepared_Cell_9",
+        "Prepared_Cell_10",
+        "Cell_Tray_1"
+      ],
+      "outputIds": [
+        "Assembled_Module_1"
+      ]
+    },
+    {
+      "time": 137.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_11"
+      ],
+      "outputIds": [
+        "Prepared_Cell_11"
+      ]
+    },
+    {
+      "time": 143.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_63"
+      ],
+      "outputIds": [
+        "Prepared_Cell_63"
+      ]
+    },
+    {
+      "time": 147.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_1"
+      ],
+      "outputIds": [
+        "Turned_Module_1"
+      ]
+    },
+    {
+      "time": 149.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_12"
+      ],
+      "outputIds": [
+        "Prepared_Cell_12"
+      ]
+    },
+    {
+      "time": 155.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_64"
+      ],
+      "outputIds": [
+        "Prepared_Cell_64"
+      ]
+    },
+    {
+      "time": 157.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_1"
+      ],
+      "outputIds": [
+        "Inspected_Module_1"
+      ]
+    },
+    {
+      "time": 161.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_13"
+      ],
+      "outputIds": [
+        "Prepared_Cell_13"
+      ]
+    },
+    {
+      "time": 167.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_1"
+      ],
+      "outputIds": [
+        "Inspected_Module_1"
+      ]
+    },
+    {
+      "time": 167.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_65"
+      ],
+      "outputIds": [
+        "Prepared_Cell_65"
+      ]
+    },
+    {
+      "time": 173.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_14"
+      ],
+      "outputIds": [
+        "Prepared_Cell_14"
+      ]
+    },
+    {
+      "time": 179.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_66"
+      ],
+      "outputIds": [
+        "Prepared_Cell_66"
+      ]
+    },
+    {
+      "time": 185.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_15"
+      ],
+      "outputIds": [
+        "Prepared_Cell_15"
+      ]
+    },
+    {
+      "time": 191.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_67"
+      ],
+      "outputIds": [
+        "Prepared_Cell_67"
+      ]
+    },
+    {
+      "time": 197.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_16"
+      ],
+      "outputIds": [
+        "Prepared_Cell_16"
+      ]
+    },
+    {
+      "time": 203.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_68"
+      ],
+      "outputIds": [
+        "Prepared_Cell_68"
+      ]
+    },
+    {
+      "time": 209.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_17"
+      ],
+      "outputIds": [
+        "Prepared_Cell_17"
+      ]
+    },
+    {
+      "time": 215.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_69"
+      ],
+      "outputIds": [
+        "Prepared_Cell_69"
+      ]
+    },
+    {
+      "time": 221.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_18"
+      ],
+      "outputIds": [
+        "Prepared_Cell_18"
+      ]
+    },
+    {
+      "time": 227.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_70"
+      ],
+      "outputIds": [
+        "Prepared_Cell_70"
+      ]
+    },
+    {
+      "time": 233.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_19"
+      ],
+      "outputIds": [
+        "Prepared_Cell_19"
+      ]
+    },
+    {
+      "time": 239.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_71"
+      ],
+      "outputIds": [
+        "Prepared_Cell_71"
+      ]
+    },
+    {
+      "time": 245.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_20"
+      ],
+      "outputIds": [
+        "Prepared_Cell_20"
+      ]
+    },
+    {
+      "time": 251.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_72"
+      ],
+      "outputIds": [
+        "Prepared_Cell_72"
+      ]
+    },
+    {
+      "time": 256.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_11",
+        "Prepared_Cell_12",
+        "Prepared_Cell_13",
+        "Prepared_Cell_14",
+        "Prepared_Cell_15",
+        "Prepared_Cell_16",
+        "Prepared_Cell_17",
+        "Prepared_Cell_18",
+        "Prepared_Cell_19",
+        "Prepared_Cell_20",
+        "Cell_Tray_2"
+      ],
+      "outputIds": [
+        "Assembled_Module_2"
+      ]
+    },
+    {
+      "time": 257.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_21"
+      ],
+      "outputIds": [
+        "Prepared_Cell_21"
+      ]
+    },
+    {
+      "time": 263.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_73"
+      ],
+      "outputIds": [
+        "Prepared_Cell_73"
+      ]
+    },
+    {
+      "time": 267.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_2"
+      ],
+      "outputIds": [
+        "Turned_Module_2"
+      ]
+    },
+    {
+      "time": 269.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_22"
+      ],
+      "outputIds": [
+        "Prepared_Cell_22"
+      ]
+    },
+    {
+      "time": 275.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_74"
+      ],
+      "outputIds": [
+        "Prepared_Cell_74"
+      ]
+    },
+    {
+      "time": 277.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_2"
+      ],
+      "outputIds": [
+        "Inspected_Module_2"
+      ]
+    },
+    {
+      "time": 281.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_23"
+      ],
+      "outputIds": [
+        "Prepared_Cell_23"
+      ]
+    },
+    {
+      "time": 287.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_2"
+      ],
+      "outputIds": [
+        "Inspected_Module_2"
+      ]
+    },
+    {
+      "time": 293.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_24"
+      ],
+      "outputIds": [
+        "Prepared_Cell_24"
+      ]
+    },
+    {
+      "time": 305.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_25"
+      ],
+      "outputIds": [
+        "Prepared_Cell_25"
+      ]
+    },
+    {
+      "time": 317.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_26"
+      ],
+      "outputIds": [
+        "Prepared_Cell_26"
+      ]
+    },
+    {
+      "time": 329.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_27"
+      ],
+      "outputIds": [
+        "Prepared_Cell_27"
+      ]
+    },
+    {
+      "time": 337.2277,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_75"
+      ],
+      "outputIds": [
+        "Prepared_Cell_75"
+      ]
+    },
+    {
+      "time": 339.2277,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_76"
+      ],
+      "outputIds": [
+        "Prepared_Cell_76"
+      ]
+    },
+    {
+      "time": 341.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_28"
+      ],
+      "outputIds": [
+        "Prepared_Cell_28"
+      ]
+    },
+    {
+      "time": 341.2277,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_77"
+      ],
+      "outputIds": [
+        "Prepared_Cell_77"
+      ]
+    },
+    {
+      "time": 343.2277,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_78"
+      ],
+      "outputIds": [
+        "Prepared_Cell_78"
+      ]
+    },
+    {
+      "time": 345.2277,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_79"
+      ],
+      "outputIds": [
+        "Prepared_Cell_79"
+      ]
+    },
+    {
+      "time": 347.2277,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_80"
+      ],
+      "outputIds": [
+        "Prepared_Cell_80"
+      ]
+    },
+    {
+      "time": 353.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_29"
+      ],
+      "outputIds": [
+        "Prepared_Cell_29"
+      ]
+    },
+    {
+      "time": 359.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_81"
+      ],
+      "outputIds": [
+        "Prepared_Cell_81"
+      ]
+    },
+    {
+      "time": 365.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_30"
+      ],
+      "outputIds": [
+        "Prepared_Cell_30"
+      ]
+    },
+    {
+      "time": 371.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_82"
+      ],
+      "outputIds": [
+        "Prepared_Cell_82"
+      ]
+    },
+    {
+      "time": 376.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_21",
+        "Prepared_Cell_22",
+        "Prepared_Cell_23",
+        "Prepared_Cell_24",
+        "Prepared_Cell_25",
+        "Prepared_Cell_26",
+        "Prepared_Cell_27",
+        "Prepared_Cell_28",
+        "Prepared_Cell_29",
+        "Prepared_Cell_30",
+        "Cell_Tray_3"
+      ],
+      "outputIds": [
+        "Assembled_Module_3"
+      ]
+    },
+    {
+      "time": 377.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_31"
+      ],
+      "outputIds": [
+        "Prepared_Cell_31"
+      ]
+    },
+    {
+      "time": 383.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_83"
+      ],
+      "outputIds": [
+        "Prepared_Cell_83"
+      ]
+    },
+    {
+      "time": 387.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_3"
+      ],
+      "outputIds": [
+        "Turned_Module_3"
+      ]
+    },
+    {
+      "time": 389.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_32"
+      ],
+      "outputIds": [
+        "Prepared_Cell_32"
+      ]
+    },
+    {
+      "time": 395.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_84"
+      ],
+      "outputIds": [
+        "Prepared_Cell_84"
+      ]
+    },
+    {
+      "time": 397.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_3"
+      ],
+      "outputIds": [
+        "Inspected_Module_3"
+      ]
+    },
+    {
+      "time": 401.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_33"
+      ],
+      "outputIds": [
+        "Prepared_Cell_33"
+      ]
+    },
+    {
+      "time": 407.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_3"
+      ],
+      "outputIds": [
+        "Inspected_Module_3"
+      ]
+    },
+    {
+      "time": 407.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_85"
+      ],
+      "outputIds": [
+        "Prepared_Cell_85"
+      ]
+    },
+    {
+      "time": 413.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_34"
+      ],
+      "outputIds": [
+        "Prepared_Cell_34"
+      ]
+    },
+    {
+      "time": 419.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_86"
+      ],
+      "outputIds": [
+        "Prepared_Cell_86"
+      ]
+    },
+    {
+      "time": 425.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_35"
+      ],
+      "outputIds": [
+        "Prepared_Cell_35"
+      ]
+    },
+    {
+      "time": 431.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_87"
+      ],
+      "outputIds": [
+        "Prepared_Cell_87"
+      ]
+    },
+    {
+      "time": 437.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_36"
+      ],
+      "outputIds": [
+        "Prepared_Cell_36"
+      ]
+    },
+    {
+      "time": 443.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_88"
+      ],
+      "outputIds": [
+        "Prepared_Cell_88"
+      ]
+    },
+    {
+      "time": 449.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_37"
+      ],
+      "outputIds": [
+        "Prepared_Cell_37"
+      ]
+    },
+    {
+      "time": 455.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_89"
+      ],
+      "outputIds": [
+        "Prepared_Cell_89"
+      ]
+    },
+    {
+      "time": 461.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_38"
+      ],
+      "outputIds": [
+        "Prepared_Cell_38"
+      ]
+    },
+    {
+      "time": 467.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_90"
+      ],
+      "outputIds": [
+        "Prepared_Cell_90"
+      ]
+    },
+    {
+      "time": 473.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_39"
+      ],
+      "outputIds": [
+        "Prepared_Cell_39"
+      ]
+    },
+    {
+      "time": 479.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_91"
+      ],
+      "outputIds": [
+        "Prepared_Cell_91"
+      ]
+    },
+    {
+      "time": 485.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_40"
+      ],
+      "outputIds": [
+        "Prepared_Cell_40"
+      ]
+    },
+    {
+      "time": 491.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_92"
+      ],
+      "outputIds": [
+        "Prepared_Cell_92"
+      ]
+    },
+    {
+      "time": 496.0,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_31",
+        "Prepared_Cell_32",
+        "Prepared_Cell_33",
+        "Prepared_Cell_34",
+        "Prepared_Cell_35",
+        "Prepared_Cell_36",
+        "Prepared_Cell_37",
+        "Prepared_Cell_38",
+        "Prepared_Cell_39",
+        "Prepared_Cell_40",
+        "Cell_Tray_4"
+      ],
+      "outputIds": [
+        "Assembled_Module_4"
+      ]
+    },
+    {
+      "time": 497.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_41"
+      ],
+      "outputIds": [
+        "Prepared_Cell_41"
+      ]
+    },
+    {
+      "time": 503.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_93"
+      ],
+      "outputIds": [
+        "Prepared_Cell_93"
+      ]
+    },
+    {
+      "time": 507.0,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_4"
+      ],
+      "outputIds": [
+        "Turned_Module_4"
+      ]
+    },
+    {
+      "time": 509.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_42"
+      ],
+      "outputIds": [
+        "Prepared_Cell_42"
+      ]
+    },
+    {
+      "time": 515.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_94"
+      ],
+      "outputIds": [
+        "Prepared_Cell_94"
+      ]
+    },
+    {
+      "time": 517.0,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_4"
+      ],
+      "outputIds": [
+        "Inspected_Module_4"
+      ]
+    },
+    {
+      "time": 521.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_43"
+      ],
+      "outputIds": [
+        "Prepared_Cell_43"
+      ]
+    },
+    {
+      "time": 527.0,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_4"
+      ],
+      "outputIds": [
+        "Inspected_Module_4"
+      ]
+    },
+    {
+      "time": 527.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_95"
+      ],
+      "outputIds": [
+        "Prepared_Cell_95"
+      ]
+    },
+    {
+      "time": 533.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_44"
+      ],
+      "outputIds": [
+        "Prepared_Cell_44"
+      ]
+    },
+    {
+      "time": 539.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_96"
+      ],
+      "outputIds": [
+        "Prepared_Cell_96"
+      ]
+    },
+    {
+      "time": 545.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_45"
+      ],
+      "outputIds": [
+        "Prepared_Cell_45"
+      ]
+    },
+    {
+      "time": 551.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_97"
+      ],
+      "outputIds": [
+        "Prepared_Cell_97"
+      ]
+    },
+    {
+      "time": 557.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_46"
+      ],
+      "outputIds": [
+        "Prepared_Cell_46"
+      ]
+    },
+    {
+      "time": 563.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_98"
+      ],
+      "outputIds": [
+        "Prepared_Cell_98"
+      ]
+    },
+    {
+      "time": 569.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_47"
+      ],
+      "outputIds": [
+        "Prepared_Cell_47"
+      ]
+    },
+    {
+      "time": 575.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_99"
+      ],
+      "outputIds": [
+        "Prepared_Cell_99"
+      ]
+    },
+    {
+      "time": 581.0,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_48"
+      ],
+      "outputIds": [
+        "Prepared_Cell_48"
+      ]
+    },
+    {
+      "time": 587.0,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_100"
+      ],
+      "outputIds": [
+        "Prepared_Cell_100"
+      ]
+    },
+    {
+      "time": 646.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_49"
+      ],
+      "outputIds": [
+        "Prepared_Cell_49"
+      ]
+    },
+    {
+      "time": 652.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_101"
+      ],
+      "outputIds": [
+        "Prepared_Cell_101"
+      ]
+    },
+    {
+      "time": 658.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_50"
+      ],
+      "outputIds": [
+        "Prepared_Cell_50"
+      ]
+    },
+    {
+      "time": 664.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_102"
+      ],
+      "outputIds": [
+        "Prepared_Cell_102"
+      ]
+    },
+    {
+      "time": 669.9415,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_41",
+        "Prepared_Cell_42",
+        "Prepared_Cell_43",
+        "Prepared_Cell_44",
+        "Prepared_Cell_45",
+        "Prepared_Cell_46",
+        "Prepared_Cell_47",
+        "Prepared_Cell_48",
+        "Prepared_Cell_49",
+        "Prepared_Cell_50",
+        "Cell_Tray_5"
+      ],
+      "outputIds": [
+        "Assembled_Module_5"
+      ]
+    },
+    {
+      "time": 670.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_51"
+      ],
+      "outputIds": [
+        "Prepared_Cell_51"
+      ]
+    },
+    {
+      "time": 676.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_103"
+      ],
+      "outputIds": [
+        "Prepared_Cell_103"
+      ]
+    },
+    {
+      "time": 680.9415,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_5"
+      ],
+      "outputIds": [
+        "Turned_Module_5"
+      ]
+    },
+    {
+      "time": 682.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_52"
+      ],
+      "outputIds": [
+        "Prepared_Cell_52"
+      ]
+    },
+    {
+      "time": 688.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_104"
+      ],
+      "outputIds": [
+        "Prepared_Cell_104"
+      ]
+    },
+    {
+      "time": 690.9415,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_5"
+      ],
+      "outputIds": [
+        "Inspected_Module_5"
+      ]
+    },
+    {
+      "time": 694.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_53"
+      ],
+      "outputIds": [
+        "Prepared_Cell_53"
+      ]
+    },
+    {
+      "time": 700.9415,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_5"
+      ],
+      "outputIds": [
+        "Inspected_Module_5"
+      ]
+    },
+    {
+      "time": 700.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_105"
+      ],
+      "outputIds": [
+        "Prepared_Cell_105"
+      ]
+    },
+    {
+      "time": 706.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_54"
+      ],
+      "outputIds": [
+        "Prepared_Cell_54"
+      ]
+    },
+    {
+      "time": 712.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_106"
+      ],
+      "outputIds": [
+        "Prepared_Cell_106"
+      ]
+    },
+    {
+      "time": 718.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_55"
+      ],
+      "outputIds": [
+        "Prepared_Cell_55"
+      ]
+    },
+    {
+      "time": 724.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_107"
+      ],
+      "outputIds": [
+        "Prepared_Cell_107"
+      ]
+    },
+    {
+      "time": 730.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_56"
+      ],
+      "outputIds": [
+        "Prepared_Cell_56"
+      ]
+    },
+    {
+      "time": 736.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_108"
+      ],
+      "outputIds": [
+        "Prepared_Cell_108"
+      ]
+    },
+    {
+      "time": 742.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_57"
+      ],
+      "outputIds": [
+        "Prepared_Cell_57"
+      ]
+    },
+    {
+      "time": 748.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_109"
+      ],
+      "outputIds": [
+        "Prepared_Cell_109"
+      ]
+    },
+    {
+      "time": 754.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_58"
+      ],
+      "outputIds": [
+        "Prepared_Cell_58"
+      ]
+    },
+    {
+      "time": 760.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_110"
+      ],
+      "outputIds": [
+        "Prepared_Cell_110"
+      ]
+    },
+    {
+      "time": 766.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_59"
+      ],
+      "outputIds": [
+        "Prepared_Cell_59"
+      ]
+    },
+    {
+      "time": 772.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_111"
+      ],
+      "outputIds": [
+        "Prepared_Cell_111"
+      ]
+    },
+    {
+      "time": 778.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_60"
+      ],
+      "outputIds": [
+        "Prepared_Cell_60"
+      ]
+    },
+    {
+      "time": 784.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_112"
+      ],
+      "outputIds": [
+        "Prepared_Cell_112"
+      ]
+    },
+    {
+      "time": 789.9415,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_51",
+        "Prepared_Cell_52",
+        "Prepared_Cell_53",
+        "Prepared_Cell_54",
+        "Prepared_Cell_55",
+        "Prepared_Cell_56",
+        "Prepared_Cell_57",
+        "Prepared_Cell_58",
+        "Prepared_Cell_59",
+        "Prepared_Cell_60",
+        "Cell_Tray_6"
+      ],
+      "outputIds": [
+        "Assembled_Module_6"
+      ]
+    },
+    {
+      "time": 790.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_61"
+      ],
+      "outputIds": [
+        "Prepared_Cell_61"
+      ]
+    },
+    {
+      "time": 796.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_113"
+      ],
+      "outputIds": [
+        "Prepared_Cell_113"
+      ]
+    },
+    {
+      "time": 800.9415,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_6"
+      ],
+      "outputIds": [
+        "Turned_Module_6"
+      ]
+    },
+    {
+      "time": 802.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_62"
+      ],
+      "outputIds": [
+        "Prepared_Cell_62"
+      ]
+    },
+    {
+      "time": 808.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_114"
+      ],
+      "outputIds": [
+        "Prepared_Cell_114"
+      ]
+    },
+    {
+      "time": 814.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_63"
+      ],
+      "outputIds": [
+        "Prepared_Cell_63"
+      ]
+    },
+    {
+      "time": 820.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_115"
+      ],
+      "outputIds": [
+        "Prepared_Cell_115"
+      ]
+    },
+    {
+      "time": 826.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_64"
+      ],
+      "outputIds": [
+        "Prepared_Cell_64"
+      ]
+    },
+    {
+      "time": 832.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_116"
+      ],
+      "outputIds": [
+        "Prepared_Cell_116"
+      ]
+    },
+    {
+      "time": 838.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_65"
+      ],
+      "outputIds": [
+        "Prepared_Cell_65"
+      ]
+    },
+    {
+      "time": 844.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_117"
+      ],
+      "outputIds": [
+        "Prepared_Cell_117"
+      ]
+    },
+    {
+      "time": 850.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_66"
+      ],
+      "outputIds": [
+        "Prepared_Cell_66"
+      ]
+    },
+    {
+      "time": 856.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_118"
+      ],
+      "outputIds": [
+        "Prepared_Cell_118"
+      ]
+    },
+    {
+      "time": 862.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_67"
+      ],
+      "outputIds": [
+        "Prepared_Cell_67"
+      ]
+    },
+    {
+      "time": 868.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_119"
+      ],
+      "outputIds": [
+        "Prepared_Cell_119"
+      ]
+    },
+    {
+      "time": 874.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_68"
+      ],
+      "outputIds": [
+        "Prepared_Cell_68"
+      ]
+    },
+    {
+      "time": 880.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_120"
+      ],
+      "outputIds": [
+        "Prepared_Cell_120"
+      ]
+    },
+    {
+      "time": 886.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_69"
+      ],
+      "outputIds": [
+        "Prepared_Cell_69"
+      ]
+    },
+    {
+      "time": 892.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_121"
+      ],
+      "outputIds": [
+        "Prepared_Cell_121"
+      ]
+    },
+    {
+      "time": 898.0042,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_6"
+      ],
+      "outputIds": [
+        "Inspected_Module_6"
+      ]
+    },
+    {
+      "time": 898.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_70"
+      ],
+      "outputIds": [
+        "Prepared_Cell_70"
+      ]
+    },
+    {
+      "time": 904.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_122"
+      ],
+      "outputIds": [
+        "Prepared_Cell_122"
+      ]
+    },
+    {
+      "time": 908.0042,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_6"
+      ],
+      "outputIds": [
+        "Inspected_Module_6"
+      ]
+    },
+    {
+      "time": 909.9415,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_61",
+        "Prepared_Cell_62",
+        "Prepared_Cell_63",
+        "Prepared_Cell_64",
+        "Prepared_Cell_65",
+        "Prepared_Cell_66",
+        "Prepared_Cell_67",
+        "Prepared_Cell_68",
+        "Prepared_Cell_69",
+        "Prepared_Cell_70",
+        "Cell_Tray_7"
+      ],
+      "outputIds": [
+        "Assembled_Module_7"
+      ]
+    },
+    {
+      "time": 910.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_71"
+      ],
+      "outputIds": [
+        "Prepared_Cell_71"
+      ]
+    },
+    {
+      "time": 916.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_123"
+      ],
+      "outputIds": [
+        "Prepared_Cell_123"
+      ]
+    },
+    {
+      "time": 920.9415,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_7"
+      ],
+      "outputIds": [
+        "Turned_Module_7"
+      ]
+    },
+    {
+      "time": 922.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_72"
+      ],
+      "outputIds": [
+        "Prepared_Cell_72"
+      ]
+    },
+    {
+      "time": 928.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_124"
+      ],
+      "outputIds": [
+        "Prepared_Cell_124"
+      ]
+    },
+    {
+      "time": 930.9415,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_7"
+      ],
+      "outputIds": [
+        "Inspected_Module_7"
+      ]
+    },
+    {
+      "time": 934.9415,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_73"
+      ],
+      "outputIds": [
+        "Prepared_Cell_73"
+      ]
+    },
+    {
+      "time": 940.9415,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_7"
+      ],
+      "outputIds": [
+        "Inspected_Module_7"
+      ]
+    },
+    {
+      "time": 940.9415,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_125"
+      ],
+      "outputIds": [
+        "Prepared_Cell_125"
+      ]
+    },
+    {
+      "time": 975.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_74"
+      ],
+      "outputIds": [
+        "Prepared_Cell_74"
+      ]
+    },
+    {
+      "time": 981.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_126"
+      ],
+      "outputIds": [
+        "Prepared_Cell_126"
+      ]
+    },
+    {
+      "time": 987.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_75"
+      ],
+      "outputIds": [
+        "Prepared_Cell_75"
+      ]
+    },
+    {
+      "time": 993.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_127"
+      ],
+      "outputIds": [
+        "Prepared_Cell_127"
+      ]
+    },
+    {
+      "time": 999.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_76"
+      ],
+      "outputIds": [
+        "Prepared_Cell_76"
+      ]
+    },
+    {
+      "time": 1005.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_128"
+      ],
+      "outputIds": [
+        "Prepared_Cell_128"
+      ]
+    },
+    {
+      "time": 1011.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_77"
+      ],
+      "outputIds": [
+        "Prepared_Cell_77"
+      ]
+    },
+    {
+      "time": 1017.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_129"
+      ],
+      "outputIds": [
+        "Prepared_Cell_129"
+      ]
+    },
+    {
+      "time": 1023.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_78"
+      ],
+      "outputIds": [
+        "Prepared_Cell_78"
+      ]
+    },
+    {
+      "time": 1029.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_130"
+      ],
+      "outputIds": [
+        "Prepared_Cell_130"
+      ]
+    },
+    {
+      "time": 1035.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_79"
+      ],
+      "outputIds": [
+        "Prepared_Cell_79"
+      ]
+    },
+    {
+      "time": 1041.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_131"
+      ],
+      "outputIds": [
+        "Prepared_Cell_131"
+      ]
+    },
+    {
+      "time": 1047.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_80"
+      ],
+      "outputIds": [
+        "Prepared_Cell_80"
+      ]
+    },
+    {
+      "time": 1053.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_132"
+      ],
+      "outputIds": [
+        "Prepared_Cell_132"
+      ]
+    },
+    {
+      "time": 1058.7269,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_71",
+        "Prepared_Cell_72",
+        "Prepared_Cell_73",
+        "Prepared_Cell_74",
+        "Prepared_Cell_75",
+        "Prepared_Cell_76",
+        "Prepared_Cell_77",
+        "Prepared_Cell_78",
+        "Prepared_Cell_79",
+        "Prepared_Cell_80",
+        "Cell_Tray_8"
+      ],
+      "outputIds": [
+        "Assembled_Module_8"
+      ]
+    },
+    {
+      "time": 1059.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_81"
+      ],
+      "outputIds": [
+        "Prepared_Cell_81"
+      ]
+    },
+    {
+      "time": 1065.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_133"
+      ],
+      "outputIds": [
+        "Prepared_Cell_133"
+      ]
+    },
+    {
+      "time": 1069.7269,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_8"
+      ],
+      "outputIds": [
+        "Turned_Module_8"
+      ]
+    },
+    {
+      "time": 1071.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_82"
+      ],
+      "outputIds": [
+        "Prepared_Cell_82"
+      ]
+    },
+    {
+      "time": 1077.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_134"
+      ],
+      "outputIds": [
+        "Prepared_Cell_134"
+      ]
+    },
+    {
+      "time": 1079.7269,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_8"
+      ],
+      "outputIds": [
+        "Inspected_Module_8"
+      ]
+    },
+    {
+      "time": 1083.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_83"
+      ],
+      "outputIds": [
+        "Prepared_Cell_83"
+      ]
+    },
+    {
+      "time": 1089.7269,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_8"
+      ],
+      "outputIds": [
+        "Inspected_Module_8"
+      ]
+    },
+    {
+      "time": 1089.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_135"
+      ],
+      "outputIds": [
+        "Prepared_Cell_135"
+      ]
+    },
+    {
+      "time": 1095.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_84"
+      ],
+      "outputIds": [
+        "Prepared_Cell_84"
+      ]
+    },
+    {
+      "time": 1101.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_136"
+      ],
+      "outputIds": [
+        "Prepared_Cell_136"
+      ]
+    },
+    {
+      "time": 1107.7269,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_85"
+      ],
+      "outputIds": [
+        "Prepared_Cell_85"
+      ]
+    },
+    {
+      "time": 1113.7269,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_137"
+      ],
+      "outputIds": [
+        "Prepared_Cell_137"
+      ]
+    },
+    {
+      "time": 1208.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_86"
+      ],
+      "outputIds": [
+        "Prepared_Cell_86"
+      ]
+    },
+    {
+      "time": 1214.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_138"
+      ],
+      "outputIds": [
+        "Prepared_Cell_138"
+      ]
+    },
+    {
+      "time": 1220.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_87"
+      ],
+      "outputIds": [
+        "Prepared_Cell_87"
+      ]
+    },
+    {
+      "time": 1226.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_139"
+      ],
+      "outputIds": [
+        "Prepared_Cell_139"
+      ]
+    },
+    {
+      "time": 1232.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_88"
+      ],
+      "outputIds": [
+        "Prepared_Cell_88"
+      ]
+    },
+    {
+      "time": 1238.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_140"
+      ],
+      "outputIds": [
+        "Prepared_Cell_140"
+      ]
+    },
+    {
+      "time": 1244.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_89"
+      ],
+      "outputIds": [
+        "Prepared_Cell_89"
+      ]
+    },
+    {
+      "time": 1250.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_141"
+      ],
+      "outputIds": [
+        "Prepared_Cell_141"
+      ]
+    },
+    {
+      "time": 1256.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_90"
+      ],
+      "outputIds": [
+        "Prepared_Cell_90"
+      ]
+    },
+    {
+      "time": 1262.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_142"
+      ],
+      "outputIds": [
+        "Prepared_Cell_142"
+      ]
+    },
+    {
+      "time": 1267.0978,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_81",
+        "Prepared_Cell_82",
+        "Prepared_Cell_83",
+        "Prepared_Cell_84",
+        "Prepared_Cell_85",
+        "Prepared_Cell_86",
+        "Prepared_Cell_87",
+        "Prepared_Cell_88",
+        "Prepared_Cell_89",
+        "Prepared_Cell_90",
+        "Cell_Tray_9"
+      ],
+      "outputIds": [
+        "Assembled_Module_9"
+      ]
+    },
+    {
+      "time": 1268.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_91"
+      ],
+      "outputIds": [
+        "Prepared_Cell_91"
+      ]
+    },
+    {
+      "time": 1274.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_143"
+      ],
+      "outputIds": [
+        "Prepared_Cell_143"
+      ]
+    },
+    {
+      "time": 1278.0978,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_9"
+      ],
+      "outputIds": [
+        "Turned_Module_9"
+      ]
+    },
+    {
+      "time": 1280.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_92"
+      ],
+      "outputIds": [
+        "Prepared_Cell_92"
+      ]
+    },
+    {
+      "time": 1286.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_144"
+      ],
+      "outputIds": [
+        "Prepared_Cell_144"
+      ]
+    },
+    {
+      "time": 1292.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_93"
+      ],
+      "outputIds": [
+        "Prepared_Cell_93"
+      ]
+    },
+    {
+      "time": 1298.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_145"
+      ],
+      "outputIds": [
+        "Prepared_Cell_145"
+      ]
+    },
+    {
+      "time": 1304.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_94"
+      ],
+      "outputIds": [
+        "Prepared_Cell_94"
+      ]
+    },
+    {
+      "time": 1310.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_146"
+      ],
+      "outputIds": [
+        "Prepared_Cell_146"
+      ]
+    },
+    {
+      "time": 1316.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_95"
+      ],
+      "outputIds": [
+        "Prepared_Cell_95"
+      ]
+    },
+    {
+      "time": 1322.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_147"
+      ],
+      "outputIds": [
+        "Prepared_Cell_147"
+      ]
+    },
+    {
+      "time": 1326.5768,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_9"
+      ],
+      "outputIds": [
+        "Inspected_Module_9"
+      ]
+    },
+    {
+      "time": 1328.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_96"
+      ],
+      "outputIds": [
+        "Prepared_Cell_96"
+      ]
+    },
+    {
+      "time": 1334.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_148"
+      ],
+      "outputIds": [
+        "Prepared_Cell_148"
+      ]
+    },
+    {
+      "time": 1336.5768,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_9"
+      ],
+      "outputIds": [
+        "Inspected_Module_9"
+      ]
+    },
+    {
+      "time": 1340.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_97"
+      ],
+      "outputIds": [
+        "Prepared_Cell_97"
+      ]
+    },
+    {
+      "time": 1346.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_149"
+      ],
+      "outputIds": [
+        "Prepared_Cell_149"
+      ]
+    },
+    {
+      "time": 1352.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_98"
+      ],
+      "outputIds": [
+        "Prepared_Cell_98"
+      ]
+    },
+    {
+      "time": 1358.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_150"
+      ],
+      "outputIds": [
+        "Prepared_Cell_150"
+      ]
+    },
+    {
+      "time": 1364.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_99"
+      ],
+      "outputIds": [
+        "Prepared_Cell_99"
+      ]
+    },
+    {
+      "time": 1370.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_151"
+      ],
+      "outputIds": [
+        "Prepared_Cell_151"
+      ]
+    },
+    {
+      "time": 1376.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_100"
+      ],
+      "outputIds": [
+        "Prepared_Cell_100"
+      ]
+    },
+    {
+      "time": 1382.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_152"
+      ],
+      "outputIds": [
+        "Prepared_Cell_152"
+      ]
+    },
+    {
+      "time": 1387.0978,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_91",
+        "Prepared_Cell_92",
+        "Prepared_Cell_93",
+        "Prepared_Cell_94",
+        "Prepared_Cell_95",
+        "Prepared_Cell_96",
+        "Prepared_Cell_97",
+        "Prepared_Cell_98",
+        "Prepared_Cell_99",
+        "Prepared_Cell_100",
+        "Cell_Tray_10"
+      ],
+      "outputIds": [
+        "Assembled_Module_10"
+      ]
+    },
+    {
+      "time": 1388.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_101"
+      ],
+      "outputIds": [
+        "Prepared_Cell_101"
+      ]
+    },
+    {
+      "time": 1394.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_153"
+      ],
+      "outputIds": [
+        "Prepared_Cell_153"
+      ]
+    },
+    {
+      "time": 1398.0978,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_10"
+      ],
+      "outputIds": [
+        "Turned_Module_10"
+      ]
+    },
+    {
+      "time": 1400.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_102"
+      ],
+      "outputIds": [
+        "Prepared_Cell_102"
+      ]
+    },
+    {
+      "time": 1406.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_154"
+      ],
+      "outputIds": [
+        "Prepared_Cell_154"
+      ]
+    },
+    {
+      "time": 1408.0978,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_10"
+      ],
+      "outputIds": [
+        "Inspected_Module_10"
+      ]
+    },
+    {
+      "time": 1412.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_103"
+      ],
+      "outputIds": [
+        "Prepared_Cell_103"
+      ]
+    },
+    {
+      "time": 1418.0978,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_10"
+      ],
+      "outputIds": [
+        "Inspected_Module_10"
+      ]
+    },
+    {
+      "time": 1418.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_155"
+      ],
+      "outputIds": [
+        "Prepared_Cell_155"
+      ]
+    },
+    {
+      "time": 1424.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_104"
+      ],
+      "outputIds": [
+        "Prepared_Cell_104"
+      ]
+    },
+    {
+      "time": 1436.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_105"
+      ],
+      "outputIds": [
+        "Prepared_Cell_105"
+      ]
+    },
+    {
+      "time": 1448.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_106"
+      ],
+      "outputIds": [
+        "Prepared_Cell_106"
+      ]
+    },
+    {
+      "time": 1460.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_107"
+      ],
+      "outputIds": [
+        "Prepared_Cell_107"
+      ]
+    },
+    {
+      "time": 1461.4203,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_156"
+      ],
+      "outputIds": [
+        "Prepared_Cell_156"
+      ]
+    },
+    {
+      "time": 1463.4203,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_157"
+      ],
+      "outputIds": [
+        "Prepared_Cell_157"
+      ]
+    },
+    {
+      "time": 1465.4203,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_158"
+      ],
+      "outputIds": [
+        "Prepared_Cell_158"
+      ]
+    },
+    {
+      "time": 1467.4203,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_159"
+      ],
+      "outputIds": [
+        "Prepared_Cell_159"
+      ]
+    },
+    {
+      "time": 1472.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_108"
+      ],
+      "outputIds": [
+        "Prepared_Cell_108"
+      ]
+    },
+    {
+      "time": 1478.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_160"
+      ],
+      "outputIds": [
+        "Prepared_Cell_160"
+      ]
+    },
+    {
+      "time": 1484.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_109"
+      ],
+      "outputIds": [
+        "Prepared_Cell_109"
+      ]
+    },
+    {
+      "time": 1490.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_161"
+      ],
+      "outputIds": [
+        "Prepared_Cell_161"
+      ]
+    },
+    {
+      "time": 1496.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_110"
+      ],
+      "outputIds": [
+        "Prepared_Cell_110"
+      ]
+    },
+    {
+      "time": 1502.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_162"
+      ],
+      "outputIds": [
+        "Prepared_Cell_162"
+      ]
+    },
+    {
+      "time": 1507.0978,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_101",
+        "Prepared_Cell_102",
+        "Prepared_Cell_103",
+        "Prepared_Cell_104",
+        "Prepared_Cell_105",
+        "Prepared_Cell_106",
+        "Prepared_Cell_107",
+        "Prepared_Cell_108",
+        "Prepared_Cell_109",
+        "Prepared_Cell_110",
+        "Cell_Tray_11"
+      ],
+      "outputIds": [
+        "Assembled_Module_11"
+      ]
+    },
+    {
+      "time": 1508.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_111"
+      ],
+      "outputIds": [
+        "Prepared_Cell_111"
+      ]
+    },
+    {
+      "time": 1514.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_163"
+      ],
+      "outputIds": [
+        "Prepared_Cell_163"
+      ]
+    },
+    {
+      "time": 1518.0978,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_11"
+      ],
+      "outputIds": [
+        "Turned_Module_11"
+      ]
+    },
+    {
+      "time": 1520.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_112"
+      ],
+      "outputIds": [
+        "Prepared_Cell_112"
+      ]
+    },
+    {
+      "time": 1526.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_164"
+      ],
+      "outputIds": [
+        "Prepared_Cell_164"
+      ]
+    },
+    {
+      "time": 1528.0978,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_11"
+      ],
+      "outputIds": [
+        "Inspected_Module_11"
+      ]
+    },
+    {
+      "time": 1532.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_113"
+      ],
+      "outputIds": [
+        "Prepared_Cell_113"
+      ]
+    },
+    {
+      "time": 1538.0978,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_11"
+      ],
+      "outputIds": [
+        "Inspected_Module_11"
+      ]
+    },
+    {
+      "time": 1538.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_165"
+      ],
+      "outputIds": [
+        "Prepared_Cell_165"
+      ]
+    },
+    {
+      "time": 1544.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_114"
+      ],
+      "outputIds": [
+        "Prepared_Cell_114"
+      ]
+    },
+    {
+      "time": 1550.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_166"
+      ],
+      "outputIds": [
+        "Prepared_Cell_166"
+      ]
+    },
+    {
+      "time": 1556.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_115"
+      ],
+      "outputIds": [
+        "Prepared_Cell_115"
+      ]
+    },
+    {
+      "time": 1562.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_167"
+      ],
+      "outputIds": [
+        "Prepared_Cell_167"
+      ]
+    },
+    {
+      "time": 1568.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_116"
+      ],
+      "outputIds": [
+        "Prepared_Cell_116"
+      ]
+    },
+    {
+      "time": 1574.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_168"
+      ],
+      "outputIds": [
+        "Prepared_Cell_168"
+      ]
+    },
+    {
+      "time": 1580.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_117"
+      ],
+      "outputIds": [
+        "Prepared_Cell_117"
+      ]
+    },
+    {
+      "time": 1586.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_169"
+      ],
+      "outputIds": [
+        "Prepared_Cell_169"
+      ]
+    },
+    {
+      "time": 1592.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_118"
+      ],
+      "outputIds": [
+        "Prepared_Cell_118"
+      ]
+    },
+    {
+      "time": 1598.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_170"
+      ],
+      "outputIds": [
+        "Prepared_Cell_170"
+      ]
+    },
+    {
+      "time": 1604.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_119"
+      ],
+      "outputIds": [
+        "Prepared_Cell_119"
+      ]
+    },
+    {
+      "time": 1610.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_171"
+      ],
+      "outputIds": [
+        "Prepared_Cell_171"
+      ]
+    },
+    {
+      "time": 1616.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_120"
+      ],
+      "outputIds": [
+        "Prepared_Cell_120"
+      ]
+    },
+    {
+      "time": 1622.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_172"
+      ],
+      "outputIds": [
+        "Prepared_Cell_172"
+      ]
+    },
+    {
+      "time": 1627.0978,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_111",
+        "Prepared_Cell_112",
+        "Prepared_Cell_113",
+        "Prepared_Cell_114",
+        "Prepared_Cell_115",
+        "Prepared_Cell_116",
+        "Prepared_Cell_117",
+        "Prepared_Cell_118",
+        "Prepared_Cell_119",
+        "Prepared_Cell_120",
+        "Cell_Tray_13"
+      ],
+      "outputIds": [
+        "Assembled_Module_12"
+      ]
+    },
+    {
+      "time": 1628.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_121"
+      ],
+      "outputIds": [
+        "Prepared_Cell_121"
+      ]
+    },
+    {
+      "time": 1634.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_173"
+      ],
+      "outputIds": [
+        "Prepared_Cell_173"
+      ]
+    },
+    {
+      "time": 1640.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_122"
+      ],
+      "outputIds": [
+        "Prepared_Cell_122"
+      ]
+    },
+    {
+      "time": 1645.9894,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_12"
+      ],
+      "outputIds": [
+        "Turned_Module_12"
+      ]
+    },
+    {
+      "time": 1646.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_174"
+      ],
+      "outputIds": [
+        "Prepared_Cell_174"
+      ]
+    },
+    {
+      "time": 1652.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_123"
+      ],
+      "outputIds": [
+        "Prepared_Cell_123"
+      ]
+    },
+    {
+      "time": 1655.9894,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_12"
+      ],
+      "outputIds": [
+        "Inspected_Module_12"
+      ]
+    },
+    {
+      "time": 1658.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_175"
+      ],
+      "outputIds": [
+        "Prepared_Cell_175"
+      ]
+    },
+    {
+      "time": 1664.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_124"
+      ],
+      "outputIds": [
+        "Prepared_Cell_124"
+      ]
+    },
+    {
+      "time": 1665.9894,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_12"
+      ],
+      "outputIds": [
+        "Inspected_Module_12"
+      ]
+    },
+    {
+      "time": 1670.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_176"
+      ],
+      "outputIds": [
+        "Prepared_Cell_176"
+      ]
+    },
+    {
+      "time": 1676.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_125"
+      ],
+      "outputIds": [
+        "Prepared_Cell_125"
+      ]
+    },
+    {
+      "time": 1682.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_177"
+      ],
+      "outputIds": [
+        "Prepared_Cell_177"
+      ]
+    },
+    {
+      "time": 1688.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_126"
+      ],
+      "outputIds": [
+        "Prepared_Cell_126"
+      ]
+    },
+    {
+      "time": 1694.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_178"
+      ],
+      "outputIds": [
+        "Prepared_Cell_178"
+      ]
+    },
+    {
+      "time": 1700.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_127"
+      ],
+      "outputIds": [
+        "Prepared_Cell_127"
+      ]
+    },
+    {
+      "time": 1706.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_179"
+      ],
+      "outputIds": [
+        "Prepared_Cell_179"
+      ]
+    },
+    {
+      "time": 1712.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_128"
+      ],
+      "outputIds": [
+        "Prepared_Cell_128"
+      ]
+    },
+    {
+      "time": 1718.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_180"
+      ],
+      "outputIds": [
+        "Prepared_Cell_180"
+      ]
+    },
+    {
+      "time": 1724.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_129"
+      ],
+      "outputIds": [
+        "Prepared_Cell_129"
+      ]
+    },
+    {
+      "time": 1730.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_181"
+      ],
+      "outputIds": [
+        "Prepared_Cell_181"
+      ]
+    },
+    {
+      "time": 1736.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_130"
+      ],
+      "outputIds": [
+        "Prepared_Cell_130"
+      ]
+    },
+    {
+      "time": 1742.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_182"
+      ],
+      "outputIds": [
+        "Prepared_Cell_182"
+      ]
+    },
+    {
+      "time": 1747.0978,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_121",
+        "Prepared_Cell_122",
+        "Prepared_Cell_123",
+        "Prepared_Cell_124",
+        "Prepared_Cell_125",
+        "Prepared_Cell_126",
+        "Prepared_Cell_127",
+        "Prepared_Cell_128",
+        "Prepared_Cell_129",
+        "Prepared_Cell_130",
+        "Cell_Tray_18"
+      ],
+      "outputIds": [
+        "Assembled_Module_13"
+      ]
+    },
+    {
+      "time": 1748.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_131"
+      ],
+      "outputIds": [
+        "Prepared_Cell_131"
+      ]
+    },
+    {
+      "time": 1754.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_183"
+      ],
+      "outputIds": [
+        "Prepared_Cell_183"
+      ]
+    },
+    {
+      "time": 1758.0978,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_13"
+      ],
+      "outputIds": [
+        "Turned_Module_13"
+      ]
+    },
+    {
+      "time": 1760.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_132"
+      ],
+      "outputIds": [
+        "Prepared_Cell_132"
+      ]
+    },
+    {
+      "time": 1766.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_184"
+      ],
+      "outputIds": [
+        "Prepared_Cell_184"
+      ]
+    },
+    {
+      "time": 1768.0978,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_13"
+      ],
+      "outputIds": [
+        "Inspected_Module_13"
+      ]
+    },
+    {
+      "time": 1772.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_133"
+      ],
+      "outputIds": [
+        "Prepared_Cell_133"
+      ]
+    },
+    {
+      "time": 1778.0978,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_13"
+      ],
+      "outputIds": [
+        "Inspected_Module_13"
+      ]
+    },
+    {
+      "time": 1778.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_185"
+      ],
+      "outputIds": [
+        "Prepared_Cell_185"
+      ]
+    },
+    {
+      "time": 1784.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_134"
+      ],
+      "outputIds": [
+        "Prepared_Cell_134"
+      ]
+    },
+    {
+      "time": 1790.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_186"
+      ],
+      "outputIds": [
+        "Prepared_Cell_186"
+      ]
+    },
+    {
+      "time": 1796.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_135"
+      ],
+      "outputIds": [
+        "Prepared_Cell_135"
+      ]
+    },
+    {
+      "time": 1802.0978,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_187"
+      ],
+      "outputIds": [
+        "Prepared_Cell_187"
+      ]
+    },
+    {
+      "time": 1808.0978,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_136"
+      ],
+      "outputIds": [
+        "Prepared_Cell_136"
+      ]
+    },
+    {
+      "time": 1853.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_188"
+      ],
+      "outputIds": [
+        "Prepared_Cell_188"
+      ]
+    },
+    {
+      "time": 1859.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_137"
+      ],
+      "outputIds": [
+        "Prepared_Cell_137"
+      ]
+    },
+    {
+      "time": 1865.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_189"
+      ],
+      "outputIds": [
+        "Prepared_Cell_189"
+      ]
+    },
+    {
+      "time": 1871.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_138"
+      ],
+      "outputIds": [
+        "Prepared_Cell_138"
+      ]
+    },
+    {
+      "time": 1877.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_190"
+      ],
+      "outputIds": [
+        "Prepared_Cell_190"
+      ]
+    },
+    {
+      "time": 1883.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_139"
+      ],
+      "outputIds": [
+        "Prepared_Cell_139"
+      ]
+    },
+    {
+      "time": 1889.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_191"
+      ],
+      "outputIds": [
+        "Prepared_Cell_191"
+      ]
+    },
+    {
+      "time": 1895.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_140"
+      ],
+      "outputIds": [
+        "Prepared_Cell_140"
+      ]
+    },
+    {
+      "time": 1901.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_192"
+      ],
+      "outputIds": [
+        "Prepared_Cell_192"
+      ]
+    },
+    {
+      "time": 1906.1236,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_131",
+        "Prepared_Cell_132",
+        "Prepared_Cell_133",
+        "Prepared_Cell_134",
+        "Prepared_Cell_135",
+        "Prepared_Cell_136",
+        "Prepared_Cell_137",
+        "Prepared_Cell_138",
+        "Prepared_Cell_139",
+        "Prepared_Cell_140",
+        "Cell_Tray_19"
+      ],
+      "outputIds": [
+        "Assembled_Module_14"
+      ]
+    },
+    {
+      "time": 1907.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_141"
+      ],
+      "outputIds": [
+        "Prepared_Cell_141"
+      ]
+    },
+    {
+      "time": 1913.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_193"
+      ],
+      "outputIds": [
+        "Prepared_Cell_193"
+      ]
+    },
+    {
+      "time": 1917.1236,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_14"
+      ],
+      "outputIds": [
+        "Turned_Module_14"
+      ]
+    },
+    {
+      "time": 1919.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_142"
+      ],
+      "outputIds": [
+        "Prepared_Cell_142"
+      ]
+    },
+    {
+      "time": 1925.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_194"
+      ],
+      "outputIds": [
+        "Prepared_Cell_194"
+      ]
+    },
+    {
+      "time": 1927.1236,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_14"
+      ],
+      "outputIds": [
+        "Inspected_Module_14"
+      ]
+    },
+    {
+      "time": 1931.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_143"
+      ],
+      "outputIds": [
+        "Prepared_Cell_143"
+      ]
+    },
+    {
+      "time": 1937.1236,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_14"
+      ],
+      "outputIds": [
+        "Inspected_Module_14"
+      ]
+    },
+    {
+      "time": 1937.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_195"
+      ],
+      "outputIds": [
+        "Prepared_Cell_195"
+      ]
+    },
+    {
+      "time": 1943.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_144"
+      ],
+      "outputIds": [
+        "Prepared_Cell_144"
+      ]
+    },
+    {
+      "time": 1949.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_196"
+      ],
+      "outputIds": [
+        "Prepared_Cell_196"
+      ]
+    },
+    {
+      "time": 1955.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_145"
+      ],
+      "outputIds": [
+        "Prepared_Cell_145"
+      ]
+    },
+    {
+      "time": 1961.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_197"
+      ],
+      "outputIds": [
+        "Prepared_Cell_197"
+      ]
+    },
+    {
+      "time": 1967.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_146"
+      ],
+      "outputIds": [
+        "Prepared_Cell_146"
+      ]
+    },
+    {
+      "time": 1973.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_198"
+      ],
+      "outputIds": [
+        "Prepared_Cell_198"
+      ]
+    },
+    {
+      "time": 1979.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_147"
+      ],
+      "outputIds": [
+        "Prepared_Cell_147"
+      ]
+    },
+    {
+      "time": 1985.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_199"
+      ],
+      "outputIds": [
+        "Prepared_Cell_199"
+      ]
+    },
+    {
+      "time": 1991.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_148"
+      ],
+      "outputIds": [
+        "Prepared_Cell_148"
+      ]
+    },
+    {
+      "time": 1997.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_200"
+      ],
+      "outputIds": [
+        "Prepared_Cell_200"
+      ]
+    },
+    {
+      "time": 2003.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_149"
+      ],
+      "outputIds": [
+        "Prepared_Cell_149"
+      ]
+    },
+    {
+      "time": 2009.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_201"
+      ],
+      "outputIds": [
+        "Prepared_Cell_201"
+      ]
+    },
+    {
+      "time": 2015.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_150"
+      ],
+      "outputIds": [
+        "Prepared_Cell_150"
+      ]
+    },
+    {
+      "time": 2021.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_202"
+      ],
+      "outputIds": [
+        "Prepared_Cell_202"
+      ]
+    },
+    {
+      "time": 2026.1236,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_141",
+        "Prepared_Cell_142",
+        "Prepared_Cell_143",
+        "Prepared_Cell_144",
+        "Prepared_Cell_145",
+        "Prepared_Cell_146",
+        "Prepared_Cell_147",
+        "Prepared_Cell_148",
+        "Prepared_Cell_149",
+        "Prepared_Cell_150",
+        "Cell_Tray_20"
+      ],
+      "outputIds": [
+        "Assembled_Module_15"
+      ]
+    },
+    {
+      "time": 2027.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_151"
+      ],
+      "outputIds": [
+        "Prepared_Cell_151"
+      ]
+    },
+    {
+      "time": 2033.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_203"
+      ],
+      "outputIds": [
+        "Prepared_Cell_203"
+      ]
+    },
+    {
+      "time": 2037.1236,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_15"
+      ],
+      "outputIds": [
+        "Turned_Module_15"
+      ]
+    },
+    {
+      "time": 2039.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_152"
+      ],
+      "outputIds": [
+        "Prepared_Cell_152"
+      ]
+    },
+    {
+      "time": 2045.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_204"
+      ],
+      "outputIds": [
+        "Prepared_Cell_204"
+      ]
+    },
+    {
+      "time": 2047.1236,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_15"
+      ],
+      "outputIds": [
+        "Inspected_Module_15"
+      ]
+    },
+    {
+      "time": 2051.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_153"
+      ],
+      "outputIds": [
+        "Prepared_Cell_153"
+      ]
+    },
+    {
+      "time": 2057.1236,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_15"
+      ],
+      "outputIds": [
+        "Inspected_Module_15"
+      ]
+    },
+    {
+      "time": 2057.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_205"
+      ],
+      "outputIds": [
+        "Prepared_Cell_205"
+      ]
+    },
+    {
+      "time": 2063.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_154"
+      ],
+      "outputIds": [
+        "Prepared_Cell_154"
+      ]
+    },
+    {
+      "time": 2069.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_206"
+      ],
+      "outputIds": [
+        "Prepared_Cell_206"
+      ]
+    },
+    {
+      "time": 2075.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_155"
+      ],
+      "outputIds": [
+        "Prepared_Cell_155"
+      ]
+    },
+    {
+      "time": 2081.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_207"
+      ],
+      "outputIds": [
+        "Prepared_Cell_207"
+      ]
+    },
+    {
+      "time": 2087.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_156"
+      ],
+      "outputIds": [
+        "Prepared_Cell_156"
+      ]
+    },
+    {
+      "time": 2093.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_208"
+      ],
+      "outputIds": [
+        "Prepared_Cell_208"
+      ]
+    },
+    {
+      "time": 2099.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_157"
+      ],
+      "outputIds": [
+        "Prepared_Cell_157"
+      ]
+    },
+    {
+      "time": 2105.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_209"
+      ],
+      "outputIds": [
+        "Prepared_Cell_209"
+      ]
+    },
+    {
+      "time": 2111.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_158"
+      ],
+      "outputIds": [
+        "Prepared_Cell_158"
+      ]
+    },
+    {
+      "time": 2117.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_210"
+      ],
+      "outputIds": [
+        "Prepared_Cell_210"
+      ]
+    },
+    {
+      "time": 2123.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_159"
+      ],
+      "outputIds": [
+        "Prepared_Cell_159"
+      ]
+    },
+    {
+      "time": 2129.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_211"
+      ],
+      "outputIds": [
+        "Prepared_Cell_211"
+      ]
+    },
+    {
+      "time": 2135.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_160"
+      ],
+      "outputIds": [
+        "Prepared_Cell_160"
+      ]
+    },
+    {
+      "time": 2141.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_212"
+      ],
+      "outputIds": [
+        "Prepared_Cell_212"
+      ]
+    },
+    {
+      "time": 2146.1236,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_151",
+        "Prepared_Cell_152",
+        "Prepared_Cell_153",
+        "Prepared_Cell_154",
+        "Prepared_Cell_155",
+        "Prepared_Cell_156",
+        "Prepared_Cell_157",
+        "Prepared_Cell_158",
+        "Prepared_Cell_159",
+        "Prepared_Cell_160",
+        "Cell_Tray_21"
+      ],
+      "outputIds": [
+        "Assembled_Module_16"
+      ]
+    },
+    {
+      "time": 2147.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_161"
+      ],
+      "outputIds": [
+        "Prepared_Cell_161"
+      ]
+    },
+    {
+      "time": 2153.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_213"
+      ],
+      "outputIds": [
+        "Prepared_Cell_213"
+      ]
+    },
+    {
+      "time": 2157.1236,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_16"
+      ],
+      "outputIds": [
+        "Turned_Module_16"
+      ]
+    },
+    {
+      "time": 2159.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_162"
+      ],
+      "outputIds": [
+        "Prepared_Cell_162"
+      ]
+    },
+    {
+      "time": 2165.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_214"
+      ],
+      "outputIds": [
+        "Prepared_Cell_214"
+      ]
+    },
+    {
+      "time": 2167.1236,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_16"
+      ],
+      "outputIds": [
+        "Inspected_Module_16"
+      ]
+    },
+    {
+      "time": 2171.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_163"
+      ],
+      "outputIds": [
+        "Prepared_Cell_163"
+      ]
+    },
+    {
+      "time": 2177.1236,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_16"
+      ],
+      "outputIds": [
+        "Inspected_Module_16"
+      ]
+    },
+    {
+      "time": 2177.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_215"
+      ],
+      "outputIds": [
+        "Prepared_Cell_215"
+      ]
+    },
+    {
+      "time": 2183.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_164"
+      ],
+      "outputIds": [
+        "Prepared_Cell_164"
+      ]
+    },
+    {
+      "time": 2189.1236,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_216"
+      ],
+      "outputIds": [
+        "Prepared_Cell_216"
+      ]
+    },
+    {
+      "time": 2195.1236,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_165"
+      ],
+      "outputIds": [
+        "Prepared_Cell_165"
+      ]
+    },
+    {
+      "time": 2381.6155,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_217"
+      ],
+      "outputIds": [
+        "Prepared_Cell_217"
+      ]
+    },
+    {
+      "time": 2387.6155,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_166"
+      ],
+      "outputIds": [
+        "Prepared_Cell_166"
+      ]
+    },
+    {
+      "time": 2393.6155,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_218"
+      ],
+      "outputIds": [
+        "Prepared_Cell_218"
+      ]
+    },
+    {
+      "time": 2399.6155,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_167"
+      ],
+      "outputIds": [
+        "Prepared_Cell_167"
+      ]
+    },
+    {
+      "time": 2405.6155,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_219"
+      ],
+      "outputIds": [
+        "Prepared_Cell_219"
+      ]
+    },
+    {
+      "time": 2411.6155,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_168"
+      ],
+      "outputIds": [
+        "Prepared_Cell_168"
+      ]
+    },
+    {
+      "time": 2417.6155,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_220"
+      ],
+      "outputIds": [
+        "Prepared_Cell_220"
+      ]
+    },
+    {
+      "time": 2423.6155,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_169"
+      ],
+      "outputIds": [
+        "Prepared_Cell_169"
+      ]
+    },
+    {
+      "time": 2429.6155,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_221"
+      ],
+      "outputIds": [
+        "Prepared_Cell_221"
+      ]
+    },
+    {
+      "time": 2481.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_170"
+      ],
+      "outputIds": [
+        "Prepared_Cell_170"
+      ]
+    },
+    {
+      "time": 2487.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_222"
+      ],
+      "outputIds": [
+        "Prepared_Cell_222"
+      ]
+    },
+    {
+      "time": 2492.3228,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_161",
+        "Prepared_Cell_162",
+        "Prepared_Cell_163",
+        "Prepared_Cell_164",
+        "Prepared_Cell_165",
+        "Prepared_Cell_166",
+        "Prepared_Cell_167",
+        "Prepared_Cell_168",
+        "Prepared_Cell_169",
+        "Prepared_Cell_170",
+        "Cell_Tray_22"
+      ],
+      "outputIds": [
+        "Assembled_Module_17"
+      ]
+    },
+    {
+      "time": 2493.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_171"
+      ],
+      "outputIds": [
+        "Prepared_Cell_171"
+      ]
+    },
+    {
+      "time": 2499.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_223"
+      ],
+      "outputIds": [
+        "Prepared_Cell_223"
+      ]
+    },
+    {
+      "time": 2503.3228,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_17"
+      ],
+      "outputIds": [
+        "Turned_Module_17"
+      ]
+    },
+    {
+      "time": 2505.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_172"
+      ],
+      "outputIds": [
+        "Prepared_Cell_172"
+      ]
+    },
+    {
+      "time": 2511.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_224"
+      ],
+      "outputIds": [
+        "Prepared_Cell_224"
+      ]
+    },
+    {
+      "time": 2513.3228,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_17"
+      ],
+      "outputIds": [
+        "Inspected_Module_17"
+      ]
+    },
+    {
+      "time": 2517.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_173"
+      ],
+      "outputIds": [
+        "Prepared_Cell_173"
+      ]
+    },
+    {
+      "time": 2523.3228,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_17"
+      ],
+      "outputIds": [
+        "Inspected_Module_17"
+      ]
+    },
+    {
+      "time": 2523.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_225"
+      ],
+      "outputIds": [
+        "Prepared_Cell_225"
+      ]
+    },
+    {
+      "time": 2529.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_174"
+      ],
+      "outputIds": [
+        "Prepared_Cell_174"
+      ]
+    },
+    {
+      "time": 2535.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_226"
+      ],
+      "outputIds": [
+        "Prepared_Cell_226"
+      ]
+    },
+    {
+      "time": 2541.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_175"
+      ],
+      "outputIds": [
+        "Prepared_Cell_175"
+      ]
+    },
+    {
+      "time": 2547.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_227"
+      ],
+      "outputIds": [
+        "Prepared_Cell_227"
+      ]
+    },
+    {
+      "time": 2553.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_176"
+      ],
+      "outputIds": [
+        "Prepared_Cell_176"
+      ]
+    },
+    {
+      "time": 2559.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_228"
+      ],
+      "outputIds": [
+        "Prepared_Cell_228"
+      ]
+    },
+    {
+      "time": 2565.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_177"
+      ],
+      "outputIds": [
+        "Prepared_Cell_177"
+      ]
+    },
+    {
+      "time": 2571.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_229"
+      ],
+      "outputIds": [
+        "Prepared_Cell_229"
+      ]
+    },
+    {
+      "time": 2577.3228,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_178"
+      ],
+      "outputIds": [
+        "Prepared_Cell_178"
+      ]
+    },
+    {
+      "time": 2583.3228,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_230"
+      ],
+      "outputIds": [
+        "Prepared_Cell_230"
+      ]
+    },
+    {
+      "time": 2744.3966,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_179"
+      ],
+      "outputIds": [
+        "Prepared_Cell_179"
+      ]
+    },
+    {
+      "time": 2755.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_231"
+      ],
+      "outputIds": [
+        "Prepared_Cell_231"
+      ]
+    },
+    {
+      "time": 2761.8643,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_180"
+      ],
+      "outputIds": [
+        "Prepared_Cell_180"
+      ]
+    },
+    {
+      "time": 2767.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_232"
+      ],
+      "outputIds": [
+        "Prepared_Cell_232"
+      ]
+    },
+    {
+      "time": 2772.8643,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_171",
+        "Prepared_Cell_172",
+        "Prepared_Cell_173",
+        "Prepared_Cell_174",
+        "Prepared_Cell_175",
+        "Prepared_Cell_176",
+        "Prepared_Cell_177",
+        "Prepared_Cell_178",
+        "Prepared_Cell_179",
+        "Prepared_Cell_180",
+        "Cell_Tray_23"
+      ],
+      "outputIds": [
+        "Assembled_Module_18"
+      ]
+    },
+    {
+      "time": 2773.8643,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_181"
+      ],
+      "outputIds": [
+        "Prepared_Cell_181"
+      ]
+    },
+    {
+      "time": 2779.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_233"
+      ],
+      "outputIds": [
+        "Prepared_Cell_233"
+      ]
+    },
+    {
+      "time": 2783.8643,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_18"
+      ],
+      "outputIds": [
+        "Turned_Module_18"
+      ]
+    },
+    {
+      "time": 2785.8643,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_182"
+      ],
+      "outputIds": [
+        "Prepared_Cell_182"
+      ]
+    },
+    {
+      "time": 2791.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_234"
+      ],
+      "outputIds": [
+        "Prepared_Cell_234"
+      ]
+    },
+    {
+      "time": 2793.8643,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_18"
+      ],
+      "outputIds": [
+        "Inspected_Module_18"
+      ]
+    },
+    {
+      "time": 2797.8643,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_183"
+      ],
+      "outputIds": [
+        "Prepared_Cell_183"
+      ]
+    },
+    {
+      "time": 2803.8643,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_18"
+      ],
+      "outputIds": [
+        "Inspected_Module_18"
+      ]
+    },
+    {
+      "time": 2803.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_235"
+      ],
+      "outputIds": [
+        "Prepared_Cell_235"
+      ]
+    },
+    {
+      "time": 2809.8643,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_184"
+      ],
+      "outputIds": [
+        "Prepared_Cell_184"
+      ]
+    },
+    {
+      "time": 2815.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_236"
+      ],
+      "outputIds": [
+        "Prepared_Cell_236"
+      ]
+    },
+    {
+      "time": 2821.8643,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_185"
+      ],
+      "outputIds": [
+        "Prepared_Cell_185"
+      ]
+    },
+    {
+      "time": 2827.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_237"
+      ],
+      "outputIds": [
+        "Prepared_Cell_237"
+      ]
+    },
+    {
+      "time": 2839.8643,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_238"
+      ],
+      "outputIds": [
+        "Prepared_Cell_238"
+      ]
+    },
+    {
+      "time": 2850.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_186"
+      ],
+      "outputIds": [
+        "Prepared_Cell_186"
+      ]
+    },
+    {
+      "time": 2858.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_187"
+      ],
+      "outputIds": [
+        "Prepared_Cell_187"
+      ]
+    },
+    {
+      "time": 2864.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_239"
+      ],
+      "outputIds": [
+        "Prepared_Cell_239"
+      ]
+    },
+    {
+      "time": 2870.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_188"
+      ],
+      "outputIds": [
+        "Prepared_Cell_188"
+      ]
+    },
+    {
+      "time": 2876.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_240"
+      ],
+      "outputIds": [
+        "Prepared_Cell_240"
+      ]
+    },
+    {
+      "time": 2882.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_189"
+      ],
+      "outputIds": [
+        "Prepared_Cell_189"
+      ]
+    },
+    {
+      "time": 2888.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_241"
+      ],
+      "outputIds": [
+        "Prepared_Cell_241"
+      ]
+    },
+    {
+      "time": 2894.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_190"
+      ],
+      "outputIds": [
+        "Prepared_Cell_190"
+      ]
+    },
+    {
+      "time": 2900.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_242"
+      ],
+      "outputIds": [
+        "Prepared_Cell_242"
+      ]
+    },
+    {
+      "time": 2905.1289,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_181",
+        "Prepared_Cell_182",
+        "Prepared_Cell_183",
+        "Prepared_Cell_184",
+        "Prepared_Cell_185",
+        "Prepared_Cell_186",
+        "Prepared_Cell_187",
+        "Prepared_Cell_188",
+        "Prepared_Cell_189",
+        "Prepared_Cell_190",
+        "Cell_Tray_24"
+      ],
+      "outputIds": [
+        "Assembled_Module_19"
+      ]
+    },
+    {
+      "time": 2906.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_191"
+      ],
+      "outputIds": [
+        "Prepared_Cell_191"
+      ]
+    },
+    {
+      "time": 2912.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_243"
+      ],
+      "outputIds": [
+        "Prepared_Cell_243"
+      ]
+    },
+    {
+      "time": 2918.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_192"
+      ],
+      "outputIds": [
+        "Prepared_Cell_192"
+      ]
+    },
+    {
+      "time": 2924.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_244"
+      ],
+      "outputIds": [
+        "Prepared_Cell_244"
+      ]
+    },
+    {
+      "time": 2930.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_193"
+      ],
+      "outputIds": [
+        "Prepared_Cell_193"
+      ]
+    },
+    {
+      "time": 2936.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_245"
+      ],
+      "outputIds": [
+        "Prepared_Cell_245"
+      ]
+    },
+    {
+      "time": 2942.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_194"
+      ],
+      "outputIds": [
+        "Prepared_Cell_194"
+      ]
+    },
+    {
+      "time": 2948.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_246"
+      ],
+      "outputIds": [
+        "Prepared_Cell_246"
+      ]
+    },
+    {
+      "time": 2954.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_195"
+      ],
+      "outputIds": [
+        "Prepared_Cell_195"
+      ]
+    },
+    {
+      "time": 2960.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_247"
+      ],
+      "outputIds": [
+        "Prepared_Cell_247"
+      ]
+    },
+    {
+      "time": 2966.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_196"
+      ],
+      "outputIds": [
+        "Prepared_Cell_196"
+      ]
+    },
+    {
+      "time": 2972.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_248"
+      ],
+      "outputIds": [
+        "Prepared_Cell_248"
+      ]
+    },
+    {
+      "time": 2978.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_197"
+      ],
+      "outputIds": [
+        "Prepared_Cell_197"
+      ]
+    },
+    {
+      "time": 2984.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_249"
+      ],
+      "outputIds": [
+        "Prepared_Cell_249"
+      ]
+    },
+    {
+      "time": 2990.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_198"
+      ],
+      "outputIds": [
+        "Prepared_Cell_198"
+      ]
+    },
+    {
+      "time": 2996.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_250"
+      ],
+      "outputIds": [
+        "Prepared_Cell_250"
+      ]
+    },
+    {
+      "time": 3002.1289,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_199"
+      ],
+      "outputIds": [
+        "Prepared_Cell_199"
+      ]
+    },
+    {
+      "time": 3008.1289,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_251"
+      ],
+      "outputIds": [
+        "Prepared_Cell_251"
+      ]
+    },
+    {
+      "time": 3096.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_200"
+      ],
+      "outputIds": [
+        "Prepared_Cell_200"
+      ]
+    },
+    {
+      "time": 3099.6252,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_19"
+      ],
+      "outputIds": [
+        "Turned_Module_19"
+      ]
+    },
+    {
+      "time": 3102.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_252"
+      ],
+      "outputIds": [
+        "Prepared_Cell_252"
+      ]
+    },
+    {
+      "time": 3107.6252,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_191",
+        "Prepared_Cell_192",
+        "Prepared_Cell_193",
+        "Prepared_Cell_194",
+        "Prepared_Cell_195",
+        "Prepared_Cell_196",
+        "Prepared_Cell_197",
+        "Prepared_Cell_198",
+        "Prepared_Cell_199",
+        "Prepared_Cell_200",
+        "Cell_Tray_25"
+      ],
+      "outputIds": [
+        "Assembled_Module_20"
+      ]
+    },
+    {
+      "time": 3108.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_201"
+      ],
+      "outputIds": [
+        "Prepared_Cell_201"
+      ]
+    },
+    {
+      "time": 3109.6252,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_19"
+      ],
+      "outputIds": [
+        "Inspected_Module_19"
+      ]
+    },
+    {
+      "time": 3114.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_253"
+      ],
+      "outputIds": [
+        "Prepared_Cell_253"
+      ]
+    },
+    {
+      "time": 3118.6252,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_20"
+      ],
+      "outputIds": [
+        "Turned_Module_20"
+      ]
+    },
+    {
+      "time": 3119.6252,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_19"
+      ],
+      "outputIds": [
+        "Inspected_Module_19"
+      ]
+    },
+    {
+      "time": 3120.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_202"
+      ],
+      "outputIds": [
+        "Prepared_Cell_202"
+      ]
+    },
+    {
+      "time": 3126.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_254"
+      ],
+      "outputIds": [
+        "Prepared_Cell_254"
+      ]
+    },
+    {
+      "time": 3132.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_203"
+      ],
+      "outputIds": [
+        "Prepared_Cell_203"
+      ]
+    },
+    {
+      "time": 3138.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_255"
+      ],
+      "outputIds": [
+        "Prepared_Cell_255"
+      ]
+    },
+    {
+      "time": 3144.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_204"
+      ],
+      "outputIds": [
+        "Prepared_Cell_204"
+      ]
+    },
+    {
+      "time": 3150.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_256"
+      ],
+      "outputIds": [
+        "Prepared_Cell_256"
+      ]
+    },
+    {
+      "time": 3156.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_205"
+      ],
+      "outputIds": [
+        "Prepared_Cell_205"
+      ]
+    },
+    {
+      "time": 3162.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_257"
+      ],
+      "outputIds": [
+        "Prepared_Cell_257"
+      ]
+    },
+    {
+      "time": 3168.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_206"
+      ],
+      "outputIds": [
+        "Prepared_Cell_206"
+      ]
+    },
+    {
+      "time": 3174.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_258"
+      ],
+      "outputIds": [
+        "Prepared_Cell_258"
+      ]
+    },
+    {
+      "time": 3180.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_207"
+      ],
+      "outputIds": [
+        "Prepared_Cell_207"
+      ]
+    },
+    {
+      "time": 3186.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_259"
+      ],
+      "outputIds": [
+        "Prepared_Cell_259"
+      ]
+    },
+    {
+      "time": 3192.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_208"
+      ],
+      "outputIds": [
+        "Prepared_Cell_208"
+      ]
+    },
+    {
+      "time": 3198.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_260"
+      ],
+      "outputIds": [
+        "Prepared_Cell_260"
+      ]
+    },
+    {
+      "time": 3204.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_209"
+      ],
+      "outputIds": [
+        "Prepared_Cell_209"
+      ]
+    },
+    {
+      "time": 3210.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_261"
+      ],
+      "outputIds": [
+        "Prepared_Cell_261"
+      ]
+    },
+    {
+      "time": 3216.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_210"
+      ],
+      "outputIds": [
+        "Prepared_Cell_210"
+      ]
+    },
+    {
+      "time": 3222.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_262"
+      ],
+      "outputIds": [
+        "Prepared_Cell_262"
+      ]
+    },
+    {
+      "time": 3227.6252,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_201",
+        "Prepared_Cell_202",
+        "Prepared_Cell_203",
+        "Prepared_Cell_204",
+        "Prepared_Cell_205",
+        "Prepared_Cell_206",
+        "Prepared_Cell_207",
+        "Prepared_Cell_208",
+        "Prepared_Cell_209",
+        "Prepared_Cell_210",
+        "Cell_Tray_26"
+      ],
+      "outputIds": [
+        "Assembled_Module_21"
+      ]
+    },
+    {
+      "time": 3228.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_211"
+      ],
+      "outputIds": [
+        "Prepared_Cell_211"
+      ]
+    },
+    {
+      "time": 3234.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_263"
+      ],
+      "outputIds": [
+        "Prepared_Cell_263"
+      ]
+    },
+    {
+      "time": 3238.6252,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_21"
+      ],
+      "outputIds": [
+        "Turned_Module_21"
+      ]
+    },
+    {
+      "time": 3239.5737,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_20"
+      ],
+      "outputIds": [
+        "Inspected_Module_20"
+      ]
+    },
+    {
+      "time": 3240.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_212"
+      ],
+      "outputIds": [
+        "Prepared_Cell_212"
+      ]
+    },
+    {
+      "time": 3246.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_264"
+      ],
+      "outputIds": [
+        "Prepared_Cell_264"
+      ]
+    },
+    {
+      "time": 3252.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_213"
+      ],
+      "outputIds": [
+        "Prepared_Cell_213"
+      ]
+    },
+    {
+      "time": 3258.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_265"
+      ],
+      "outputIds": [
+        "Prepared_Cell_265"
+      ]
+    },
+    {
+      "time": 3264.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_214"
+      ],
+      "outputIds": [
+        "Prepared_Cell_214"
+      ]
+    },
+    {
+      "time": 3270.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_266"
+      ],
+      "outputIds": [
+        "Prepared_Cell_266"
+      ]
+    },
+    {
+      "time": 3276.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_215"
+      ],
+      "outputIds": [
+        "Prepared_Cell_215"
+      ]
+    },
+    {
+      "time": 3282.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_267"
+      ],
+      "outputIds": [
+        "Prepared_Cell_267"
+      ]
+    },
+    {
+      "time": 3288.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_216"
+      ],
+      "outputIds": [
+        "Prepared_Cell_216"
+      ]
+    },
+    {
+      "time": 3293.0139,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_20"
+      ],
+      "outputIds": [
+        "Inspected_Module_20"
+      ]
+    },
+    {
+      "time": 3293.0139,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_21"
+      ],
+      "outputIds": [
+        "Inspected_Module_21"
+      ]
+    },
+    {
+      "time": 3294.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_268"
+      ],
+      "outputIds": [
+        "Prepared_Cell_268"
+      ]
+    },
+    {
+      "time": 3300.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_217"
+      ],
+      "outputIds": [
+        "Prepared_Cell_217"
+      ]
+    },
+    {
+      "time": 3306.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_269"
+      ],
+      "outputIds": [
+        "Prepared_Cell_269"
+      ]
+    },
+    {
+      "time": 3309.0139,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_21"
+      ],
+      "outputIds": [
+        "Inspected_Module_21"
+      ]
+    },
+    {
+      "time": 3312.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_218"
+      ],
+      "outputIds": [
+        "Prepared_Cell_218"
+      ]
+    },
+    {
+      "time": 3318.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_270"
+      ],
+      "outputIds": [
+        "Prepared_Cell_270"
+      ]
+    },
+    {
+      "time": 3324.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_219"
+      ],
+      "outputIds": [
+        "Prepared_Cell_219"
+      ]
+    },
+    {
+      "time": 3330.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_271"
+      ],
+      "outputIds": [
+        "Prepared_Cell_271"
+      ]
+    },
+    {
+      "time": 3336.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_220"
+      ],
+      "outputIds": [
+        "Prepared_Cell_220"
+      ]
+    },
+    {
+      "time": 3342.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_272"
+      ],
+      "outputIds": [
+        "Prepared_Cell_272"
+      ]
+    },
+    {
+      "time": 3347.6252,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_211",
+        "Prepared_Cell_212",
+        "Prepared_Cell_213",
+        "Prepared_Cell_214",
+        "Prepared_Cell_215",
+        "Prepared_Cell_216",
+        "Prepared_Cell_217",
+        "Prepared_Cell_218",
+        "Prepared_Cell_219",
+        "Prepared_Cell_220",
+        "Cell_Tray_27"
+      ],
+      "outputIds": [
+        "Assembled_Module_22"
+      ]
+    },
+    {
+      "time": 3348.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_221"
+      ],
+      "outputIds": [
+        "Prepared_Cell_221"
+      ]
+    },
+    {
+      "time": 3354.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_273"
+      ],
+      "outputIds": [
+        "Prepared_Cell_273"
+      ]
+    },
+    {
+      "time": 3360.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_222"
+      ],
+      "outputIds": [
+        "Prepared_Cell_222"
+      ]
+    },
+    {
+      "time": 3366.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_274"
+      ],
+      "outputIds": [
+        "Prepared_Cell_274"
+      ]
+    },
+    {
+      "time": 3372.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_223"
+      ],
+      "outputIds": [
+        "Prepared_Cell_223"
+      ]
+    },
+    {
+      "time": 3378.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_275"
+      ],
+      "outputIds": [
+        "Prepared_Cell_275"
+      ]
+    },
+    {
+      "time": 3384.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_224"
+      ],
+      "outputIds": [
+        "Prepared_Cell_224"
+      ]
+    },
+    {
+      "time": 3390.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_276"
+      ],
+      "outputIds": [
+        "Prepared_Cell_276"
+      ]
+    },
+    {
+      "time": 3396.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_225"
+      ],
+      "outputIds": [
+        "Prepared_Cell_225"
+      ]
+    },
+    {
+      "time": 3402.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_277"
+      ],
+      "outputIds": [
+        "Prepared_Cell_277"
+      ]
+    },
+    {
+      "time": 3408.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_226"
+      ],
+      "outputIds": [
+        "Prepared_Cell_226"
+      ]
+    },
+    {
+      "time": 3413.5981,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_22"
+      ],
+      "outputIds": [
+        "Turned_Module_22"
+      ]
+    },
+    {
+      "time": 3414.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_278"
+      ],
+      "outputIds": [
+        "Prepared_Cell_278"
+      ]
+    },
+    {
+      "time": 3420.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_227"
+      ],
+      "outputIds": [
+        "Prepared_Cell_227"
+      ]
+    },
+    {
+      "time": 3423.5981,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_22"
+      ],
+      "outputIds": [
+        "Inspected_Module_22"
+      ]
+    },
+    {
+      "time": 3426.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_279"
+      ],
+      "outputIds": [
+        "Prepared_Cell_279"
+      ]
+    },
+    {
+      "time": 3432.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_228"
+      ],
+      "outputIds": [
+        "Prepared_Cell_228"
+      ]
+    },
+    {
+      "time": 3433.5981,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_22"
+      ],
+      "outputIds": [
+        "Inspected_Module_22"
+      ]
+    },
+    {
+      "time": 3438.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_280"
+      ],
+      "outputIds": [
+        "Prepared_Cell_280"
+      ]
+    },
+    {
+      "time": 3444.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_229"
+      ],
+      "outputIds": [
+        "Prepared_Cell_229"
+      ]
+    },
+    {
+      "time": 3450.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_281"
+      ],
+      "outputIds": [
+        "Prepared_Cell_281"
+      ]
+    },
+    {
+      "time": 3456.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_230"
+      ],
+      "outputIds": [
+        "Prepared_Cell_230"
+      ]
+    },
+    {
+      "time": 3462.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_282"
+      ],
+      "outputIds": [
+        "Prepared_Cell_282"
+      ]
+    },
+    {
+      "time": 3467.6252,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_221",
+        "Prepared_Cell_222",
+        "Prepared_Cell_223",
+        "Prepared_Cell_224",
+        "Prepared_Cell_225",
+        "Prepared_Cell_226",
+        "Prepared_Cell_227",
+        "Prepared_Cell_228",
+        "Prepared_Cell_229",
+        "Prepared_Cell_230",
+        "Cell_Tray_28"
+      ],
+      "outputIds": [
+        "Assembled_Module_23"
+      ]
+    },
+    {
+      "time": 3468.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_231"
+      ],
+      "outputIds": [
+        "Prepared_Cell_231"
+      ]
+    },
+    {
+      "time": 3474.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_283"
+      ],
+      "outputIds": [
+        "Prepared_Cell_283"
+      ]
+    },
+    {
+      "time": 3478.6252,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_23"
+      ],
+      "outputIds": [
+        "Turned_Module_23"
+      ]
+    },
+    {
+      "time": 3480.6252,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_232"
+      ],
+      "outputIds": [
+        "Prepared_Cell_232"
+      ]
+    },
+    {
+      "time": 3486.6252,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_284"
+      ],
+      "outputIds": [
+        "Prepared_Cell_284"
+      ]
+    },
+    {
+      "time": 3488.6252,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_23"
+      ],
+      "outputIds": [
+        "Inspected_Module_23"
+      ]
+    },
+    {
+      "time": 3498.6252,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_23"
+      ],
+      "outputIds": [
+        "Inspected_Module_23"
+      ]
+    },
+    {
+      "time": 3550.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_233"
+      ],
+      "outputIds": [
+        "Prepared_Cell_233"
+      ]
+    },
+    {
+      "time": 3556.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_285"
+      ],
+      "outputIds": [
+        "Prepared_Cell_285"
+      ]
+    },
+    {
+      "time": 3562.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_234"
+      ],
+      "outputIds": [
+        "Prepared_Cell_234"
+      ]
+    },
+    {
+      "time": 3568.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_286"
+      ],
+      "outputIds": [
+        "Prepared_Cell_286"
+      ]
+    },
+    {
+      "time": 3574.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_235"
+      ],
+      "outputIds": [
+        "Prepared_Cell_235"
+      ]
+    },
+    {
+      "time": 3580.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_287"
+      ],
+      "outputIds": [
+        "Prepared_Cell_287"
+      ]
+    },
+    {
+      "time": 3586.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_236"
+      ],
+      "outputIds": [
+        "Prepared_Cell_236"
+      ]
+    },
+    {
+      "time": 3592.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_288"
+      ],
+      "outputIds": [
+        "Prepared_Cell_288"
+      ]
+    },
+    {
+      "time": 3598.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_237"
+      ],
+      "outputIds": [
+        "Prepared_Cell_237"
+      ]
+    },
+    {
+      "time": 3604.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_289"
+      ],
+      "outputIds": [
+        "Prepared_Cell_289"
+      ]
+    },
+    {
+      "time": 3610.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_238"
+      ],
+      "outputIds": [
+        "Prepared_Cell_238"
+      ]
+    },
+    {
+      "time": 3616.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_290"
+      ],
+      "outputIds": [
+        "Prepared_Cell_290"
+      ]
+    },
+    {
+      "time": 3622.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_239"
+      ],
+      "outputIds": [
+        "Prepared_Cell_239"
+      ]
+    },
+    {
+      "time": 3628.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_291"
+      ],
+      "outputIds": [
+        "Prepared_Cell_291"
+      ]
+    },
+    {
+      "time": 3634.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_240"
+      ],
+      "outputIds": [
+        "Prepared_Cell_240"
+      ]
+    },
+    {
+      "time": 3640.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_292"
+      ],
+      "outputIds": [
+        "Prepared_Cell_292"
+      ]
+    },
+    {
+      "time": 3645.5779,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_231",
+        "Prepared_Cell_232",
+        "Prepared_Cell_233",
+        "Prepared_Cell_234",
+        "Prepared_Cell_235",
+        "Prepared_Cell_236",
+        "Prepared_Cell_237",
+        "Prepared_Cell_238",
+        "Prepared_Cell_239",
+        "Prepared_Cell_240",
+        "Cell_Tray_29"
+      ],
+      "outputIds": [
+        "Assembled_Module_24"
+      ]
+    },
+    {
+      "time": 3646.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_241"
+      ],
+      "outputIds": [
+        "Prepared_Cell_241"
+      ]
+    },
+    {
+      "time": 3652.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_293"
+      ],
+      "outputIds": [
+        "Prepared_Cell_293"
+      ]
+    },
+    {
+      "time": 3656.5779,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_24"
+      ],
+      "outputIds": [
+        "Turned_Module_24"
+      ]
+    },
+    {
+      "time": 3658.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_242"
+      ],
+      "outputIds": [
+        "Prepared_Cell_242"
+      ]
+    },
+    {
+      "time": 3664.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_294"
+      ],
+      "outputIds": [
+        "Prepared_Cell_294"
+      ]
+    },
+    {
+      "time": 3666.5779,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_24"
+      ],
+      "outputIds": [
+        "Inspected_Module_24"
+      ]
+    },
+    {
+      "time": 3670.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_243"
+      ],
+      "outputIds": [
+        "Prepared_Cell_243"
+      ]
+    },
+    {
+      "time": 3676.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_295"
+      ],
+      "outputIds": [
+        "Prepared_Cell_295"
+      ]
+    },
+    {
+      "time": 3682.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_244"
+      ],
+      "outputIds": [
+        "Prepared_Cell_244"
+      ]
+    },
+    {
+      "time": 3688.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_296"
+      ],
+      "outputIds": [
+        "Prepared_Cell_296"
+      ]
+    },
+    {
+      "time": 3694.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_245"
+      ],
+      "outputIds": [
+        "Prepared_Cell_245"
+      ]
+    },
+    {
+      "time": 3699.4927,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_24"
+      ],
+      "outputIds": [
+        "Inspected_Module_24"
+      ]
+    },
+    {
+      "time": 3700.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_297"
+      ],
+      "outputIds": [
+        "Prepared_Cell_297"
+      ]
+    },
+    {
+      "time": 3706.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_246"
+      ],
+      "outputIds": [
+        "Prepared_Cell_246"
+      ]
+    },
+    {
+      "time": 3718.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_247"
+      ],
+      "outputIds": [
+        "Prepared_Cell_247"
+      ]
+    },
+    {
+      "time": 3730.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_248"
+      ],
+      "outputIds": [
+        "Prepared_Cell_248"
+      ]
+    },
+    {
+      "time": 3742.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_249"
+      ],
+      "outputIds": [
+        "Prepared_Cell_249"
+      ]
+    },
+    {
+      "time": 3754.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_250"
+      ],
+      "outputIds": [
+        "Prepared_Cell_250"
+      ]
+    },
+    {
+      "time": 3765.5779,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_241",
+        "Prepared_Cell_242",
+        "Prepared_Cell_243",
+        "Prepared_Cell_244",
+        "Prepared_Cell_245",
+        "Prepared_Cell_246",
+        "Prepared_Cell_247",
+        "Prepared_Cell_248",
+        "Prepared_Cell_249",
+        "Prepared_Cell_250",
+        "Cell_Tray_30"
+      ],
+      "outputIds": [
+        "Assembled_Module_25"
+      ]
+    },
+    {
+      "time": 3766.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_251"
+      ],
+      "outputIds": [
+        "Prepared_Cell_251"
+      ]
+    },
+    {
+      "time": 3778.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_252"
+      ],
+      "outputIds": [
+        "Prepared_Cell_252"
+      ]
+    },
+    {
+      "time": 3780.4179,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_25"
+      ],
+      "outputIds": [
+        "Turned_Module_25"
+      ]
+    },
+    {
+      "time": 3790.4179,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_25"
+      ],
+      "outputIds": [
+        "Inspected_Module_25"
+      ]
+    },
+    {
+      "time": 3790.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_253"
+      ],
+      "outputIds": [
+        "Prepared_Cell_253"
+      ]
+    },
+    {
+      "time": 3798.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_298"
+      ],
+      "outputIds": [
+        "Prepared_Cell_298"
+      ]
+    },
+    {
+      "time": 3800.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_299"
+      ],
+      "outputIds": [
+        "Prepared_Cell_299"
+      ]
+    },
+    {
+      "time": 3800.4179,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_25"
+      ],
+      "outputIds": [
+        "Inspected_Module_25"
+      ]
+    },
+    {
+      "time": 3802.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_300"
+      ],
+      "outputIds": [
+        "Prepared_Cell_300"
+      ]
+    },
+    {
+      "time": 3802.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_254"
+      ],
+      "outputIds": [
+        "Prepared_Cell_254"
+      ]
+    },
+    {
+      "time": 3804.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_301"
+      ],
+      "outputIds": [
+        "Prepared_Cell_301"
+      ]
+    },
+    {
+      "time": 3806.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_302"
+      ],
+      "outputIds": [
+        "Prepared_Cell_302"
+      ]
+    },
+    {
+      "time": 3808.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_303"
+      ],
+      "outputIds": [
+        "Prepared_Cell_303"
+      ]
+    },
+    {
+      "time": 3810.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_304"
+      ],
+      "outputIds": [
+        "Prepared_Cell_304"
+      ]
+    },
+    {
+      "time": 3812.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_305"
+      ],
+      "outputIds": [
+        "Prepared_Cell_305"
+      ]
+    },
+    {
+      "time": 3814.127,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_306"
+      ],
+      "outputIds": [
+        "Prepared_Cell_306"
+      ]
+    },
+    {
+      "time": 3814.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_255"
+      ],
+      "outputIds": [
+        "Prepared_Cell_255"
+      ]
+    },
+    {
+      "time": 3820.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_307"
+      ],
+      "outputIds": [
+        "Prepared_Cell_307"
+      ]
+    },
+    {
+      "time": 3826.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_256"
+      ],
+      "outputIds": [
+        "Prepared_Cell_256"
+      ]
+    },
+    {
+      "time": 3832.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_308"
+      ],
+      "outputIds": [
+        "Prepared_Cell_308"
+      ]
+    },
+    {
+      "time": 3838.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_257"
+      ],
+      "outputIds": [
+        "Prepared_Cell_257"
+      ]
+    },
+    {
+      "time": 3844.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_309"
+      ],
+      "outputIds": [
+        "Prepared_Cell_309"
+      ]
+    },
+    {
+      "time": 3850.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_258"
+      ],
+      "outputIds": [
+        "Prepared_Cell_258"
+      ]
+    },
+    {
+      "time": 3856.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_310"
+      ],
+      "outputIds": [
+        "Prepared_Cell_310"
+      ]
+    },
+    {
+      "time": 3862.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_259"
+      ],
+      "outputIds": [
+        "Prepared_Cell_259"
+      ]
+    },
+    {
+      "time": 3868.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_311"
+      ],
+      "outputIds": [
+        "Prepared_Cell_311"
+      ]
+    },
+    {
+      "time": 3874.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_260"
+      ],
+      "outputIds": [
+        "Prepared_Cell_260"
+      ]
+    },
+    {
+      "time": 3880.5779,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_312"
+      ],
+      "outputIds": [
+        "Prepared_Cell_312"
+      ]
+    },
+    {
+      "time": 3885.5779,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_251",
+        "Prepared_Cell_252",
+        "Prepared_Cell_253",
+        "Prepared_Cell_254",
+        "Prepared_Cell_255",
+        "Prepared_Cell_256",
+        "Prepared_Cell_257",
+        "Prepared_Cell_258",
+        "Prepared_Cell_259",
+        "Prepared_Cell_260",
+        "Cell_Tray_31"
+      ],
+      "outputIds": [
+        "Assembled_Module_26"
+      ]
+    },
+    {
+      "time": 3886.5779,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_261"
+      ],
+      "outputIds": [
+        "Prepared_Cell_261"
+      ]
+    },
+    {
+      "time": 3929.7849,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_26"
+      ],
+      "outputIds": [
+        "Turned_Module_26"
+      ]
+    },
+    {
+      "time": 3967.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_313"
+      ],
+      "outputIds": [
+        "Prepared_Cell_313"
+      ]
+    },
+    {
+      "time": 3973.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_262"
+      ],
+      "outputIds": [
+        "Prepared_Cell_262"
+      ]
+    },
+    {
+      "time": 3979.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_314"
+      ],
+      "outputIds": [
+        "Prepared_Cell_314"
+      ]
+    },
+    {
+      "time": 3985.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_263"
+      ],
+      "outputIds": [
+        "Prepared_Cell_263"
+      ]
+    },
+    {
+      "time": 3991.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_315"
+      ],
+      "outputIds": [
+        "Prepared_Cell_315"
+      ]
+    },
+    {
+      "time": 3997.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_264"
+      ],
+      "outputIds": [
+        "Prepared_Cell_264"
+      ]
+    },
+    {
+      "time": 4003.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_316"
+      ],
+      "outputIds": [
+        "Prepared_Cell_316"
+      ]
+    },
+    {
+      "time": 4009.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_265"
+      ],
+      "outputIds": [
+        "Prepared_Cell_265"
+      ]
+    },
+    {
+      "time": 4015.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_317"
+      ],
+      "outputIds": [
+        "Prepared_Cell_317"
+      ]
+    },
+    {
+      "time": 4020.1607,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_26"
+      ],
+      "outputIds": [
+        "Inspected_Module_26"
+      ]
+    },
+    {
+      "time": 4021.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_266"
+      ],
+      "outputIds": [
+        "Prepared_Cell_266"
+      ]
+    },
+    {
+      "time": 4027.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_318"
+      ],
+      "outputIds": [
+        "Prepared_Cell_318"
+      ]
+    },
+    {
+      "time": 4030.1607,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_26"
+      ],
+      "outputIds": [
+        "Inspected_Module_26"
+      ]
+    },
+    {
+      "time": 4033.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_267"
+      ],
+      "outputIds": [
+        "Prepared_Cell_267"
+      ]
+    },
+    {
+      "time": 4039.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_319"
+      ],
+      "outputIds": [
+        "Prepared_Cell_319"
+      ]
+    },
+    {
+      "time": 4045.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_268"
+      ],
+      "outputIds": [
+        "Prepared_Cell_268"
+      ]
+    },
+    {
+      "time": 4051.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_320"
+      ],
+      "outputIds": [
+        "Prepared_Cell_320"
+      ]
+    },
+    {
+      "time": 4057.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_269"
+      ],
+      "outputIds": [
+        "Prepared_Cell_269"
+      ]
+    },
+    {
+      "time": 4063.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_321"
+      ],
+      "outputIds": [
+        "Prepared_Cell_321"
+      ]
+    },
+    {
+      "time": 4069.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_270"
+      ],
+      "outputIds": [
+        "Prepared_Cell_270"
+      ]
+    },
+    {
+      "time": 4075.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_322"
+      ],
+      "outputIds": [
+        "Prepared_Cell_322"
+      ]
+    },
+    {
+      "time": 4081.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_271"
+      ],
+      "outputIds": [
+        "Prepared_Cell_271"
+      ]
+    },
+    {
+      "time": 4087.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_323"
+      ],
+      "outputIds": [
+        "Prepared_Cell_323"
+      ]
+    },
+    {
+      "time": 4093.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_272"
+      ],
+      "outputIds": [
+        "Prepared_Cell_272"
+      ]
+    },
+    {
+      "time": 4099.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_324"
+      ],
+      "outputIds": [
+        "Prepared_Cell_324"
+      ]
+    },
+    {
+      "time": 4105.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_273"
+      ],
+      "outputIds": [
+        "Prepared_Cell_273"
+      ]
+    },
+    {
+      "time": 4111.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_325"
+      ],
+      "outputIds": [
+        "Prepared_Cell_325"
+      ]
+    },
+    {
+      "time": 4117.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_274"
+      ],
+      "outputIds": [
+        "Prepared_Cell_274"
+      ]
+    },
+    {
+      "time": 4118.8723,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_261",
+        "Prepared_Cell_262",
+        "Prepared_Cell_263",
+        "Prepared_Cell_264",
+        "Prepared_Cell_265",
+        "Prepared_Cell_266",
+        "Prepared_Cell_267",
+        "Prepared_Cell_268",
+        "Prepared_Cell_269",
+        "Prepared_Cell_270",
+        "Cell_Tray_32"
+      ],
+      "outputIds": [
+        "Assembled_Module_27"
+      ]
+    },
+    {
+      "time": 4123.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_326"
+      ],
+      "outputIds": [
+        "Prepared_Cell_326"
+      ]
+    },
+    {
+      "time": 4129.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_275"
+      ],
+      "outputIds": [
+        "Prepared_Cell_275"
+      ]
+    },
+    {
+      "time": 4129.8723,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_27"
+      ],
+      "outputIds": [
+        "Turned_Module_27"
+      ]
+    },
+    {
+      "time": 4135.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_327"
+      ],
+      "outputIds": [
+        "Prepared_Cell_327"
+      ]
+    },
+    {
+      "time": 4139.8723,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_27"
+      ],
+      "outputIds": [
+        "Inspected_Module_27"
+      ]
+    },
+    {
+      "time": 4141.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_276"
+      ],
+      "outputIds": [
+        "Prepared_Cell_276"
+      ]
+    },
+    {
+      "time": 4147.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_328"
+      ],
+      "outputIds": [
+        "Prepared_Cell_328"
+      ]
+    },
+    {
+      "time": 4149.8723,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_27"
+      ],
+      "outputIds": [
+        "Inspected_Module_27"
+      ]
+    },
+    {
+      "time": 4153.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_277"
+      ],
+      "outputIds": [
+        "Prepared_Cell_277"
+      ]
+    },
+    {
+      "time": 4159.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_329"
+      ],
+      "outputIds": [
+        "Prepared_Cell_329"
+      ]
+    },
+    {
+      "time": 4165.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_278"
+      ],
+      "outputIds": [
+        "Prepared_Cell_278"
+      ]
+    },
+    {
+      "time": 4171.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_330"
+      ],
+      "outputIds": [
+        "Prepared_Cell_330"
+      ]
+    },
+    {
+      "time": 4177.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_279"
+      ],
+      "outputIds": [
+        "Prepared_Cell_279"
+      ]
+    },
+    {
+      "time": 4183.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_331"
+      ],
+      "outputIds": [
+        "Prepared_Cell_331"
+      ]
+    },
+    {
+      "time": 4189.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_280"
+      ],
+      "outputIds": [
+        "Prepared_Cell_280"
+      ]
+    },
+    {
+      "time": 4195.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_332"
+      ],
+      "outputIds": [
+        "Prepared_Cell_332"
+      ]
+    },
+    {
+      "time": 4200.3122,
+      "machineId": "OP30_Assembler",
+      "type": "Combiner",
+      "inputIds": [
+        "Prepared_Cell_271",
+        "Prepared_Cell_272",
+        "Prepared_Cell_273",
+        "Prepared_Cell_274",
+        "Prepared_Cell_275",
+        "Prepared_Cell_276",
+        "Prepared_Cell_277",
+        "Prepared_Cell_278",
+        "Prepared_Cell_279",
+        "Prepared_Cell_280",
+        "Cell_Tray_33"
+      ],
+      "outputIds": [
+        "Assembled_Module_28"
+      ]
+    },
+    {
+      "time": 4201.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_281"
+      ],
+      "outputIds": [
+        "Prepared_Cell_281"
+      ]
+    },
+    {
+      "time": 4207.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_333"
+      ],
+      "outputIds": [
+        "Prepared_Cell_333"
+      ]
+    },
+    {
+      "time": 4211.3122,
+      "machineId": "OP40_Turnover",
+      "type": "Kinematic",
+      "inputIds": [
+        "Assembled_Module_28"
+      ],
+      "outputIds": [
+        "Turned_Module_28"
+      ]
+    },
+    {
+      "time": 4213.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_282"
+      ],
+      "outputIds": [
+        "Prepared_Cell_282"
+      ]
+    },
+    {
+      "time": 4219.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_334"
+      ],
+      "outputIds": [
+        "Prepared_Cell_334"
+      ]
+    },
+    {
+      "time": 4221.3122,
+      "machineId": "OP50_Scanner",
+      "type": "Mutator",
+      "inputIds": [
+        "Turned_Module_28"
+      ],
+      "outputIds": [
+        "Inspected_Module_28"
+      ]
+    },
+    {
+      "time": 4225.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_283"
+      ],
+      "outputIds": [
+        "Prepared_Cell_283"
+      ]
+    },
+    {
+      "time": 4231.3122,
+      "machineId": "OP60_Palletizer",
+      "type": "Stacker",
+      "inputIds": [
+        "Inspected_Module_28"
+      ],
+      "outputIds": [
+        "Inspected_Module_28"
+      ]
+    },
+    {
+      "time": 4231.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_335"
+      ],
+      "outputIds": [
+        "Prepared_Cell_335"
+      ]
+    },
+    {
+      "time": 4237.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_284"
+      ],
+      "outputIds": [
+        "Prepared_Cell_284"
+      ]
+    },
+    {
+      "time": 4243.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_336"
+      ],
+      "outputIds": [
+        "Prepared_Cell_336"
+      ]
+    },
+    {
+      "time": 4249.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_285"
+      ],
+      "outputIds": [
+        "Prepared_Cell_285"
+      ]
+    },
+    {
+      "time": 4255.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_337"
+      ],
+      "outputIds": [
+        "Prepared_Cell_337"
+      ]
+    },
+    {
+      "time": 4261.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_286"
+      ],
+      "outputIds": [
+        "Prepared_Cell_286"
+      ]
+    },
+    {
+      "time": 4267.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_338"
+      ],
+      "outputIds": [
+        "Prepared_Cell_338"
+      ]
+    },
+    {
+      "time": 4273.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_287"
+      ],
+      "outputIds": [
+        "Prepared_Cell_287"
+      ]
+    },
+    {
+      "time": 4279.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_339"
+      ],
+      "outputIds": [
+        "Prepared_Cell_339"
+      ]
+    },
+    {
+      "time": 4285.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_288"
+      ],
+      "outputIds": [
+        "Prepared_Cell_288"
+      ]
+    },
+    {
+      "time": 4291.3122,
+      "machineId": "OP10_Cutter",
+      "type": "Separator",
+      "inputIds": [
+        "Raw_Prismatic_Cell_340"
+      ],
+      "outputIds": [
+        "Prepared_Cell_340"
+      ]
+    },
+    {
+      "time": 4297.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_289"
+      ],
+      "outputIds": [
+        "Prepared_Cell_289"
+      ]
+    },
+    {
+      "time": 4309.3122,
+      "machineId": "OP20_Press",
+      "type": "Transformer",
+      "inputIds": [
+        "Prepared_Cell_290"
+      ],
+      "outputIds": [
+        "Prepared_Cell_290"
+      ]
+    }
+  ]
+}

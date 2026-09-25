@@ -1,0 +1,10 @@
+{"timestamp_s": "2023-01-02 06:00:00.0000", "source": {"name": "Robot_Arm_01"}, "action": "Idle", "targetPartId": "", "destinationNode": "", "duration": "0.1"}
+{"timestamp_s": "2023-01-02 06:00:01.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_001_A", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:05.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_001_B", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:11.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_002_A", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:15.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_002_B", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:21.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_003_A", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:25.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_003_B", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:31.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_004_A", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:35.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_004_B", "destinationNode": "OP20_Press", "duration": "3.0"}
+{"timestamp_s": "2023-01-02 06:00:41.0000", "source": {"name": "Robot_Arm_01"}, "action": "PickAndPlace", "targetPartId": "Block_005_A", "destinationNode": "OP20_Press", "duration": "3.0"}
