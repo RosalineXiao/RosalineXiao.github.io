@@ -8,7 +8,7 @@
       content="Xiangyu Xiao portfolio: mechanical engineering PhD, industrial metaverse, HCI, product design, publications, photography, and more."
     />
     <title>Xiangyu Xiao | Engineering, HCI and Product Design</title>
-    <link rel="stylesheet" href="styles.css?v=home-factory-pinecone-motion2" />
+    <link rel="stylesheet" href="styles.css?v=home-factory-preview1" />
   </head>
   <body class="home">
     <header class="site-header" data-header>
@@ -83,7 +83,7 @@
 
       <section class="home-spotlight" aria-labelledby="home-spotlight-title">
         <div class="home-spotlight-card">
-          <figure class="home-spotlight-image">
+          <figure class="home-spotlight-image" data-factory-preview>
             <img
               src="assets/portfolio/ev-battery-factory/images/factory-home-spotlight.jpg"
               alt="Unity VR view of an EV battery factory assembly line, with controller hands and machine status indicators"
@@ -92,6 +92,9 @@
               loading="lazy"
               decoding="async"
             />
+            <video class="home-spotlight-video" data-preview-video data-src="assets/portfolio/ev-battery-factory/media/vr-factory-walkthrough.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+            <figcaption class="home-spotlight-video-caption">VR prototype footage</figcaption>
+            <button class="home-spotlight-preview-toggle" type="button" data-preview-toggle aria-label="Play muted factory video preview" aria-pressed="false" hidden>Play preview</button>
           </figure>
           <div class="home-spotlight-copy">
             <p class="home-spotlight-label">NEW PROJECT · UNITY WEBGL</p>
@@ -128,7 +131,7 @@
             <strong>Product Design</strong>
             <small>Industrial design, CAD, prototyping, materials, mechanisms, and CMF.</small>
           </a>
-          <a href="#project-showcase" data-filter="visual" aria-selected="false">
+          <a href="photography-more.html">
             <span>04</span>
             <strong>Photography & More</strong>
             <small>Image-making, visual archives, fieldwork, and material observations.</small>
@@ -190,9 +193,9 @@
             <h3>BENTO+</h3>
             <p>Modular object study focused on everyday use, portability, and product language.</p>
           </a>
-          <a class="project-card" href="projects.html#onearth-energy-saving-app-for-gengame" data-category="visual">
+          <a class="project-card" href="projects.html#onearth-energy-saving-app-for-gengame" data-category="hci">
             <img src="assets/projects/onearth.jpg" alt="ONEARTH visual interface reference" />
-            <span>Photography & More</span>
+            <span>HCI</span>
             <h3>ONEARTH</h3>
             <p>Energy-saving app concept with visual systems, behaviour change, and interaction design.</p>
           </a>
@@ -223,6 +226,6 @@
       <p class="footer-copyright">Copyright © 2026 https://rosalinexiao.github.io/. All rights reserved.</p>
     </footer>
 
-    <script src="script.js?v=home-factory-pinecone-motion2"></script>
+    <script src="script.js?v=home-factory-preview1"></script>
   </body>
 </html>

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Projects by Xiangyu Xiao extracted from the original portfolio archive."
+      content="Selected projects by Xiangyu Xiao in industrial metaverse, human-computer interaction, and product design."
     />
     <title>Projects | Xiangyu Xiao</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=projects-grid3" />
   </head>
-  <body>
+  <body class="projects-page">
     <header class="site-header" data-header>
       <a class="brand" href="index.html" aria-label="Xiangyu Xiao home">
         <span class="dynamic-logo" aria-hidden="true">
@@ -29,116 +29,102 @@
     <main>
       <section class="page-hero" aria-labelledby="projects-title">
         <p class="eyebrow">Projects</p>
-        <h1 id="projects-title">Project archive.</h1>
+        <h1 id="projects-title">Selected projects.</h1>
         <p>
-          A curated archive of selected design, HCI, and product work. Each
-          entry opens into a case-study view with process images, context, and
-          the decisions behind the final outcome.
+          Exploring industrial systems, human interaction, and everyday objects
+          through research, design, and working prototypes.
         </p>
       </section>
 
       <section class="section portfolio-index" aria-labelledby="project-index-title">
-        <div class="section-heading">
-          <p class="eyebrow">Project tabs</p>
-          <h2 id="project-index-title">Choose one project.</h2>
+        <h2 class="visually-hidden" id="project-index-title">Browse projects</h2>
+        <div class="project-filters" role="group" aria-label="Project filters">
+          <button class="active" type="button" data-filter="all" aria-pressed="true">All (12)</button>
+          <button type="button" data-filter="product" aria-pressed="false">Product (5)</button>
+          <button type="button" data-filter="hci" aria-pressed="false">HCI / UX (6)</button>
+          <button type="button" data-filter="industrial-metaverse" aria-pressed="false">Industrial Metaverse (1)</button>
         </div>
-        <div class="project-filters" role="toolbar" aria-label="Project filters">
-          <button class="active" type="button" data-filter="all" aria-selected="true">All (12)</button>
-          <button type="button" data-filter="product" aria-selected="false">Product (6)</button>
-          <button type="button" data-filter="hci" aria-selected="false">HCI / UX (5)</button>
-          <button type="button" data-filter="industrial-metaverse" aria-selected="false">Industrial Metaverse (1)</button>
-        </div>
-        <div class="project-card-grid portfolio-card-grid" role="tablist" aria-label="Project tabs">
+        <div class="project-card-grid portfolio-card-grid" aria-label="Project collection">
           <a class="project-card portfolio-card" href="#ev-battery-factory" data-category="industrial-metaverse">
-            <img src="assets/portfolio/ev-battery-factory/images/factory-unity-cover.png" alt="Unity VR view of an EV battery factory assembly line, with controller hands and machine status indicators" loading="lazy" />
-            <span>Industrial Metaverse</span>
+            <div class="portfolio-cover"><img class="factory-cover" src="assets/portfolio/ev-battery-factory/images/Zone2_LineLayout_Review.png" alt="Overview of the EV battery assembly line, conveyors and production stations" loading="lazy" decoding="async" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Industrial Metaverse</span>
             <h3>EV Battery Factory</h3>
-            <p>An explorable Unity factory scene connected to selected manufacturing simulation data.</p>
-            <ul><li>Industrial Metaverse</li><li>Unity</li><li>Manufacturing Simulation</li><li>Interactive 3D</li></ul>
+            <p>An explorable factory connecting manufacturing simulation with an interactive Unity environment.</p>
           </a>
           <a class="project-card portfolio-card" href="#plant-companion" data-category="hci">
-  <img src="assets/portfolio/plant-companion/toppic.jpg" alt="PLANT COMPANION project preview" loading="lazy" />
-  <span>Tangible Interaction Design</span>
-  <h3>PLANT COMPANION</h3>
-  <p>In 2021, there were approximately 973 thousand males and 561 thousand females aged 16 to 44 living alone in the United Kingdom[1]. They crave love and emotional support. As a way to solve the loneliness problem, many young people living alone are eager to keep pets to accompany them, but they cannot due to...</p>
-  <ul><li>Human-Plant Interaction</li><li>Loneliness</li><li>Arduino</li><li>Interactive Design</li></ul>
-</a> <a class="project-card portfolio-card" href="#spacecube" data-category="product">
-  <img src="assets/portfolio/spacecube/main2.jpg" alt="SpaceCube project preview" loading="lazy" />
-  <span>Product Design</span>
-  <h3>SpaceCube</h3>
-  <p>SPACE CUBE is a futuristic loudspeaker that has built-in audio visualization. It features ferrofluid, which dances and changes shape in rhythm with the music that is being played. The loudspeaker has an elegant and futuristic design. The idea comes from one of my school projects where we discuss and...</p>
-  <ul><li>Ferrofluid Speaker</li><li>Arduino</li><li>Music Visualization</li><li>Dynamic</li></ul>
-</a> <a class="project-card portfolio-card" href="#ezporter" data-category="product">
-  <img src="assets/portfolio/ezporter/main1.JPG" alt="EzPorter project preview" loading="lazy" />
-  <span>Industrial Design</span>
-  <h3>EzPorter</h3>
-  <p>EzPorter is portable and fast-deployable bridge system that can be used during foods. It implements diferent modules that can be utilited in diferent combinations to meet different use cases. It can also function as road barriers when not in</p>
-  <ul><li>3D Printing</li><li>Floating Bridge</li><li>Modelling</li></ul>
-</a> <a class="project-card portfolio-card" href="#bento" data-category="product">
-  <img src="assets/portfolio/bento/main2.jpg" alt="BENTO+ project preview" loading="lazy" />
-  <span>Product Design</span>
-  <h3>BENTO+</h3>
-  <p>BENTO+ is a set of specilly designed bento boxes that have a redesigned user experience. It incorporates special hinges that allows the bento boxes to swivel, making it easy to load up with your favorite recipes and lit up to go without having to close each of the bento</p>
-  <ul><li>3D modelling</li><li>Tableware</li><li>Creative design</li></ul>
-</a> <a class="project-card portfolio-card" href="#limera" data-category="product">
-  <img src="assets/portfolio/limera/main2.jpg" alt="Limera project preview" loading="lazy" />
-  <span>Product Design</span>
-  <h3>Limera</h3>
-  <p>LIMERA is a portable camera that proposes a new method of camera storage without compromising professionalty, It implements a swivel body that allows the camera to be transformed into a smaller cylinder which is much easier to store in bags and carry</p>
-  <ul><li>Camera</li><li>Innovative Design</li><li>Prototype</li></ul>
-</a> <a class="project-card portfolio-card" href="#logger" data-category="product">
-  <img src="assets/portfolio/logger/main4.png" alt="Logger project preview" loading="lazy" />
-  <span>Product Design</span>
-  <h3>Logger</h3>
-  <p>LOGGER is a smart water bottle that has multiple in-built sensors for environmental measurements. Hikers are able to contribute to scientific research by trekking to remote areas that lack internet connection and weather monitoring. The sensors will collect data while hikers are trekking, and upload the data...</p>
-  <ul><li>Water bottle</li><li>IoT</li><li>Sensors</li><li>Arduino</li></ul>
-</a> <a class="project-card portfolio-card" href="#design-research-on-laundry-habits-in-loughborough" data-category="hci">
-  <img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/main.jpg" alt="Design Research on Laundry Habits in Loughborough project preview" loading="lazy" />
-  <span>Design Research Methods</span>
-  <h3>Design Research on Laundry Habits in Loughborough</h3>
-  <p>In this research, we focus on the process of washing clothes and study the impact of clothes washing on the environment. A scoping tool: The 5Ws and 1H (Who, What, When, Where, Why, and How) is used to investigate a certain brief or</p>
-  <ul><li>Design Research Methods</li><li>Laundry</li><li>Behavior and Habits</li></ul>
-</a> <a class="project-card portfolio-card" href="#drt-bus-experience-design-for-tourists" data-category="hci">
-  <img src="assets/portfolio/drt-bus-experience-design-for-tourists/main.jpg" alt="DRT Bus Experience Design for Tourists project preview" loading="lazy" />
-  <span>UX Design for Advanced Technology</span>
-  <h3>DRT Bus Experience Design for Tourists</h3>
-  <p>Bus travel is efficient and sustainable yet restricts travellers to long fixed routes. Issues including difficulty locating bus stops, feelings of insecurity while waiting, and boredom contribute to tourists opting for unsustainable single-occupancy options like</p>
-  <ul><li>Advanced Technology</li><li>UX Design</li><li>AR</li><li>VR</li><li>Interactive Design</li></ul>
-</a> <a class="project-card portfolio-card" href="#s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough" data-category="product">
-  <img src="assets/portfolio/s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough/main2.png" alt="S-Scooter - A sustainable way to travel in the 15-minute neighborhood in Loughborough project preview" loading="lazy" />
-  <span>Mobility</span>
-  <h3>S-Scooter - A sustainable way to travel in the 15-minute neighborhood in Loughborough</h3>
-  <p>鈥淲e are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.鈥?As students at Loughborough University, we have found</p>
-  <ul><li>sustainable mobility</li><li>scooter</li><li>smart mobility</li><li>interactive design</li></ul>
-</a> <a class="project-card portfolio-card" href="#eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact" data-category="hci">
-  <img src="assets/portfolio/eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact/main2.png" alt="Eco Circle - An APP that increases recycling rates for Uni-campuses in collaboration with TPXimpact project preview" loading="lazy" />
-  <span>Sustainable Experience Design</span>
-  <h3>Eco Circle - An APP that increases recycling rates for Uni-campuses in collaboration with TPXimpact</h3>
-  <p>This project is a group work with three other students. The project is conducted in collaboration with TPXimpact, a digital transformation company based in the UK, supporting organisations to build a better future for people, places and the</p>
-  <ul><li>industry project</li><li>sustainable design</li></ul>
-</a> <a class="project-card portfolio-card" href="#onearth-energy-saving-app-for-gengame" data-category="hci">
-  <img src="assets/portfolio/onearth-energy-saving-app-for-gengame/main.jpg" alt="ONEARTH - Energy Saving APP for GenGame project preview" loading="lazy" />
-  <span>Experience Design</span>
-  <h3>ONEARTH - Energy Saving APP for GenGame</h3>
-  <p>ONEARTH is an smartphone app in partnership with GenGame energy. Based on a user-centered design approach, ONEARTH targets new parents who are short of money and time and encourages them to use smart meters to ensure the best living conditions for their family, allowing their baby to get the best start in...</p>
-  <ul><li>Experience Design</li><li>APP</li><li>Energy Saving</li><li>Smart Meter</li></ul>
-</a>
+            <div class="portfolio-cover"><img class="plant-cover" src="assets/portfolio/plant-companion/plant-bottom.jpg" alt="A person tending the Plant Companion prototype and its living plant" loading="lazy" decoding="async" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Tangible Interaction</span>
+            <h3>Plant Companion</h3>
+            <p>A working prototype exploring reciprocal care between people and plants through light, sound, and movement.</p>
+          </a> <a class="project-card portfolio-card" href="#spacecube" data-category="product">
+            <div class="portfolio-cover"><img class="spacecube-cover" src="assets/portfolio/spacecube/main2.jpg" alt="The complete SpaceCube loudspeaker with its ferrofluid display in a dark sculptural setting" loading="lazy" decoding="async" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Product Design</span>
+            <h3>SpaceCube</h3>
+            <p>A ferrofluid loudspeaker that turns music into a moving, sculptural material experience.</p>
+          </a> <a class="project-card portfolio-card" href="#ezporter" data-category="product">
+            <div class="portfolio-cover"><img src="assets/portfolio/ezporter/main1.JPG" alt="EzPorter project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Industrial Design</span>
+            <h3>EzPorter</h3>
+            <p>A modular, rapidly deployable floating bridge designed for flood response.</p>
+          </a> <a class="project-card portfolio-card" href="#bento" data-category="product">
+            <div class="portfolio-cover"><img src="assets/portfolio/bento/main2.jpg" alt="BENTO+ project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Product Design</span>
+            <h3>BENTO+</h3>
+            <p>A swivelling lunchbox system designed for easier packing, carrying, and everyday meals.</p>
+          </a> <a class="project-card portfolio-card" href="#limera" data-category="product">
+            <div class="portfolio-cover"><img src="assets/portfolio/limera/main2.jpg" alt="Limera project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Product Design</span>
+            <h3>Limera</h3>
+            <p>A camera concept with a rotating body that folds into a compact cylinder for travel.</p>
+          </a> <a class="project-card portfolio-card" href="#logger" data-category="product">
+            <div class="portfolio-cover"><img src="assets/portfolio/logger/main4.png" alt="Logger project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Connected Products</span>
+            <h3>Logger</h3>
+            <p>A sensor-equipped water bottle that lets hikers contribute environmental data from remote places.</p>
+          </a> <a class="project-card portfolio-card" href="#design-research-on-laundry-habits-in-loughborough" data-category="hci">
+            <div class="portfolio-cover"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/main.jpg" alt="Design Research on Laundry Habits in Loughborough project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Design Research</span>
+            <h3>Laundry Habits</h3>
+            <p>Design research into pet owners’ laundry routines and opportunities for more sustainable washing.</p>
+          </a> <a class="project-card portfolio-card" href="#drt-bus-experience-design-for-tourists" data-category="hci">
+            <div class="portfolio-cover"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/main.jpg" alt="DRT Bus Experience Design for Tourists project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">HCI / UX</span>
+            <h3>DRT Bus Experience</h3>
+            <p>Exploring how AR and VR can make demand-responsive bus travel more engaging for tourists.</p>
+          </a> <a class="project-card portfolio-card" href="#s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough" data-category="hci">
+            <div class="portfolio-cover"><img src="assets/portfolio/s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough/main2.png" alt="S-Scooter - A sustainable way to travel in the 15-minute neighborhood in Loughborough project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">HCI</span>
+            <h3>S-Scooter</h3>
+            <p>A shared mobility concept for everyday journeys within a 15-minute neighbourhood.</p>
+          </a> <a class="project-card portfolio-card" href="#eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact" data-category="hci">
+            <div class="portfolio-cover"><img src="assets/portfolio/eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact/main2.png" alt="Eco Circle - An APP that increases recycling rates for Uni-campuses in collaboration with TPXimpact project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">Sustainable UX</span>
+            <h3>Eco Circle</h3>
+            <p>A campus recycling app concept developed in collaboration with TPXimpact.</p>
+          </a> <a class="project-card portfolio-card" href="#onearth-energy-saving-app-for-gengame" data-category="hci">
+            <div class="portfolio-cover"><img src="assets/portfolio/onearth-energy-saving-app-for-gengame/main.jpg" alt="ONEARTH - Energy Saving APP for GenGame project preview" loading="lazy" /><span class="portfolio-open" aria-hidden="true">↗</span></div>
+            <span class="portfolio-category">HCI</span>
+            <h3>ONEARTH</h3>
+            <p>An energy-saving app concept for new parents, developed in partnership with GenGame.</p>
+          </a>
         </div>
       </section>
 
       <section class="section portfolio-details" aria-label="Project details">
+        <a class="portfolio-back" href="#project-index-title">← Back to all projects</a>
         <article class="project-detail active has-opening-video" id="plant-companion" data-category="hci">
   <header class="project-detail-header">
     <span class="project-number">01</span>
     <div>
       <p class="eyebrow">Tangible Interaction Design</p>
       <h2>PLANT COMPANION</h2>
-      <p>In 2021, there were approximately 973 thousand males and 561 thousand females aged 16 to 44 living alone in the United Kingdom[1]. They crave love and emotional support. As a way to solve the loneliness problem, many young people living alone are eager to keep pets to accompany them, but they cannot due to...</p>
+      <p>A responsive plant prototype that uses sensors, light, sound, and movement to turn everyday plant care into a two-way interaction.</p>
       <ul class="project-tags"><li>Human-Plant Interaction</li><li>Loneliness</li><li>Arduino</li><li>Interactive Design</li></ul>
     </div>
   </header>
-  <div class="portfolio-video project-detail-opening-video"><iframe src="https://www.youtube.com/embed/t5ggkp-cbg0" title="Project video" loading="lazy" allowfullscreen></iframe></div>
-  <figure class="project-detail-hero"><img src="assets/portfolio/plant-companion/toppic.jpg" alt="PLANT COMPANION hero image" loading="lazy" /></figure>
+  <div class="portfolio-video project-detail-opening-video"><iframe src="https://www.youtube.com/embed/fasD9g_Evt0" title="Plant Companion prototype demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <p class="portfolio-video-link"><a href="https://www.youtube.com/watch?v=fasD9g_Evt0" target="_blank" rel="noopener noreferrer">Watch the prototype video on YouTube ↗</a></p>
+  <figure class="project-detail-hero plant-opening"><img src="assets/portfolio/plant-companion/plant-bottom.jpg" alt="Hands-on interaction with the Plant Companion prototype" loading="lazy" /><figcaption>Plant Companion in use: exploring care through interaction with a living plant.</figcaption></figure>
   <div class="project-detail-body">
     <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/1.jpg" alt="plant-companion project image 1" loading="lazy" /></figure>
 <h4>Introduction</h4>
@@ -155,7 +141,7 @@
 <h5>Ethics and Data Collection</h5>
 <p>: Participants completed reading the Interview Participant Information Sheet. All videos, pictures, and data are used with the permission of the participants. They all completed the interview with Informed Consent.</p>
 <h5>Findings</h5>
-<p><strong>Participants鈥?reasons for keeping plants:</strong></p>
+<p><strong>Participants’ reasons for keeping plants:</strong></p>
 <ul>
 <li>All three participants mentioned that they want to keep plants to gain a better visual experience,</li>
 <li>Plants will make the environment more lively when they live alone, and they look forward to having fun through raising plants.</li>
@@ -164,7 +150,7 @@
 <p><strong>Emotional changes in participants keeping plants:</strong></p>
 <p>All three participants felt that the process of keeping the plants fell short of their initial expectations.</p>
 <ul>
-<li>Two of them said that they did not get happiness because plants don鈥檛 have a lot of existence. Plants are easy to forget and are prone to death due to neglect and lack of care.</li>
+<li>Two of them said that they did not get happiness because plants don’t have a lot of existence. Plants are easy to forget and are prone to death due to neglect and lack of care.</li>
 <li>Plants do not provide as much feedback as animals. When the freshness wore off, she felt that she was unable to get any emotional benefit from her plant.</li>
 <li>Problems Participants Have When keeping Plants</li>
 <p>All three participants mentioned that the biggest problem was that the plants were prone to dying.</p>
@@ -178,7 +164,7 @@
 <h5>Secondary research about human-plant interaction</h5>
 <p>Secondary research is used as a method to explore deeper for more possibilities for plant interaction. This research aims to explore two aspects of human-plant interaction: How exactly do plants interact, and how do people benefit from the interaction.</p>
 <h5>Key Insights</h5>
-<p>According to the secondary research, three key insights are shown which relate to the plant companion project. 1. Improving the physical and mental health of people through physical interaction with plants, meaning that interaction with plants can benefit users鈥?health. 2. Simulating and expressing humanlike feelings through plants can improve psychological health, which means that we can use light and sound humans accept to give feedback to them. 3. Plants can transmit information through changes in their own state, which means that we can obtain information by exploiting the special characteristics of some specific plants or using them as biosensors.</p>
+<p>According to the secondary research, three key insights are shown which relate to the plant companion project. 1. Improving the physical and mental health of people through physical interaction with plants, meaning that interaction with plants can benefit users’ health. 2. Simulating and expressing humanlike feelings through plants can improve psychological health, which means that we can use light and sound humans accept to give feedback to them. 3. Plants can transmit information through changes in their own state, which means that we can obtain information by exploiting the special characteristics of some specific plants or using them as biosensors.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/4.png" alt="plant-companion project image 4" loading="lazy" /></figure>
 <h4>The Idea</h4>
 <p>An idea related to human-plant interaction gradually formed. The basic concept is to enhance the interaction of plants and provide plants with the ability to show noticeable feedback with the help of electronics and sensors. It is hoped that this interaction will enhance the merits of keeping plants and bring mental benefits to the user. The plant will be able to collect data from the environment and the user, then react accordingly, giving sensory feedback to the user to create a sense of warmth and company.</p>
@@ -206,7 +192,7 @@
 <p>The servo motor allows the plant to wave its leaves</p>
 <p>The light sensor detects if there is enough light for the plant</p>
 <p>The ultrasonic sensor can detect distance and can be used to detect human motion.</p>
-<p>Pine cones are used as boi-sensors for measuring humidity and a feature switch</p>
+<p>Pine cones are used as bio-sensors for measuring humidity and a feature switch</p>
 <p>Pine cones close up when there is water, therefore we can use a DIY switch (two metal contacts attached to the pine cone) to detect if the pine cone has closed up or not.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/7.png" alt="plant-companion project image 6" loading="lazy" /></figure>
 <p>My early prototypes have established proof of concept for the bio-electrical system and started to test different interactions. We continue to refine the early prototypes.</p>
@@ -236,7 +222,7 @@
 <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/12.png" alt="plant-companion project image 11" loading="lazy" /></figure>
 <p>The light sensor was added next. It was a simple connection with a resistor, giving Plant Companion the ability to sense light. The LED ring and the MP3 module were added last, which are used to provide visual and sound feedback.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/13.png" alt="plant-companion project image 12" loading="lazy" /></figure>
-<p>Two types of pines cones, big or small, were tested together with the moisture sensor. It was found that small pine cones match leaf plants鈥?habits better. Since I used leaf plants in this project, it was better to use small pine cones.</p>
+<p>Two types of pines cones, big or small, were tested together with the moisture sensor. It was found that small pine cones match leaf plants’ habits better. Since I used leaf plants in this project, it was better to use small pine cones.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/11.png" alt="plant-companion project image 13" loading="lazy" /></figure>
 <p>For the coding part, connecting the sensors and reading the values was not so difficult. There are two difficult parts in coding: 1. Removing delay() so that Arduino can multitask without hanging up to wait for delays. The solution, also found in an online tutorial, was to use the Millis() function to keep track of timings. 2. The different states of the prototype. Depending on the light intensity, the soil moisture, and the distance of the user, Plant Companion has to react differently and give different outputs. It was quite difficult to write if-statements to control the prototype.</p>
 <p>The behavior of the prototype is summarized in the table below.</p>
@@ -252,13 +238,13 @@
 <ul>
 <li>PHYSICAL LAYER - Form and function of the</li>
 <p>interfaces;</p>
-<li>CULTURAL LAYER 鈥?Narrative and context of the</li>
+<li>CULTURAL LAYER — Narrative and context of the</li>
 <p>interaction, social signifier;</p>
-<li>INTERACTION LAYER 鈥?Design of situation,</li>
+<li>INTERACTION LAYER — Design of situation,</li>
 <p>usability aspects;</p>
-<li>TECHNICAL LAYER 鈥?Intermediating between the</li>
+<li>TECHNICAL LAYER — Intermediating between the</li>
 <p>interaction and the physical layer.</p>
-<li>AFFORDANCE 鈥?Accessibility of the interaction.[8]</li>
+<li>AFFORDANCE — Accessibility of the interaction.[8]</li>
 </ul>
 <p>Three participants from previous interviews were invited to participate in user testing of the evaluation. Their thoughts were recorded and analyzed to obtain suggestions for improvement.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/plant-companion/17.png" alt="plant-companion project image 16" loading="lazy" /></figure>
@@ -288,19 +274,19 @@
 <h4>Reflection</h4>
 <p>Reflection has been carried out in the process of doing the project. Overall, the project was successful in creating a working prototype that promotes human- plant interaction. The aim of the project is to support people who are living alone through interaction with plants. There are a few points that could be improved in future prototypes: 1. The project does not go deep into how plants communicate or convey information, but instead focuses on the experience of human beings when interacting with plants. 2. It takes time for the pine cone to react to water. The pine cone closes up very slowly, therefore users are unable to visually see the pine cone closing, so they might forget about the feedback of pine cones. The project lacks a full evaluation of whether Plant Companion actually helps loneliness. 3. The project lacks an analysis of how inaccuracies of plant sensors affect the experience. 4. The servo motor might cause damage to the plant, although it is only a slight vibration.</p>
 <h4>Future Work</h4>
-<p>1. Further iterations and improvements according to the results of the user evaluation. 2. The user evaluation was conducted on only three participants, which is a small sample that could be biased. It also can鈥檛 reflect a wide range of users, therefore more extensive user evaluation should be done in the future. 3. The colour and flashing modes of the LED ring used in the prototype should have in-depth research. 4. More secondary research on white noise music should be done to prove that the chosen music is appropriate and enjoyable for users.</p>
-<p>Nowadays, IoT (Internet of Things) is becoming a huge trend, where products are connected to the cloud to share data or utilize its the enormous computing capabilities. This also opens up a new path for Plant Companion, where environmental data could be uploaded to the internet. Users will then be able to see the status of their plants even if they are not at home. This provides many new opoortunities for interacting with plants, such as remote interaction or online interaction, which is a topic that is worthy of more research.</p>
+<p>1. Further iterations and improvements according to the results of the user evaluation. 2. The user evaluation was conducted on only three participants, which is a small sample that could be biased. It also can’t reflect a wide range of users, therefore more extensive user evaluation should be done in the future. 3. The colour and flashing modes of the LED ring used in the prototype should have in-depth research. 4. More secondary research on white noise music should be done to prove that the chosen music is appropriate and enjoyable for users.</p>
+<p>Nowadays, IoT (Internet of Things) is becoming a huge trend, where products are connected to the cloud to share data or utilize its the enormous computing capabilities. This also opens up a new path for Plant Companion, where environmental data could be uploaded to the internet. Users will then be able to see the status of their plants even if they are not at home. This provides many new opportunities for interacting with plants, such as remote interaction or online interaction, which is a topic that is worthy of more research.</p>
 <h4>Acknowledgements</h4>
 <p>I would like to thank all the participants and teachers who provided helpful comments and advice for this project. Thanks to the design school for the component funding and materials.</p>
 <h4>REFERENCES</h4>
 <p>[1] D. Clark. 2022. People living alone UK 2021, by age and gender. (April 2022). Retrieved January 1, 2023 from https://www.statista.com/statistics/531386/people-living-alone-uk-age-and-gender/ ACM.</p>
 <p>[2] B. Martin, B. Hanington, and B.M. Hanington. 2012. Universal Methods of Design: 100 Ways to Research Complex Problems, Develop Innovative Ideas, and Design Effective Solutions. Rockport Publishers.</p>
-<p>[3] DelSesto, M., 2020. People鈥損lant interactions and the ecological self. Plants, People, Planet, 2(3), pp.201-211.</p>
+<p>[3] DelSesto, M., 2020. People–plant interactions and the ecological self. Plants, People, Planet, 2(3), pp.201-211.</p>
 <p>[4] Seow, O., Honnet, C., Perrault, S. and Ishii, H., 2022. Pudica: A Framework For Designing Augmented Human-Flora Interaction. In Augmented Humans 2022 (pp. 40-45).</p>
 <p>[5] SpulberGeorge (2023). EasyUltrasonic. [online] GitHub. Available at: https://github.com/SpulberGeorge/EasyUltrasonic [Accessed 13 Jan. 2023].</p>
 <p>[6] www.theamplituhedron.com. (n.d.). How to use the Serial MP3 Player (UART) with Speaker byOPEN-SMART with Arduino. [online] Available at: https://www.theamplituhedron.com/articles/How-to-use-the-Serial-MP3-Player-UART-with-Speaker-by-OPEN-SMART-with-Arduino/ [Accessed 13Jan. 2023].</p>
 <p>[7] docs.arduino.cc. (n.d.). Servo Motor Basics with Arduino | Arduino Documentation. [online] Available at: https://docs.arduino.cc/learn/electronics/servo-motors.</p>
-<p>[8] Hornecker, E. (2012). 鈥淏eyond affordance: Tangibles鈥?hybrid nature鈥? In Proc. TEI鈥?2, ACM, 175-182.</p>
+<p>[8] Hornecker, E. (2012). “Beyond affordance: Tangibles’ hybrid nature” In Proc. TEI ’12, ACM, 175-182.</p>
   </div>
 </article> <article class="project-detail has-opening-video" id="spacecube" data-category="product">
   <header class="project-detail-header">
@@ -308,7 +294,7 @@
     <div>
       <p class="eyebrow">Product Design</p>
       <h2>SpaceCube</h2>
-      <p>SPACE CUBE is a futuristic loudspeaker that has built-in audio visualization. It features ferrofluid, which dances and changes shape in rhythm with the music that is being played. The loudspeaker has an elegant and futuristic design. The idea comes from one of my school projects where we discuss and...</p>
+      <p>A ferrofluid loudspeaker that translates music into visible motion, combining material experimentation, electronics, and product design.</p>
       <ul class="project-tags"><li>Ferrofluid Speaker</li><li>Arduino</li><li>Music Visualization</li><li>Dynamic</li></ul>
     </div>
   </header>
@@ -317,7 +303,7 @@
   <div class="project-detail-body">
     <h5>Ferrofluid Loudspeakers</h5>
 <p><strong>SPACE CUBE</strong> is a <strong>futuristic loudspeaker</strong> that has <strong>built-in audio visualization</strong>. It features <strong>ferrofluid</strong>, which <strong>dances and changes shape</strong> in rhythm with the music that is being played. The loudspeaker has an <strong>elegant and futuristic design</strong>.</p>
-<p>The idea comes from one of my school projects where we discuss and experiment with different materials. Ferrofluid is a special liquid as it is magnetic,so its unique magnetic properties can be used to achieve stunning effects in designing a product. Space Cube uses <strong>microcontrollers</strong> and <strong>special circuitry</strong> to anayze music and control the ferrofuid through <strong>electromagnets</strong>. <strong>The combination of special materials and technology creates this cool and aes-thetically pleasing design.</strong></p>
+<p>The idea comes from one of my school projects where we discuss and experiment with different materials. Ferrofluid is a special liquid as it is magnetic,so its unique magnetic properties can be used to achieve stunning effects in designing a product. Space Cube uses <strong>microcontrollers</strong> and <strong>special circuitry</strong> to analyze music and control the ferrofluid through <strong>electromagnets</strong>. <strong>The combination of special materials and technology creates this cool and aesthetically pleasing design.</strong></p>
 <figure class="portfolio-figure"><img src="assets/portfolio/spacecube/2.jpg" alt="spacecube project image 1" loading="lazy" /></figure>
 <h4>The team</h4>
 <p>Xiangyu Xiao / Industrial Design + Arduino + Visual Design + Video</p>
@@ -370,7 +356,7 @@
     <div>
       <p class="eyebrow">Industrial Design</p>
       <h2>EzPorter</h2>
-      <p>EzPorter is portable and fast-deployable bridge system that can be used during foods. It implements diferent modules that can be utilited in diferent combinations to meet different use cases. It can also function as road barriers when not in</p>
+      <p>EzPorter is portable and fast-deployable bridge system that can be used during floods. It implements different modules that can be utilized in different combinations to meet different use cases. It can also function as road barriers when not in</p>
       <ul class="project-tags"><li>3D Printing</li><li>Floating Bridge</li><li>Modelling</li></ul>
     </div>
   </header>
@@ -378,7 +364,7 @@
   <figure class="project-detail-hero"><img src="assets/portfolio/ezporter/main1.JPG" alt="EzPorter hero image" loading="lazy" /></figure>
   <div class="project-detail-body">
     <h4>Fast deployable floating bridge design for rescue</h4>
-<p><strong>EzPorter</strong> is <strong>portable and fast-deployable bridge system</strong> that can be used during foods. It implements diferent <strong>modules</strong> that can be utilited in <strong>diferent combinations</strong> to meet different use cases. It can also function as <strong>road barriers</strong> when not in use.</p>
+<p><strong>EzPorter</strong> is <strong>portable and fast-deployable bridge system</strong> that can be used during floods. It implements different <strong>modules</strong> that can be utilized in <strong>different combinations</strong> to meet different use cases. It can also function as <strong>road barriers</strong> when not in use.</p>
 <p>The idea of EzPorter comes from my own experience in floods. My home town is prone to big food in the summer, and I have experenced being stranded and not able to move due to floods. A foating bridge has the flextility to react and deploy quickly wile preserving its capability to tansport a huge number of people at the same time.EzPorter is product design that implements <strong>a brave concept for a brave solution</strong>. I built a huge sandbox model and made avideo of it to demonstrate the function and use case of EzPorter, and 3D printing was used for making the models of the EzPorter modules.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/ezporter/1.jpg" alt="ezporter project image 1" loading="lazy" /></figure>
 <h4>Background &amp; Secondary Research</h4>
@@ -405,14 +391,14 @@
     <div>
       <p class="eyebrow">Product Design</p>
       <h2>BENTO+</h2>
-      <p>BENTO+ is a set of specilly designed bento boxes that have a redesigned user experience. It incorporates special hinges that allows the bento boxes to swivel, making it easy to load up with your favorite recipes and lit up to go without having to close each of the bento</p>
+      <p>BENTO+ is a set of specially designed bento boxes that have a redesigned user experience. It incorporates special hinges that allows the bento boxes to swivel, making it easy to load up with your favorite recipes and lit up to go without having to close each of the bento</p>
       <ul class="project-tags"><li>3D modelling</li><li>Tableware</li><li>Creative design</li></ul>
     </div>
   </header>
   <figure class="project-detail-hero"><img src="assets/portfolio/bento/main2.jpg" alt="BENTO+ hero image" loading="lazy" /></figure>
   <div class="project-detail-body">
     <h4>Tableware designed for office workers</h4>
-<p><strong>BENTO+</strong> is a set of specilly designed bento boxes that have a <strong>redesigned user experience</strong>. It incorporates <strong>special hinges</strong> that allows the bento boxes to <strong>swivel</strong>, making it <strong>easy to load</strong> up with your favorite recipes and lit up to go without having to close each of the bento boxes.</p>
+<p><strong>BENTO+</strong> is a set of specially designed bento boxes that have a <strong>redesigned user experience</strong>. It incorporates <strong>special hinges</strong> that allows the bento boxes to <strong>swivel</strong>, making it <strong>easy to load</strong> up with your favorite recipes and lit up to go without having to close each of the bento boxes.</p>
 <p>The idea comes from my own experience of bringing breakfast in lunch boxes every day. Traditional lunch boxes are cumbersome to use. Bento+ has specially designed handle and joints that allow the boxes to be closed simply by lifting the handle up. The project incorporates my own ideal form of bento boxes that allows the user to cut,pack and go in flash. <strong>This project emphasizes the design process of a product and the ablity to systematically designand analyze a product.</strong></p>
 <figure class="portfolio-figure"><img src="assets/portfolio/bento/1.jpg" alt="bento project image 1" loading="lazy" /></figure>
 <h4>Research</h4>
@@ -441,7 +427,7 @@
     <div>
       <p class="eyebrow">Product Design</p>
       <h2>Limera</h2>
-      <p>LIMERA is a portable camera that proposes a new method of camera storage without compromising professionalty, It implements a swivel body that allows the camera to be transformed into a smaller cylinder which is much easier to store in bags and carry</p>
+      <p>LIMERA is a portable camera that proposes a new method of camera storage without compromising professionalism, It implements a swivel body that allows the camera to be transformed into a smaller cylinder which is much easier to store in bags and carry</p>
       <ul class="project-tags"><li>Camera</li><li>Innovative Design</li><li>Prototype</li></ul>
     </div>
   </header>
@@ -449,7 +435,7 @@
   <div class="project-detail-body">
     <h4>Professional camera for easy storage</h4>
 <figure class="portfolio-figure"><img src="assets/portfolio/limera/5.jpg" alt="limera project image 1" loading="lazy" /></figure>
-<p><strong>LIMERA</strong> is a <strong>portable camera</strong> that proposes a new <strong>method of camera storage without compromising professionalty</strong>, It implements a <strong>swivel body</strong> that allows the camera to be transformed into a smaller cylinder which is much <strong>easier to store in bags and carry around</strong>.</p>
+<p><strong>LIMERA</strong> is a <strong>portable camera</strong> that proposes a new <strong>method of camera storage without compromising professionalism</strong>, It implements a <strong>swivel body</strong> that allows the camera to be transformed into a smaller cylinder which is much <strong>easier to store in bags and carry around</strong>.</p>
 <p>Professional cameras are big, bulky and have a weird shape, whereas LIMERA cuts the bulk of raditional cameres.The project originates from my hoby ofphotography, where l find traditional cameras hard to fit in my back pack.LIMERA is a combination of <strong>conceptual product design</strong>, <strong>product modelling and ergonomic design</strong>. For products like cameras, <strong>user interaction</strong> is a crucial part in my design, which is tested by making foam models to verfy the <strong>feasibility of the concept</strong>.</p>
 <h4>Background</h4>
 <figure class="portfolio-figure"><img src="assets/portfolio/limera/1.jpg" alt="limera project image 2" loading="lazy" /></figure>
@@ -498,17 +484,17 @@
 <p>In this research, we focus on the process of washing clothes and study the impact of clothes washing on the environment. A scoping tool: The 5Ws and 1H (Who, What, When, Where, Why, and How) is used to investigate a certain brief or context.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/1.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 1" loading="lazy" /></figure>
 <p>Pet owners were intrigued and decided to study. I myself am a pet owner, and there are many pet owners across the world. Pets tend to change fur or make a mess, which results in extra laundry to be done. I am interested in finding out how keeping pets affect the laundry habits of people, and how this impacts the environment.</p>
-<p>Therefore, I chose: <strong>鈥淚 am going to research the washing behaviour and practices of the students who keep pets so that I can optimize the laundry washing process for pet owners.鈥?</strong></p>
+<p>Therefore, I chose: <strong>“I am going to research the washing behaviour and practices of the students who keep pets so that I can optimize the laundry washing process for pet owners.”</strong></p>
 <h5>Pilot study: Auto-ethnography</h5>
 <p>Before setting off the investigative research, a pilot filming was conducted to explore the process of doing laundry for people and pets.</p>
-<p>For convenience, an observation has been done to see the process of doing laundry for people and pets at my home in Wuhan China. Their ex periences were documented with photos and video, and notes were made on the reflections of this experience. It indicates that keeping pets may increase the amount of laundry that needs to be done, so the impact of pet ownership on people鈥檚 laundry behavior needs to be explored.</p>
+<p>For convenience, an observation has been done to see the process of doing laundry for people and pets at my home in Wuhan China. Their ex periences were documented with photos and video, and notes were made on the reflections of this experience. It indicates that keeping pets may increase the amount of laundry that needs to be done, so the impact of pet ownership on people’s laundry behavior needs to be explored.</p>
 <p>Auto-ethnography is a method of conducting qualitative research that focuses on participant observation or the ethnographic method, in which the researcher is embedded in settings to write about social groups that are different from their own. (Besio, 2009)</p>
 <p>Therefore it was used as the first research to have a basic understanding of doing laundry for owners and pets, to come up with a guide for the later interviews and observations.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/2.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 2" loading="lazy" /></figure>
 <h5>Data Collection</h5>
 <p>When I was in my hometown of Wuhan, China, I used to do laundry for myself and my pet.</p>
 <p>I used video and photography to record my experience and the laundry process, and I also wrote notes about my observations afterward.</p>
-<p>From the pilot study, the steps in a basic laundry process were observed. From these steps, a basic structure for the interview can be established. Following the basic laundry process, the process of doing pet鈥檚 laundry was also observed. A couple of differences were spotted when comparing doing the person鈥檚 own laundry and doing the pet鈥檚 laundry. The differences are labeled in bold in Figure 2.</p>
+<p>From the pilot study, the steps in a basic laundry process were observed. From these steps, a basic structure for the interview can be established. Following the basic laundry process, the process of doing pet’s laundry was also observed. A couple of differences were spotted when comparing doing the person’s own laundry and doing the pet’s laundry. The differences are labeled in bold in Figure 2.</p>
 <p>The following are the points of interest found from this pilot study:</p>
 <ul>
 <li>What are the differences between doing own laundry and doing the laundry of pets</li>
@@ -520,12 +506,12 @@
 <h5>Reflection</h5>
 <p>Since I had a pet in my hometown, I chose auto ethnography and reenact methods. From observations,</p>
 <ul>
-<li>I gained first impression on the laundry process concerning pet鈥檚, and was</li>
+<li>I gained first impression on the laundry process concerning pet’s, and was</li>
 <p>able to write a guide for the interview, which is a good start for the research.</p>
 </ul>
 <p>The disadvantage of this study is that:</p>
 <ul>
-<li>Since I didn鈥檛 have a pet in the UK, it was hard to complete auto</li>
+<li>Since I didn’t have a pet in the UK, it was hard to complete auto</li>
 <p>ethnography. I had to record my habits with notes, and ask my family at home to re-enact what I did and made the raudio-visual recording. This limits the observations as it will not be as detailed.</p>
 </ul>
 <h5>Revised Hunt Statement</h5>
@@ -545,7 +531,7 @@
 <li>Basic information</li>
 <li>About pets</li>
 <li>About own laundry</li>
-<li>About pet鈥檚 laundry</li>
+<li>About pet’s laundry</li>
 <li>About laundry habits</li>
 </ul>
 <p>The guide aims to obtain detailed information about their thoughts and behaviour of their laundry practices as a pet owner. It is structured such that basic information about their pets and themselves are first obtained, then basic details of they do their own laundry, after that details of how they do the laundry of their pets, and last of all, details on their laundry habits and thoughts</p>
@@ -553,7 +539,7 @@
 <p><strong>Benefits</strong></p>
 <ul>
 <li>Generally quick to conduct.</li>
-<li>provides good access to the user鈥檚 character, goals, and emotional responses.</li>
+<li>provides good access to the user’s character, goals, and emotional responses.</li>
 <li>The researcher can guide the conversation and redirect it as needed.</li>
 <li>Deep levels of knowledge and understanding are possible.</li>
 <li>Users can display or respond to interview-related objects or props.</li>
@@ -561,7 +547,7 @@
 <p><strong>Limitations</strong></p>
 <ul>
 <li>Setting up is a lengthy process.</li>
-<li>Poor questions may lead to and influence user responses, and the interviewer鈥檚 or researcher鈥檚 personality may have an impact on the results.</li>
+<li>Poor questions may lead to and influence user responses, and the interviewer’s or researcher’s personality may have an impact on the results.</li>
 <li>extreme attention paid to what the user says rather than what they do.</li>
 <li>It is challenging to compare interviews because no two interviews are same.</li>
 <li>It takes a lot of time and effort to analyse (Hall. E, 2013)</li>
@@ -573,10 +559,10 @@
 <h5>Introduction</h5>
 <p>Typically, the exploratory and evaluation phases of research projects utilise design ethnography.</p>
 <p>Observation implies paying close attention to and meticulously document- ing phenomena, such as people, artefacts, surroundings, events, behaviours, and interaction.(Martin et al., 2012)</p>
-<p>Shadowing is conducted to perform design ethnography. It鈥檚 a method that鈥檚 frequently used in user research. The concept is straightforward: while the user is being observed, the researcher watches how they use the good or service in their environment. (The Interaction Design Foundation, 2020)</p>
-<p>To do laundry for pets and oneself, a deeper understanding of the behavior of individual candidates is required. Shadowing is a method to perform in- depth observation of the behaviors and emotions of the participants and record their laundry process. Compared to participant observation, it will not interfere and interrupt the participant鈥檚 behavior and thoughts. A short interview after the shadowing was performed to alleviate its limitations.</p>
+<p>Shadowing is conducted to perform design ethnography. It’s a method that’s frequently used in user research. The concept is straightforward: while the user is being observed, the researcher watches how they use the good or service in their environment. (The Interaction Design Foundation, 2020)</p>
+<p>To do laundry for pets and oneself, a deeper understanding of the behavior of individual candidates is required. Shadowing is a method to perform in- depth observation of the behaviors and emotions of the participants and record their laundry process. Compared to participant observation, it will not interfere and interrupt the participant’s behavior and thoughts. A short interview after the shadowing was performed to alleviate its limitations.</p>
 <h5>Data Collection</h5>
-<p>According to the content of the interview, the three participants all do their own laundry and pets鈥?laundry separately. Therefore, shadowing is used to observe them do their own laundry and pets鈥?laundry separately. Videos were recorded, then summarized and analyzed using AEIOU, which is included in the data analysis and appendix sections.</p>
+<p>According to the content of the interview, the three participants all do their own laundry and pets’ laundry separately. Therefore, shadowing is used to observe them do their own laundry and pets’ laundry separately. Videos were recorded, then summarized and analyzed using AEIOU, which is included in the data analysis and appendix sections.</p>
 <h5>Ethics</h5>
 <p>Following ethics is a crucial throughout the research. This study was conducted under ethical regulations of Loughborough University. The data collected in the research will only be used for this study, will be anonymized and securely stored. All three participants are fully aware of how the collected data is used, have read the participant information sheet, and signed a written consent form.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/7.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 7" loading="lazy" /></figure>
@@ -591,7 +577,7 @@
 </ul>
 <p><strong>Limitations</strong></p>
 <ul>
-<li>Easy to substitute for the investigator鈥檚 bias</li>
+<li>Easy to substitute for the investigator’s bias</li>
 <li>Low observation efficiency</li>
 <li>Inability to instantly understand the particular behaviour of participants</li>
 </ul>
@@ -601,12 +587,12 @@
 <p>One drawback is that pointing a camera at the participant makes them nervous, which might affect their behavior, although I use shadowing to reduce my presence as much as possible to lessen their distraction.</p>
 <h4>Data Analysis</h4>
 <h5>Analysing Video Data: AEIOU</h5>
-<p>AEIOU templates are used to organize data collected from the laundry process of their own clothes and their pet鈥檚 clothes. The three participants each have a set of AEIOU forms that record their data. Simple analysis is also performed in the AEIOU. The AEIOU forms can be found in the next page.</p>
+<p>AEIOU templates are used to organize data collected from the laundry process of their own clothes and their pet’s clothes. The three participants each have a set of AEIOU forms that record their data. Simple analysis is also performed in the AEIOU. The AEIOU forms can be found in the next page.</p>
 <h5>Reflection</h5>
 <p><strong>Benefits</strong></p>
 <ul>
 <li>Enables the meaningful systematic cataloguing and analysis of visual data.</li>
-<li>Maps out several facets of the user鈥檚 behaviour and surroundings visually.</li>
+<li>Maps out several facets of the user’s behaviour and surroundings visually.</li>
 <li>Discovers hidden behaviours, workarounds, and needs.</li>
 </ul>
 <p><strong>Limitations</strong></p>
@@ -628,7 +614,7 @@
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/14.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 14" loading="lazy" /></figure>
 <h4>Insights</h4>
 <h5>Introduction</h5>
-<p>Insights are intuitive understandings of user behavior based on user research that can inspire creative design ideas. (Kumar V., 2012) Insights come from findings and observations. They are intuitive and depend on the researcher鈥檚 thoughts, creativity and vision. Insights vary from person to person, but they all provide creativity that can be turned into opportunities.</p>
+<p>Insights are intuitive understandings of user behavior based on user research that can inspire creative design ideas. (Kumar V., 2012) Insights come from findings and observations. They are intuitive and depend on the researcher’s thoughts, creativity and vision. Insights vary from person to person, but they all provide creativity that can be turned into opportunities.</p>
 <p>From the patterns in the affinity diagram and the findings, insights can be drawn. Then we use a 2x2 evaluation matrix to select 3-5 key insights.</p>
 <p>The key insights will then be used to derive opportunities.</p>
 <h5>Key Insights</h5>
@@ -640,12 +626,12 @@
 <ul>
 <li>What it means</li>
 </ul>
-<p>Participants tend to use more detergent and/or sanitizer when they are doing their pet鈥檚 laundry, potentially having to wash/rinse a second time. Especially for laundry beads, participants can only add another bead, potentially adding too much detergent.</p>
+<p>Participants tend to use more detergent and/or sanitizer when they are doing their pet’s laundry, potentially having to wash/rinse a second time. Especially for laundry beads, participants can only add another bead, potentially adding too much detergent.</p>
 <ul>
 <li>Why it matters</li>
 </ul>
 <p>Doing a second wash/rinse will increases water and energy use, potentially having a bad effect on the environment.</p>
-<h5>Cleanliness determines whether pet鈥檚 laundry can be washed together with own laundry.</h5>
+<h5>Cleanliness determines whether pet’s laundry can be washed together with own laundry.</h5>
 <ul>
 <li>What we saw/ heard</li>
 </ul>
@@ -653,11 +639,11 @@
 <ul>
 <li>What it means</li>
 </ul>
-<p>Laundry are mostly separated by cleanliness, no matter if it is from own laundry or from pet鈥檚. Most of the time the participant鈥檚 own laundry is separated from their pet鈥檚 laundry because their pet鈥檚 laundry is much dirtier. But after washing, the two types of laundry are dried together on the same rack or in the same dryer.</p>
+<p>Laundry are mostly separated by cleanliness, no matter if it is from own laundry or from pet’s. Most of the time the participant’s own laundry is separated from their pet’s laundry because their pet’s laundry is much dirtier. But after washing, the two types of laundry are dried together on the same rack or in the same dryer.</p>
 <ul>
 <li>Why it matters</li>
 </ul>
-<p>Seperating laundry leads to more laundry cycles, and potentially more energy consumption. If pet鈥檚 laundry and own laundry can be mixed together, there will be no need to do two laundries, therefore cutting water electricity use in half.</p>
+<p>Separating laundry leads to more laundry cycles, and potentially more energy consumption. If pet’s laundry and own laundry can be mixed together, there will be no need to do two laundries, therefore cutting water electricity use in half.</p>
 <h5>Participants do laundry because of their own psychological feelings</h5>
 <ul>
 <li>What we saw/ heard</li>
@@ -671,7 +657,7 @@
 <li>Why it matters</li>
 </ul>
 <p>This was the case for all three interviewers, who usually washed their clothes because they felt they needed to be washed. This may increase the time of laundry and add additional energy consumption.</p>
-<h5>Time spent was one of the important factors influencing participants鈥?choice of laundry method</h5>
+<h5>Time spent was one of the important factors influencing participants’ choice of laundry method</h5>
 <ul>
 <li>What we saw/ heard</li>
 </ul>
@@ -688,7 +674,7 @@
 <p>As a group of PhD students, they have a strong sense of time and will care about the time spent. Therefore, it is more acceptable to study how to save energy while saving time.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/19.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 19" loading="lazy" /></figure>
 <h4>Opportunities: HMW</h4>
-<p>鈥淗ow Might We鈥?Questions, or HMW in short, is a series of small questions that stimulate brainstorming. (鈥?How Might We鈥?Questions, n.d.) The researchers ask themselves these questions to help boost creativity and thoughts. HMW questions usually are derived from insights, and lead to potential opportunities.</p>
+<p>“How Might We” Questions, or HMW in short, is a series of small questions that stimulate brainstorming. (“How Might We” Questions, n.d.) The researchers ask themselves these questions to help boost creativity and thoughts. HMW questions usually are derived from insights, and lead to potential opportunities.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/20.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 20" loading="lazy" /></figure>
 <h4>Reflections</h4>
 <h5>Reflection on methodology and process</h5>
@@ -704,7 +690,7 @@
 <p>There are also some other things that could be improved:</p>
 <ul>
 <li>Not enough experience in interviewing. I took care not to ask Yes-No questions, but I still ended up asking some.</li>
-<li>Staying unbiased was difficult. I wasn鈥檛 sure if I am unbiased enough.</li>
+<li>Staying unbiased was difficult. I wasn’t sure if I am unbiased enough.</li>
 </ul>
 <h5>Reflection as a design researcher</h5>
 <p>Previously as a product design bachelor student in China, I did not know how to conduct a proper design research. What I did most were simple questionairres or online surveys, which only gave limited data and was not sufficient to fully uncover the details of the behavior of participants. Therefore I was unable to correctly grasp the pain points in a topic back then.</p>
@@ -713,14 +699,14 @@
 <p>Doing design research is an important starting point in a design process, and I will definitely be using the methodologies that I have learned in this research for future research studies.</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/design-research-on-laundry-habits-in-loughborough/21.jpg" alt="design-research-on-laundry-habits-in-loughborough project image 21" loading="lazy" /></figure>
 <h4>References</h4>
-<p>Besio, K., 2009. Autoethnography, in: Kitchin, R., Thrift, N. (Eds.), International Encyclopedia of Human Geography. Elsevier, Oxford, pp. 240鈥?243 https://doi.org/10.1016/B978-008044910-4.00405-3</p>
-<p>Demuth, C., Mey, G., 2015. Qualitative Methodology in Developmental Psychology, in: Wright, J.D. (Ed.), International Encyclopedia of the Social &amp; Behavioral Sciences (Second Edition). Elsevier, Oxford, pp. 668鈥?75. https://doi.org/10.1016/B978-0-08-097086-8.23156-5</p>
+<p>Besio, K., 2009. Autoethnography, in: Kitchin, R., Thrift, N. (Eds.), International Encyclopedia of Human Geography. Elsevier, Oxford, pp. 240–243 https://doi.org/10.1016/B978-008044910-4.00405-3</p>
+<p>Demuth, C., Mey, G., 2015. Qualitative Methodology in Developmental Psychology, in: Wright, J.D. (Ed.), International Encyclopedia of the Social &amp; Behavioral Sciences (Second Edition). Elsevier, Oxford, pp. 668–75. https://doi.org/10.1016/B978-0-08-097086-8.23156-5</p>
 <p>Martin, B., Hanington, B., Hanington, B.M., 2012. Universal methods of design: 100 ways to research complex problems, develop innovative ideas, and design effective solutions. Rockport Publishers.</p>
 <p>The Interaction Design Foundation. (2020). Shadowing in User Research Do You See What They See [online] Available at: https://www.interaction-design.org/literature/article/shadowing-in-user-research-do-you-see-what-they-see#:~:text=The%20idea%20of%20shadowing%20someone. (Accessed: 12 Nov. 2022)</p>
 <p>Lo, K.P.Y., 2011. Designing service evidence for positive relational messages. International Journal of Design, 5 (2), pp. 5-13, available at: https://dspace.lboro.ac.uk/dspace-jspui/bitstream/2134/10353/6/LO_KPY_design_for_relational_messages.pdf (Accessed: 12 Nov. 2022)</p>
 <p>Martin. B and Hanington. B (2012) Universal Methods of Design, Rockport Publishers, Massachusetts, pp. 10-11, 90-91, 102-103, 120-121, 124-125 Hall. E (2013) Interviewing Humans, Excerpt of Chapter 5 Just Enough Research, available online at: https://alistapart.com/article/interviewing-humans (Accessed: 10 Nov. 2022)</p>
 <p>Portigal. S (2013) Getting Ready to Conduct your Interviews, In: Portigal. S, Interviewing users: How to Uncover Compelling Insights, available online at: http://rosenfeldmedia.com/wp-content/ uploads/2014/10/Interviewing-Users-Excerpt.pdf (Accessed: 10 Nov. 2022)</p>
-<p>Kumar. V (2012) 101 Design Methods: A Structured Approach for Driving Innovation in Your Organization, Wiley, pp. 138-141 鈥淗ow Might We鈥?Questions. (n.d.). [online] Available at: http://crowdresearch.stanford.edu/w/img_auth.php/f/ff/How_might_we.pdf. (Accessed on 12. Nov. 2022)</p>
+<p>Kumar. V (2012) 101 Design Methods: A Structured Approach for Driving Innovation in Your Organization, Wiley, pp. 138-141 “How Might We” Questions. (n.d.). [online] Available at: http://crowdresearch.stanford.edu/w/img_auth.php/f/ff/How_might_we.pdf. (Accessed on 12. Nov. 2022)</p>
   </div>
 </article> <article class="project-detail has-opening-video" id="drt-bus-experience-design-for-tourists" data-category="hci">
   <header class="project-detail-header">
@@ -737,11 +723,11 @@
   <div class="project-detail-body">
     <p>Bus travel is efficient and sustainable yet restricts travellers to long fixed routes. Issues including difficulty locating bus stops, feelings of insecurity while waiting, and boredom contribute to tourists opting for unsustainable single-occupancy options like Uber.</p>
 <p>However, according to the data from Transport &amp; Environment, PHV drivers in England (including Uber drivers) produced over 81% of the total amount of CO2 in the UK.</p>
-<p>We aimed to create an innovative bus travel experience using VR and AR to improve enjoyment, flexibility, and convenience. Our VR scenario demonstrates the bus travel鈥檚 advantages and positive environmental impact. Our AR guides passengers to virtual bus stops, encouraging bus travel selection. User testing applied physical storms, SUS Testing, and USE scoreboards to verify user interest and behavioural change.</p>
-<p>To promote bus travel to tourists in Europe鈥檚 most visited cities, we need only upload new videos and geo-location information to scale the concept fast.</p>
+<p>We aimed to create an innovative bus travel experience using VR and AR to improve enjoyment, flexibility, and convenience. Our VR scenario demonstrates the bus travel’s advantages and positive environmental impact. Our AR guides passengers to virtual bus stops, encouraging bus travel selection. User testing applied physical storms, SUS Testing, and USE scoreboards to verify user interest and behavioural change.</p>
+<p>To promote bus travel to tourists in Europe’s most visited cities, we need only upload new videos and geo-location information to scale the concept fast.</p>
 <h4>Introduction</h4>
 <p>This project is a group work with three other students.</p>
-<p><strong>Team Leader: Xiangyu Xiao (me)</strong>锛欰s the team leader, I am responsible for the overall project management, data analysis, determining the main features, prototype iteration, and video production.</p>
+<p><strong>Team Leader: Xiangyu Xiao (me)</strong>: As the team leader, I am responsible for the overall project management, data analysis, determining the main features, prototype iteration, and video production.</p>
 <p>Team members:</p>
 <ul>
 <li>Jingkun Wei: Responsible for the user reseach</li>
@@ -758,7 +744,7 @@
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/1.jpg" alt="drt-bus-experience-design-for-tourists project image 2" loading="lazy" /></figure>
 <h5>Initial Goal</h5>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/3.jpg" alt="drt-bus-experience-design-for-tourists project image 3" loading="lazy" /></figure>
-<p><strong>鈥淗ow might we design a public transportation experience that utilises advanced technology to encourage more people to travel by public transportation鈥?/strong></p>
+<p><strong>“How might we design a public transportation experience that utilises advanced technology to encourage more people to travel by public transportation”</strong></p>
 <h4>Research</h4>
 <h5>Research Method</h5>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/4.jpg" alt="drt-bus-experience-design-for-tourists project image 4" loading="lazy" /></figure>
@@ -768,9 +754,9 @@
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/5.jpg" alt="drt-bus-experience-design-for-tourists project image 5" loading="lazy" /></figure>
 <h5>As-is Scenario</h5>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/6.jpg" alt="drt-bus-experience-design-for-tourists project image 6" loading="lazy" /></figure>
-<p>Build a <strong>better understanding</strong> of tourists鈥?current experience.</p>
+<p>Build a <strong>better understanding</strong> of tourists’ current experience.</p>
 <h5>Refined Problem Statement</h5>
-<p><strong>鈥淗ow might we design a public transportation experience utilising advanced technology that encourages tourists to change from choosing a taxi to a bus鈥?/strong></p>
+<p><strong>“How might we design a public transportation experience utilising advanced technology that encourages tourists to change from choosing a taxi to a bus”</strong></p>
 <h5>Online Survey</h5>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/7.jpg" alt="drt-bus-experience-design-for-tourists project image 7" loading="lazy" /></figure>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/8.jpg" alt="drt-bus-experience-design-for-tourists project image 8" loading="lazy" /></figure>
@@ -845,7 +831,7 @@
 <p>_This part is done by my team member._</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/27.jpg" alt="drt-bus-experience-design-for-tourists project image 27" loading="lazy" /></figure>
 <h5>Context Scenario</h5>
-<p><strong>STAGE 1銆€On the plane</strong> _Stage 1 is done by my team member._</p>
+<p><strong>STAGE 1 — On the plane</strong> _Stage 1 is done by my team member._</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/28.jpg" alt="drt-bus-experience-design-for-tourists project image 28" loading="lazy" /></figure>
 <p><strong>STAGE 2 After Arriving at airport</strong></p>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/29.jpg" alt="drt-bus-experience-design-for-tourists project image 29" loading="lazy" /></figure>
@@ -916,7 +902,7 @@
 <p>Whole Process</p>
 <ul>
 <li>Use HEART Framework to further test our prototype</li>
-<li>Designing with more advanced technology integration specifically for DRT buses to improve users鈥?experience.</li>
+<li>Designing with more advanced technology integration specifically for DRT buses to improve users’ experience.</li>
 <li>Expanding the current specific airport usage range to daily life, so that the system can also be used for daily commuting, thereby addressing UN Goals on a larger scale.</li>
 <li>Considering more support for people with disabilities and accessibility to increase the number of users</li>
 </ul>
@@ -925,13 +911,13 @@
 <p>Click <strong><a href="https://www.figma.com/proto/SbrBWJhKkBmtpccLrddLJY/Adv-Tech-mid-fi-appembed_host=share&amp;amp;kind=&amp;amp;node-id=273-1483&amp;amp;page-id=0%3A1&amp;amp;scaling=scale-down&amp;amp;show-proto-sidebar=1&amp;amp;starting-point-node-id=189%3A1310&amp;amp;viewport=-123%2C-2%2C0.06" target="_blank" rel="noreferrer">HERE</a></strong> or scan the QR code below if the demo does not load!</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/drt-bus-experience-design-for-tourists/frame.png" alt="drt-bus-experience-design-for-tourists project image 37" loading="lazy" /></figure>
   </div>
-</article> <article class="project-detail has-opening-video" id="s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough" data-category="product">
+</article> <article class="project-detail has-opening-video" id="s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough" data-category="hci">
   <header class="project-detail-header">
     <span class="project-number">09</span>
     <div>
-      <p class="eyebrow">Mobility</p>
+      <p class="eyebrow">HCI</p>
       <h2>S-Scooter - A sustainable way to travel in the 15-minute neighborhood in Loughborough</h2>
-      <p>鈥淲e are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.鈥?As students at Loughborough University, we have found</p>
+      <p>“We are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.” As students at Loughborough University, we have found</p>
       <ul class="project-tags"><li>sustainable mobility</li><li>scooter</li><li>smart mobility</li><li>interactive design</li></ul>
     </div>
   </header>
@@ -940,7 +926,7 @@
   <div class="project-detail-body">
 <h4>THE PROBLEM BEING TACKLED</h4>
 <h5>Brief</h5>
-<p><strong>鈥淲e are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.鈥?/strong></p>
+<p><strong>“We are going to research the transportation methods and habits of the students living around Leicestershire, UK. So that design a sustainable way to optimize their traveling in the 15-minute neighborhood.”</strong></p>
 <p>As students at Loughborough University, we have found that many students lack a suitable means of transport when traveling between school and town, or to the library for study.</p>
 <p>So to solve this problem, our idea was based on the conception of an immediate, free public transport option for short distances to meet the flexible travel needs of the student population</p>
 <p>An Affinity Diagram is created sourcing from interview, survey and observation:</p>
@@ -954,7 +940,7 @@
 <figure class="portfolio-figure"><img src="assets/portfolio/s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough/4.jpg" alt="s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough project image 4" loading="lazy" /></figure>
 <ul>
 <li>The priority matrix method is used to reorder the ideas from the brainstorming refers to the coordinate.</li>
-<li>Ideas that are allocated in the 鈥淪weet spot鈥?could be developed forward in the next step</li>
+<li>Ideas that are allocated in the “Sweet spot” could be developed forward in the next step</li>
 </ul>
 <h5>MAIN FEATURES</h5>
 <h5>SHARE</h5>
@@ -980,7 +966,7 @@
 <li>The e-scooter system helps students to reach campus facilities in every corner of the Loughborough campus.</li>
 </ul>
 <h4>HERO SHOT</h4>
-<p>鈥淲e believe, there is an opportunity to design an <strong>e-scooter sharing system</strong> for the <strong>student and staff living around the Loughborough campus</strong> that <strong>cultivates a more sustainable transport method</strong> so that they experience a <strong>sustainable and efficient transport style</strong>.鈥?/p>
+<p>“We believe, there is an opportunity to design an <strong>e-scooter sharing system</strong> for the <strong>student and staff living around the Loughborough campus</strong> that <strong>cultivates a more sustainable transport method</strong> so that they experience a <strong>sustainable and efficient transport style</strong>.”</p>
 <figure class="portfolio-figure"><img src="assets/portfolio/s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough/5.jpg" alt="s-scooter-a-sustainable-way-to-travel-in-the-15-minute-neighborhood-in-loughborough project image 5" loading="lazy" /></figure>
 <p><strong>S-Scooter aims to provide students with a swift, safe, short-distance, sustainable shared transport experience with freedom and joy</strong></p>
 <h4>STORYBOARD</h4>
@@ -1099,13 +1085,13 @@
 </ul>
 <figure class="portfolio-figure"><img src="assets/portfolio/eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact/2.png" alt="eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact project image 4" loading="lazy" /></figure>
 <h4>Problem statement</h4>
-<p><strong>Why it鈥檚 important 锛?/strong></p>
+<p><strong>Why it’s important :</strong></p>
 <ul>
 <li>Recycling is crucial to the <strong>future health</strong> of our</li>
-<p>planet -the world鈥檚 natural resources are finite, and some are in very short supply.</p>
+<p>planet -the world’s natural resources are finite, and some are in very short supply.</p>
 <li>75% of waste is generally <strong>recyclable</strong>.So</li>
 <p>schools make a huge impact when they recycle.</p>
-<li>Waste reduction and reuse can save campus鈥?/li>
+<li>Waste reduction and reuse can save campus resources.</li>
 <p><strong>money</strong>.</p>
 <li>It promotes ethical citizenship in students- that</li>
 <p>even the smallest actions matter and that their actions as consumers and recyclers can make a <strong>difference</strong>.</p>
@@ -1121,7 +1107,7 @@
 </ul>
 <p>Situation</p>
 <ul>
-<li>Living on campus鈥?dormitory.</li>
+<li>Living on campus in a dormitory.</li>
 <li>Already have the awareness of reduce waste</li>
 </ul>
 <p>Gender</p>
@@ -1176,7 +1162,7 @@
 <p>1. External <strong>trigger</strong> Posters that stick around the bins to remind students that wastes also can be reused. 2. Internal <strong>motivation</strong>:</p>
 <ul>
 <li>Give detailed recycle method suggestions. Repeat the tip that wastes can be reused as a priority.</li>
-<li>Penalties: Demonstrate the harmful effects of failing to recycle properly and evoke users鈥?empathy.</li>
+<li>Penalties: Demonstrate the harmful effects of failing to recycle properly and evoke users’ empathy.</li>
 </ul>
 <p><strong>Slogan:</strong> Don't throw it away, it can give you more.</p>
 <h5><strong>Using AR technology to scan and get inspiration about reuse.</strong></h5>
@@ -1196,7 +1182,7 @@
 <h4>Main features setting</h4>
 <figure class="portfolio-figure"><img src="assets/portfolio/eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact/18.png" alt="eco-circle-an-app-that-increases-recycling-rates-for-uni-campuses-in-collaboration-with-tpximpact project image 17" loading="lazy" /></figure>
 <h4>Risk assumption</h4>
-<p><strong>Low risk but鈥?/strong></p>
+<p><strong>Low risk but…</strong></p>
 <ul>
 <li>What if the Supplier refused collaboration or found a reason not to support the reward (Med)</li>
 <li>What if dormitory refuse to put up posters on the wall (Very low)</li>
@@ -1262,7 +1248,7 @@
   <header class="project-detail-header">
     <span class="project-number">11</span>
     <div>
-      <p class="eyebrow">Experience Design</p>
+      <p class="eyebrow">HCI</p>
       <h2>ONEARTH - Energy Saving APP for GenGame</h2>
       <p>ONEARTH is an smartphone app in partnership with GenGame energy. Based on a user-centered design approach, ONEARTH targets new parents who are short of money and time and encourages them to use smart meters to ensure the best living conditions for their family, allowing their baby to get the best start in...</p>
       <ul class="project-tags"><li>Experience Design</li><li>APP</li><li>Energy Saving</li><li>Smart Meter</li></ul>
@@ -1577,6 +1563,6 @@
       <a href="mailto:rosalinexiao520@gmail.com">rosalinexiao520@gmail.com</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=projects-grid2"></script>
   </body>
 </html>

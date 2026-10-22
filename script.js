@@ -19,6 +19,70 @@ const arCanvas = document.querySelector("[data-ar-canvas]");
 const arStatus = document.querySelector("[data-ar-status]");
 const siteHeader = document.querySelector("[data-header]");
 
+const factoryPreview = document.querySelector("[data-factory-preview]");
+if (factoryPreview) {
+  const video = factoryPreview.querySelector("[data-preview-video]");
+  const toggle = factoryPreview.querySelector("[data-preview-toggle]");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let requested = false;
+
+  function stopPreview() {
+    requested = false;
+    video.pause();
+    factoryPreview.classList.remove("is-preview-playing");
+    toggle.textContent = "Play preview";
+    toggle.setAttribute("aria-label", "Play muted factory video preview");
+    toggle.setAttribute("aria-pressed", "false");
+    if (video.readyState > 0) video.currentTime = 0;
+  }
+
+  function playPreview() {
+    requested = true;
+    video.muted = true;
+    // Load the existing six-second recording only after interaction.
+    if (!video.getAttribute("src")) video.src = video.dataset.src;
+    video.play().catch(() => {
+      if (video.paused) stopPreview();
+    });
+  }
+
+  video.addEventListener("playing", () => {
+    if (!requested || document.hidden) {
+      stopPreview();
+      return;
+    }
+    factoryPreview.classList.add("is-preview-playing");
+    toggle.textContent = "Stop preview";
+    toggle.setAttribute("aria-label", "Stop factory video preview");
+    toggle.setAttribute("aria-pressed", "true");
+  });
+  video.addEventListener("error", stopPreview);
+  factoryPreview.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse" && !reducedMotion.matches) playPreview();
+  });
+  factoryPreview.addEventListener("pointerleave", (event) => {
+    if (event.pointerType === "mouse") stopPreview();
+  });
+  toggle.addEventListener("click", () => requested ? stopPreview() : playPreview());
+  factoryPreview.addEventListener("focusout", (event) => {
+    if (!factoryPreview.contains(event.relatedTarget)) stopPreview();
+  });
+  factoryPreview.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") stopPreview();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopPreview();
+  });
+  window.addEventListener("blur", stopPreview);
+  reducedMotion.addEventListener("change", stopPreview);
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) stopPreview();
+    }).observe(factoryPreview);
+  }
+  toggle.hidden = false;
+}
+
 const pineconeScaleLayout = [
   { side: -1, y: 25, open: 7, close: 0.68, twist: 0.2, fold: 0.6 },
   { side: 1, y: 30.5, open: 10, close: 0.7, twist: -0.3, fold: 1.1 },
@@ -136,34 +200,42 @@ function applyFilter(filter) {
     card.classList.toggle("hidden", !isVisible);
   });
 
-  if (portfolioCards.length > 0) {
-    const activeCard = Array.from(portfolioCards).find(
-      (card) => !card.classList.contains("hidden") && card.classList.contains("active")
-    );
-    const fallbackCard = Array.from(portfolioCards).find((card) => !card.classList.contains("hidden"));
-    const nextCard = activeCard || fallbackCard;
-
-    if (nextCard) {
-      selectProjectTab(getProjectIdFromCard(nextCard), { updateHash: false, scroll: false });
-    }
-  }
 }
 
 function getProjectIdFromCard(card) {
   return card?.getAttribute("href")?.replace("#", "") || "";
 }
 
+function closeProjectDetail(options = {}) {
+  const details = document.querySelector(".portfolio-details");
+  if (!details) return;
+  details.hidden = true;
+  projectDetails.forEach((detail) => {
+    detail.classList.remove("active");
+    detail.hidden = true;
+  });
+  portfolioCards.forEach((card) => {
+    card.classList.remove("active");
+    card.removeAttribute("aria-current");
+  });
+  if (!options.preserveHash && window.location.hash) {
+    window.history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+}
+
 function selectProjectTab(projectId, options = {}) {
   if (!projectId || projectDetails.length === 0) return;
 
   const target = document.getElementById(projectId);
-  if (!target) return;
+  if (!target?.classList.contains("project-detail")) return;
+
+  document.querySelector(".portfolio-details").hidden = false;
 
   portfolioCards.forEach((card) => {
     const isActive = getProjectIdFromCard(card) === projectId;
     card.classList.toggle("active", isActive);
-    card.setAttribute("aria-selected", String(isActive));
-    card.setAttribute("tabindex", isActive ? "0" : "-1");
+    if (isActive) card.setAttribute("aria-current", "true");
+    else card.removeAttribute("aria-current");
   });
 
   projectDetails.forEach((detail) => {
@@ -186,11 +258,10 @@ function initialiseProjectTabs() {
 
   portfolioCards.forEach((card) => {
     const projectId = getProjectIdFromCard(card);
-    card.setAttribute("role", "tab");
     card.setAttribute("aria-controls", projectId);
-    card.setAttribute("aria-selected", "false");
 
     card.addEventListener("click", (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       selectProjectTab(projectId, { updateHash: true, scroll: true });
     });
@@ -203,13 +274,12 @@ function initialiseProjectTabs() {
     });
   });
 
-  projectDetails.forEach((detail) => {
-    detail.setAttribute("role", "tabpanel");
-  });
-
   const hashProject = window.location.hash.replace("#", "");
-  const firstCard = Array.from(portfolioCards).find((card) => !card.classList.contains("hidden"));
-  const initialProject = document.getElementById(hashProject) ? hashProject : getProjectIdFromCard(firstCard);
+  closeProjectDetail({ preserveHash: true });
+  document.querySelector(".portfolio-back")?.addEventListener("click", () => {
+    closeProjectDetail();
+  });
+  const initialProject = document.getElementById(hashProject)?.classList.contains("project-detail") ? hashProject : null;
   selectProjectTab(initialProject, { updateHash: false, scroll: false });
 
   if (hashProject && hashProject === initialProject) {
@@ -514,11 +584,12 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((item) => {
       item.classList.remove("active");
-      item.setAttribute("aria-selected", "false");
+      item.setAttribute(item.matches("button") ? "aria-pressed" : "aria-selected", "false");
     });
     button.classList.add("active");
-    button.setAttribute("aria-selected", "true");
+    button.setAttribute(button.matches("button") ? "aria-pressed" : "aria-selected", "true");
     applyFilter(button.dataset.filter);
+    if (portfolioCards.length) closeProjectDetail();
   });
 });
 
